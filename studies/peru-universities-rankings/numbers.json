@@ -1,0 +1,352 @@
+{
+  "rankings": 13,
+  "leaders_outside_post": [
+    "uniRank: UTP"
+  ],
+  "differs_from_post": [
+    {
+      "university": "PUCP",
+      "measure": "leader",
+      "posted": 7,
+      "now": 8
+    },
+    {
+      "university": "PUCP",
+      "measure": "top3",
+      "posted": 15,
+      "now": 12
+    },
+    {
+      "university": "PUCP",
+      "measure": "present",
+      "posted": 16,
+      "now": 12
+    },
+    {
+      "university": "UPCH",
+      "measure": "leader",
+      "posted": 8,
+      "now": 4
+    },
+    {
+      "university": "UPCH",
+      "measure": "top3",
+      "posted": 14,
+      "now": 10
+    },
+    {
+      "university": "UPCH",
+      "measure": "present",
+      "posted": 15,
+      "now": 12
+    },
+    {
+      "university": "UNMSM",
+      "measure": "leader",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UNMSM",
+      "measure": "present",
+      "posted": 11,
+      "now": 9
+    },
+    {
+      "university": "Científica",
+      "measure": "leader",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "Científica",
+      "measure": "top3",
+      "posted": 6,
+      "now": 3
+    },
+    {
+      "university": "Científica",
+      "measure": "present",
+      "posted": 12,
+      "now": 9
+    },
+    {
+      "university": "UPC",
+      "measure": "leader",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UPC",
+      "measure": "present",
+      "posted": 9,
+      "now": 8
+    },
+    {
+      "university": "UNALM",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UNALM",
+      "measure": "present",
+      "posted": 7,
+      "now": 6
+    },
+    {
+      "university": "UPN",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UPN",
+      "measure": "present",
+      "posted": 5,
+      "now": 6
+    },
+    {
+      "university": "Pacífico",
+      "measure": "present",
+      "posted": 4,
+      "now": 5
+    },
+    {
+      "university": "ULima",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "ULima",
+      "measure": "present",
+      "posted": 4,
+      "now": 6
+    },
+    {
+      "university": "USMP",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "USMP",
+      "measure": "present",
+      "posted": 4,
+      "now": 5
+    },
+    {
+      "university": "UNTRM",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UNTRM",
+      "measure": "present",
+      "posted": 3,
+      "now": 4
+    }
+  ],
+  "against_original": [
+    {
+      "university": "PUCP",
+      "measure": "leader",
+      "posted": 7,
+      "now": 8
+    },
+    {
+      "university": "PUCP",
+      "measure": "top3",
+      "posted": 15,
+      "now": 12
+    },
+    {
+      "university": "PUCP",
+      "measure": "present",
+      "posted": 16,
+      "now": 12
+    },
+    {
+      "university": "UPCH",
+      "measure": "leader",
+      "posted": 8,
+      "now": 4
+    },
+    {
+      "university": "UPCH",
+      "measure": "top3",
+      "posted": 14,
+      "now": 10
+    },
+    {
+      "university": "UPCH",
+      "measure": "present",
+      "posted": 15,
+      "now": 12
+    },
+    {
+      "university": "UNMSM",
+      "measure": "leader",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UNMSM",
+      "measure": "top3",
+      "posted": 7,
+      "now": 7
+    },
+    {
+      "university": "UNMSM",
+      "measure": "present",
+      "posted": 11,
+      "now": 9
+    },
+    {
+      "university": "Científica",
+      "measure": "leader",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "Científica",
+      "measure": "top3",
+      "posted": 6,
+      "now": 3
+    },
+    {
+      "university": "Científica",
+      "measure": "present",
+      "posted": 12,
+      "now": 9
+    },
+    {
+      "university": "UPC",
+      "measure": "leader",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UPC",
+      "measure": "top3",
+      "posted": 1,
+      "now": 1
+    },
+    {
+      "university": "UPC",
+      "measure": "present",
+      "posted": 9,
+      "now": 8
+    },
+    {
+      "university": "UNALM",
+      "measure": "leader",
+      "posted": 0,
+      "now": 0
+    },
+    {
+      "university": "UNALM",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UNALM",
+      "measure": "present",
+      "posted": 7,
+      "now": 6
+    },
+    {
+      "university": "UPN",
+      "measure": "leader",
+      "posted": 0,
+      "now": 0
+    },
+    {
+      "university": "UPN",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UPN",
+      "measure": "present",
+      "posted": 5,
+      "now": 6
+    },
+    {
+      "university": "Pacífico",
+      "measure": "leader",
+      "posted": 0,
+      "now": 0
+    },
+    {
+      "university": "Pacífico",
+      "measure": "top3",
+      "posted": 1,
+      "now": 1
+    },
+    {
+      "university": "Pacífico",
+      "measure": "present",
+      "posted": 4,
+      "now": 5
+    },
+    {
+      "university": "ULima",
+      "measure": "leader",
+      "posted": 0,
+      "now": 0
+    },
+    {
+      "university": "ULima",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "ULima",
+      "measure": "present",
+      "posted": 4,
+      "now": 6
+    },
+    {
+      "university": "USMP",
+      "measure": "leader",
+      "posted": 0,
+      "now": 0
+    },
+    {
+      "university": "USMP",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "USMP",
+      "measure": "present",
+      "posted": 4,
+      "now": 5
+    },
+    {
+      "university": "UNTRM",
+      "measure": "leader",
+      "posted": 0,
+      "now": 0
+    },
+    {
+      "university": "UNTRM",
+      "measure": "top3",
+      "posted": 1,
+      "now": 0
+    },
+    {
+      "university": "UNTRM",
+      "measure": "present",
+      "posted": 3,
+      "now": 4
+    }
+  ]
+}

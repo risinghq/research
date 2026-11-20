@@ -1,0 +1,111 @@
+{
+ "kind": "bars",
+ "title": "Rankings that include the university",
+ "subtitle": "Global rankings, latest edition on 2026-11-18",
+ "source": "Rankings and editions in the study's README; QS data: Source: QS Quacquarelli Symonds (www.qs.com). With permission.",
+ "unit": "",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "This study",
+   "points": [
+    {
+     "x": "PUCP",
+     "y": 12
+    },
+    {
+     "x": "UPCH",
+     "y": 12
+    },
+    {
+     "x": "UNMSM",
+     "y": 9
+    },
+    {
+     "x": "Científica",
+     "y": 9
+    },
+    {
+     "x": "UPC",
+     "y": 8
+    },
+    {
+     "x": "UNALM",
+     "y": 6
+    },
+    {
+     "x": "UPN",
+     "y": 6
+    },
+    {
+     "x": "Pacífico",
+     "y": 5
+    },
+    {
+     "x": "ULima",
+     "y": 6
+    },
+    {
+     "x": "USMP",
+     "y": 5
+    },
+    {
+     "x": "UNTRM",
+     "y": 4
+    }
+   ]
+  }
+ ],
+ "compare": {
+  "label": "Mayta-Tristán, 2026-11-18",
+  "points": [
+   {
+    "x": "PUCP",
+    "y": 16
+   },
+   {
+    "x": "UPCH",
+    "y": 15
+   },
+   {
+    "x": "UNMSM",
+    "y": 11
+   },
+   {
+    "x": "Científica",
+    "y": 12
+   },
+   {
+    "x": "UPC",
+    "y": 9
+   },
+   {
+    "x": "UNALM",
+    "y": 7
+   },
+   {
+    "x": "UPN",
+    "y": 5
+   },
+   {
+    "x": "Pacífico",
+    "y": 4
+   },
+   {
+    "x": "ULima",
+    "y": 4
+   },
+   {
+    "x": "USMP",
+    "y": 4
+   },
+   {
+    "x": "UNTRM",
+    "y": 3
+   }
+  ]
+ }
+}
