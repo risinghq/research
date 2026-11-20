@@ -25,7 +25,7 @@ expected over the next six months, and the traffic of prospective buyers. The
 index combines the three answers and is seasonally adjusted. A reading above
 50 means more builders see conditions as good than poor.
 
-![U.S. homebuilder sentiment index, monthly](hmi.png)
+![U.S. homebuilder sentiment index, monthly](https://research.rising.sh/us-homebuilder-sentiment/hmi.svg)
 
 The index fell to 25 in November 2026, from 29 in October and 38 a year
 earlier. It was last that low in April 2012, at 24. Since January 2000 it has
@@ -50,7 +50,7 @@ the same value for each of its 323 months, from January 2000 to November 2026.
 
 [`us_homebuilder_sentiment.py`](us_homebuilder_sentiment.py) reads the link to
 "Table 2: National HMI – History" from NAHB's page, downloads the table and
-writes the chart file [`hmi.json`](hmi.json), the figure and
+writes the chart file [`hmi.json`](hmi.json) and
 [`numbers.json`](numbers.json). [`original.csv`](original.csv) holds the
 values the Axios chart plots. The rerun workflow runs the script every
 weekday.

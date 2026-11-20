@@ -2,7 +2,8 @@
 
 Rising's studies on open data. Each study is a folder under
 [`studies/`](studies) with its question, its report, the numbers it cites and
-its figures. Shared data clients live under [`packages/`](packages).
+its chart files, which [docs/charts.md](docs/charts.md) describes. Shared data
+clients live under [`packages/`](packages).
 
 ## Studies
 

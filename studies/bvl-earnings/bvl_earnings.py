@@ -25,8 +25,8 @@ import pandas as pd
 from bvl import eventstudy, issuers, panel, store, study
 
 
-STATEMENTS_SOURCE = "Source: SMV open data API, quarterly statements."
-EVENTS_SOURCE = "Source: SMV open data API, quarterly statements and BVL quotes."
+STATEMENTS_SOURCE = "SMV open data API, quarterly statements."
+EVENTS_SOURCE = "SMV open data API, quarterly statements and BVL quotes."
 SEED = 20261114
 # How far before and after the filing the reaction profile runs, in market days.
 SPAN = (-5, 60)
@@ -304,41 +304,62 @@ def _figures(
     sample: pd.DataFrame,
     out: Path,
 ) -> None:
-    note = STATEMENTS_SOURCE + " Individual statements of issuers."
     rule = {RULE_FROM.date().isoformat(): "SMV 013-2014 in force"}
+    quarter = figures.Axis("quarter")
     figures.lines(
-        {"median days after quarter end": by_quarter["median_lag"]},
-        out / "lag.png",
-        title="How long issuers take to file a quarterly statement",
-        ylabel="days",
-        note=note + " One point per fiscal quarter, by quarter end.",
+        out,
+        "lag",
+        {"Median days after quarter end": by_quarter["median_lag"]},
+        figures.Style(
+            "How long issuers take to file a quarterly statement",
+            "Median days from the end of the fiscal quarter to the filing,"
+            " individual statements",
+            STATEMENTS_SOURCE,
+            unit="days",
+        ),
+        quarter,
         marks=rule,
     )
     figures.lines(
+        out,
+        "due-day",
         {
-            "filed on the due day": by_quarter["on_due_day"] * 100,
-            "filed after it": by_quarter["late"] * 100,
+            "Filed on the due day": by_quarter["on_due_day"] * 100,
+            "Filed after it": by_quarter["late"] * 100,
         },
-        out / "due-day.png",
-        title="Share of statements filed on the due day and after it",
-        ylabel="% of statements",
-        note=note + " Due day: the SMV limit moved past closed days.",
+        figures.Style(
+            "Share of statements filed on the due day and after it",
+            "Percent of individual statements. The due day is the SMV limit,"
+            " moved past closed days.",
+            STATEMENTS_SOURCE,
+            unit="%",
+            decimals=1,
+        ),
+        quarter,
         marks=rule,
     )
-    figures.bars(
+    figures.columns(
+        out,
+        "filing-day",
         shares * 100,
-        out / "filing-day.png",
-        title="Filing day against the due day, since July 2014",
-        ylabel="% of statements",
-        note=note + " 0 is the due day.",
+        figures.Style(
+            "Filing day against the due day, since July 2014",
+            "Percent of individual statements by market day; 0 is the due day",
+            STATEMENTS_SOURCE,
+            unit="%",
+            decimals=1,
+        ),
+        figures.Axis("number", label="Day", decimals=0),
     )
     returns, _, _ = eventstudy.profile(
         grid, sample["column"].to_numpy(), sample["day0"].to_numpy(), SPAN
     )
     offsets = pd.Index(range(SPAN[0], SPAN[1] + 1), name="day")
     figures.lines(
+        out,
+        "drift",
         {
-            f"{name} news": pd.Series(
+            f"{name.capitalize()} news": pd.Series(
                 np.nancumsum(
                     np.nanmean(returns[(sample["tercile"] == name).to_numpy()], axis=0)
                 )
@@ -347,11 +368,15 @@ def _figures(
             )
             for name in ("good", "middle", "bad")
         },
-        out / "drift.png",
-        title="Mean cumulative abnormal return around a quarterly filing",
-        ylabel="cumulative %, from the close of day -6",
-        note=EVENTS_SOURCE + " Terciles of the change in net income from a year"
-        " before, over assets.",
+        figures.Style(
+            "Mean cumulative abnormal return around a quarterly filing",
+            "Cumulative from the close of day -6, by tercile of the change in"
+            " net income from a year before, over assets",
+            EVENTS_SOURCE,
+            unit="%",
+            decimals=2,
+        ),
+        figures.Axis("number", label="Day", decimals=0),
     )
 
 

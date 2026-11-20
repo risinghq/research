@@ -18,7 +18,7 @@ if TYPE_CHECKING:
     from collections.abc import Callable, Sequence
 
 DEFAULT_DB = Path("data/bvl.sqlite")
-SOURCE = "Source: SMV open data API (mvnet.smv.gob.pe), BVL daily quotes."
+SOURCE = "SMV open data API (mvnet.smv.gob.pe), BVL daily quotes."
 
 
 def records(frame: pd.DataFrame | pd.Series) -> list[dict[str, object]]:

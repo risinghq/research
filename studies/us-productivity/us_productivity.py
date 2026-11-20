@@ -32,7 +32,6 @@ CHART = replication.Chart(
     unit="%",
     decimals=1,
     source="BLS, Productivity and Costs, series PRS85006092.",
-    ylabel="Percent change at an annual rate",
 )
 
 

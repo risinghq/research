@@ -139,7 +139,7 @@ between bid and ask, which gives this index a small upward drift; over the 2 to
 | `bvl.panel`                    | Returns, local shares, market days, the market index and Amihud         |
 | `bvl.issuers`                  | Ticker-to-RUC links                                                     |
 | `bvl.eventstudy`               | The event-study grid, measures, placebos and bootstrap                  |
-| `figures`                      | Line, bar and scatter charts, shared with every study                   |
+| `figures`                      | The chart files of every study ([charts](charts.md))                    |
 | `bvl.study`                    | A study's command line, `numbers.json` and the shared source note       |
 | `bvl.cli`                      | The `bvl` command                                                       |
 | `bvl_liquidity.py`             | Coverage, Amihud illiquidity and the MSCI review                        |

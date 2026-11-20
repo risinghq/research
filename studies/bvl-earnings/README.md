@@ -63,7 +63,7 @@ statements filed from 1 July 2014.
 
 ## Issuers file on the last day
 
-![Median days from quarter end to filing](lag.png)
+![Median days from quarter end to filing](https://research.rising.sh/bvl-earnings/lag.svg)
 
 The median issuer files 30 days after the quarter in the first three quarters
 and 45 days after the fourth: at the limit, not before it.
@@ -78,14 +78,14 @@ Since July 2014, of 9,671 individual statements:
 | Filed after it                 |  6.7% |                      7.3% |            5.9% |
 | Filed more than 30 days after  |  2.7% |                      3.0% |            2.2% |
 
-![Filing day against the due day](filing-day.png)
+![Filing day against the due day](https://research.rising.sh/bvl-earnings/filing-day.svg)
 
 31.3% file on the due day and 10.6% the calendar day before. 1.2% file one
 day after it, and from the second day on, each day holds 0.1% to 0.2%.
 Issuers with a traded share file on the due day more often than those with
 only bonds or other securities, not earlier.
 
-![Share filed on the due day and after it, by quarter](due-day.png)
+![Share filed on the due day and after it, by quarter](https://research.rising.sh/bvl-earnings/due-day.svg)
 
 The share on the due day swings before 2017 because issuers read the 30-day
 limit differently. From 2012 to 2015, 38% to 51% of second- and third-quarter
@@ -136,7 +136,7 @@ The top tercile (1,678 events) gains 0.90% on days 0 and 1 and the bottom
 tercile (1,679) loses 1.25%. Before the filing the gap is +0.25%, and its
 interval includes zero: prices do not move with the news ahead of the filing.
 
-![Mean cumulative abnormal return around a filing, by tercile of news](drift.png)
+![Mean cumulative abnormal return around a filing, by tercile of news](https://research.rising.sh/bvl-earnings/drift.svg)
 
 After day 1 the gap keeps widening, to +3.84% by day 60. Prices take the news
 over weeks, not in a day.

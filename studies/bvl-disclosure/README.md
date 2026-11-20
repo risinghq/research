@@ -53,7 +53,7 @@ multiplied by the sign of the day 0 to 1 reaction. A leak makes it positive.
 [0.17, 0.41]. The peak is on day 1, not day 0, which fits a market where many
 filings arrive after the session or where a thin stock trades a day late.
 
-![Absolute abnormal return around a filing](abs-return-profile.png)
+![Absolute abnormal return around a filing](https://research.rising.sh/bvl-disclosure/abs-return-profile.svg)
 
 **Prices do not move ahead of the news.** On placebo days the signed return is
 +0.16%: thin stocks trade on stale prices, so a five-day move tends to continue
@@ -68,7 +68,7 @@ is also no larger than on placebo days: −0.15 points [−0.29, −0.00] over d
 excess is −0.005 [−0.024, +0.015] in log(1 + ratio). On days 0 to 1 it is
 +0.051 [+0.032, +0.069].
 
-![Traded amount around a filing](amount-profile.png)
+![Traded amount around a filing](https://research.rising.sh/bvl-disclosure/amount-profile.svg)
 
 **Stocks with filings trade more often throughout, not only before them.** A
 stock trades on 44% of days −5 to −1 before a filing and 39% of placebo days,
@@ -76,7 +76,7 @@ stock trades on 44% of days −5 to −1 before a filing and 39% of placebo days
 around a filing are busier than the quiet weeks the placebos are drawn from, so
 this gap is not a pre-filing build-up.
 
-![Share of stocks that trade](traded-profile.png)
+![Share of stocks that trade](https://research.rising.sh/bvl-disclosure/traded-profile.svg)
 
 **By topic**, the excess in each measure:
 
@@ -97,7 +97,7 @@ the week before. No topic shows a positive signed return whose interval
 excludes zero. Capital events (issues, buybacks, mergers) have the largest
 pre-filing amount, +0.084, but its interval includes zero.
 
-![Signed pre-filing return by topic](pre-run-up-by-topic.png)
+![Signed pre-filing return by topic](https://research.rising.sh/bvl-disclosure/pre-run-up-by-topic.svg)
 
 **By period**, the reaction grew: +0.20 points [0.06, 0.35] in 2010-14, +0.29
 [0.05, 0.59] in 2015-19 and +0.36 [0.21, 0.53] in 2020-26. The signed
@@ -113,7 +113,7 @@ than 4% the next day. The SMV's Reglamento de Hechos de Importancia
 "tan pronto como tal hecho ocurra ... y en ningún caso más allá del día en que
 este haya ocurrido o haya sido conocido" (article 9.1).
 
-![Gap from decision to filing](filing-gap.png)
+![Gap from decision to filing](https://research.rising.sh/bvl-disclosure/filing-gap.svg)
 
 Same-day filings carry the whole effect: a reaction of +0.34 [0.21, 0.48] and a
 signed return of −0.30 [−0.50, −0.12] over 10,782 events. Filings one day or

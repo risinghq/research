@@ -41,15 +41,15 @@ a series digit) whose name does not say fund or ETF. Foreign listings such as
 traded on less than a third of market days; in 2020 it traded on 5%. The share
 that traded on 80% or more of days has stayed between 6% and 27%.
 
-![Active stocks](active-stocks.png)
+![Active stocks](https://research.rising.sh/bvl-liquidity/active-stocks.svg)
 
-![Coverage](coverage.png)
+![Coverage](https://research.rising.sh/bvl-liquidity/coverage.svg)
 
 **Illiquidity peaked in 2001-03 and again in 2015-16.** The yearly effects run
 from −0.86 (2007, the most liquid year) to +1.03 (2002). After the 2007 boom,
 2010-14 sat between −0.46 and −0.72.
 
-![Illiquidity](illiquidity.png)
+![Illiquidity](https://research.rising.sh/bvl-liquidity/illiquidity.svg)
 
 **The 2015-16 rise started before MSCI's consultation.** Mean monthly log
 illiquidity was −0.27 from August 2014 to July 2015, +0.50 during the review
@@ -59,7 +59,7 @@ about 2.2 times as much during the review. The rise began in March 2015, five
 months before MSCI opened the consultation, and fell back from March 2016, three
 months before the decision.
 
-![Around the MSCI review](illiquidity-msci.png)
+![Around the MSCI review](https://research.rising.sh/bvl-liquidity/illiquidity-msci.svg)
 
 ## What this does not show
 

@@ -26,7 +26,7 @@ from bvl import panel, store, study
 
 
 CHAIN = ("IGBVL", "SPBLPGPT", "MXNUAMPEGEN")
-BCRP_SOURCE = "Sources: SMV API (BVL index levels), BCRP API (sol per dollar, copper)."
+BCRP_SOURCE = "SMV API (BVL index levels), BCRP API (sol per dollar, copper)."
 LEVEL_FROM = "2010-01-01"
 ESTIMATION = (-260, -11)
 # Days 0 to REACTION_DAYS - 1 form the cumulative window.
@@ -163,46 +163,69 @@ def run(db: Path, out: Path) -> dict[str, object]:
     daily = index.join(bcrp_returns(db, pd.DatetimeIndex(index.index)))
     table = event_table(daily)
     labels = pd.Index([e.label for e in EVENTS], name="event")
-    note = BCRP_SOURCE + " Day 0: first session after the news."
-
     level = daily.loc[LEVEL_FROM:, "level"]
+    # A week's last close: at a page's width a daily line draws the same.
+    weekly = level.resample("W-FRI").last().dropna()
     figures.lines(
-        {"Peru General": level / level.iloc[0] * 100},
-        out / "index-events.png",
-        title="Peru General index and the political events studied",
-        ylabel=f"index, {level.index[0].date()} = 100",
-        note=BCRP_SOURCE + " Marks: event numbers in the README.",
+        out,
+        "index-events",
+        {"Peru General": weekly / level.iloc[0] * 100},
+        figures.Style(
+            "Peru General index and the political events studied",
+            f"Weekly close, index {level.index[0].date()} = 100. Each mark is"
+            " the week of an event, by its number in the table.",
+            BCRP_SOURCE,
+            decimals=1,
+        ),
+        figures.Axis("day"),
         marks={e.day0: str(n) for n, e in enumerate(EVENTS, 1)},
     )
-    abnormal = pd.Series(table["abnormal"].to_numpy() * 100, labels)
-    band = pd.Series(1.96 * table["sd"].to_numpy() * 100, labels)
+    numbered = pd.Index([f"{n}. {label}" for n, label in enumerate(labels, 1)])
+    abnormal = pd.Series(table["abnormal"].to_numpy() * 100, numbered)
+    band = pd.Series(1.96 * table["sd"].to_numpy() * 100, numbered)
     figures.bars(
+        out,
+        "day0-abnormal",
         abnormal,
-        out / "day0-abnormal.png",
-        title="Day-0 index return net of copper",
-        ylabel="abnormal log return, %",
-        note=note + " Whiskers: ±1.96 residual sd.",
-        errors=(abnormal - band, abnormal + band),
-        rotate=True,
+        figures.Style(
+            "Day-0 index return net of copper",
+            "Abnormal log return on the first session after the news, with"
+            " whiskers at ±1.96 residual sd",
+            BCRP_SOURCE,
+            unit="%",
+            decimals=2,
+        ),
+        low=abnormal - band,
+        high=abnormal + band,
     )
-    car = pd.Series(table["car"].to_numpy() * 100, labels)
+    car = pd.Series(table["car"].to_numpy() * 100, numbered)
     car_band = band * np.sqrt(REACTION_DAYS)
     figures.bars(
+        out,
+        "car",
         car,
-        out / "car.png",
-        title="Index return net of copper over days 0 to +5",
-        ylabel="cumulative abnormal log return, %",
-        note=note + " Whiskers: ±1.96 sd of a 6-day sum.",
-        errors=(car - car_band, car + car_band),
-        rotate=True,
+        figures.Style(
+            "Index return net of copper over days 0 to +5",
+            "Cumulative abnormal log return from the first session after the"
+            " news, with whiskers at ±1.96 sd of a 6-day sum",
+            BCRP_SOURCE,
+            unit="%",
+            decimals=2,
+        ),
+        low=car - car_band,
+        high=car + car_band,
     )
     figures.bars(
-        pd.Series(table["sol"].to_numpy() * 100, labels),
-        out / "sol-day0.png",
-        title="Change in soles per dollar on day 0",
-        ylabel="log change, % (up: weaker sol)",
-        note=note,
-        rotate=True,
+        out,
+        "sol-day0",
+        pd.Series(table["sol"].to_numpy() * 100, numbered),
+        figures.Style(
+            "Change in soles per dollar on day 0",
+            "Log change on the first session after the news; positive is a weaker sol",
+            BCRP_SOURCE,
+            unit="%",
+            decimals=2,
+        ),
     )
 
     returns = daily["r"]

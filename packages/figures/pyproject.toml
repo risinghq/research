@@ -1,9 +1,11 @@
 [project]
 name = "figures"
 version = "0.1.0"
-description = "The line, bar and scatter charts every study draws, as PNG files."
+description = "The chart files every study writes for research.rising.sh to draw."
 requires-python = ">=3.14"
-dependencies = ["matplotlib", "pandas"]
+dependencies = [
+ "pandas",
+]
 
 [build-system]
 requires = ["hatchling"]
