@@ -22,11 +22,8 @@ from the BLS Public Data API.
 
 ![Change in the Consumer Price Index, monthly](cpi.png)
 
-[`us_cpi.py`](us_cpi.py) fetches the series from 1999, takes each month's index
-over the month before as a percent change, and writes the chart file
-[`cpi.json`](cpi.json), the figure and [`numbers.json`](numbers.json). A
-scheduled job reruns it every weekday, so the chart gains each new month the
-day BLS publishes it.
+Each bar is a month's index over the month before, as a percent change. The
+chart gains each new month the day BLS publishes it.
 
 ## What differs from the original
 
@@ -38,17 +35,20 @@ day BLS publishes it.
 - **Revisions.** BLS revises the seasonal factors of the last five years with
   each January index, published in February. The original keeps the numbers
   of 2026-11-10. This chart shows the latest figures and draws the original's
-  beside them, and `revised_since_post` in `numbers.json` lists every month
-  that changed at the original's one decimal.
+  beside them.
 
 ## Checked against the original
 
-The original's chart data is in the post's embedded chart. On 2026-11-20 the
-BLS series gave the same change for January to September 2026 to five
+The post's chart publishes the values it plots. On 2026-11-20 the BLS series gave the same change for January to September 2026 to five
 decimals. For October the original shows 0.4%, the figure BLS rounded in its
 release, and the index gives 0.35%, which rounds to the same 0.4%.
 
-## Run it
+## Reproduce
+
+[`us_cpi.py`](us_cpi.py) fetches the series from 1999 and writes the chart file
+[`cpi.json`](cpi.json), the figure and [`numbers.json`](numbers.json). Its
+`revised_since_post` lists every month that changed at the original's one
+decimal. The rerun workflow runs the script every weekday.
 
 ```bash
 mise run install

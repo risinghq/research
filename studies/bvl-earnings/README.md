@@ -17,9 +17,7 @@ filing day and over the weeks after it?
 
 The data hold 35,936 statements from 581 filers, 2002Q1 to 2026Q2. The timing
 results use the individual statements of issuers (`EMPRESAS EMISORAS`): 19,693
-statements from 384 issuers. Every number below is in
-[`numbers.json`](numbers.json), which [`bvl_earnings.py`](bvl_earnings.py)
-rewrites.
+statements from 384 issuers.
 
 ## The limits
 
@@ -119,7 +117,7 @@ needs 10 trades in days −250 to −30. The sample holds 5,035 events from 120
 issuers and 142 tickers, filed from 2003-04-23 to 2026-11-02.
 
 **Abnormal return** is the stock's daily log return less the equal-weighted
-market index of local shares ([docs/BVL.md](../../docs/bvl.md#the-panel)),
+market index of local shares ([the panel](../../docs/bvl.md#the-panel)),
 summed over a window: days −5 to −1 before the filing, days 0 to 1 for the
 reaction, and days 2 to 60 for the drift. A day the stock does not trade adds
 nothing.
@@ -187,7 +185,10 @@ and 2.0% since. The drift appears in every period at 3% to 4.5%, though the
   move on a day without trades lands the news on the next trade, so part of
   the drift may be a slow reaction, not a mispricing.
 
-## Rerun
+## Reproduce
+
+Every number above is in [`numbers.json`](numbers.json), which
+[`bvl_earnings.py`](bvl_earnings.py) rewrites.
 
 ```bash
 uv run bvl fetch quotes

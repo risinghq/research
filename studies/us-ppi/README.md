@@ -21,11 +21,9 @@ is public domain and comes from the BLS Public Data API.
 
 ![Year-over-year change in the Producer Price Index, monthly](ppi.png)
 
-[`us_ppi.py`](us_ppi.py) fetches the series from its start in November 2009,
-takes each month's index over the same month a year before as a percent
-change, and writes the chart file [`ppi.json`](ppi.json), the figure and
-[`numbers.json`](numbers.json). A scheduled job reruns it every weekday, so the
-chart gains each new month and every revision the day BLS publishes it.
+Each point is a month's index over the same month a year before, as a percent
+change. The chart gains each new month and every revision the day BLS
+publishes it.
 
 ## What differs from the original
 
@@ -40,16 +38,20 @@ chart gains each new month and every revision the day BLS publishes it.
   and it revises the seasonal factors of the last five years each February.
   The original keeps the numbers of 2026-11-13. This chart shows the latest
   figures, marks the preliminary months and draws the original's line beside
-  its own, and `revised_since_post` in `numbers.json` lists every month that
-  changed.
+  its own.
 
 ## Checked against the original
 
-The original's chart data is in the post's embedded chart. On 2026-11-20 the
-BLS index gave the same change, at the original's precision, for all 192
+The post's chart publishes the values it plots. On 2026-11-20 the BLS index
+gave the same change, at the original's precision, for all 192
 months, from November 2010 to October 2026.
 
-## Run it
+## Reproduce
+
+[`us_ppi.py`](us_ppi.py) fetches the series from its start in November 2009
+and writes the chart file [`ppi.json`](ppi.json), the figure and
+[`numbers.json`](numbers.json). Its `revised_since_post` lists every month that
+changed since the post. The rerun workflow runs the script every weekday.
 
 ```bash
 mise run install

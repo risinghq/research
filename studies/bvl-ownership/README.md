@@ -16,9 +16,7 @@ and asks two questions. How concentrated is the ownership of Peruvian issuers?
 And do share classes with more free float trade more?
 
 The API answers only the current register, so the study is one snapshot,
-fetched on 2026-11-19. Every number below is in
-[`numbers.json`](numbers.json), which [`bvl_ownership.py`](bvl_ownership.py)
-rewrites.
+fetched on 2026-11-19.
 
 ## The register
 
@@ -129,8 +127,8 @@ Ferreycorp, with no holder above 10%, trades every day.
 ## Limits
 
 - **One snapshot.** The API has no history, so the study cannot say whether
-  ownership changed or whether a change in float moved trading. Running
-  `bvl fetch holders` again adds a new dated snapshot.
+  ownership changed or whether a change in float moved trading. A later
+  download of the register would add a second dated snapshot.
 - **Free float is an upper bound.** Holders under the cut-off may act
   together, and a listed holder may be a vehicle of another. The register does
   not link them.
@@ -147,10 +145,11 @@ Ferreycorp, with no holder above 10%, trades every day.
 - **Small sample.** With 57 and 36 classes, the intervals are wide. The
   direction of the effect given size is clear; its size is not.
 
-## Rerun
+## Reproduce
 
-The study reads the latest holders snapshot, so a new `fetch holders` moves it
-to that day's register.
+Every number above is in [`numbers.json`](numbers.json), which
+[`bvl_ownership.py`](bvl_ownership.py) rewrites. The study reads the latest
+holders snapshot, so a new `fetch holders` moves it to that day's register.
 
 ```bash
 uv run bvl fetch quotes

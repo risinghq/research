@@ -15,9 +15,7 @@ made since 2010.
 
 The data are the BVL daily quotes and the SMV's material-event register:
 125,068 filings from 2010-01-04 to 2026-11-13. 13,906 events of 147 issuers
-and 171 tickers can be measured. Every number below is in
-[`numbers.json`](numbers.json), which
-[`bvl_disclosure.py`](bvl_disclosure.py) rewrites.
+and 171 tickers can be measured.
 
 ## Method
 
@@ -145,7 +143,10 @@ separate from zero.
 - **Amounts are in an unreported currency.** Each stock is compared with its own
   baseline, so this does not bias a ratio. It does rule out market-wide sums.
 
-## Rerun
+## Reproduce
+
+Every number above is in [`numbers.json`](numbers.json), which
+[`bvl_disclosure.py`](bvl_disclosure.py) rewrites.
 
 ```bash
 uv run bvl fetch quotes
