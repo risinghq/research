@@ -1,0 +1,13 @@
+[project]
+name = "replication"
+version = "0.1.0"
+description = "Writes a replication's chart file, numbers, figure and README data date."
+requires-python = ">=3.14"
+dependencies = ["figures", "pandas"]
+
+[tool.uv.sources]
+figures = { workspace = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

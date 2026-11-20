@@ -3,64 +3,10 @@
   "title": "Change in U.S. nonfarm payrolls",
   "subtitle": "Monthly, seasonally adjusted",
   "unit": "jobs",
+  "decimals": 0,
   "source": "BLS, Current Employment Statistics, series CES0000000001.",
   "view": "2026-01",
   "points": [
-    {
-      "period": "1999-02",
-      "value": 418000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-03",
-      "value": 117000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-04",
-      "value": 361000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-05",
-      "value": 218000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-06",
-      "value": 271000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-07",
-      "value": 338000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-08",
-      "value": 150000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-09",
-      "value": 199000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-10",
-      "value": 407000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-11",
-      "value": 288000,
-      "preliminary": false
-    },
-    {
-      "period": "1999-12",
-      "value": 317000,
-      "preliminary": false
-    },
     {
       "period": "2000-01",
       "value": 228000,

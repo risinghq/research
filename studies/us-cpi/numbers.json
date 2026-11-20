@@ -1,0 +1,61 @@
+{
+  "latest": {
+    "period": "2026-10",
+    "value": 0.35028,
+    "preliminary": false
+  },
+  "preliminary": [],
+  "revised_since_post": [],
+  "against_original": [
+    {
+      "period": "2026-01",
+      "posted": 0.17084,
+      "now": 0.17084
+    },
+    {
+      "period": "2026-02",
+      "posted": 0.267,
+      "now": 0.267
+    },
+    {
+      "period": "2026-03",
+      "posted": 0.86514,
+      "now": 0.86514
+    },
+    {
+      "period": "2026-04",
+      "posted": 0.64004,
+      "now": 0.64004
+    },
+    {
+      "period": "2026-05",
+      "posted": 0.47291,
+      "now": 0.47291
+    },
+    {
+      "period": "2026-06",
+      "posted": -0.42248,
+      "now": -0.42248
+    },
+    {
+      "period": "2026-07",
+      "posted": 0.07367,
+      "now": 0.07367
+    },
+    {
+      "period": "2026-08",
+      "posted": 0.39602,
+      "now": 0.39602
+    },
+    {
+      "period": "2026-09",
+      "posted": 0.64855,
+      "now": 0.64855
+    },
+    {
+      "period": "2026-10",
+      "posted": 0.4,
+      "now": 0.35028
+    }
+  ]
+}

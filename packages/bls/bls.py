@@ -20,9 +20,17 @@ if TYPE_CHECKING:
 
 BASE_URL = "https://api.bls.gov/publicAPI/v2/"
 PAYROLLS = "CES0000000001"
+CPI = "CUSR0000SA0"
+PPI = "WPSFD4"
+PRODUCTIVITY = "PRS85006092"
+GROUND_BEEF = "APU0000703112"
 # The series the studies read, by BLS id.
 SERIES = {
     PAYROLLS: "total nonfarm employment, seasonally adjusted, thousands",
+    CPI: "CPI-U all items, U.S. city average, seasonally adjusted, 1982-84=100",
+    PPI: "PPI final demand, seasonally adjusted, November 2009=100",
+    PRODUCTIVITY: "nonfarm business labor productivity, annualized quarterly change",
+    GROUND_BEEF: "ground beef, 100% beef, average price per pound, U.S. city average",
 }
 YEARS_PER_REQUEST = {False: 10, True: 20}
 

@@ -1,0 +1,56 @@
+{
+  "latest": {
+    "period": "2026-Q3",
+    "value": 3.6,
+    "preliminary": false
+  },
+  "preliminary": [],
+  "revised_since_post": [],
+  "against_original": [
+    {
+      "period": "2024-Q3",
+      "posted": 3.4,
+      "now": 3.4
+    },
+    {
+      "period": "2024-Q4",
+      "posted": 2.1,
+      "now": 2.1
+    },
+    {
+      "period": "2025-Q1",
+      "posted": -0.1,
+      "now": -0.1
+    },
+    {
+      "period": "2025-Q2",
+      "posted": 4.2,
+      "now": 4.2
+    },
+    {
+      "period": "2025-Q3",
+      "posted": 4.5,
+      "now": 4.5
+    },
+    {
+      "period": "2025-Q4",
+      "posted": 1.2,
+      "now": 1.2
+    },
+    {
+      "period": "2026-Q1",
+      "posted": 1.4,
+      "now": 1.4
+    },
+    {
+      "period": "2026-Q2",
+      "posted": 2.1,
+      "now": 2.1
+    },
+    {
+      "period": "2026-Q3",
+      "posted": 3.6,
+      "now": 3.6
+    }
+  ]
+}
