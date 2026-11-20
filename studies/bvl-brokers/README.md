@@ -15,8 +15,7 @@ among the firms, year by year, and which firms lead it.
 
 The panel has 7,615 market days from 1996-01-02 to 2026-11-13 and 31 firms.
 The findings cover 2010 to 2026; the next section says why. 2026 runs to 13
-November. Every number below is in [`numbers.json`](numbers.json), which
-[`bvl_brokers.py`](bvl_brokers.py) rewrites.
+November.
 
 ## Method
 
@@ -112,7 +111,10 @@ in 2024 and 2026.
   share mixes the two at face value.
 - A single block trade can move a firm's yearly share by many points.
 
-## Rerun
+## Reproduce
+
+Every number above is in [`numbers.json`](numbers.json), which
+[`bvl_brokers.py`](bvl_brokers.py) rewrites.
 
 ```bash
 uv run bvl fetch quotes

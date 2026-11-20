@@ -13,9 +13,7 @@ How easy has it been to trade a Peruvian stock on the Lima Stock Exchange
 Markets status?
 
 The data are the BVL daily quotes the SMV publishes, 1996-01-02 to 2026-11-13:
-619 local share tickers and 19,029 stock months with an illiquidity ratio. Every
-number below is in [`numbers.json`](numbers.json), which
-[`bvl_liquidity.py`](bvl_liquidity.py) rewrites.
+619 local share tickers and 19,029 stock months with an illiquidity ratio.
 
 ## Method
 
@@ -80,7 +78,10 @@ months before the decision.
 - **2026 is a partial year**, and a single month (July 2026) has a large
   negative effect that a few trades can produce.
 
-## Rerun
+## Reproduce
+
+Every number above is in [`numbers.json`](numbers.json), which
+[`bvl_liquidity.py`](bvl_liquidity.py) rewrites.
 
 ```bash
 uv run bvl fetch quotes

@@ -16,9 +16,7 @@ following week. It asks which shocks the market priced and which it ignored.
 The index is the Peru General: the IGBVL to April 2015, the S&P/BVL Peru
 General to August 2025 and the MSCI NUAM Peru General after it. There are 7,589
 market days from 1996-01-02 to 2026-11-13. The exchange rate and copper come
-from the central bank (BCRP). Every number below is in
-[`numbers.json`](numbers.json), which [`bvl_politics.py`](bvl_politics.py)
-rewrites.
+from the central bank (BCRP).
 
 ## Method
 
@@ -136,7 +134,10 @@ the 2016 first-round rally by the
 [Banco de la Nación](https://www.bn.com.pe/atencion-cliente/informe-economico/2016/ReportExtr110416.pdf)
 and [Peru Reports](https://perureports.com/peru-markets-rally-leftist-fails-qualify-runoff/3752/).
 
-## Rerun
+## Reproduce
+
+Every number above is in [`numbers.json`](numbers.json), which
+[`bvl_politics.py`](bvl_politics.py) rewrites.
 
 ```bash
 uv run bvl fetch quotes

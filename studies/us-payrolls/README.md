@@ -21,11 +21,8 @@ adjusted. The data is public domain and comes from the BLS Public Data API.
 
 ![Change in U.S. nonfarm payrolls, monthly](payrolls.png)
 
-[`us_payrolls.py`](us_payrolls.py) fetches the series from 1999, takes each
-month's level less the month before, and writes the chart file
-[`payrolls.json`](payrolls.json), the figure and [`numbers.json`](numbers.json).
-A scheduled job reruns it every weekday, so the chart gains each new month and
-every revision the day BLS publishes it.
+Each bar is a month's level less the month before. The chart gains each new
+month and every revision the day BLS publishes it.
 
 ## What differs from the original
 
@@ -34,18 +31,22 @@ every revision the day BLS publishes it.
 - **Revisions.** Each jobs report revises the two months before it, and the
   annual benchmark, published with the January report, revises the past years.
   The original keeps the numbers of 2026-11-06. This chart shows the latest
-  estimate and draws the original's numbers beside it, and
-  `revised_since_post` in `numbers.json` lists every month that changed.
+  estimate and draws the original's numbers beside it.
 - **Preliminary months.** BLS marks the two latest months preliminary; the
   chart marks them too.
 
 ## Checked against the original
 
-The original's chart data is in the post's embedded chart. On 2026-11-20 the
-BLS series gave the same change, to the thousand, for each of its ten months:
+The post's chart publishes the values it plots. On 2026-11-20 the BLS series
+gave the same change, to the thousand, for each of its ten months:
 from 160,000 in January and −156,000 in February to 165,000 in October.
 
-## Run it
+## Reproduce
+
+[`us_payrolls.py`](us_payrolls.py) fetches the series from 1999 and writes the
+chart file [`payrolls.json`](payrolls.json), the figure and
+[`numbers.json`](numbers.json). Its `revised_since_post` lists every month that
+changed since the post. The rerun workflow runs the script every weekday.
 
 ```bash
 mise run install

@@ -45,4 +45,11 @@ README lists the fetches it needs. Each README opens with front matter that the
 research.rising.sh site reads: a one-line `summary`, the `topic`, a `status` of
 `live` or `finished`, the `published` date and the `data` date the numbers run
 to. A replication adds the keys that name its original.
+
+A README ends with a `## Reproduce` section that names the script, its output
+files and the commands that rerun it. The text above that section is for
+readers and names no files, commands or pipeline. The site shows the text above
+`## Reproduce`, links the study's folder for the rest, and fails its build on a
+README without the section.
+
 `mise run check` runs the lint, type checks and tests that CI runs.

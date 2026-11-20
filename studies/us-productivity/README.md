@@ -23,11 +23,8 @@ from the BLS Public Data API.
 
 ![Change in U.S. output per hour of labor, quarterly](productivity.png)
 
-[`us_productivity.py`](us_productivity.py) fetches the series from 2000 and
-writes the chart file [`productivity.json`](productivity.json), the figure and
-[`numbers.json`](numbers.json). BLS publishes the change itself, so the script
-computes nothing. A scheduled job reruns it every weekday, so the chart gains
-each new quarter and every revision the day BLS publishes it.
+The chart shows the change as BLS publishes it and gains each new quarter and
+every revision the day BLS publishes it.
 
 ## What differs from the original
 
@@ -37,15 +34,19 @@ each new quarter and every revision the day BLS publishes it.
 - **Revisions.** Each release revises earlier quarters, and the revised
   estimate of a quarter follows about a month after the first. The original
   keeps the numbers of 2026-11-05. This chart shows the latest estimate and
-  draws the original's numbers beside it, and `revised_since_post` in
-  `numbers.json` lists every quarter that changed.
+  draws the original's numbers beside it.
 
 ## Checked against the original
 
-The original's chart data is in the post's embedded chart. On 2026-11-20 the
-BLS series gave the same change, to the tenth, for each of its nine quarters.
+The post's chart publishes the values it plots. On 2026-11-20 the BLS series
+gave the same change, to the tenth, for each of its nine quarters.
 
-## Run it
+## Reproduce
+
+[`us_productivity.py`](us_productivity.py) fetches the series from 2000 and
+writes the chart file [`productivity.json`](productivity.json), the figure and
+[`numbers.json`](numbers.json). Its `revised_since_post` lists every quarter
+that changed since the post. The rerun workflow runs the script every weekday.
 
 ```bash
 mise run install
