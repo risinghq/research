@@ -47,7 +47,7 @@ def test_a_rerun_matches_every_posted_month_and_dates_the_readme(
     assert "data: 2026-10-31" in (tmp_path / "README.md").read_text("utf-8")
     chart = json.loads((tmp_path / "payrolls.json").read_text("utf-8"))
     assert chart["view"] == "2026-01"
-    assert chart["points"][0]["period"] == "2025-02"
+    assert chart["series"][0]["points"][0]["x"] == "2025-02"
 
 
 def test_a_revised_month_is_listed_with_the_posted_and_current_change(

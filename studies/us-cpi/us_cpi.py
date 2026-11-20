@@ -33,7 +33,6 @@ CHART = replication.Chart(
     unit="%",
     decimals=1,
     source="BLS, Consumer Price Index, series CUSR0000SA0.",
-    ylabel="Percent change from the month before",
 )
 
 

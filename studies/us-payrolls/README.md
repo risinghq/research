@@ -19,7 +19,7 @@ the October jobs report. This study rebuilds that chart from the BLS series it
 was drawn from, series `CES0000000001`, total nonfarm employment, seasonally
 adjusted. The data is public domain and comes from the BLS Public Data API.
 
-![Change in U.S. nonfarm payrolls, monthly](payrolls.png)
+![Change in U.S. nonfarm payrolls, monthly](https://research.rising.sh/us-payrolls/payrolls.svg)
 
 Each bar is a month's level less the month before. The chart gains each new
 month and every revision the day BLS publishes it.
@@ -44,7 +44,7 @@ from 160,000 in January and −156,000 in February to 165,000 in October.
 ## Reproduce
 
 [`us_payrolls.py`](us_payrolls.py) fetches the series from 1999 and writes the
-chart file [`payrolls.json`](payrolls.json), the figure and
+chart file [`payrolls.json`](payrolls.json) and
 [`numbers.json`](numbers.json). Its `revised_since_post` lists every month that
 changed since the post. The rerun workflow runs the script every weekday.
 

@@ -1,0 +1,108 @@
+{
+ "kind": "bars",
+ "title": "Day-0 index return net of copper",
+ "subtitle": "Abnormal log return on the first session after the news, with whiskers at ±1.96 residual sd",
+ "source": "SMV API (BVL index levels), BCRP API (sol per dollar, copper).",
+ "unit": "%",
+ "decimals": 2,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Day-0 index return net of copper",
+   "points": [
+    {
+     "x": "1. 2011 first round",
+     "y": -3.14974,
+     "low": -5.30833,
+     "high": -0.991156
+    },
+    {
+     "x": "2. 2011 runoff",
+     "y": -13.6368,
+     "low": -16.5239,
+     "high": -10.7498
+    },
+    {
+     "x": "3. 2016 first round",
+     "y": 8.43316,
+     "low": 6.45481,
+     "high": 10.4115
+    },
+    {
+     "x": "4. 2016 runoff",
+     "y": -0.179104,
+     "low": -2.51772,
+     "high": 2.15952
+    },
+    {
+     "x": "5. 2017 PPK survives vacancy vote",
+     "y": 1.98427,
+     "low": 0.868214,
+     "high": 3.10033
+    },
+    {
+     "x": "6. 2018 PPK resigns",
+     "y": 0.350212,
+     "low": -0.885574,
+     "high": 1.586
+    },
+    {
+     "x": "7. 2019 Vizcarra dissolves Congress",
+     "y": -1.66017,
+     "low": -2.86021,
+     "high": -0.460134
+    },
+    {
+     "x": "8. 2020 Congress removes Vizcarra",
+     "y": -4.99773,
+     "low": -7.79381,
+     "high": -2.20166
+    },
+    {
+     "x": "9. 2020 Merino resigns",
+     "y": -0.0702143,
+     "low": -2.87823,
+     "high": 2.73781
+    },
+    {
+     "x": "10. 2021 first round",
+     "y": -1.56709,
+     "low": -4.00142,
+     "high": 0.867236
+    },
+    {
+     "x": "11. 2021 runoff",
+     "y": -8.32615,
+     "low": -10.8647,
+     "high": -5.78762
+    },
+    {
+     "x": "12. 2022 Castillo's self-coup, removal",
+     "y": 0.704022,
+     "low": -1.91332,
+     "high": 3.32137
+    },
+    {
+     "x": "13. 2025 Congress removes Boluarte",
+     "y": -1.64582,
+     "low": -3.15417,
+     "high": -0.137464
+    },
+    {
+     "x": "14. 2026 first round",
+     "y": 0.163194,
+     "low": -2.13166,
+     "high": 2.45805
+    },
+    {
+     "x": "15. 2026 runoff",
+     "y": 2.75085,
+     "low": 0.279562,
+     "high": 5.22213
+    }
+   ]
+  }
+ ]
+}

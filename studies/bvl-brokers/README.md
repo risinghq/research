@@ -57,7 +57,7 @@ carries its current name: BBVA SAB (code CON) for every year, for example.
 
 ## Concentration has no trend
 
-![Yearly and median-day HHI, 2010 to 2026](hhi.png)
+![Yearly and median-day HHI, 2010 to 2026](https://research.rising.sh/bvl-brokers/hhi.svg)
 
 | Year | HHI   | Median day | Largest firm | Its share | Top 3 | Firms |
 | ---- | ----: | ---------: | ------------ | --------: | ----: | ----: |
@@ -78,7 +78,7 @@ shares, the two would match. The gap means the firms that carry a day's
 trading change from day to day, and the year's shares spread wider than a
 typical day's.
 
-![Share of the largest firm and the three largest firms](top-shares.png)
+![Share of the largest firm and the three largest firms](https://research.rising.sh/bvl-brokers/top-shares.svg)
 
 ## Credicorp Capital leads, and Grupo Coril has risen
 
@@ -93,14 +93,14 @@ A few large trades can make such a year; this study does not identify them.
 Grupo Coril (GCO) first entered the top five in 2022, with 7.9%. It was second
 in 2023 (17.5%), 2025 (16.7%) and 2026 (15.8%).
 
-![Yearly share of the three largest firms of 2026](leaders.png)
+![Yearly share of the three largest firms of 2026](https://research.rising.sh/bvl-brokers/leaders.svg)
 
 ## Fewer firms
 
 The firms with any trading rose from 21 in 2010 to 26 in 2016, then fell to 19
 in 2024 and 2026.
 
-![Firms with any amount traded each year](firms.png)
+![Firms with any amount traded each year](https://research.rising.sh/bvl-brokers/firms.svg)
 
 ## Limits
 

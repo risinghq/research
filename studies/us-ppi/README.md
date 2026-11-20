@@ -19,7 +19,7 @@ rebuilds that chart from the series it was drawn from, Bureau of Labor
 Statistics (BLS) series `WPSFD4`, final demand, seasonally adjusted. The data
 is public domain and comes from the BLS Public Data API.
 
-![Year-over-year change in the Producer Price Index, monthly](ppi.png)
+![Year-over-year change in the Producer Price Index, monthly](https://research.rising.sh/us-ppi/ppi.svg)
 
 Each point is a month's index over the same month a year before, as a percent
 change. The chart gains each new month and every revision the day BLS
@@ -49,7 +49,7 @@ months, from November 2010 to October 2026.
 ## Reproduce
 
 [`us_ppi.py`](us_ppi.py) fetches the series from its start in November 2009
-and writes the chart file [`ppi.json`](ppi.json), the figure and
+and writes the chart file [`ppi.json`](ppi.json) and
 [`numbers.json`](numbers.json). Its `revised_since_post` lists every month that
 changed since the post. The rerun workflow runs the script every weekday.
 

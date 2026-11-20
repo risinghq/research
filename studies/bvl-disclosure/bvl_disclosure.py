@@ -265,7 +265,8 @@ def _figures(
     shares: pd.DataFrame,
     out: Path,
 ) -> None:
-    note = SOURCE + " Events: SMV material-event filings, 2010 on."
+    source = SOURCE.removesuffix(".") + ", SMV material-event filings from 2010."
+    day = figures.Axis("number", label="Day", decimals=0)
     event_returns, event_amount, event_traded = eventstudy.profile(
         grid, sample["column"].to_numpy(), sample["day0"].to_numpy(), PROFILE_SPAN
     )
@@ -274,40 +275,59 @@ def _figures(
     )
     offsets = pd.Index(range(PROFILE_SPAN[0], PROFILE_SPAN[1] + 1), name="day")
     figures.lines(
+        out,
+        "abs-return-profile",
         {
-            "filing": pd.Series(
+            "Filing": pd.Series(
                 np.nanmean(np.abs(event_returns), axis=0) * 100, offsets
             ),
-            "placebo day": pd.Series(
+            "Placebo day": pd.Series(
                 np.nanmean(np.abs(placebo_returns), axis=0) * 100, offsets
             ),
         },
-        out / "abs-return-profile.png",
-        title="Size of the daily abnormal move around a material-event filing",
-        ylabel="mean |abnormal return|, %",
-        note=note + " Day 0: first market day on or after the filing date.",
+        figures.Style(
+            "Size of the daily abnormal move around a material-event filing",
+            "Mean absolute abnormal return. Day 0 is the first market day on or"
+            " after the filing date.",
+            source,
+            unit="%",
+            decimals=2,
+        ),
+        day,
     )
     figures.lines(
+        out,
+        "traded-profile",
         {
-            "filing": pd.Series(np.nanmean(event_traded, axis=0) * 100, offsets),
-            "placebo day": pd.Series(np.nanmean(placebo_traded, axis=0) * 100, offsets),
+            "Filing": pd.Series(np.nanmean(event_traded, axis=0) * 100, offsets),
+            "Placebo day": pd.Series(np.nanmean(placebo_traded, axis=0) * 100, offsets),
         },
-        out / "traded-profile.png",
-        title="Share of stocks that trade on each day around a filing",
-        ylabel="% of events with a trade",
-        note=note,
+        figures.Style(
+            "Share of stocks that trade on each day around a filing",
+            "Percent of events with a trade",
+            source,
+            unit="%",
+            decimals=1,
+        ),
+        day,
     )
     figures.lines(
+        out,
+        "amount-profile",
         {
-            "filing": pd.Series(np.nanmean(np.log1p(event_amount), axis=0), offsets),
-            "placebo day": pd.Series(
+            "Filing": pd.Series(np.nanmean(np.log1p(event_amount), axis=0), offsets),
+            "Placebo day": pd.Series(
                 np.nanmean(np.log1p(placebo_amount), axis=0), offsets
             ),
         },
-        out / "amount-profile.png",
-        title="Traded amount around a filing, against the stock's own baseline",
-        ylabel="mean log(1 + amount / baseline)",
-        note=note + " Baseline: mean daily amount over days -250 to -30.",
+        figures.Style(
+            "Traded amount around a filing, against the stock's own baseline",
+            "Mean log(1 + amount / baseline). The baseline is the mean daily"
+            " amount over days -250 to -30.",
+            source,
+            decimals=2,
+        ),
+        day,
     )
     signed = {
         name: result["signed_pre5"]
@@ -316,22 +336,32 @@ def _figures(
     }
     excess = pd.Series({t: v["excess"] * 100 for t, v in signed.items()})
     figures.bars(
+        out,
+        "pre-run-up-by-topic",
         excess,
-        out / "pre-run-up-by-topic.png",
-        title="Pre-filing move in the direction of the reaction, over placebo",
-        ylabel="excess signed return, days -5 to -1, %",
-        note=note + " Bars: 95% bootstrap interval clustered by day 0.",
-        errors=(
-            pd.Series({t: v["low"] * 100 for t, v in signed.items()}),
-            pd.Series({t: v["high"] * 100 for t, v in signed.items()}),
+        figures.Style(
+            "Pre-filing move in the direction of the reaction, over placebo",
+            "Excess signed return over days -5 to -1, with the 95% bootstrap"
+            " interval clustered by day 0",
+            source,
+            unit="%",
+            decimals=2,
         ),
+        low=pd.Series({t: v["low"] * 100 for t, v in signed.items()}),
+        high=pd.Series({t: v["high"] * 100 for t, v in signed.items()}),
     )
     figures.lines(
-        {name: shares[name] * 100 for name in ("same day", "next day")},
-        out / "filing-gap.png",
-        title="When the decision behind a filing was taken",
-        ylabel="% of events",
-        note=note + " Gap: agreement date to filing date.",
+        out,
+        "filing-gap",
+        {name.capitalize(): shares[name] * 100 for name in ("same day", "next day")},
+        figures.Style(
+            "When the decision behind a filing was taken",
+            "Percent of events by the gap from the agreement date to the filing date",
+            source,
+            unit="%",
+            decimals=1,
+        ),
+        figures.Axis("year"),
     )
 
 

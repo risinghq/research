@@ -21,7 +21,7 @@ study rebuilds that chart from the BLS series it was drawn from, series
 from the quarter before at an annual rate. The data is public domain and comes
 from the BLS Public Data API.
 
-![Change in U.S. output per hour of labor, quarterly](productivity.png)
+![Change in U.S. output per hour of labor, quarterly](https://research.rising.sh/us-productivity/productivity.svg)
 
 The chart shows the change as BLS publishes it and gains each new quarter and
 every revision the day BLS publishes it.
@@ -44,7 +44,7 @@ gave the same change, to the tenth, for each of its nine quarters.
 ## Reproduce
 
 [`us_productivity.py`](us_productivity.py) fetches the series from 2000 and
-writes the chart file [`productivity.json`](productivity.json), the figure and
+writes the chart file [`productivity.json`](productivity.json) and
 [`numbers.json`](numbers.json). Its `revised_since_post` lists every quarter
 that changed since the post. The rerun workflow runs the script every weekday.
 

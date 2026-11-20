@@ -108,37 +108,58 @@ def run(db: Path, out: Path) -> dict[str, object]:
     )
     shown = by_year.loc[first:]
     shares = yearly_shares(rows).loc[first:]
-    note = study.SOURCE.replace("BVL daily quotes", "amounts traded by each SAB")
+    source = study.SOURCE.replace("BVL daily quotes", "amounts traded by each SAB")
     last_year = int(shares.index.max())
+    year = figures.Axis("year")
 
     figures.lines(
-        {"yearly shares": shown["hhi"], "median day": shown["daily_hhi"]},
-        out / "hhi.png",
-        title="Concentration of BVL brokerage, Herfindahl-Hirschman index",
-        ylabel="HHI, 0 to 10,000",
-        note=note + f" {last_year} is partial.",
+        out,
+        "hhi",
+        {"Yearly shares": shown["hhi"], "Median day": shown["daily_hhi"]},
+        figures.Style(
+            "Concentration of BVL brokerage",
+            f"Herfindahl-Hirschman index, 0 to 10,000. {last_year} is partial.",
+            source,
+        ),
+        year,
     )
     figures.lines(
-        {"largest firm": shown["top1"] * 100, "three largest": shown["top3"] * 100},
-        out / "top-shares.png",
-        title="Share of the amount traded through the largest firms",
-        ylabel="% of bought plus sold",
-        note=note + " Each year's ranking.",
+        out,
+        "top-shares",
+        {"Largest firm": shown["top1"] * 100, "Three largest": shown["top3"] * 100},
+        figures.Style(
+            "Share of the amount traded through the largest firms",
+            "Percent of bought plus sold, by each year's ranking",
+            source,
+            unit="%",
+            decimals=1,
+        ),
+        year,
     )
     figures.lines(
-        {"firms": shown["firms"]},
-        out / "firms.png",
-        title="Brokerage firms with any amount traded in the year",
-        ylabel="firms",
-        note=note,
+        out,
+        "firms",
+        {"Firms": shown["firms"]},
+        figures.Style(
+            "Brokerage firms with any amount traded in the year",
+            "Firms per year",
+            source,
+        ),
+        year,
     )
     leaders = shares.iloc[-1].nlargest(3)
     figures.lines(
+        out,
+        "leaders",
         {f"{names[code]} ({code})": shares[code] * 100 for code in leaders.index},
-        out / "leaders.png",
-        title=f"Yearly share of the three largest firms in {last_year}",
-        ylabel="% of bought plus sold",
-        note=note,
+        figures.Style(
+            f"Yearly share of the three largest firms in {last_year}",
+            "Percent of bought plus sold",
+            source,
+            unit="%",
+            decimals=1,
+        ),
+        year,
     )
 
     numbers: dict[str, object] = {

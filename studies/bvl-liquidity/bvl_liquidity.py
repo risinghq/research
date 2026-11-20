@@ -104,42 +104,69 @@ def run(db: Path, out: Path) -> dict[str, object]:
     monthly.index = pd.PeriodIndex(monthly.index).to_timestamp()
     complete = coverage.loc[coverage.index < pd.Timestamp.today().year]
 
+    year, month = figures.Axis("year"), figures.Axis("month")
     figures.lines(
-        {"local stocks that traded": complete["stocks"]},
-        out / "active-stocks.png",
-        title="Local stocks with at least one trade, per year",
-        ylabel="stocks",
-        note=SOURCE,
+        out,
+        "active-stocks",
+        {"Local stocks that traded": complete["stocks"]},
+        figures.Style(
+            "Local stocks with at least one trade, per year",
+            "Stocks",
+            SOURCE,
+            unit="stocks",
+        ),
+        year,
     )
     figures.lines(
+        out,
+        "coverage",
         {
-            "traded on 80% or more of days": complete["daily_share"] * 100,
-            "traded on under 20% of days": complete["rare_share"] * 100,
+            "Traded on 80% or more of days": complete["daily_share"] * 100,
+            "Traded on under 20% of days": complete["rare_share"] * 100,
         },
-        out / "coverage.png",
-        title="How often a listed local stock trades",
-        ylabel="% of active stocks",
-        note=SOURCE + " Coverage counts days between a stock's first and last trade.",
+        figures.Style(
+            "How often a listed local stock trades",
+            "Percent of active stocks. Coverage counts the days between a stock's"
+            " first and last trade.",
+            SOURCE,
+            unit="%",
+            decimals=1,
+        ),
+        year,
+    )
+    illiquidity = (
+        "Log illiquidity against the mean month. Higher means the same amount"
+        " traded moves the price more."
     )
     figures.lines(
+        out,
+        "illiquidity",
         {
-            "monthly": monthly,
+            "Monthly": monthly,
             "12-month mean": monthly.rolling(12, min_periods=6).mean(),
         },
-        out / "illiquidity.png",
-        title="Price impact of trading (Amihud), net of each stock's own level",
-        ylabel="log illiquidity vs mean month",
-        note=SOURCE + " Higher: the same amount traded moves the price more.",
-        span=("2015-08-03", "2016-06-14", "MSCI review "),
+        figures.Style(
+            "Price impact of trading (Amihud), net of each stock's own level",
+            illiquidity,
+            SOURCE,
+            decimals=2,
+        ),
+        month,
+        span=("2015-08-03", "2016-06-14", "MSCI review"),
     )
 
     window = monthly.loc["2014-01":"2017-12"]
     figures.lines(
-        {"monthly": window},
-        out / "illiquidity-msci.png",
-        title="Illiquidity around MSCI's 2015-16 review of Peru",
-        ylabel="log illiquidity vs mean month",
-        note=SOURCE,
+        out,
+        "illiquidity-msci",
+        {"Monthly": window},
+        figures.Style(
+            "Illiquidity around MSCI's 2015-16 review of Peru",
+            illiquidity,
+            SOURCE,
+            decimals=2,
+        ),
+        month,
         marks=MSCI_MARKS,
     )
 

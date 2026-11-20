@@ -32,7 +32,6 @@ CHART = replication.Chart(
     unit="$",
     decimals=2,
     source="BLS, Average Price Data, series APU0000703112.",
-    ylabel="Dollars per pound",
 )
 
 

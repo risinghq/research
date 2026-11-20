@@ -24,7 +24,7 @@ from bcrp import SOL
 from bvl import issuers, panel, store, study
 
 
-SOURCE = "Source: SMV open data API, register of holders, and BVL quotes."
+SOURCE = "SMV open data API, register of holders, and BVL quotes."
 SEED = 20261114
 CONTROL = 50.0
 COMMON = "common"
@@ -258,33 +258,48 @@ def run(db: Path, out: Path) -> dict[str, object]:
     traded, last_day = traded_classes(db, frame, snapshot)
     sample = traded[traded["days"] > 0].dropna(subset=["assets"])
     rng = np.random.default_rng(SEED)
-    note = SOURCE + f" Register of {snapshot}."
+    source = SOURCE.removesuffix(".") + f"; register of {snapshot}."
 
     edges = range(0, 101, 10)
     counts = pd.cut(frame["free_float"], list(edges), right=False, include_lowest=True)
-    figures.bars(
-        counts.value_counts(sort=False).set_axis([f"{a}-{a + 10}" for a in edges[:-1]]),
-        out / "free-float.png",
-        title="Share classes by free float, 100 less the listed stakes",
-        ylabel="share classes",
-        note=note + " Free float, %.",
+    figures.columns(
+        out,
+        "free-float",
+        counts.value_counts(sort=False).set_axis(
+            [f"{a}-{a + 10}%" for a in edges[:-1]]
+        ),
+        figures.Style(
+            "Share classes by free float, 100 less the listed stakes",
+            "Share classes in each band of free float",
+            source,
+            unit="classes",
+        ),
+        figures.Axis("category"),
     )
     kinds = frame.groupby("largest_kind").size().reindex(KINDS, fill_value=0)
     figures.bars(
-        kinds,
-        out / "largest-holder.png",
-        title="Kind of the largest holder of each share class",
-        ylabel="share classes",
-        note=note,
+        out,
+        "largest-holder",
+        kinds.rename(index=str.capitalize),
+        figures.Style(
+            "Kind of the largest holder of each share class",
+            "Share classes",
+            source,
+            unit="classes",
+        ),
     )
     figures.scatter(
-        sample["free_float"],
-        sample["coverage"] * 100,
-        out / "float-trading.png",
-        title="Free float and the share of market days a class traded",
-        xlabel="free float, %",
-        ylabel="% of market days, last 12 months",
-        note=note + " Point area: total assets.",
+        out,
+        "float-trading",
+        sample.set_index("ticker")["free_float"],
+        sample.set_index("ticker")["coverage"] * 100,
+        figures.Style(
+            "Free float and the share of market days a class traded",
+            "Percent of market days in the last 12 months; point area is total assets",
+            source,
+            unit="%",
+        ),
+        figures.Axis("number", label="Free float", unit="%"),
         size=sample["assets"],
     )
 

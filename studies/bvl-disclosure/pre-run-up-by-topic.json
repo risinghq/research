@@ -1,0 +1,66 @@
+{
+ "kind": "bars",
+ "title": "Pre-filing move in the direction of the reaction, over placebo",
+ "subtitle": "Excess signed return over days -5 to -1, with the 95% bootstrap interval clustered by day 0",
+ "source": "SMV open data API (mvnet.smv.gob.pe), BVL daily quotes, SMV material-event filings from 2010.",
+ "unit": "%",
+ "decimals": 2,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Pre-filing move in the direction of the reaction, over placebo",
+   "points": [
+    {
+     "x": "results",
+     "y": -0.289,
+     "low": -0.552,
+     "high": -0.037
+    },
+    {
+     "x": "dividends",
+     "y": -0.553,
+     "low": -0.936,
+     "high": -0.201
+    },
+    {
+     "x": "capital",
+     "y": -0.651,
+     "low": -1.417,
+     "high": 0.162
+    },
+    {
+     "x": "debt",
+     "y": 0.103,
+     "low": -0.36,
+     "high": 0.59
+    },
+    {
+     "x": "legal",
+     "y": -0.06,
+     "low": -1.256,
+     "high": 1.153
+    },
+    {
+     "x": "governance",
+     "y": -0.317,
+     "low": -0.523,
+     "high": -0.111
+    },
+    {
+     "x": "news",
+     "y": -0.033,
+     "low": -1.255,
+     "high": 1.241
+    },
+    {
+     "x": "other",
+     "y": -0.19,
+     "low": -0.487,
+     "high": 0.087
+    }
+   ]
+  }
+ ]
+}

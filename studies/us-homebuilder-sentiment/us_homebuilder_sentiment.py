@@ -27,7 +27,6 @@ CHART = replication.Chart(
     unit="",
     decimals=0,
     source="NAHB/Wells Fargo Housing Market Index, used with permission.",
-    ylabel="Index, 50 = as many good as poor",
 )
 
 

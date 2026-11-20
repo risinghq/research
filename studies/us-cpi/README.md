@@ -20,7 +20,7 @@ it was drawn from, series `CUSR0000SA0`, all items for all urban consumers,
 U.S. city average, seasonally adjusted. The data is public domain and comes
 from the BLS Public Data API.
 
-![Change in the Consumer Price Index, monthly](cpi.png)
+![Change in the Consumer Price Index, monthly](https://research.rising.sh/us-cpi/cpi.svg)
 
 Each bar is a month's index over the month before, as a percent change. The
 chart gains each new month the day BLS publishes it.
@@ -46,7 +46,7 @@ release, and the index gives 0.35%, which rounds to the same 0.4%.
 ## Reproduce
 
 [`us_cpi.py`](us_cpi.py) fetches the series from 1999 and writes the chart file
-[`cpi.json`](cpi.json), the figure and [`numbers.json`](numbers.json). Its
+[`cpi.json`](cpi.json) and [`numbers.json`](numbers.json). Its
 `revised_since_post` lists every month that changed at the original's one
 decimal. The rerun workflow runs the script every weekday.
 

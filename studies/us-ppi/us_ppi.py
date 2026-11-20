@@ -33,7 +33,6 @@ CHART = replication.Chart(
     unit="%",
     decimals=1,
     source="BLS, Producer Price Index, series WPSFD4.",
-    ylabel="Percent change from a year before",
 )
 
 

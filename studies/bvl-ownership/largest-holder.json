@@ -1,0 +1,34 @@
+{
+ "kind": "bars",
+ "title": "Kind of the largest holder of each share class",
+ "subtitle": "Share classes",
+ "source": "SMV open data API, register of holders, and BVL quotes; register of 2026-11-19.",
+ "unit": "classes",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Kind of the largest holder of each share class",
+   "points": [
+    {
+     "x": "State",
+     "y": 18.0
+    },
+    {
+     "x": "Pension fund",
+     "y": 1.0
+    },
+    {
+     "x": "Person",
+     "y": 10.0
+    },
+    {
+     "x": "Company",
+     "y": 164.0
+    }
+   ]
+  }
+ ]
+}

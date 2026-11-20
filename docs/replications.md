@@ -34,32 +34,16 @@ and `value`, as read from the post's chart data. A script never edits it.
 the precision the original published: a posted 0.4 is not revised by a current
 0.35028, which rounds to it. A period with no current value counts as revised.
 
-The `replication` package writes the chart file, `numbers.json`, the figure and
-the `data` date from a study's points and its original, so a study script only
-fetches the series and computes its values.
+The `replication` package writes the chart file, `numbers.json` and the `data`
+date from a study's points and its original, so a study script only fetches
+the series and computes its values.
 
 ## Chart file
 
-A figure `NAME.png` with a sibling `NAME.json` is drawn on research.rising.sh
-as an interactive chart; the PNG remains for GitHub and as the fallback. The
-JSON holds:
-
-| Field      | Value                                                                  |
-| ---------- | ---------------------------------------------------------------------- |
-| `kind`     | `columns` for changes, `line` for levels or long spans                 |
-| `title`    | The chart title                                                        |
-| `subtitle` | The frequency and adjustment                                           |
-| `unit`     | `%` follows a value, `$` precedes it, a word such as `jobs` follows it; empty for a bare number such as an index |
-| `decimals` | The decimals a value is shown with                                     |
-| `source`   | The source line                                                        |
-| `view`     | The first period the chart opens on: the original's first period       |
-| `points`   | `{period, value, preliminary}`, oldest first, one for every period     |
-| `compare`  | `{label, points}`: the values the original published, drawn beside it  |
-
-A `period` is `YYYY-MM` for a month or `YYYY-Qn` for a quarter. A `value` is
-null for a period the source published nothing for, such as the months BLS
-did not collect during the October 2025 lapse in appropriations; the chart
-leaves a gap there.
+The chart file follows [the chart contract](charts.md). A replication uses
+`columns` for changes and `line` for levels or long spans, with one series,
+"Latest estimate", of every month or quarter. Its `view` is the original's
+first period, and `compare` holds the values the original published.
 
 ## Rerun
 

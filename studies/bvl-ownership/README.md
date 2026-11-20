@@ -55,14 +55,14 @@ summed, and its **free float** is 100 less that sum: what holders under the
 register's cut-off own. This is an upper bound on the float that trades,
 since several small holders may be one family or group.
 
-![Share classes by free float](free-float.png)
+![Share classes by free float](https://research.rising.sh/bvl-ownership/free-float.svg)
 
 The median class has a free float of 2.86%. 128 of the 193 classes have less
 than 10% outside the listed holders, and 23 have none. In 71.5% of classes one
 holder owns more than half, and in 34.2% of all classes that holder is
 foreign.
 
-![Kind of the largest holder of each class](largest-holder.png)
+![Kind of the largest holder of each class](https://research.rising.sh/bvl-ownership/largest-holder.svg)
 
 The largest holder is a company in 164 classes, the state in 18, a person in
 10, and a pension fund in 1, Ferreycorp.
@@ -85,7 +85,7 @@ one, Agro Pucalá, has no statement with its total assets, which leaves a sample
 of 57.
 36 of them trade often enough for an Amihud measure.
 
-![Free float and coverage](float-trading.png)
+![Free float and coverage](https://research.rising.sh/bvl-ownership/float-trading.svg)
 
 **Size** is the issuer's total assets in its latest individual statement, with
 dollar statements converted at the BCRP exchange rate. Each test is a rank

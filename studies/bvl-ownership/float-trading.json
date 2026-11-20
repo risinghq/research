@@ -1,0 +1,363 @@
+{
+ "kind": "scatter",
+ "title": "Free float and the share of market days a class traded",
+ "subtitle": "Percent of market days in the last 12 months; point area is total assets",
+ "source": "SMV open data API, register of holders, and BVL quotes; register of 2026-11-19.",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "number",
+  "label": "Free float",
+  "unit": "%",
+  "decimals": 0
+ },
+ "series": [
+  {
+   "label": "Free float and the share of market days a class traded",
+   "points": [
+    {
+     "x": 0.7,
+     "y": 9.87124,
+     "name": "INTPEBC1",
+     "size": 8254580.0
+    },
+    {
+     "x": 35.27,
+     "y": 42.9185,
+     "name": "BROCALC1",
+     "size": 3151830.0
+    },
+    {
+     "x": 60.7155,
+     "y": 100.0,
+     "name": "FERREYC1",
+     "size": 3157340.0
+    },
+    {
+     "x": 16.38,
+     "y": 21.03,
+     "name": "RIMSEGC1",
+     "size": 22867600.0
+    },
+    {
+     "x": 0.69,
+     "y": 23.6052,
+     "name": "SCOTIAC1",
+     "size": 72609100.0
+    },
+    {
+     "x": 2.26132,
+     "y": 99.5708,
+     "name": "CREDITC1",
+     "size": 220305000.0
+    },
+    {
+     "x": 0.966977,
+     "y": 24.0343,
+     "name": "INTERBC1",
+     "size": 80769700.0
+    },
+    {
+     "x": 47.71,
+     "y": 97.8541,
+     "name": "ALICORC1",
+     "size": 9429650.0
+    },
+    {
+     "x": 0.203064,
+     "y": 7.29614,
+     "name": "HERMESC1",
+     "size": 1494350.0
+    },
+    {
+     "x": 6.57,
+     "y": 18.8841,
+     "name": "BUENAVC1",
+     "size": 19673000.0
+    },
+    {
+     "x": 48.7244,
+     "y": 3.86266,
+     "name": "TRADIC1",
+     "size": 605664.0
+    },
+    {
+     "x": 11.9416,
+     "y": 0.858369,
+     "name": "BPICHPC1",
+     "size": 9409160.0
+    },
+    {
+     "x": 16.63,
+     "y": 99.5708,
+     "name": "NEXAPEC1",
+     "size": 4190700.0
+    },
+    {
+     "x": 2.8887,
+     "y": 24.0343,
+     "name": "BACKUBC1",
+     "size": 16637000.0
+    },
+    {
+     "x": 6.996,
+     "y": 1.28755,
+     "name": "GRHOLDC1",
+     "size": 850936.0
+    },
+    {
+     "x": 0.64,
+     "y": 1.28755,
+     "name": "ATACOAC1",
+     "size": 715572.0
+    },
+    {
+     "x": 1.21,
+     "y": 1.28755,
+     "name": "SAGAC1",
+     "size": 2274540.0
+    },
+    {
+     "x": 5.7408,
+     "y": 99.5708,
+     "name": "BBVAC1",
+     "size": 122316000.0
+    },
+    {
+     "x": 36.3943,
+     "y": 93.133,
+     "name": "UNACEMC1",
+     "size": 6751850.0
+    },
+    {
+     "x": 1.48,
+     "y": 17.1674,
+     "name": "SHPC1",
+     "size": 12026300.0
+    },
+    {
+     "x": 4.28,
+     "y": 0.429185,
+     "name": "MOROCOC1",
+     "size": 527329.0
+    },
+    {
+     "x": 91.4856,
+     "y": 3.86266,
+     "name": "SEALDC1",
+     "size": 1036780.0
+    },
+    {
+     "x": 1.13402,
+     "y": 0.429185,
+     "name": "POSITIC1",
+     "size": 2965600.0
+    },
+    {
+     "x": 23.278,
+     "y": 0.858369,
+     "name": "COCESUC1",
+     "size": 773519.0
+    },
+    {
+     "x": 33.649,
+     "y": 4.72103,
+     "name": "INVCENC1",
+     "size": 2425370.0
+    },
+    {
+     "x": 8.01,
+     "y": 0.858369,
+     "name": "ASJUANC1",
+     "size": 225551.0
+    },
+    {
+     "x": 17.24,
+     "y": 12.4464,
+     "name": "SNJACIC1",
+     "size": 664199.0
+    },
+    {
+     "x": 17.8648,
+     "y": 0.858369,
+     "name": "ANDAHUC1",
+     "size": 442119.0
+    },
+    {
+     "x": 2.97,
+     "y": 6.00858,
+     "name": "SNJUANC1",
+     "size": 1651890.0
+    },
+    {
+     "x": 36.1,
+     "y": 70.3863,
+     "name": "CASAGRC1",
+     "size": 1820710.0
+    },
+    {
+     "x": 13.0768,
+     "y": 48.0687,
+     "name": "CARTAVC1",
+     "size": 885899.0
+    },
+    {
+     "x": 15.171,
+     "y": 9.87124,
+     "name": "LAREDOC1",
+     "size": 968030.0
+    },
+    {
+     "x": 71.0,
+     "y": 4.29185,
+     "name": "TUMANC1",
+     "size": 858788.0
+    },
+    {
+     "x": 6.0495,
+     "y": 67.382,
+     "name": "PODERC1",
+     "size": 3223880.0
+    },
+    {
+     "x": 63.686,
+     "y": 46.3519,
+     "name": "POMALCC1",
+     "size": 1332330.0
+    },
+    {
+     "x": 5.28,
+     "y": 96.5665,
+     "name": "CVERDEC1",
+     "size": 32875600.0
+    },
+    {
+     "x": 0.377713,
+     "y": 1.71674,
+     "name": "MINCORC1",
+     "size": 1401350.0
+    },
+    {
+     "x": 2.84,
+     "y": 63.0901,
+     "name": "PLUZENC1",
+     "size": 8263140.0
+    },
+    {
+     "x": 63.503,
+     "y": 1.71674,
+     "name": "EGEPIBC1",
+     "size": 683715.0
+    },
+    {
+     "x": 7.65,
+     "y": 97.4249,
+     "name": "ORYGENC1",
+     "size": 5866780.0
+    },
+    {
+     "x": 2.86,
+     "y": 54.5064,
+     "name": "LUSURC1",
+     "size": 12897300.0
+    },
+    {
+     "x": 5.29,
+     "y": 64.8069,
+     "name": "AENZAC1",
+     "size": 2379440.0
+    },
+    {
+     "x": 1.14286,
+     "y": 1.28755,
+     "name": "PACIFIC1",
+     "size": 21284800.0
+    },
+    {
+     "x": 17.03,
+     "y": 97.4249,
+     "name": "ENGIEC1",
+     "size": 7942160.0
+    },
+    {
+     "x": 9.88,
+     "y": 17.5966,
+     "name": "AUSTRAC1",
+     "size": 1013500.0
+    },
+    {
+     "x": 88.96,
+     "y": 3.43348,
+     "name": "PERENBC1",
+     "size": 130666.0
+    },
+    {
+     "x": 84.88,
+     "y": 3.43348,
+     "name": "ANDEXBC1",
+     "size": 9584.0
+    },
+    {
+     "x": 39.49,
+     "y": 15.8798,
+     "name": "CORAREC1",
+     "size": 5932540.0
+    },
+    {
+     "x": 10.0429,
+     "y": 10.7296,
+     "name": "EXALMC1",
+     "size": 2894500.0
+    },
+    {
+     "x": 5.179,
+     "y": 7.72532,
+     "name": "VOLCAAC1",
+     "size": 9730390.0
+    },
+    {
+     "x": 9.97,
+     "y": 89.6996,
+     "name": "SIDERC1",
+     "size": 1800630.0
+    },
+    {
+     "x": 29.6,
+     "y": 94.8498,
+     "name": "CPACASC1",
+     "size": 3252820.0
+    },
+    {
+     "x": 16.08,
+     "y": 12.0172,
+     "name": "AIHC1",
+     "size": 551113.0
+    },
+    {
+     "x": 1.8182,
+     "y": 1.71674,
+     "name": "CRECAPC1",
+     "size": 171061.0
+    },
+    {
+     "x": 7.4476,
+     "y": 0.429185,
+     "name": "FOSSALC1",
+     "size": 33679.0
+    },
+    {
+     "x": 5.17,
+     "y": 18.8841,
+     "name": "IPCHAC1",
+     "size": 449836.0
+    },
+    {
+     "x": 30.12,
+     "y": 8.58369,
+     "name": "CUMBRAC1",
+     "size": 48298.0
+    }
+   ]
+  }
+ ]
+}

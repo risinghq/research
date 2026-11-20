@@ -32,8 +32,6 @@ CHART = replication.Chart(
     unit="jobs",
     decimals=0,
     source="BLS, Current Employment Statistics, series CES0000000001.",
-    ylabel="Thousands of jobs",
-    scale=1000,
 )
 
 

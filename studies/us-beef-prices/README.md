@@ -19,7 +19,7 @@ Bureau of Labor Statistics (BLS) series it was drawn from, series
 `APU0000703112`, ground beef, 100% beef, U.S. city average. The data is public
 domain and comes from the BLS Public Data API.
 
-![Ground beef price per pound, monthly](beef.png)
+![Ground beef price per pound, monthly](https://research.rising.sh/us-beef-prices/beef.svg)
 
 The chart shows the price as BLS publishes it and gains each new month the day
 BLS publishes it, with the CPI.
@@ -47,7 +47,7 @@ January 2023 to September 2026, when a pound cost $6.79.
 ## Reproduce
 
 [`us_beef_prices.py`](us_beef_prices.py) fetches the series from its start in
-1984 and writes the chart file [`beef.json`](beef.json), the figure and
+1984 and writes the chart file [`beef.json`](beef.json) and
 [`numbers.json`](numbers.json). The rerun workflow runs it every weekday.
 
 ```bash

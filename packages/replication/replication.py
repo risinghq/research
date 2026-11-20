@@ -1,6 +1,6 @@
 """Writes the files a replication publishes: the chart file research.rising.sh
-draws, `numbers.json`, the PNG figure and the README's `data` date.
-docs/replications.md defines the chart file and `original.csv`.
+draws, `numbers.json` and the README's `data` date. docs/charts.md defines the
+chart file and docs/replications.md defines `original.csv`.
 
 A period is `YYYY-MM` for a month or `YYYY-Qn` for a quarter.
 """
@@ -58,11 +58,7 @@ class Original:
 
 @dataclass(frozen=True)
 class Chart:
-    """How a replication's series is drawn.
-
-    `name` is the file stem of the chart file and the figure. `ylabel` and
-    `scale` apply only to the PNG, which divides each value by `scale`.
-    """
+    """How a replication's series is drawn. `name` is the chart file's stem."""
 
     name: str
     kind: Literal["columns", "line"]
@@ -71,8 +67,6 @@ class Chart:
     unit: str
     decimals: int
     source: str
-    ylabel: str
-    scale: float = 1
 
 
 def period(day: date, *, quarterly: bool = False) -> str:
@@ -176,73 +170,40 @@ def chart_file(
     chart: Chart, points: Sequence[Point], original: Original
 ) -> dict[str, object]:
     """The chart file, opening on the post's first period."""
-    return {
-        "kind": chart.kind,
-        "title": chart.title,
-        "subtitle": chart.subtitle,
-        "unit": chart.unit,
-        "decimals": chart.decimals,
-        "source": chart.source,
-        "view": min(original.values),
-        "points": [asdict(point) for point in points],
-        "compare": {
+    latest = [
+        {"x": point.period, "y": point.value, "preliminary": point.preliminary}
+        for point in points
+    ]
+    return figures.chart(
+        chart.kind,
+        figures.Style(
+            chart.title, chart.subtitle, chart.source, chart.unit, chart.decimals
+        ),
+        figures.Axis("quarter" if _QUARTER.match(points[0].period) else "month"),
+        [{"label": "Latest estimate", "points": latest}],
+        view=min(original.values),
+        compare={
             "label": f"{original.outlet}, {original.posted}",
             "points": [
-                {"period": key, "value": value}
-                for key, value in original.values.items()
+                {"x": key, "y": value} for key, value in original.values.items()
             ],
         },
-    }
+    )
 
 
 def set_data_date(readme: str, day: date) -> str:
     return _DATA_LINE.sub(f"data: {day.isoformat()}", readme, count=1)
 
 
-def _label(value: pd.Period) -> str:
-    if value.freqstr.startswith("Q"):
-        return f"Q{value.quarter} {value.strftime('%y')}"
-    return value.strftime("%b %y")
-
-
-def _draw(chart: Chart, points: Sequence[Point], path: Path) -> None:
-    """The figure over the post's periods, for GitHub and as the site's fallback."""
-    periods = [_pandas_period(point.period) for point in points]
-    values = [
-        float("nan") if point.value is None else point.value / chart.scale
-        for point in points
-    ]
-    note = f"Source: {chart.source}"
-    if chart.kind == "columns":
-        figures.bars(
-            pd.Series(values, index=[_label(p) for p in periods]),
-            path,
-            title=chart.title,
-            ylabel=chart.ylabel,
-            note=note,
-        )
-    else:
-        days = pd.DatetimeIndex([p.start_time for p in periods])
-        figures.lines(
-            {chart.title: pd.Series(values, index=days)},
-            path,
-            title=chart.title,
-            ylabel=chart.ylabel,
-            note=note,
-        )
-
-
 def publish(
     out: Path, chart: Chart, points: Sequence[Point], original: Original
 ) -> dict[str, object]:
-    """Write the chart file, `numbers.json` and the figure, date the README, and
-    return the numbers."""
-    shown = [point for point in points if point.period >= min(original.values)]
+    """Write the chart file and `numbers.json`, date the README, and return the
+    numbers."""
     result = numbers(points, original)
     out.mkdir(parents=True, exist_ok=True)
     _write_json(out / "numbers.json", result)
-    _write_json(out / f"{chart.name}.json", chart_file(chart, points, original))
-    _draw(chart, shown, out / f"{chart.name}.png")
+    figures.write(out, chart.name, chart_file(chart, points, original))
     readme = out / "README.md"
     if readme.exists():
         text = readme.read_text(encoding="utf-8")

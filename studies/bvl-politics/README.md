@@ -58,9 +58,9 @@ from the central bank (BCRP).
 
 Returns are log changes. The event numbers match the marks on the index chart.
 
-![The Peru General index since 2010, with each event marked](index-events.png)
+![The Peru General index since 2010, with each event marked](https://research.rising.sh/bvl-politics/index-events.svg)
 
-![Day-0 abnormal return of each event](day0-abnormal.png)
+![Day-0 abnormal return of each event](https://research.rising.sh/bvl-politics/day0-abnormal.svg)
 
 ## Elections move the market most
 
@@ -86,7 +86,7 @@ modest (−3.1% and −1.6%), but the week added up to −11.3% and −8.3%. The
 (z = −1.9). The 2026 runoff reversed it, with +2.8% on day 0 and +8.5% over
 the week (z = 2.8).
 
-![Abnormal return over days 0 to +5](car.png)
+![Abnormal return over days 0 to +5](https://research.rising.sh/bvl-politics/car.svg)
 
 ## Removals and resignations mostly do not
 
@@ -105,7 +105,7 @@ Peru's crises in Congress moved the index less than elections did:
   20 March 2018, the day before. Surviving the first vacancy vote three months earlier was worth +2.0%
   (z = 3.5), and the sol strengthened 0.9% (z = −4.2).
 
-![Change in soles per dollar on day 0](sol-day0.png)
+![Change in soles per dollar on day 0](https://research.rising.sh/bvl-politics/sol-day0.svg)
 
 ## What the numbers do not show
 

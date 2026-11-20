@@ -1,0 +1,58 @@
+{
+ "kind": "columns",
+ "title": "Share classes by free float, 100 less the listed stakes",
+ "subtitle": "Share classes in each band of free float",
+ "source": "SMV open data API, register of holders, and BVL quotes; register of 2026-11-19.",
+ "unit": "classes",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Share classes by free float, 100 less the listed stakes",
+   "points": [
+    {
+     "x": "0-10%",
+     "y": 128.0
+    },
+    {
+     "x": "10-20%",
+     "y": 22.0
+    },
+    {
+     "x": "20-30%",
+     "y": 5.0
+    },
+    {
+     "x": "30-40%",
+     "y": 10.0
+    },
+    {
+     "x": "40-50%",
+     "y": 6.0
+    },
+    {
+     "x": "50-60%",
+     "y": 0.0
+    },
+    {
+     "x": "60-70%",
+     "y": 7.0
+    },
+    {
+     "x": "70-80%",
+     "y": 5.0
+    },
+    {
+     "x": "80-90%",
+     "y": 4.0
+    },
+    {
+     "x": "90-100%",
+     "y": 6.0
+    }
+   ]
+  }
+ ]
+}
