@@ -15,8 +15,8 @@ posted: 2026-11-18
 
 On 2026-11-18 Percy Mayta-Tristán posted a table of eleven Peruvian
 universities. For each one it counts the global rankings that place it first
-in Peru, in Peru's top three, and anywhere in the ranking. The post does not
-list the rankings it counts.
+in Peru, in Peru's top three, and anywhere in the ranking. It counts 18
+rankings at their most recent edition and does not name them.
 
 This study counts the same three things over 13 named rankings, each at its
 latest edition published on or before 2026-11-18. [`ranks.csv`](ranks.csv)
@@ -92,9 +92,9 @@ Symonds.
 
 ## What differs from the original
 
-- **Rankings.** The original counts at least 16 rankings: PUCP alone appears
-  in 16. This study counts 13 and names each one. The four rankings left out
-  above account for part of the gap.
+- **Rankings.** The original counts 18 rankings. This study counts 13 and
+  names each one. The four THE and QS rankings left out above account for
+  part of the gap.
 - **First place.** The original has Cayetano Heredia first in Peru in 8
   rankings and PUCP in 7. Here PUCP leads 8 and Cayetano Heredia 4. UNMSM,
   Científica and UPC each lead one ranking in the original and none here.
