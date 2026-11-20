@@ -37,6 +37,7 @@ def _axes(title: str, ylabel: str) -> tuple[Figure, Axes]:
     axes.set_ylabel(ylabel, color=INK)
     axes.spines[["top", "right"]].set_visible(False)
     axes.grid(axis="y", color="#e4e7eb", linewidth=0.8)
+    axes.set_axisbelow(True)
     return figure, axes
 
 

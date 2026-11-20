@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# Commits the working tree's changed files to the checked-out branch through
+# the GraphQL API. master requires signed commits, and GitHub signs a commit
+# that createCommitOnBranch makes with the workflow token; a git push from the
+# runner would be unsigned. Exits quietly when nothing changed.
+set -euo pipefail
+
+headline=$1
+mapfile -t changed < <(git status --porcelain --untracked-files=all | cut -c4-)
+if ((${#changed[@]} == 0)); then
+  echo "nothing changed"
+  exit 0
+fi
+
+additions=$(
+  for path in "${changed[@]}"; do
+    jq -n --arg path "$path" --rawfile contents <(base64 -w0 "$path") \
+      '{path: $path, contents: $contents}'
+  done | jq -s .
+)
+
+jq -n \
+  --arg repo "$GITHUB_REPOSITORY" \
+  --arg branch "$GITHUB_REF_NAME" \
+  --arg head "$(git rev-parse HEAD)" \
+  --arg headline "$headline" \
+  --argjson additions "$additions" \
+  '{
+    query: "mutation($input: CreateCommitOnBranchInput!) { createCommitOnBranch(input: $input) { commit { url } } }",
+    variables: {input: {
+      branch: {repositoryNameWithOwner: $repo, branchName: $branch},
+      expectedHeadOid: $head,
+      message: {headline: $headline},
+      fileChanges: {additions: $additions}
+    }}
+  }' |
+  gh api graphql --input - --jq .data.createCommitOnBranch.commit.url

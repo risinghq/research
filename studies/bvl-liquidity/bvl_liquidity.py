@@ -14,10 +14,11 @@ here compares a stock only with itself or counts days and stocks:
 
 from pathlib import Path
 
+import figures
 import numpy as np
 import pandas as pd
 
-from bvl import figures, panel, study
+from bvl import panel, study
 from bvl.study import SOURCE
 
 

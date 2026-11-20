@@ -12,10 +12,11 @@ year's total amount; the daily HHI uses each day's shares.
 
 from pathlib import Path
 
+import figures
 import numpy as np
 import pandas as pd
 
-from bvl import figures, store, study
+from bvl import store, study
 
 
 # A year enters the figures once the firms' bought amount, and every later

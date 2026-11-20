@@ -5,7 +5,6 @@ description = "Lima Stock Exchange (BVL) panel from the SMV and BCRP APIs, and t
 requires-python = ">=3.14"
 dependencies = [
     "bcrp",
-    "matplotlib",
     "numpy",
     "pandas",
     "smv",

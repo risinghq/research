@@ -1,0 +1,10 @@
+[project]
+name = "bls"
+version = "0.1.0"
+description = "Client for the BLS Public Data API: U.S. labor and price series."
+requires-python = ">=3.14"
+dependencies = ["httpx2"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

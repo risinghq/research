@@ -1,0 +1,64 @@
+{
+  "latest": {
+    "period": "2026-10",
+    "value": 165000,
+    "preliminary": true
+  },
+  "preliminary": [
+    "2026-09",
+    "2026-10"
+  ],
+  "revised_since_post": [],
+  "against_original": [
+    {
+      "period": "2026-01",
+      "posted": 160000,
+      "now": 160000
+    },
+    {
+      "period": "2026-02",
+      "posted": -156000,
+      "now": -156000
+    },
+    {
+      "period": "2026-03",
+      "posted": 214000,
+      "now": 214000
+    },
+    {
+      "period": "2026-04",
+      "posted": 148000,
+      "now": 148000
+    },
+    {
+      "period": "2026-05",
+      "posted": 63000,
+      "now": 63000
+    },
+    {
+      "period": "2026-06",
+      "posted": 31000,
+      "now": 31000
+    },
+    {
+      "period": "2026-07",
+      "posted": -10000,
+      "now": -10000
+    },
+    {
+      "period": "2026-08",
+      "posted": 186000,
+      "now": 186000
+    },
+    {
+      "period": "2026-09",
+      "posted": 60000,
+      "now": 60000
+    },
+    {
+      "period": "2026-10",
+      "posted": 165000,
+      "now": 165000
+    }
+  ]
+}

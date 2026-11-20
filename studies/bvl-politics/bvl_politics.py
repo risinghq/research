@@ -17,11 +17,12 @@ import json
 from pathlib import Path
 from typing import NamedTuple
 
+import figures
 import numpy as np
 import pandas as pd
 
 from bcrp import COPPER, SOL
-from bvl import figures, panel, store, study
+from bvl import panel, store, study
 
 
 CHAIN = ("IGBVL", "SPBLPGPT", "MXNUAMPEGEN")

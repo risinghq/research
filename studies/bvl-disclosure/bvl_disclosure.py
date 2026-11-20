@@ -16,10 +16,11 @@ import re
 from pathlib import Path
 from typing import Any
 
+import figures
 import numpy as np
 import pandas as pd
 
-from bvl import eventstudy, figures, issuers, panel, store, study
+from bvl import eventstudy, issuers, panel, store, study
 from bvl.study import SOURCE
 
 
