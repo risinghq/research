@@ -12,19 +12,21 @@ if ((${#changed[@]} == 0)); then
   exit 0
 fi
 
-additions=$(
-  for path in "${changed[@]}"; do
-    jq -n --arg path "$path" --rawfile contents <(base64 -w0 "$path") \
-      '{path: $path, contents: $contents}'
-  done | jq -s .
-)
+# The encoded files go through a file, not an argument: a figure's base64
+# outgrows the kernel's limit on one argument.
+additions=$(mktemp)
+trap 'rm -f "$additions"' EXIT
+for path in "${changed[@]}"; do
+  jq -n --arg path "$path" --rawfile contents <(base64 -w0 "$path") \
+    '{path: $path, contents: $contents}'
+done >"$additions"
 
 jq -n \
   --arg repo "$GITHUB_REPOSITORY" \
   --arg branch "$GITHUB_REF_NAME" \
   --arg head "$(git rev-parse HEAD)" \
   --arg headline "$headline" \
-  --argjson additions "$additions" \
+  --slurpfile additions "$additions" \
   '{
     query: "mutation($input: CreateCommitOnBranchInput!) { createCommitOnBranch(input: $input) { commit { url } } }",
     variables: {input: {
