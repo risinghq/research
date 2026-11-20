@@ -16,11 +16,12 @@ import re
 
 from pathlib import Path
 
+import figures
 import numpy as np
 import pandas as pd
 
 from bcrp import SOL
-from bvl import figures, issuers, panel, store, study
+from bvl import issuers, panel, store, study
 
 
 SOURCE = "Source: SMV open data API, register of holders, and BVL quotes."

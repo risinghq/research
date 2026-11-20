@@ -56,7 +56,9 @@ explicit_package_bases = true
 # A study folder's name has a hyphen, so each study module is top level.
 mypy_path = [
     "packages/bcrp",
+    "packages/bls",
     "packages/bvl",
+    "packages/figures",
     "packages/smv",
     "studies/bvl-brokers",
     "studies/bvl-disclosure",
@@ -64,6 +66,7 @@ mypy_path = [
     "studies/bvl-liquidity",
     "studies/bvl-ownership",
     "studies/bvl-politics",
+    "studies/us-payrolls",
 ]
 enable_error_code = [
     "ignore-without-code",
