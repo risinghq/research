@@ -52,5 +52,7 @@ which signs the commit, rather than pushing from git. A rerun on unchanged data
 writes identical files and commits nothing. research.rising.sh picks up the
 commit with its next submodule update.
 
-The BLS client needs no key. A repository secret `BLS_API_KEY` holding a BLS
-registration key raises the limit from 25 to 500 requests a day.
+The BLS client runs without a key on a local machine. The workflow needs the
+repository secret `BLS_API_KEY`, a BLS registration key: BLS counts the
+keyless limit of 25 requests a day per address, and GitHub's shared runners
+use it up before the rerun starts. A key raises the limit to 500 a day.
