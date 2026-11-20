@@ -1,7 +1,8 @@
 name: rerun
 
 # Reruns the live replications and commits what changed. BLS publishes at 8:30
-# Eastern on weekdays; 15:30 UTC is after it in both summer and winter time.
+# Eastern on weekdays and NAHB its index at 10:00; 15:30 UTC is after both in
+# summer and winter time.
 on:
   schedule:
     - cron: "30 15 * * 1-5"
@@ -30,6 +31,7 @@ jobs:
           uv run studies/us-beef-prices/us_beef_prices.py
         env:
           BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
+      - run: uv run studies/us-homebuilder-sentiment/us_homebuilder_sentiment.py
       - run: '.github/scripts/commit-changes "studies: rerun the live replications"'
         env:
           GH_TOKEN: ${{ github.token }}
