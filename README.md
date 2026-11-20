@@ -22,8 +22,13 @@ series:
 Replications rebuild a published chart from its public data and rerun it as
 the data updates; [docs/replications.md](docs/replications.md) describes them:
 
-- [Change in U.S. nonfarm payrolls](studies/us-payrolls/README.md), after
-  Axios, from the BLS.
+All five rebuild Axios charts from BLS series:
+
+- [Change in U.S. nonfarm payrolls](studies/us-payrolls/README.md)
+- [Change in the Consumer Price Index](studies/us-cpi/README.md)
+- [Year-over-year change in the Producer Price Index](studies/us-ppi/README.md)
+- [Change in U.S. output per hour of labor](studies/us-productivity/README.md)
+- [Ground beef price per pound](studies/us-beef-prices/README.md)
 
 ## Run a study
 

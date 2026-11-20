@@ -59,6 +59,7 @@ mypy_path = [
     "packages/bls",
     "packages/bvl",
     "packages/figures",
+    "packages/replication",
     "packages/smv",
     "studies/bvl-brokers",
     "studies/bvl-disclosure",
@@ -66,7 +67,11 @@ mypy_path = [
     "studies/bvl-liquidity",
     "studies/bvl-ownership",
     "studies/bvl-politics",
+    "studies/us-beef-prices",
+    "studies/us-cpi",
     "studies/us-payrolls",
+    "studies/us-ppi",
+    "studies/us-productivity",
 ]
 enable_error_code = [
     "ignore-without-code",

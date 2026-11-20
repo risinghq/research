@@ -22,7 +22,12 @@ jobs:
           persist-credentials: false
       - uses: jdx/mise-action@d5574b52816a478f9d4e6529a3f6ff17a8a36785 # v5.2.8
       - run: mise run install
-      - run: uv run studies/us-payrolls/us_payrolls.py
+      - run: |
+          uv run studies/us-payrolls/us_payrolls.py
+          uv run studies/us-cpi/us_cpi.py
+          uv run studies/us-ppi/us_ppi.py
+          uv run studies/us-productivity/us_productivity.py
+          uv run studies/us-beef-prices/us_beef_prices.py
         env:
           BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
       - run: '.github/scripts/commit-changes "studies: rerun the live replications"'
