@@ -1,2 +1,33 @@
 # research
-Studies on open data, each with its question, code, numbers and figures
+
+Rising's studies on open data. Each study is a folder under
+[`studies/`](studies) with its question, its report, the numbers it cites and
+its figures. Shared data clients live under [`packages/`](packages).
+
+## Studies
+
+The Lima Stock Exchange (BVL), on the SMV's open data and the central bank's
+series:
+
+- [BVL liquidity since 1996](studies/bvl-liquidity/README.md), and the MSCI
+  review of 2015-16.
+- [Do BVL prices move before a material event is filed?](studies/bvl-disclosure/README.md)
+- [How the BVL and the sol take Peru's political shocks](studies/bvl-politics/README.md)
+- [How concentrated is BVL brokerage?](studies/bvl-brokers/README.md)
+- [When BVL issuers file their quarterly results, and how prices take them](studies/bvl-earnings/README.md)
+- [Who holds BVL issuers, and does a concentrated register trade less?](studies/bvl-ownership/README.md)
+
+[docs/bvl.md](docs/bvl.md) describes the data and the `bvl` command.
+
+## Run a study
+
+You need [mise](https://mise.jdx.dev/), which installs the pinned Python and uv:
+
+```bash
+mise run install
+uv run bvl fetch quotes
+uv run bvl study liquidity
+```
+
+A study reads `data/`, which is not committed, and rewrites its folder.
+`mise run check` runs the lint, type checks and tests that CI runs.

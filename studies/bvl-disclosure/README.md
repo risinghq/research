@@ -144,4 +144,4 @@ uv run bvl fetch events
 uv run bvl study disclosure
 ```
 
-[The bvl manual](../../docs/BVL.md) describes the data and the commands.
+[The bvl manual](../../docs/bvl.md) describes the data and the commands.

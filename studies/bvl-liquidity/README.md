@@ -79,4 +79,4 @@ uv run bvl fetch quotes
 uv run bvl study liquidity
 ```
 
-[The bvl manual](../../docs/BVL.md) describes the data and the commands.
+[The bvl manual](../../docs/bvl.md) describes the data and the commands.

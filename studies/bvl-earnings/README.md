@@ -110,7 +110,7 @@ needs 10 trades in days −250 to −30. The sample holds 5,035 events from 120
 issuers and 142 tickers, filed from 2003-04-23 to 2026-11-02.
 
 **Abnormal return** is the stock's daily log return less the equal-weighted
-market index of local shares ([docs/BVL.md](../../docs/BVL.md#the-panel)),
+market index of local shares ([docs/BVL.md](../../docs/bvl.md#the-panel)),
 summed over a window: days −5 to −1 before the filing, days 0 to 1 for the
 reaction, and days 2 to 60 for the drift. A day the stock does not trade adds
 nothing.

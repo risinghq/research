@@ -2,6 +2,7 @@
 name = "bvl"
 version = "0.1.0"
 description = "Lima Stock Exchange (BVL) data from the SMV open API, and the studies built on it."
+requires-python = ">=3.14"
 dependencies = [
     "httpx2",
     "matplotlib",
