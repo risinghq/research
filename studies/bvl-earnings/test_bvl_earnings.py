@@ -1,15 +1,6 @@
-from contextlib import closing
-from datetime import date
-from pathlib import Path
-
-import httpx2
+import bvl_earnings as earnings
 import numpy as np
 import pandas as pd
-
-from bvl import earnings, fetch, smv, store
-
-
-FIXTURES = Path(__file__).parent / "fixtures"
 
 
 def test_due_days_match_the_smv_2021_calendar() -> None:
@@ -74,18 +65,3 @@ def test_news_needs_the_same_quarter_a_year_before_in_the_same_currency() -> Non
     assert np.isnan(news.iloc[0])
     assert news.iloc[1] == 0.1
     assert news.iloc[2:].isna().all()
-
-
-def test_fill_statements_skips_a_quarter_that_has_not_ended(tmp_path: Path) -> None:
-    asked: list[tuple[str, str]] = []
-
-    def answer(request: httpx2.Request) -> httpx2.Response:
-        asked.append((request.url.params["sPeriodo"], request.url.params["sTipoInf"]))
-        return httpx2.Response(200, content=(FIXTURES / "statements.json").read_bytes())
-
-    client = smv.SmvClient(None, transport=httpx2.MockTransport(answer))
-    with closing(store.connect(tmp_path / "bvl.sqlite")) as connection:
-        fetch.fill_statements(
-            client, connection, date(2025, 1, 1), date(2025, 12, 31), date(2025, 8, 1)
-        )
-    assert asked == [("1", "I"), ("1", "C"), ("2", "I"), ("2", "C")]

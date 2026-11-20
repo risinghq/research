@@ -4,10 +4,10 @@ from contextlib import closing
 from pathlib import Path
 
 from bvl import records, store
-from bvl.smv import parse_envelope
+from smv import parse_envelope
 
 
-FIXTURES = Path(__file__).parent / "fixtures"
+FIXTURES = Path(__file__).parents[2] / "smv" / "tests" / "fixtures"
 
 
 def rows(name: str) -> list[dict[str, object]]:

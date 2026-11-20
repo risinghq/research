@@ -1,3 +1,11 @@
+---
+summary: When BVL issuers file quarterly statements against their legal limit, and how prices react to the news in them.
+topic: bvl
+status: finished
+published: 2026-11-18
+data: 2026-11-13
+---
+
 # When BVL issuers file their quarterly results, and how prices take them
 
 Every issuer with securities on the Lima Stock Exchange files quarterly
@@ -10,7 +18,8 @@ filing day and over the weeks after it?
 The data hold 35,936 statements from 581 filers, 2002Q1 to 2026Q2. The timing
 results use the individual statements of issuers (`EMPRESAS EMISORAS`): 19,693
 statements from 384 issuers. Every number below is in
-[`numbers.json`](numbers.json), which `bvl study earnings` rewrites.
+[`numbers.json`](numbers.json), which [`bvl_earnings.py`](bvl_earnings.py)
+rewrites.
 
 ## The limits
 
@@ -177,3 +186,13 @@ and 2.0% since. The drift appears in every period at 3% to 4.5%, though the
 - **Thin trading.** Many BVL stocks trade on few days. A price that does not
   move on a day without trades lands the news on the next trade, so part of
   the drift may be a slow reaction, not a mispricing.
+
+## Rerun
+
+```bash
+uv run bvl fetch quotes
+uv run bvl fetch statements
+uv run studies/bvl-earnings/bvl_earnings.py
+```
+
+[The bvl manual](../../docs/bvl.md) describes the data and the commands.

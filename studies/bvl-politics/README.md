@@ -1,3 +1,11 @@
+---
+summary: How the Peru General index and the sol moved after 15 elections, removals and resignations since 2011.
+topic: bvl
+status: finished
+published: 2026-11-16
+data: 2026-11-13
+---
+
 # How the BVL and the sol take Peru's political shocks
 
 Peru has held four presidential elections since 2011, and five
@@ -9,7 +17,8 @@ The index is the Peru General: the IGBVL to April 2015, the S&P/BVL Peru
 General to August 2025 and the MSCI NUAM Peru General after it. There are 7,589
 market days from 1996-01-02 to 2026-11-13. The exchange rate and copper come
 from the central bank (BCRP). Every number below is in
-[`numbers.json`](numbers.json), which `bvl study politics` rewrites.
+[`numbers.json`](numbers.json), which [`bvl_politics.py`](bvl_politics.py)
+rewrites.
 
 ## Method
 
@@ -126,3 +135,14 @@ and [Conexión ESAN](https://esan.edu.pe/conexion-esan/despues-de-la-tormenta-si
 the 2016 first-round rally by the
 [Banco de la Nación](https://www.bn.com.pe/atencion-cliente/informe-economico/2016/ReportExtr110416.pdf)
 and [Peru Reports](https://perureports.com/peru-markets-rally-leftist-fails-qualify-runoff/3752/).
+
+## Rerun
+
+```bash
+uv run bvl fetch quotes
+uv run bvl fetch indices
+uv run bvl fetch bcrp
+uv run studies/bvl-politics/bvl_politics.py
+```
+
+[The bvl manual](../../docs/bvl.md) describes the data and the commands.

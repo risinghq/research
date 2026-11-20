@@ -5,8 +5,7 @@ from pathlib import Path
 
 import httpx2
 import pytest
-
-from bvl import smv
+import smv
 
 
 FIXTURES = Path(__file__).parent / "fixtures"

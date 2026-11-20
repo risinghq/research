@@ -1,0 +1,10 @@
+[project]
+name = "smv"
+version = "0.1.0"
+description = "Client for the SMV open data API: BVL quotes, indices, filings, statements and holders."
+requires-python = ">=3.14"
+dependencies = ["httpx2"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

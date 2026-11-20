@@ -1,3 +1,11 @@
+---
+summary: How the BVL's trading splits among brokerage firms, year by year, and which firms lead it.
+topic: bvl
+status: finished
+published: 2026-11-17
+data: 2026-11-13
+---
+
 # How concentrated is BVL brokerage?
 
 Every trade on the Lima Stock Exchange goes through a brokerage firm, a
@@ -8,7 +16,7 @@ among the firms, year by year, and which firms lead it.
 The panel has 7,615 market days from 1996-01-02 to 2026-11-13 and 31 firms.
 The findings cover 2010 to 2026; the next section says why. 2026 runs to 13
 November. Every number below is in [`numbers.json`](numbers.json), which
-`bvl study brokers` rewrites.
+[`bvl_brokers.py`](bvl_brokers.py) rewrites.
 
 ## Method
 
@@ -103,3 +111,13 @@ in 2024 and 2026.
 - Amounts carry no currency, and the BVL trades in soles and US dollars. A
   share mixes the two at face value.
 - A single block trade can move a firm's yearly share by many points.
+
+## Rerun
+
+```bash
+uv run bvl fetch quotes
+uv run bvl fetch brokers
+uv run studies/bvl-brokers/bvl_brokers.py
+```
+
+[The bvl manual](../../docs/bvl.md) describes the data and the commands.

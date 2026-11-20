@@ -15,10 +15,12 @@ if TYPE_CHECKING:
     from collections.abc import Mapping
 
 BASE_URL = "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/"
+SOL = "PD04638PD"
+COPPER = "PD04701XD"
 # The daily series the studies read, by BCRP code.
 SERIES = {
-    "PD04638PD": "interbank exchange rate, soles per US dollar, sell",
-    "PD04701XD": "copper, London, US cents per pound",
+    SOL: "interbank exchange rate, soles per US dollar, sell",
+    COPPER: "copper, London, US cents per pound",
 }
 _MONTHS = {
     "Ene": 1,

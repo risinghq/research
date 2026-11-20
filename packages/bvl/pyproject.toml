@@ -1,17 +1,22 @@
 [project]
 name = "bvl"
 version = "0.1.0"
-description = "Lima Stock Exchange (BVL) data from the SMV open API, and the studies built on it."
+description = "Lima Stock Exchange (BVL) panel from the SMV and BCRP APIs, and the tools its studies share."
 requires-python = ">=3.14"
 dependencies = [
-    "httpx2",
+    "bcrp",
     "matplotlib",
     "numpy",
     "pandas",
+    "smv",
 ]
 
 [project.scripts]
 bvl = "bvl.cli:main"
+
+[tool.uv.sources]
+bcrp = { workspace = true }
+smv = { workspace = true }
 
 [build-system]
 requires = ["hatchling"]

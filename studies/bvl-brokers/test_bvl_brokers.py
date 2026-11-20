@@ -1,32 +1,6 @@
-from contextlib import closing
-from datetime import date
-from pathlib import Path
-
-import httpx2
+import bvl_brokers as brokers
 import pandas as pd
 import pytest
-
-from bvl import brokers, fetch, smv, store
-
-
-FIXTURES = Path(__file__).parent / "fixtures"
-
-
-def test_fill_broker_amounts_stamps_each_row_with_its_day(tmp_path: Path) -> None:
-    def answer(request: httpx2.Request) -> httpx2.Response:
-        return httpx2.Response(200, content=(FIXTURES / "brokers.json").read_bytes())
-
-    client = smv.SmvClient(None, transport=httpx2.MockTransport(answer))
-    db = tmp_path / "bvl.sqlite"
-    with closing(store.connect(db)) as connection:
-        fetch.fill_broker_amounts(
-            client, connection, [date(2025, 1, 6)], date(2026, 1, 1)
-        )
-    rows = store.read(db, "SELECT * FROM broker_amounts ORDER BY broker")
-
-    assert list(rows["broker"]) == ["CRE", "GCO", "ITG"]
-    assert set(rows["date"]) == {"2025-01-06"}
-    assert rows["sold"].iloc[2] == 6944573.36
 
 
 def frame(days: dict[str, dict[str, float]]) -> pd.DataFrame:

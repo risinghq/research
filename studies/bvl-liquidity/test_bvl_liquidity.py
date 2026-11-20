@@ -1,8 +1,7 @@
+import bvl_liquidity as liquidity
 import numpy as np
 import pandas as pd
 import pytest
-
-from bvl import liquidity, panel
 
 
 def test_time_effects_recover_year_effects_on_an_unbalanced_panel() -> None:
@@ -25,21 +24,3 @@ def test_time_effects_recover_year_effects_on_an_unbalanced_panel() -> None:
     expected = pd.Series(year_effect)
     expected -= expected.mean()
     assert effects.to_numpy() == pytest.approx(expected.to_numpy(), abs=0.02)
-
-
-@pytest.mark.parametrize(
-    ("ticker", "name", "local"),
-    [
-        ("ALICORC1", "Alicorp S.A.A.", True),
-        ("BACKUSI1", "Union De Cervecerias Peruanas Backus Y Johnston", True),
-        ("AMD", "Advanced Micro Devices, Inc.", False),
-        ("BAP", "Credicorp Ltd.", False),
-        ("FICORPS2", "Coril Renta Prime Soles 2 - Fondo De Inversion", False),
-        ("COWZ1", "Pacerus Cashcows100uts Etfacc", False),
-        ("SPXS1", "Invesco S&P500 Ucits Etf", False),
-    ],
-)
-def test_local_shares_exclude_foreign_listings_funds_and_etfs(
-    ticker: str, name: str, *, local: bool
-) -> None:
-    assert panel.is_local_share(ticker, name) is local

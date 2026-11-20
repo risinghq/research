@@ -1,4 +1,4 @@
-"""Do BVL prices and traded amounts move before a material event is filed?
+"""Abnormal returns and traded amounts of BVL stocks around a filing day.
 
 Day 0 of an event is the first market day on or after the filing date,
 whatever the filing minute. A filing made during a session then counts its own

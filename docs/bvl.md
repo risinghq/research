@@ -1,8 +1,10 @@
 # bvl
 
 `bvl` fills one SQLite file with Lima Stock Exchange (BVL) data from the SMV
-open data API and the central bank's (BCRP) statistics API, and runs the
-studies in [`studies/`](../studies) on it.
+open data API and the central bank's (BCRP) statistics API. It also holds the
+panel, issuer links, event-study tools and charts that the `bvl-*` studies in
+[`studies/`](../studies) share. The API clients are their own packages,
+[`smv`](../packages/smv/smv.py) and [`bcrp`](../packages/bcrp/bcrp.py).
 
 ```bash
 uv run bvl fetch quotes      # BVL daily quotes, 1996 to today
@@ -12,17 +14,20 @@ uv run bvl fetch brokers     # each brokerage firm's amounts, one request per ma
 uv run bvl fetch statements  # quarterly summary accounts, 2002 to the last ended quarter
 uv run bvl fetch holders     # today's register of large holders, as a dated snapshot
 uv run bvl fetch bcrp        # BCRP sol per dollar and copper, 1997 to today
-uv run bvl study liquidity   # writes studies/bvl-liquidity
-uv run bvl study disclosure  # writes studies/bvl-disclosure
-uv run bvl study politics    # writes studies/bvl-politics
-uv run bvl study brokers     # writes studies/bvl-brokers
-uv run bvl study earnings    # writes studies/bvl-earnings
-uv run bvl study ownership   # writes studies/bvl-ownership
 ```
 
 `--db` sets the database (default `data/bvl.sqlite`) and `--cache` the response
 cache (default `~/.cache/bvl/smv`). `fetch` takes `--start` and `--end` as ISO
-dates, and `study` takes `--out`. `-v` logs each query window.
+dates. `-v` logs each query window.
+
+A study is a script in its folder, and each study's README names the fetches it
+needs:
+
+```bash
+uv run studies/bvl-liquidity/bvl_liquidity.py
+```
+
+It takes `--db`, with the same default, and `--out`, by default its own folder.
 
 A first fill of quotes and events sends about 190 queries. In November 2026 it
 took several hours, mostly in retries. A rerun reads settled windows from the cache and asks
@@ -124,27 +129,27 @@ between bid and ask, which gives this index a small upward drift; over the 2 to
 
 ## Modules
 
-| Module          | Responsible for                                                |
-| --------------- | -------------------------------------------------------------- |
-| `smv.py`        | The API client: windows, envelope codes, retries and the cache |
-| `bcrp.py`       | The BCRP API client and its period names                       |
-| `records.py`    | API rows to table rows                                         |
-| `store.py`      | The SQLite schema, writes and reads                            |
-| `fetch.py`      | Filling each table one query at a time                         |
-| `panel.py`      | Returns, local shares, market days and the market index        |
-| `issuers.py`    | Ticker-to-RUC links                                            |
-| `events.py`     | Event rows to filings with topics                              |
-| `liquidity.py`  | Coverage and Amihud illiquidity                                |
-| `disclosure.py` | The event-study grid, measures, placebos and bootstrap         |
-| `politics.py`   | The chained Peru General index and the political event table   |
-| `brokers.py`    | Brokerage firm shares and concentration (HHI)                  |
-| `earnings.py`   | Statement filing limits, due days, earnings news and CARs      |
-| `ownership.py`  | Share classes, free float, class tickers and rank correlations |
-| `figures.py`    | Line, bar and scatter charts                                   |
-| `studies.py`    | Each study end to end: numbers.json and figures                |
-| `cli.py`        | The `bvl` command                                              |
+| Module                         | Responsible for                                                         |
+| ------------------------------ | ----------------------------------------------------------------------- |
+| `smv`                          | The SMV API client: windows, envelope codes, retries and the cache      |
+| `bcrp`                         | The BCRP API client, its series codes and period names                  |
+| `bvl.records`                  | API rows to table rows                                                  |
+| `bvl.store`                    | The SQLite schema, writes and reads                                     |
+| `bvl.fetch`                    | Filling each table one query at a time                                  |
+| `bvl.panel`                    | Returns, local shares, market days, the market index and Amihud         |
+| `bvl.issuers`                  | Ticker-to-RUC links                                                     |
+| `bvl.eventstudy`               | The event-study grid, measures, placebos and bootstrap                  |
+| `bvl.figures`                  | Line, bar and scatter charts                                            |
+| `bvl.study`                    | A study's command line, `numbers.json` and the shared source note       |
+| `bvl.cli`                      | The `bvl` command                                                       |
+| `bvl_liquidity.py`             | Coverage, Amihud illiquidity and the MSCI review                        |
+| `bvl_disclosure.py`            | Event rows to filings with topics, and the leak tests                   |
+| `bvl_politics.py`              | The chained Peru General index and the political event table            |
+| `bvl_brokers.py`               | Brokerage firm shares and concentration (HHI)                           |
+| `bvl_earnings.py`              | Statement filing limits, due days, earnings news and CARs               |
+| `bvl_ownership.py`             | Share classes, free float, class tickers and rank correlations          |
 
-Only `smv.py` and `bcrp.py` touch the network, and only `store.py` opens the
-database. A study writes
+The `bvl_*.py` scripts sit in their study's folder. Only `smv` and `bcrp` touch
+the network, and only `bvl.store` opens the database. A study writes
 `numbers.json` and its figures; its README cites them and is checked by hand
 after a rerun.

@@ -7,7 +7,7 @@ from typing import TYPE_CHECKING, Any
 if TYPE_CHECKING:
     from datetime import date
 
-    from bvl.smv import Record
+    from smv import Record
 
 Row = dict[str, Any]
 

@@ -1,8 +1,7 @@
+import bvl_politics as politics
 import numpy as np
 import pandas as pd
 import pytest
-
-from bvl import politics
 
 
 def synthetic(shock: float, beta: float = 0.5) -> pd.DataFrame:

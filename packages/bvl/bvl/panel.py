@@ -26,6 +26,8 @@ MAX_ABS_LOG_RETURN = float(np.log(2))
 _LOCAL_TICKER = re.compile(r"^[A-Z]{3,}[A-Z]\d$")
 # Funds and ETFs that fit that pattern (FICORPS2, COWZ1) say so in the name.
 _FUND_NAME = re.compile(r"fondo|\betf|ucits", re.IGNORECASE)
+# A stock month needs this many traded days to give an Amihud ratio.
+MIN_DAYS_PER_MONTH = 5
 
 
 def load_quotes(db: Path) -> pd.DataFrame:
@@ -45,6 +47,28 @@ def load_quotes(db: Path) -> pd.DataFrame:
 def is_local_share(ticker: str, name: str) -> bool:
     """A Peruvian share, not a foreign listing, an investment fund or an ETF."""
     return _LOCAL_TICKER.match(ticker) is not None and _FUND_NAME.search(name) is None
+
+
+def local_quotes(db: Path) -> pd.DataFrame:
+    quotes = load_quotes(db)
+    local = [
+        is_local_share(ticker, name)
+        for ticker, name in zip(quotes["ticker"], quotes["name"], strict=True)
+    ]
+    return quotes[local].reset_index(drop=True)
+
+
+def monthly_amihud(quotes: pd.DataFrame) -> pd.DataFrame:
+    """Mean daily |return| / amount per stock and month, with enough days."""
+    daily = quotes.dropna(subset=["log_return"])
+    daily = daily[daily["amount"] > 0]
+    ratio = daily["log_return"].abs() / daily["amount"]
+    month = daily["date"].dt.to_period("M")
+    grouped = ratio.groupby([daily["ticker"], month])
+    frame = pd.DataFrame({"amihud": grouped.mean(), "days": grouped.size()})
+    frame = frame[(frame["days"] >= MIN_DAYS_PER_MONTH) & (frame["amihud"] > 0)]
+    frame.index.names = ["ticker", "month"]
+    return frame.reset_index()
 
 
 def market_days(quotes: pd.DataFrame) -> pd.DatetimeIndex:

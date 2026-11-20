@@ -1,3 +1,11 @@
+---
+summary: How many BVL stocks trade, how often, and whether liquidity fell during MSCI's 2015-16 review.
+topic: bvl
+status: finished
+published: 2026-11-14
+data: 2026-11-13
+---
+
 # BVL liquidity since 1996
 
 How easy has it been to trade a Peruvian stock on the Lima Stock Exchange
@@ -6,8 +14,8 @@ Markets status?
 
 The data are the BVL daily quotes the SMV publishes, 1996-01-02 to 2026-11-13:
 619 local share tickers and 19,029 stock months with an illiquidity ratio. Every
-number below is in [`numbers.json`](numbers.json), which `bvl study liquidity`
-rewrites.
+number below is in [`numbers.json`](numbers.json), which
+[`bvl_liquidity.py`](bvl_liquidity.py) rewrites.
 
 ## Method
 
@@ -76,7 +84,7 @@ months before the decision.
 
 ```bash
 uv run bvl fetch quotes
-uv run bvl study liquidity
+uv run studies/bvl-liquidity/bvl_liquidity.py
 ```
 
 [The bvl manual](../../docs/bvl.md) describes the data and the commands.

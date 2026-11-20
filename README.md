@@ -26,8 +26,12 @@ You need [mise](https://mise.jdx.dev/), which installs the pinned Python and uv:
 ```bash
 mise run install
 uv run bvl fetch quotes
-uv run bvl study liquidity
+uv run studies/bvl-liquidity/bvl_liquidity.py
 ```
 
-A study reads `data/`, which is not committed, and rewrites its folder.
+A study reads `data/`, which is not committed, and rewrites its folder. Its
+README lists the fetches it needs. Each README opens with front matter that the
+research.rising.sh site reads: a one-line `summary`, the `topic`, a `status` of
+`live` or `finished`, the `published` date and the `data` date the numbers run
+to.
 `mise run check` runs the lint, type checks and tests that CI runs.

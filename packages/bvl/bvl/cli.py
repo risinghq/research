@@ -1,30 +1,23 @@
-"""The `bvl` command: fill the panel from the SMV and BCRP APIs and run the studies."""
+"""The `bvl` command: fill the panel from the SMV and BCRP APIs."""
 
 import argparse
 import logging
-import sys
 
 from contextlib import closing
 from datetime import date
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from bvl import bcrp, fetch, smv, store, studies
+import bcrp
+import smv
+
+from bvl import fetch, store, study
 
 
 if TYPE_CHECKING:
     from collections.abc import Sequence
 
-DEFAULT_DB = Path("data/bvl.sqlite")
 DEFAULT_CACHE = Path.home() / ".cache" / "bvl" / "smv"
-STUDIES = {
-    "liquidity": studies.run_liquidity,
-    "disclosure": studies.run_disclosure,
-    "politics": studies.run_politics,
-    "brokers": studies.run_brokers,
-    "earnings": studies.run_earnings,
-    "ownership": studies.run_ownership,
-}
 # Datasets the SMV answers one market day per request: table and fill.
 DAILY_FILLS = {
     "indices": ("index_levels", fetch.fill_index_levels),
@@ -40,7 +33,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="bvl", description="Lima Stock Exchange data from the SMV open API."
     )
-    parser.add_argument("--db", type=Path, default=DEFAULT_DB)
+    parser.add_argument("--db", type=Path, default=study.DEFAULT_DB)
     parser.add_argument("--cache", type=Path, default=DEFAULT_CACHE)
     parser.add_argument("-v", "--verbose", action="store_true")
     commands = parser.add_subparsers(dest="command", required=True)
@@ -52,10 +45,6 @@ def build_parser() -> argparse.ArgumentParser:
     )
     fill.add_argument("--start", type=date.fromisoformat)
     fill.add_argument("--end", type=date.fromisoformat, default=date.today())
-
-    study = commands.add_parser("study", help="run a study on the filled panel")
-    study.add_argument("name", choices=sorted(STUDIES))
-    study.add_argument("--out", type=Path, help="default: studies/bvl-NAME")
     return parser
 
 
@@ -65,12 +54,7 @@ def main(argv: Sequence[str] | None = None) -> None:
         level=logging.INFO if args.verbose else logging.WARNING,
         format="%(asctime)s %(message)s",
     )
-    if args.command == "fetch":
-        _fetch(args)
-    else:
-        out = args.out or Path("studies") / f"bvl-{args.name}"
-        STUDIES[args.name](args.db, out)
-        sys.stdout.write(f"wrote {out}\n")
+    _fetch(args)
 
 
 def _fetch(args: argparse.Namespace) -> None:

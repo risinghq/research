@@ -1,0 +1,10 @@
+[project]
+name = "bcrp"
+version = "0.1.0"
+description = "Client for the BCRP statistics API: daily series of Peru's central bank."
+requires-python = ">=3.14"
+dependencies = ["httpx2"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -4,7 +4,10 @@ import logging
 
 from typing import TYPE_CHECKING
 
-from bvl import bcrp, records, smv, store
+import bcrp
+import smv
+
+from bvl import records, store
 
 
 if TYPE_CHECKING:

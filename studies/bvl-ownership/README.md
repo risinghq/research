@@ -1,3 +1,11 @@
+---
+summary: How concentrated the ownership of BVL issuers is, and whether share classes with more free float trade more.
+topic: bvl
+status: finished
+published: 2026-11-18
+data: 2026-11-19
+---
+
 # Who holds BVL issuers, and does a concentrated register trade less?
 
 The SMV publishes a register of the large holders of each issuer it
@@ -9,7 +17,8 @@ And do share classes with more free float trade more?
 
 The API answers only the current register, so the study is one snapshot,
 fetched on 2026-11-19. Every number below is in
-[`numbers.json`](numbers.json), which `bvl study ownership` rewrites.
+[`numbers.json`](numbers.json), which [`bvl_ownership.py`](bvl_ownership.py)
+rewrites.
 
 ## The register
 
@@ -137,3 +146,18 @@ Ferreycorp, with no holder above 10%, trades every day.
   the least liquid end.
 - **Small sample.** With 57 and 36 classes, the intervals are wide. The
   direction of the effect given size is clear; its size is not.
+
+## Rerun
+
+The study reads the latest holders snapshot, so a new `fetch holders` moves it
+to that day's register.
+
+```bash
+uv run bvl fetch quotes
+uv run bvl fetch statements
+uv run bvl fetch bcrp
+uv run bvl fetch holders
+uv run studies/bvl-ownership/bvl_ownership.py
+```
+
+[The bvl manual](../../docs/bvl.md) describes the data and the commands.

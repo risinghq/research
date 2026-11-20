@@ -12,20 +12,21 @@ fitted by least squares over days -260 to -11. Copper is the largest export and
 moves the index on most days; a political shock is what is left.
 """
 
-from typing import TYPE_CHECKING, NamedTuple
+import json
+
+from pathlib import Path
+from typing import NamedTuple
 
 import numpy as np
 import pandas as pd
 
-from bvl import panel, store
+from bcrp import COPPER, SOL
+from bvl import figures, panel, store, study
 
-
-if TYPE_CHECKING:
-    from pathlib import Path
 
 CHAIN = ("IGBVL", "SPBLPGPT", "MXNUAMPEGEN")
-COPPER = "PD04701XD"
-SOL = "PD04638PD"
+BCRP_SOURCE = "Sources: SMV API (BVL index levels), BCRP API (sol per dollar, copper)."
+LEVEL_FROM = "2010-01-01"
 ESTIMATION = (-260, -11)
 # Days 0 to REACTION_DAYS - 1 form the cumulative window.
 REACTION_DAYS = 6
@@ -154,3 +155,68 @@ def event_table(
             }
         )
     return pd.DataFrame(rows)
+
+
+def run(db: Path, out: Path) -> dict[str, object]:
+    index = peru_general(db)
+    daily = index.join(bcrp_returns(db, pd.DatetimeIndex(index.index)))
+    table = event_table(daily)
+    labels = pd.Index([e.label for e in EVENTS], name="event")
+    note = BCRP_SOURCE + " Day 0: first session after the news."
+
+    level = daily.loc[LEVEL_FROM:, "level"]
+    figures.lines(
+        {"Peru General": level / level.iloc[0] * 100},
+        out / "index-events.png",
+        title="Peru General index and the political events studied",
+        ylabel=f"index, {level.index[0].date()} = 100",
+        note=BCRP_SOURCE + " Marks: event numbers in the README.",
+        marks={e.day0: str(n) for n, e in enumerate(EVENTS, 1)},
+    )
+    abnormal = pd.Series(table["abnormal"].to_numpy() * 100, labels)
+    band = pd.Series(1.96 * table["sd"].to_numpy() * 100, labels)
+    figures.bars(
+        abnormal,
+        out / "day0-abnormal.png",
+        title="Day-0 index return net of copper",
+        ylabel="abnormal log return, %",
+        note=note + " Whiskers: ±1.96 residual sd.",
+        errors=(abnormal - band, abnormal + band),
+        rotate=True,
+    )
+    car = pd.Series(table["car"].to_numpy() * 100, labels)
+    car_band = band * np.sqrt(REACTION_DAYS)
+    figures.bars(
+        car,
+        out / "car.png",
+        title="Index return net of copper over days 0 to +5",
+        ylabel="cumulative abnormal log return, %",
+        note=note + " Whiskers: ±1.96 sd of a 6-day sum.",
+        errors=(car - car_band, car + car_band),
+        rotate=True,
+    )
+    figures.bars(
+        pd.Series(table["sol"].to_numpy() * 100, labels),
+        out / "sol-day0.png",
+        title="Change in soles per dollar on day 0",
+        ylabel="log change, % (up: weaker sol)",
+        note=note,
+        rotate=True,
+    )
+
+    returns = daily["r"]
+    numbers: dict[str, object] = {
+        "first_day": returns.index.min().date().isoformat(),
+        "last_day": returns.index.max().date().isoformat(),
+        "market_days": len(returns),
+        "daily_sd": round(float(returns.std()), 5),
+        "estimation_window": list(ESTIMATION),
+        "reaction_days": REACTION_DAYS,
+        "events": json.loads(table.round(5).to_json(orient="records")),
+    }
+    study.write_numbers(out, numbers)
+    return numbers
+
+
+if __name__ == "__main__":
+    study.main(run, Path(__file__).parent)

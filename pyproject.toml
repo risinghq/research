@@ -53,7 +53,18 @@ python_version = "3.14"
 strict = true
 namespace_packages = true
 explicit_package_bases = true
-mypy_path = "packages/bvl"
+# A study folder's name has a hyphen, so each study module is top level.
+mypy_path = [
+    "packages/bcrp",
+    "packages/bvl",
+    "packages/smv",
+    "studies/bvl-brokers",
+    "studies/bvl-disclosure",
+    "studies/bvl-earnings",
+    "studies/bvl-liquidity",
+    "studies/bvl-ownership",
+    "studies/bvl-politics",
+]
 enable_error_code = [
     "ignore-without-code",
     "redundant-expr",
@@ -62,4 +73,3 @@ enable_error_code = [
 
 [tool.pytest.ini_options]
 addopts = "-n auto --dist loadfile --strict-markers"
-pythonpath = ["packages/bvl"]

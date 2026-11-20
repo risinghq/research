@@ -10,16 +10,17 @@ shares in percent, from 0 to 10,000. A year's HHI uses the firm's share of the
 year's total amount; the daily HHI uses each day's shares.
 """
 
-from typing import TYPE_CHECKING
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-from bvl import store
+from bvl import figures, store, study
 
 
-if TYPE_CHECKING:
-    from pathlib import Path
+# A year enters the figures once the firms' bought amount, and every later
+# year's, reaches this share of the quotes' traded amount.
+COVERAGE = 0.9
 
 
 def amounts(db: Path) -> pd.DataFrame:
@@ -93,3 +94,74 @@ def concentration_by_year(rows: pd.DataFrame) -> pd.DataFrame:
             "top3": pd.Series(ranked[:, :3].sum(axis=1), index=shares.index),
         }
     ).rename_axis("year")
+
+
+def run(db: Path, out: Path) -> dict[str, object]:
+    rows = amounts(db)
+    names = latest_names(rows)
+    by_year = concentration_by_year(rows).join(coverage(db))
+    by_year["leader"] = yearly_shares(rows).idxmax(axis=1)
+    short = by_year["coverage"] < COVERAGE
+    first = (
+        int(by_year.index[short].max()) + 1 if short.any() else int(by_year.index[0])
+    )
+    shown = by_year.loc[first:]
+    shares = yearly_shares(rows).loc[first:]
+    note = study.SOURCE.replace("BVL daily quotes", "amounts traded by each SAB")
+    last_year = int(shares.index.max())
+
+    figures.lines(
+        {"yearly shares": shown["hhi"], "median day": shown["daily_hhi"]},
+        out / "hhi.png",
+        title="Concentration of BVL brokerage, Herfindahl-Hirschman index",
+        ylabel="HHI, 0 to 10,000",
+        note=note + f" {last_year} is partial.",
+    )
+    figures.lines(
+        {"largest firm": shown["top1"] * 100, "three largest": shown["top3"] * 100},
+        out / "top-shares.png",
+        title="Share of the amount traded through the largest firms",
+        ylabel="% of bought plus sold",
+        note=note + " Each year's ranking.",
+    )
+    figures.lines(
+        {"firms": shown["firms"]},
+        out / "firms.png",
+        title="Brokerage firms with any amount traded in the year",
+        ylabel="firms",
+        note=note,
+    )
+    leaders = shares.iloc[-1].nlargest(3)
+    figures.lines(
+        {f"{names[code]} ({code})": shares[code] * 100 for code in leaders.index},
+        out / "leaders.png",
+        title=f"Yearly share of the three largest firms in {last_year}",
+        ylabel="% of bought plus sold",
+        note=note,
+    )
+
+    numbers: dict[str, object] = {
+        "first_day": rows["date"].min().date().isoformat(),
+        "last_day": rows["date"].max().date().isoformat(),
+        "market_days": int(rows["date"].nunique()),
+        "firms_ever": int(rows["broker"].nunique()),
+        "coverage_threshold": COVERAGE,
+        "first_covered_year": first,
+        "by_year": study.records(by_year.round(4)),
+        "shares": {
+            str(year): [
+                {"broker": code, "name": names[str(code)], "share": round(float(s), 4)}
+                for code, s in year_shares[year_shares > 0]
+                .sort_values()
+                .iloc[::-1]
+                .items()
+            ]
+            for year, year_shares in shares.iterrows()
+        },
+    }
+    study.write_numbers(out, numbers)
+    return numbers
+
+
+if __name__ == "__main__":
+    study.main(run, Path(__file__).parent)

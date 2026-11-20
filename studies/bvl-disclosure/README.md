@@ -1,3 +1,11 @@
+---
+summary: Whether BVL prices and traded amounts move before an issuer files a material event with the SMV.
+topic: bvl
+status: finished
+published: 2026-11-14
+data: 2026-11-13
+---
+
 # Do BVL prices move before a material event is filed?
 
 A Peruvian issuer must file each material event (hecho de importancia) with the
@@ -8,7 +16,8 @@ made since 2010.
 The data are the BVL daily quotes and the SMV's material-event register:
 125,068 filings from 2010-01-04 to 2026-11-13. 13,906 events of 147 issuers
 and 171 tickers can be measured. Every number below is in
-[`numbers.json`](numbers.json), which `bvl study disclosure` rewrites.
+[`numbers.json`](numbers.json), which
+[`bvl_disclosure.py`](bvl_disclosure.py) rewrites.
 
 ## Method
 
@@ -141,7 +150,7 @@ separate from zero.
 ```bash
 uv run bvl fetch quotes
 uv run bvl fetch events
-uv run bvl study disclosure
+uv run studies/bvl-disclosure/bvl_disclosure.py
 ```
 
 [The bvl manual](../../docs/bvl.md) describes the data and the commands.

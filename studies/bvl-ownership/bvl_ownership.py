@@ -14,17 +14,18 @@ together.
 import itertools
 import re
 
-from typing import TYPE_CHECKING
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-from bvl import issuers, liquidity, panel, politics, store
+from bcrp import SOL
+from bvl import figures, issuers, panel, store, study
 
 
-if TYPE_CHECKING:
-    from pathlib import Path
-
+SOURCE = "Source: SMV open data API, register of holders, and BVL quotes."
+SEED = 20261114
+CONTROL = 50.0
 COMMON = "common"
 # Register spellings of the common class: blank, `COMUNES`, `Acciones Comunes`,
 # `Común`, `CAPITAL`, and the common ticker or its suffix (`MINCORC1`, `C1`).
@@ -136,7 +137,7 @@ def trading(quotes: pd.DataFrame, last_day: pd.Timestamp) -> pd.DataFrame:
     and its median monthly Amihud illiquidity, from months with enough days."""
     window = quotes[(quotes["date"] > last_day - WINDOW) & (quotes["date"] <= last_day)]
     days = len(panel.market_days(window))
-    amihud = liquidity.monthly_amihud(window)
+    amihud = panel.monthly_amihud(window)
     return pd.DataFrame(
         {
             "days": window.groupby("ticker").size(),
@@ -152,7 +153,7 @@ def traded_classes(
     """`frame`'s classes with a local ticker, each with its trading over the
     year to the last market day of the snapshot, and the issuer's total assets.
     Returns the rows and that day."""
-    quotes = liquidity.local_quotes(db)
+    quotes = panel.local_quotes(db)
     last_day = quotes.loc[quotes["date"] <= pd.Timestamp(snapshot), "date"].max()
     names = quotes.sort_values("date", ascending=False).drop_duplicates(
         ["ticker", "name"]
@@ -180,9 +181,7 @@ def assets(db: Path) -> pd.Series:
         "WHERE consolidated = 0 AND assets > 0",
     )
     rows = rows.sort_values(["year", "quarter"]).drop_duplicates("ruc", keep="last")
-    sol = store.read(
-        db, f"SELECT date, value FROM bcrp_series WHERE code = '{politics.SOL}'"
-    )
+    sol = store.read(db, f"SELECT date, value FROM bcrp_series WHERE code = '{SOL}'")
     rates = sol.assign(date=pd.to_datetime(sol["date"])).set_index("date")["value"]
     first = pd.to_datetime(
         pd.DataFrame({"year": rows["year"], "month": rows["quarter"] * 3, "day": 1})
@@ -249,3 +248,106 @@ def bands(frame: pd.DataFrame) -> pd.DataFrame:
             "median_amihud_per_million": grouped["amihud"].median() * 1e6,
         }
     )
+
+
+def run(db: Path, out: Path) -> dict[str, object]:
+    holders = load(db)
+    snapshot = str(holders["fetched_on"].iloc[0])
+    frame = classes(holders)
+    traded, last_day = traded_classes(db, frame, snapshot)
+    sample = traded[traded["days"] > 0].dropna(subset=["assets"])
+    rng = np.random.default_rng(SEED)
+    note = SOURCE + f" Register of {snapshot}."
+
+    edges = range(0, 101, 10)
+    counts = pd.cut(frame["free_float"], list(edges), right=False, include_lowest=True)
+    figures.bars(
+        counts.value_counts(sort=False).set_axis([f"{a}-{a + 10}" for a in edges[:-1]]),
+        out / "free-float.png",
+        title="Share classes by free float, 100 less the listed stakes",
+        ylabel="share classes",
+        note=note + " Free float, %.",
+    )
+    kinds = frame.groupby("largest_kind").size().reindex(KINDS, fill_value=0)
+    figures.bars(
+        kinds,
+        out / "largest-holder.png",
+        title="Kind of the largest holder of each share class",
+        ylabel="share classes",
+        note=note,
+    )
+    figures.scatter(
+        sample["free_float"],
+        sample["coverage"] * 100,
+        out / "float-trading.png",
+        title="Free float and the share of market days a class traded",
+        xlabel="free float, %",
+        ylabel="% of market days, last 12 months",
+        note=note + " Point area: total assets.",
+        size=sample["assets"],
+    )
+
+    amihud = sample.dropna(subset=["amihud"])
+    tests = {
+        "free_float_coverage": correlation(sample, "free_float", "coverage", rng),
+        "free_float_coverage_given_assets": correlation(
+            sample, "free_float", "coverage", rng, control="assets"
+        ),
+        "assets_coverage": correlation(sample, "assets", "coverage", rng),
+        "assets_free_float": correlation(sample, "assets", "free_float", rng),
+        "free_float_amihud": correlation(amihud, "free_float", "amihud", rng),
+        "free_float_amihud_given_assets": correlation(
+            amihud, "free_float", "amihud", rng, control="assets"
+        ),
+    }
+    numbers: dict[str, object] = {
+        "snapshot": snapshot,
+        "last_market_day": last_day.date().isoformat(),
+        "holdings": len(holders),
+        "issuers": int(holders["ruc"].nunique()),
+        "smallest_stake": round(float(holders["percent"].min()), 2),
+        "unclassed_holdings": int(holders["share_class"].isna().sum()),
+        "holder_kinds": holders["kind"].value_counts().to_dict(),
+        "foreign_holdings": int(holders["foreign"].sum()),
+        "nationalities": holders.loc[holders["foreign"], "nationality"]
+        .value_counts()
+        .head(5)
+        .to_dict(),
+        "classes": len(frame),
+        "classes_by_kind_of_largest": kinds.to_dict(),
+        "median_free_float": round(float(frame["free_float"].median()), 2),
+        "classes_free_float_under_10": int((frame["free_float"] < 10).sum()),
+        "classes_without_free_float": int((frame["free_float"] <= 0).sum()),
+        "controlled_share": round(float((frame["largest"] > CONTROL).mean()), 4),
+        "foreign_controlled_share": round(
+            float(((frame["largest"] > CONTROL) & frame["largest_foreign"]).mean()), 4
+        ),
+        "classes_with_ticker": len(traded),
+        "classes_untraded": int((traded["days"] == 0).sum()),
+        "sample": len(sample),
+        "sample_with_amihud": len(amihud),
+        "correlations": {
+            name: {k: round(v, 3) if isinstance(v, float) else v for k, v in t.items()}
+            for name, t in tests.items()
+        },
+        "bands": study.records(bands(sample).round(3)),
+        "classes_list": study.records(
+            sample.set_index("ticker")[
+                [
+                    "company",
+                    "share_class",
+                    "free_float",
+                    "largest",
+                    "largest_kind",
+                    "days",
+                    "coverage",
+                ]
+            ].round(4)
+        ),
+    }
+    study.write_numbers(out, numbers)
+    return numbers
+
+
+if __name__ == "__main__":
+    study.main(run, Path(__file__).parent)

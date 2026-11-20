@@ -2,15 +2,17 @@ from contextlib import closing
 from datetime import date
 from pathlib import Path
 
+import bvl_ownership as ownership
 import httpx2
 import numpy as np
 import pandas as pd
 import pytest
+import smv
 
-from bvl import fetch, ownership, smv, store
+from bvl import fetch, store
 
 
-FIXTURES = Path(__file__).parent / "fixtures"
+FIXTURES = Path(__file__).parents[2] / "packages" / "smv" / "tests" / "fixtures"
 
 
 def test_a_fetched_register_gives_each_class_its_float_and_foreign_stake(
