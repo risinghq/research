@@ -1,0 +1,1626 @@
+{
+  "latest": {
+    "period": "2026-11",
+    "value": 25.0,
+    "preliminary": false
+  },
+  "preliminary": [],
+  "revised_since_post": [],
+  "against_original": [
+    {
+      "period": "2000-01",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2000-02",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2000-03",
+      "posted": 64,
+      "now": 64.0
+    },
+    {
+      "period": "2000-04",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2000-05",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2000-06",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2000-07",
+      "posted": 59,
+      "now": 59.0
+    },
+    {
+      "period": "2000-08",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2000-09",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2000-10",
+      "posted": 62,
+      "now": 62.0
+    },
+    {
+      "period": "2000-11",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2000-12",
+      "posted": 57,
+      "now": 57.0
+    },
+    {
+      "period": "2001-01",
+      "posted": 52,
+      "now": 52.0
+    },
+    {
+      "period": "2001-02",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2001-03",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2001-04",
+      "posted": 59,
+      "now": 59.0
+    },
+    {
+      "period": "2001-05",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2001-06",
+      "posted": 59,
+      "now": 59.0
+    },
+    {
+      "period": "2001-07",
+      "posted": 57,
+      "now": 57.0
+    },
+    {
+      "period": "2001-08",
+      "posted": 59,
+      "now": 59.0
+    },
+    {
+      "period": "2001-09",
+      "posted": 55,
+      "now": 55.0
+    },
+    {
+      "period": "2001-10",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2001-11",
+      "posted": 48,
+      "now": 48.0
+    },
+    {
+      "period": "2001-12",
+      "posted": 55,
+      "now": 55.0
+    },
+    {
+      "period": "2002-01",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2002-02",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2002-03",
+      "posted": 62,
+      "now": 62.0
+    },
+    {
+      "period": "2002-04",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2002-05",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2002-06",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2002-07",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2002-08",
+      "posted": 55,
+      "now": 55.0
+    },
+    {
+      "period": "2002-09",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2002-10",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2002-11",
+      "posted": 62,
+      "now": 62.0
+    },
+    {
+      "period": "2002-12",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2003-01",
+      "posted": 62,
+      "now": 62.0
+    },
+    {
+      "period": "2003-02",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2003-03",
+      "posted": 56,
+      "now": 56.0
+    },
+    {
+      "period": "2003-04",
+      "posted": 55,
+      "now": 55.0
+    },
+    {
+      "period": "2003-05",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2003-06",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2003-07",
+      "posted": 65,
+      "now": 65.0
+    },
+    {
+      "period": "2003-08",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2003-09",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2003-10",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2003-11",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2003-12",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2004-01",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2004-02",
+      "posted": 66,
+      "now": 66.0
+    },
+    {
+      "period": "2004-03",
+      "posted": 66,
+      "now": 66.0
+    },
+    {
+      "period": "2004-04",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2004-05",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2004-06",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2004-07",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2004-08",
+      "posted": 70,
+      "now": 70.0
+    },
+    {
+      "period": "2004-09",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2004-10",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2004-11",
+      "posted": 70,
+      "now": 70.0
+    },
+    {
+      "period": "2004-12",
+      "posted": 71,
+      "now": 71.0
+    },
+    {
+      "period": "2005-01",
+      "posted": 70,
+      "now": 70.0
+    },
+    {
+      "period": "2005-02",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2005-03",
+      "posted": 70,
+      "now": 70.0
+    },
+    {
+      "period": "2005-04",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2005-05",
+      "posted": 70,
+      "now": 70.0
+    },
+    {
+      "period": "2005-06",
+      "posted": 72,
+      "now": 72.0
+    },
+    {
+      "period": "2005-07",
+      "posted": 70,
+      "now": 70.0
+    },
+    {
+      "period": "2005-08",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2005-09",
+      "posted": 65,
+      "now": 65.0
+    },
+    {
+      "period": "2005-10",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2005-11",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2005-12",
+      "posted": 57,
+      "now": 57.0
+    },
+    {
+      "period": "2006-01",
+      "posted": 57,
+      "now": 57.0
+    },
+    {
+      "period": "2006-02",
+      "posted": 56,
+      "now": 56.0
+    },
+    {
+      "period": "2006-03",
+      "posted": 54,
+      "now": 54.0
+    },
+    {
+      "period": "2006-04",
+      "posted": 51,
+      "now": 51.0
+    },
+    {
+      "period": "2006-05",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2006-06",
+      "posted": 42,
+      "now": 42.0
+    },
+    {
+      "period": "2006-07",
+      "posted": 39,
+      "now": 39.0
+    },
+    {
+      "period": "2006-08",
+      "posted": 33,
+      "now": 33.0
+    },
+    {
+      "period": "2006-09",
+      "posted": 30,
+      "now": 30.0
+    },
+    {
+      "period": "2006-10",
+      "posted": 31,
+      "now": 31.0
+    },
+    {
+      "period": "2006-11",
+      "posted": 33,
+      "now": 33.0
+    },
+    {
+      "period": "2006-12",
+      "posted": 33,
+      "now": 33.0
+    },
+    {
+      "period": "2007-01",
+      "posted": 35,
+      "now": 35.0
+    },
+    {
+      "period": "2007-02",
+      "posted": 39,
+      "now": 39.0
+    },
+    {
+      "period": "2007-03",
+      "posted": 36,
+      "now": 36.0
+    },
+    {
+      "period": "2007-04",
+      "posted": 33,
+      "now": 33.0
+    },
+    {
+      "period": "2007-05",
+      "posted": 30,
+      "now": 30.0
+    },
+    {
+      "period": "2007-06",
+      "posted": 28,
+      "now": 28.0
+    },
+    {
+      "period": "2007-07",
+      "posted": 24,
+      "now": 24.0
+    },
+    {
+      "period": "2007-08",
+      "posted": 22,
+      "now": 22.0
+    },
+    {
+      "period": "2007-09",
+      "posted": 20,
+      "now": 20.0
+    },
+    {
+      "period": "2007-10",
+      "posted": 19,
+      "now": 19.0
+    },
+    {
+      "period": "2007-11",
+      "posted": 19,
+      "now": 19.0
+    },
+    {
+      "period": "2007-12",
+      "posted": 18,
+      "now": 18.0
+    },
+    {
+      "period": "2008-01",
+      "posted": 19,
+      "now": 19.0
+    },
+    {
+      "period": "2008-02",
+      "posted": 20,
+      "now": 20.0
+    },
+    {
+      "period": "2008-03",
+      "posted": 20,
+      "now": 20.0
+    },
+    {
+      "period": "2008-04",
+      "posted": 20,
+      "now": 20.0
+    },
+    {
+      "period": "2008-05",
+      "posted": 19,
+      "now": 19.0
+    },
+    {
+      "period": "2008-06",
+      "posted": 18,
+      "now": 18.0
+    },
+    {
+      "period": "2008-07",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2008-08",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2008-09",
+      "posted": 17,
+      "now": 17.0
+    },
+    {
+      "period": "2008-10",
+      "posted": 14,
+      "now": 14.0
+    },
+    {
+      "period": "2008-11",
+      "posted": 9,
+      "now": 9.0
+    },
+    {
+      "period": "2008-12",
+      "posted": 9,
+      "now": 9.0
+    },
+    {
+      "period": "2009-01",
+      "posted": 8,
+      "now": 8.0
+    },
+    {
+      "period": "2009-02",
+      "posted": 9,
+      "now": 9.0
+    },
+    {
+      "period": "2009-03",
+      "posted": 9,
+      "now": 9.0
+    },
+    {
+      "period": "2009-04",
+      "posted": 14,
+      "now": 14.0
+    },
+    {
+      "period": "2009-05",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2009-06",
+      "posted": 15,
+      "now": 15.0
+    },
+    {
+      "period": "2009-07",
+      "posted": 17,
+      "now": 17.0
+    },
+    {
+      "period": "2009-08",
+      "posted": 18,
+      "now": 18.0
+    },
+    {
+      "period": "2009-09",
+      "posted": 19,
+      "now": 19.0
+    },
+    {
+      "period": "2009-10",
+      "posted": 17,
+      "now": 17.0
+    },
+    {
+      "period": "2009-11",
+      "posted": 17,
+      "now": 17.0
+    },
+    {
+      "period": "2009-12",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2010-01",
+      "posted": 15,
+      "now": 15.0
+    },
+    {
+      "period": "2010-02",
+      "posted": 17,
+      "now": 17.0
+    },
+    {
+      "period": "2010-03",
+      "posted": 15,
+      "now": 15.0
+    },
+    {
+      "period": "2010-04",
+      "posted": 19,
+      "now": 19.0
+    },
+    {
+      "period": "2010-05",
+      "posted": 22,
+      "now": 22.0
+    },
+    {
+      "period": "2010-06",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2010-07",
+      "posted": 14,
+      "now": 14.0
+    },
+    {
+      "period": "2010-08",
+      "posted": 13,
+      "now": 13.0
+    },
+    {
+      "period": "2010-09",
+      "posted": 13,
+      "now": 13.0
+    },
+    {
+      "period": "2010-10",
+      "posted": 15,
+      "now": 15.0
+    },
+    {
+      "period": "2010-11",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2010-12",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2011-01",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2011-02",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2011-03",
+      "posted": 17,
+      "now": 17.0
+    },
+    {
+      "period": "2011-04",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2011-05",
+      "posted": 16,
+      "now": 16.0
+    },
+    {
+      "period": "2011-06",
+      "posted": 13,
+      "now": 13.0
+    },
+    {
+      "period": "2011-07",
+      "posted": 15,
+      "now": 15.0
+    },
+    {
+      "period": "2011-08",
+      "posted": 15,
+      "now": 15.0
+    },
+    {
+      "period": "2011-09",
+      "posted": 14,
+      "now": 14.0
+    },
+    {
+      "period": "2011-10",
+      "posted": 17,
+      "now": 17.0
+    },
+    {
+      "period": "2011-11",
+      "posted": 19,
+      "now": 19.0
+    },
+    {
+      "period": "2011-12",
+      "posted": 21,
+      "now": 21.0
+    },
+    {
+      "period": "2012-01",
+      "posted": 25,
+      "now": 25.0
+    },
+    {
+      "period": "2012-02",
+      "posted": 28,
+      "now": 28.0
+    },
+    {
+      "period": "2012-03",
+      "posted": 28,
+      "now": 28.0
+    },
+    {
+      "period": "2012-04",
+      "posted": 24,
+      "now": 24.0
+    },
+    {
+      "period": "2012-05",
+      "posted": 28,
+      "now": 28.0
+    },
+    {
+      "period": "2012-06",
+      "posted": 29,
+      "now": 29.0
+    },
+    {
+      "period": "2012-07",
+      "posted": 35,
+      "now": 35.0
+    },
+    {
+      "period": "2012-08",
+      "posted": 37,
+      "now": 37.0
+    },
+    {
+      "period": "2012-09",
+      "posted": 40,
+      "now": 40.0
+    },
+    {
+      "period": "2012-10",
+      "posted": 41,
+      "now": 41.0
+    },
+    {
+      "period": "2012-11",
+      "posted": 45,
+      "now": 45.0
+    },
+    {
+      "period": "2012-12",
+      "posted": 47,
+      "now": 47.0
+    },
+    {
+      "period": "2013-01",
+      "posted": 47,
+      "now": 47.0
+    },
+    {
+      "period": "2013-02",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2013-03",
+      "posted": 44,
+      "now": 44.0
+    },
+    {
+      "period": "2013-04",
+      "posted": 41,
+      "now": 41.0
+    },
+    {
+      "period": "2013-05",
+      "posted": 44,
+      "now": 44.0
+    },
+    {
+      "period": "2013-06",
+      "posted": 51,
+      "now": 51.0
+    },
+    {
+      "period": "2013-07",
+      "posted": 56,
+      "now": 56.0
+    },
+    {
+      "period": "2013-08",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2013-09",
+      "posted": 57,
+      "now": 57.0
+    },
+    {
+      "period": "2013-10",
+      "posted": 54,
+      "now": 54.0
+    },
+    {
+      "period": "2013-11",
+      "posted": 54,
+      "now": 54.0
+    },
+    {
+      "period": "2013-12",
+      "posted": 57,
+      "now": 57.0
+    },
+    {
+      "period": "2014-01",
+      "posted": 56,
+      "now": 56.0
+    },
+    {
+      "period": "2014-02",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2014-03",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2014-04",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2014-05",
+      "posted": 45,
+      "now": 45.0
+    },
+    {
+      "period": "2014-06",
+      "posted": 49,
+      "now": 49.0
+    },
+    {
+      "period": "2014-07",
+      "posted": 53,
+      "now": 53.0
+    },
+    {
+      "period": "2014-08",
+      "posted": 55,
+      "now": 55.0
+    },
+    {
+      "period": "2014-09",
+      "posted": 59,
+      "now": 59.0
+    },
+    {
+      "period": "2014-10",
+      "posted": 54,
+      "now": 54.0
+    },
+    {
+      "period": "2014-11",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2014-12",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2015-01",
+      "posted": 57,
+      "now": 57.0
+    },
+    {
+      "period": "2015-02",
+      "posted": 55,
+      "now": 55.0
+    },
+    {
+      "period": "2015-03",
+      "posted": 52,
+      "now": 52.0
+    },
+    {
+      "period": "2015-04",
+      "posted": 56,
+      "now": 56.0
+    },
+    {
+      "period": "2015-05",
+      "posted": 54,
+      "now": 54.0
+    },
+    {
+      "period": "2015-06",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2015-07",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2015-08",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2015-09",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2015-10",
+      "posted": 65,
+      "now": 65.0
+    },
+    {
+      "period": "2015-11",
+      "posted": 62,
+      "now": 62.0
+    },
+    {
+      "period": "2015-12",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2016-01",
+      "posted": 61,
+      "now": 61.0
+    },
+    {
+      "period": "2016-02",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2016-03",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2016-04",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2016-05",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2016-06",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2016-07",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2016-08",
+      "posted": 59,
+      "now": 59.0
+    },
+    {
+      "period": "2016-09",
+      "posted": 65,
+      "now": 65.0
+    },
+    {
+      "period": "2016-10",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2016-11",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2016-12",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2017-01",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2017-02",
+      "posted": 65,
+      "now": 65.0
+    },
+    {
+      "period": "2017-03",
+      "posted": 71,
+      "now": 71.0
+    },
+    {
+      "period": "2017-04",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2017-05",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2017-06",
+      "posted": 66,
+      "now": 66.0
+    },
+    {
+      "period": "2017-07",
+      "posted": 64,
+      "now": 64.0
+    },
+    {
+      "period": "2017-08",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2017-09",
+      "posted": 64,
+      "now": 64.0
+    },
+    {
+      "period": "2017-10",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2017-11",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2017-12",
+      "posted": 74,
+      "now": 74.0
+    },
+    {
+      "period": "2018-01",
+      "posted": 72,
+      "now": 72.0
+    },
+    {
+      "period": "2018-02",
+      "posted": 71,
+      "now": 71.0
+    },
+    {
+      "period": "2018-03",
+      "posted": 70,
+      "now": 70.0
+    },
+    {
+      "period": "2018-04",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2018-05",
+      "posted": 70,
+      "now": 70.0
+    },
+    {
+      "period": "2018-06",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2018-07",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2018-08",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2018-09",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2018-10",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2018-11",
+      "posted": 60,
+      "now": 60.0
+    },
+    {
+      "period": "2018-12",
+      "posted": 56,
+      "now": 56.0
+    },
+    {
+      "period": "2019-01",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2019-02",
+      "posted": 62,
+      "now": 62.0
+    },
+    {
+      "period": "2019-03",
+      "posted": 62,
+      "now": 62.0
+    },
+    {
+      "period": "2019-04",
+      "posted": 63,
+      "now": 63.0
+    },
+    {
+      "period": "2019-05",
+      "posted": 66,
+      "now": 66.0
+    },
+    {
+      "period": "2019-06",
+      "posted": 64,
+      "now": 64.0
+    },
+    {
+      "period": "2019-07",
+      "posted": 65,
+      "now": 65.0
+    },
+    {
+      "period": "2019-08",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2019-09",
+      "posted": 68,
+      "now": 68.0
+    },
+    {
+      "period": "2019-10",
+      "posted": 71,
+      "now": 71.0
+    },
+    {
+      "period": "2019-11",
+      "posted": 71,
+      "now": 71.0
+    },
+    {
+      "period": "2019-12",
+      "posted": 76,
+      "now": 76.0
+    },
+    {
+      "period": "2020-01",
+      "posted": 75,
+      "now": 75.0
+    },
+    {
+      "period": "2020-02",
+      "posted": 74,
+      "now": 74.0
+    },
+    {
+      "period": "2020-03",
+      "posted": 72,
+      "now": 72.0
+    },
+    {
+      "period": "2020-04",
+      "posted": 30,
+      "now": 30.0
+    },
+    {
+      "period": "2020-05",
+      "posted": 37,
+      "now": 37.0
+    },
+    {
+      "period": "2020-06",
+      "posted": 58,
+      "now": 58.0
+    },
+    {
+      "period": "2020-07",
+      "posted": 72,
+      "now": 72.0
+    },
+    {
+      "period": "2020-08",
+      "posted": 78,
+      "now": 78.0
+    },
+    {
+      "period": "2020-09",
+      "posted": 83,
+      "now": 83.0
+    },
+    {
+      "period": "2020-10",
+      "posted": 85,
+      "now": 85.0
+    },
+    {
+      "period": "2020-11",
+      "posted": 90,
+      "now": 90.0
+    },
+    {
+      "period": "2020-12",
+      "posted": 86,
+      "now": 86.0
+    },
+    {
+      "period": "2021-01",
+      "posted": 83,
+      "now": 83.0
+    },
+    {
+      "period": "2021-02",
+      "posted": 84,
+      "now": 84.0
+    },
+    {
+      "period": "2021-03",
+      "posted": 82,
+      "now": 82.0
+    },
+    {
+      "period": "2021-04",
+      "posted": 83,
+      "now": 83.0
+    },
+    {
+      "period": "2021-05",
+      "posted": 83,
+      "now": 83.0
+    },
+    {
+      "period": "2021-06",
+      "posted": 81,
+      "now": 81.0
+    },
+    {
+      "period": "2021-07",
+      "posted": 80,
+      "now": 80.0
+    },
+    {
+      "period": "2021-08",
+      "posted": 75,
+      "now": 75.0
+    },
+    {
+      "period": "2021-09",
+      "posted": 76,
+      "now": 76.0
+    },
+    {
+      "period": "2021-10",
+      "posted": 80,
+      "now": 80.0
+    },
+    {
+      "period": "2021-11",
+      "posted": 83,
+      "now": 83.0
+    },
+    {
+      "period": "2021-12",
+      "posted": 84,
+      "now": 84.0
+    },
+    {
+      "period": "2022-01",
+      "posted": 83,
+      "now": 83.0
+    },
+    {
+      "period": "2022-02",
+      "posted": 81,
+      "now": 81.0
+    },
+    {
+      "period": "2022-03",
+      "posted": 79,
+      "now": 79.0
+    },
+    {
+      "period": "2022-04",
+      "posted": 77,
+      "now": 77.0
+    },
+    {
+      "period": "2022-05",
+      "posted": 69,
+      "now": 69.0
+    },
+    {
+      "period": "2022-06",
+      "posted": 67,
+      "now": 67.0
+    },
+    {
+      "period": "2022-07",
+      "posted": 55,
+      "now": 55.0
+    },
+    {
+      "period": "2022-08",
+      "posted": 49,
+      "now": 49.0
+    },
+    {
+      "period": "2022-09",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2022-10",
+      "posted": 38,
+      "now": 38.0
+    },
+    {
+      "period": "2022-11",
+      "posted": 33,
+      "now": 33.0
+    },
+    {
+      "period": "2022-12",
+      "posted": 31,
+      "now": 31.0
+    },
+    {
+      "period": "2023-01",
+      "posted": 35,
+      "now": 35.0
+    },
+    {
+      "period": "2023-02",
+      "posted": 42,
+      "now": 42.0
+    },
+    {
+      "period": "2023-03",
+      "posted": 44,
+      "now": 44.0
+    },
+    {
+      "period": "2023-04",
+      "posted": 45,
+      "now": 45.0
+    },
+    {
+      "period": "2023-05",
+      "posted": 50,
+      "now": 50.0
+    },
+    {
+      "period": "2023-06",
+      "posted": 55,
+      "now": 55.0
+    },
+    {
+      "period": "2023-07",
+      "posted": 56,
+      "now": 56.0
+    },
+    {
+      "period": "2023-08",
+      "posted": 50,
+      "now": 50.0
+    },
+    {
+      "period": "2023-09",
+      "posted": 44,
+      "now": 44.0
+    },
+    {
+      "period": "2023-10",
+      "posted": 40,
+      "now": 40.0
+    },
+    {
+      "period": "2023-11",
+      "posted": 34,
+      "now": 34.0
+    },
+    {
+      "period": "2023-12",
+      "posted": 37,
+      "now": 37.0
+    },
+    {
+      "period": "2024-01",
+      "posted": 44,
+      "now": 44.0
+    },
+    {
+      "period": "2024-02",
+      "posted": 48,
+      "now": 48.0
+    },
+    {
+      "period": "2024-03",
+      "posted": 51,
+      "now": 51.0
+    },
+    {
+      "period": "2024-04",
+      "posted": 51,
+      "now": 51.0
+    },
+    {
+      "period": "2024-05",
+      "posted": 45,
+      "now": 45.0
+    },
+    {
+      "period": "2024-06",
+      "posted": 43,
+      "now": 43.0
+    },
+    {
+      "period": "2024-07",
+      "posted": 41,
+      "now": 41.0
+    },
+    {
+      "period": "2024-08",
+      "posted": 39,
+      "now": 39.0
+    },
+    {
+      "period": "2024-09",
+      "posted": 41,
+      "now": 41.0
+    },
+    {
+      "period": "2024-10",
+      "posted": 43,
+      "now": 43.0
+    },
+    {
+      "period": "2024-11",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2024-12",
+      "posted": 46,
+      "now": 46.0
+    },
+    {
+      "period": "2025-01",
+      "posted": 47,
+      "now": 47.0
+    },
+    {
+      "period": "2025-02",
+      "posted": 42,
+      "now": 42.0
+    },
+    {
+      "period": "2025-03",
+      "posted": 39,
+      "now": 39.0
+    },
+    {
+      "period": "2025-04",
+      "posted": 40,
+      "now": 40.0
+    },
+    {
+      "period": "2025-05",
+      "posted": 34,
+      "now": 34.0
+    },
+    {
+      "period": "2025-06",
+      "posted": 32,
+      "now": 32.0
+    },
+    {
+      "period": "2025-07",
+      "posted": 33,
+      "now": 33.0
+    },
+    {
+      "period": "2025-08",
+      "posted": 32,
+      "now": 32.0
+    },
+    {
+      "period": "2025-09",
+      "posted": 32,
+      "now": 32.0
+    },
+    {
+      "period": "2025-10",
+      "posted": 37,
+      "now": 37.0
+    },
+    {
+      "period": "2025-11",
+      "posted": 38,
+      "now": 38.0
+    },
+    {
+      "period": "2025-12",
+      "posted": 39,
+      "now": 39.0
+    },
+    {
+      "period": "2026-01",
+      "posted": 37,
+      "now": 37.0
+    },
+    {
+      "period": "2026-02",
+      "posted": 37,
+      "now": 37.0
+    },
+    {
+      "period": "2026-03",
+      "posted": 38,
+      "now": 38.0
+    },
+    {
+      "period": "2026-04",
+      "posted": 34,
+      "now": 34.0
+    },
+    {
+      "period": "2026-05",
+      "posted": 37,
+      "now": 37.0
+    },
+    {
+      "period": "2026-06",
+      "posted": 36,
+      "now": 36.0
+    },
+    {
+      "period": "2026-07",
+      "posted": 34,
+      "now": 34.0
+    },
+    {
+      "period": "2026-08",
+      "posted": 35,
+      "now": 35.0
+    },
+    {
+      "period": "2026-09",
+      "posted": 32,
+      "now": 32.0
+    },
+    {
+      "period": "2026-10",
+      "posted": 29,
+      "now": 29.0
+    },
+    {
+      "period": "2026-11",
+      "posted": 25,
+      "now": 25.0
+    }
+  ]
+}

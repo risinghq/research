@@ -49,7 +49,7 @@ JSON holds:
 | `kind`     | `columns` for changes, `line` for levels or long spans                 |
 | `title`    | The chart title                                                        |
 | `subtitle` | The frequency and adjustment                                           |
-| `unit`     | `%` follows a value, `$` precedes it, a word such as `jobs` follows it |
+| `unit`     | `%` follows a value, `$` precedes it, a word such as `jobs` follows it; empty for a bare number such as an index |
 | `decimals` | The decimals a value is shown with                                     |
 | `source`   | The source line                                                        |
 | `view`     | The first period the chart opens on: the original's first period       |
@@ -64,7 +64,8 @@ leaves a gap there.
 ## Rerun
 
 [`.github/workflows/rerun.yml`](../.github/workflows/rerun.yml) runs each live
-replication on weekdays after the BLS release time and commits what changed.
+replication on weekdays after the BLS and NAHB release times and commits what
+changed.
 master requires signed commits, so the job commits through the GraphQL API,
 which signs the commit, rather than pushing from git. A rerun on unchanged data
 writes identical files and commits nothing. research.rising.sh picks up the
