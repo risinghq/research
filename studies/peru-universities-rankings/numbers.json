@@ -1,5 +1,514 @@
 {
-  "rankings": 16,
+  "register": 143,
+  "with_openalex": 112,
+  "without_openalex": {
+    "denied": 27,
+    "granted": 2,
+    "not submitted": 2
+  },
+  "core_summed": 22821,
+  "top10_universities_core_pct": 49.5,
+  "under_10_core": 19,
+  "core_pct_by_group": {
+    "public": 37.5,
+    "private": 61.7,
+    "denied": 0.8
+  },
+  "lima_core_pct": 63.7,
+  "growth_2015_2024": {
+    "public": {
+      "articles": [
+        2106,
+        7177
+      ],
+      "core": [
+        349,
+        1973
+      ]
+    },
+    "private": {
+      "articles": [
+        2677,
+        8370
+      ],
+      "core": [
+        673,
+        2999
+      ]
+    },
+    "denied": {
+      "articles": [
+        147,
+        419
+      ],
+      "core": [
+        3,
+        48
+      ]
+    },
+    "Peru": {
+      "articles": [
+        5417,
+        15128
+      ],
+      "core": [
+        1280,
+        4759
+      ]
+    }
+  },
+  "universities": {
+    "UNMSM": {
+      "articles": 7749,
+      "core_pct": 25.2
+    },
+    "UCV": {
+      "articles": 7474,
+      "core_pct": 9.8
+    },
+    "PUCP": {
+      "articles": 3881,
+      "core_pct": 43.5
+    },
+    "UPCH": {
+      "articles": 3106,
+      "core_pct": 60.6
+    },
+    "Científica": {
+      "articles": 2524,
+      "core_pct": 57.4
+    },
+    "USIL": {
+      "articles": 1806,
+      "core_pct": 52.2
+    },
+    "UNFV": {
+      "articles": 1794,
+      "core_pct": 22.6
+    },
+    "UNT": {
+      "articles": 1717,
+      "core_pct": 22.5
+    },
+    "UNSA": {
+      "articles": 1656,
+      "core_pct": 44.7
+    },
+    "UNA Puno": {
+      "articles": 1624,
+      "core_pct": 14.8
+    },
+    "UNALM": {
+      "articles": 1598,
+      "core_pct": 43.2
+    },
+    "UPC": {
+      "articles": 1484,
+      "core_pct": 45.2
+    },
+    "UTP": {
+      "articles": 1475,
+      "core_pct": 37.0
+    },
+    "USMP": {
+      "articles": 1431,
+      "core_pct": 29.1
+    },
+    "UPeU": {
+      "articles": 1358,
+      "core_pct": 28.5
+    },
+    "UPN": {
+      "articles": 1278,
+      "core_pct": 43.7
+    },
+    "URP": {
+      "articles": 1258,
+      "core_pct": 25.2
+    },
+    "Continental": {
+      "articles": 1222,
+      "core_pct": 42.6
+    },
+    "UNSM": {
+      "articles": 1221,
+      "core_pct": 11.3
+    },
+    "ULima": {
+      "articles": 1209,
+      "core_pct": 34.7
+    }
+  },
+  "venues_top5_pct": [
+    {
+      "x": "UCV",
+      "y": 30.2
+    },
+    {
+      "x": "UNT",
+      "y": 24.2
+    },
+    {
+      "x": "ULima",
+      "y": 23.7
+    },
+    {
+      "x": "URP",
+      "y": 22.1
+    },
+    {
+      "x": "UNA Puno",
+      "y": 16.5
+    },
+    {
+      "x": "USMP",
+      "y": 15.2
+    },
+    {
+      "x": "USIL",
+      "y": 15.1
+    },
+    {
+      "x": "UNFV",
+      "y": 13.5
+    },
+    {
+      "x": "UPCH",
+      "y": 12.6
+    },
+    {
+      "x": "UNALM",
+      "y": 12.5
+    },
+    {
+      "x": "UPeU",
+      "y": 11.9
+    },
+    {
+      "x": "Continental",
+      "y": 10.8
+    },
+    {
+      "x": "UNSM",
+      "y": 10.3
+    },
+    {
+      "x": "UTP",
+      "y": 9.8
+    },
+    {
+      "x": "UNMSM",
+      "y": 9.1
+    },
+    {
+      "x": "UPN",
+      "y": 8.1
+    },
+    {
+      "x": "UNSA",
+      "y": 7.9
+    },
+    {
+      "x": "Científica",
+      "y": 7.0
+    },
+    {
+      "x": "UPC",
+      "y": 6.5
+    },
+    {
+      "x": "PUCP",
+      "y": 5.6
+    }
+  ],
+  "journals": [
+    {
+      "source": "S4210182600",
+      "journal": "Ciencia Latina Revista Científica Multidisciplinar",
+      "country": "PY",
+      "core": "False",
+      "peru": "1788",
+      "articles": "10143"
+    },
+    {
+      "source": "S2737847956",
+      "journal": "Revista de Climatología",
+      "country": "ES",
+      "core": "False",
+      "peru": "628",
+      "articles": "682"
+    },
+    {
+      "source": "S4210235661",
+      "journal": "Horizontes Revista de Investigación en Ciencias de la Educación",
+      "country": "BO",
+      "core": "False",
+      "peru": "585",
+      "articles": "697"
+    },
+    {
+      "source": "S4210179982",
+      "journal": "Revista de Investigaciones Veterinarias del Perú",
+      "country": "PE",
+      "core": "False",
+      "peru": "360",
+      "articles": "639"
+    },
+    {
+      "source": "S10134376",
+      "journal": "Sustainability",
+      "country": "CH",
+      "core": "True",
+      "peru": "284",
+      "articles": "57799"
+    },
+    {
+      "source": "S4210168142",
+      "journal": "Prospectiva Universitaria",
+      "country": "PE",
+      "core": "False",
+      "peru": "272",
+      "articles": "274"
+    },
+    {
+      "source": "S4210177947",
+      "journal": "Revista de la Facultad de Medicina Humana",
+      "country": "PE",
+      "core": "False",
+      "peru": "248",
+      "articles": "434"
+    },
+    {
+      "source": "S4210221842",
+      "journal": "Anales de la Facultad de Medicina",
+      "country": "PE",
+      "core": "False",
+      "peru": "247",
+      "articles": "283"
+    },
+    {
+      "source": "S4210235785",
+      "journal": "SCIÉNDO",
+      "country": "PE",
+      "core": "False",
+      "peru": "245",
+      "articles": "257"
+    },
+    {
+      "source": "S4210172822",
+      "journal": "Ciencia y Desarrollo",
+      "country": "PE",
+      "core": "False",
+      "peru": "240",
+      "articles": "240"
+    }
+  ],
+  "core_per_staff": {
+    "UPCH": 3.18,
+    "UNTRM": 1.12,
+    "USIL": 0.98,
+    "Pacífico": 0.97,
+    "UNALM": 0.86,
+    "Científica": 0.66,
+    "UNMSM": 0.6,
+    "UCSP": 0.49,
+    "PUCP": 0.36,
+    "UPC": 0.22,
+    "USMP": 0.19,
+    "UCV": 0.16
+  },
+  "citing": {
+    "UNMSM": {
+      "samples": 3,
+      "core": {
+        "pct": 46.9,
+        "low": 35.2,
+        "high": 51.5
+      },
+      "dissertation": {
+        "pct": 11.8,
+        "low": 9.2,
+        "high": 17.5
+      },
+      "same": {
+        "pct": 6.6,
+        "low": 5.5,
+        "high": 8.7
+      }
+    },
+    "UCV": {
+      "samples": 3,
+      "core": {
+        "pct": 8.7,
+        "low": 5.4,
+        "high": 11.8
+      },
+      "dissertation": {
+        "pct": 27.1,
+        "low": 23.3,
+        "high": 29.3
+      },
+      "same": {
+        "pct": 25.4,
+        "low": 19.7,
+        "high": 27.7
+      }
+    },
+    "PUCP": {
+      "samples": 3,
+      "core": {
+        "pct": 53.3,
+        "low": 50.1,
+        "high": 55.8
+      },
+      "dissertation": {
+        "pct": 5.6,
+        "low": 5.3,
+        "high": 6.1
+      },
+      "same": {
+        "pct": 5.9,
+        "low": 3.8,
+        "high": 9.0
+      }
+    },
+    "UPCH": {
+      "samples": 3,
+      "core": {
+        "pct": 68.6,
+        "low": 66.3,
+        "high": 71.0
+      },
+      "dissertation": {
+        "pct": 4.4,
+        "low": 4.0,
+        "high": 4.8
+      },
+      "same": {
+        "pct": 7.2,
+        "low": 4.5,
+        "high": 9.6
+      }
+    },
+    "Científica": {
+      "samples": 3,
+      "core": {
+        "pct": 56.6,
+        "low": 51.1,
+        "high": 65.6
+      },
+      "dissertation": {
+        "pct": 7.4,
+        "low": 4.4,
+        "high": 9.9
+      },
+      "same": {
+        "pct": 7.7,
+        "low": 6.4,
+        "high": 9.1
+      }
+    },
+    "USIL": {
+      "samples": 3,
+      "core": {
+        "pct": 48.4,
+        "low": 44.6,
+        "high": 54.6
+      },
+      "dissertation": {
+        "pct": 9.4,
+        "low": 7.0,
+        "high": 12.0
+      },
+      "same": {
+        "pct": 7.7,
+        "low": 5.4,
+        "high": 8.9
+      }
+    },
+    "UNFV": {
+      "samples": 3,
+      "core": {
+        "pct": 38.0,
+        "low": 24.4,
+        "high": 47.0
+      },
+      "dissertation": {
+        "pct": 17.0,
+        "low": 8.6,
+        "high": 25.9
+      },
+      "same": {
+        "pct": 4.3,
+        "low": 2.5,
+        "high": 6.7
+      }
+    },
+    "UNT": {
+      "samples": 3,
+      "core": {
+        "pct": 45.9,
+        "low": 34.1,
+        "high": 57.5
+      },
+      "dissertation": {
+        "pct": 11.2,
+        "low": 7.9,
+        "high": 16.6
+      },
+      "same": {
+        "pct": 5.2,
+        "low": 3.8,
+        "high": 6.5
+      }
+    },
+    "UNSA": {
+      "samples": 3,
+      "core": {
+        "pct": 47.4,
+        "low": 37.2,
+        "high": 53.6
+      },
+      "dissertation": {
+        "pct": 6.6,
+        "low": 4.0,
+        "high": 7.9
+      },
+      "same": {
+        "pct": 6.4,
+        "low": 5.6,
+        "high": 7.7
+      }
+    },
+    "UNA Puno": {
+      "samples": 3,
+      "core": {
+        "pct": 28.3,
+        "low": 25.8,
+        "high": 31.3
+      },
+      "dissertation": {
+        "pct": 17.1,
+        "low": 15.9,
+        "high": 18.3
+      },
+      "same": {
+        "pct": 9.2,
+        "low": 8.0,
+        "high": 10.1
+      }
+    }
+  },
+  "leiden": {
+    "PUCP": 5.4,
+    "UNMSM": 4.3,
+    "UPCH": 7.7,
+    "UPC": 2.6,
+    "Científica": 5.2,
+    "UCV": 4.5,
+    "USIL": 8.3,
+    "UTP": 3.5
+  },
   "leaders": {
     "SCImago Institutions Rankings": [
       "PUCP"
@@ -50,568 +559,5 @@
       "PUCP",
       "UPC"
     ]
-  },
-  "leader_counts": {
-    "PUCP": 9,
-    "UPCH": 6,
-    "UTP": 1,
-    "UPC": 1
-  },
-  "leaders_outside_post": [
-    "uniRank: UTP"
-  ],
-  "differs_from_post": [
-    {
-      "university": "PUCP",
-      "measure": "leader",
-      "posted": 7,
-      "now": 9
-    },
-    {
-      "university": "PUCP",
-      "measure": "present",
-      "posted": 16,
-      "now": 15
-    },
-    {
-      "university": "UPCH",
-      "measure": "leader",
-      "posted": 8,
-      "now": 6
-    },
-    {
-      "university": "UPCH",
-      "measure": "top3",
-      "posted": 14,
-      "now": 12
-    },
-    {
-      "university": "UPCH",
-      "measure": "present",
-      "posted": 15,
-      "now": 14
-    },
-    {
-      "university": "UNMSM",
-      "measure": "leader",
-      "posted": 1,
-      "now": 0
-    },
-    {
-      "university": "UNMSM",
-      "measure": "top3",
-      "posted": 7,
-      "now": 8
-    },
-    {
-      "university": "UNMSM",
-      "measure": "present",
-      "posted": 11,
-      "now": 10
-    },
-    {
-      "university": "Científica",
-      "measure": "leader",
-      "posted": 1,
-      "now": 0
-    },
-    {
-      "university": "Científica",
-      "measure": "top3",
-      "posted": 6,
-      "now": 5
-    },
-    {
-      "university": "UPC",
-      "measure": "top3",
-      "posted": 1,
-      "now": 3
-    },
-    {
-      "university": "UPC",
-      "measure": "present",
-      "posted": 9,
-      "now": 10
-    },
-    {
-      "university": "UNALM",
-      "measure": "top3",
-      "posted": 1,
-      "now": 2
-    },
-    {
-      "university": "UNALM",
-      "measure": "present",
-      "posted": 7,
-      "now": 8
-    },
-    {
-      "university": "UPN",
-      "measure": "top3",
-      "posted": 1,
-      "now": 0
-    },
-    {
-      "university": "UPN",
-      "measure": "present",
-      "posted": 5,
-      "now": 7
-    },
-    {
-      "university": "Pacífico",
-      "measure": "present",
-      "posted": 4,
-      "now": 5
-    },
-    {
-      "university": "ULima",
-      "measure": "top3",
-      "posted": 1,
-      "now": 0
-    },
-    {
-      "university": "ULima",
-      "measure": "present",
-      "posted": 4,
-      "now": 6
-    },
-    {
-      "university": "USMP",
-      "measure": "top3",
-      "posted": 1,
-      "now": 2
-    },
-    {
-      "university": "USMP",
-      "measure": "present",
-      "posted": 4,
-      "now": 7
-    },
-    {
-      "university": "UNTRM",
-      "measure": "present",
-      "posted": 3,
-      "now": 5
-    }
-  ],
-  "against_original": [
-    {
-      "university": "PUCP",
-      "measure": "leader",
-      "posted": 7,
-      "now": 9
-    },
-    {
-      "university": "PUCP",
-      "measure": "top3",
-      "posted": 15,
-      "now": 15
-    },
-    {
-      "university": "PUCP",
-      "measure": "present",
-      "posted": 16,
-      "now": 15
-    },
-    {
-      "university": "UPCH",
-      "measure": "leader",
-      "posted": 8,
-      "now": 6
-    },
-    {
-      "university": "UPCH",
-      "measure": "top3",
-      "posted": 14,
-      "now": 12
-    },
-    {
-      "university": "UPCH",
-      "measure": "present",
-      "posted": 15,
-      "now": 14
-    },
-    {
-      "university": "UNMSM",
-      "measure": "leader",
-      "posted": 1,
-      "now": 0
-    },
-    {
-      "university": "UNMSM",
-      "measure": "top3",
-      "posted": 7,
-      "now": 8
-    },
-    {
-      "university": "UNMSM",
-      "measure": "present",
-      "posted": 11,
-      "now": 10
-    },
-    {
-      "university": "Científica",
-      "measure": "leader",
-      "posted": 1,
-      "now": 0
-    },
-    {
-      "university": "Científica",
-      "measure": "top3",
-      "posted": 6,
-      "now": 5
-    },
-    {
-      "university": "Científica",
-      "measure": "present",
-      "posted": 12,
-      "now": 12
-    },
-    {
-      "university": "UPC",
-      "measure": "leader",
-      "posted": 1,
-      "now": 1
-    },
-    {
-      "university": "UPC",
-      "measure": "top3",
-      "posted": 1,
-      "now": 3
-    },
-    {
-      "university": "UPC",
-      "measure": "present",
-      "posted": 9,
-      "now": 10
-    },
-    {
-      "university": "UNALM",
-      "measure": "leader",
-      "posted": 0,
-      "now": 0
-    },
-    {
-      "university": "UNALM",
-      "measure": "top3",
-      "posted": 1,
-      "now": 2
-    },
-    {
-      "university": "UNALM",
-      "measure": "present",
-      "posted": 7,
-      "now": 8
-    },
-    {
-      "university": "UPN",
-      "measure": "leader",
-      "posted": 0,
-      "now": 0
-    },
-    {
-      "university": "UPN",
-      "measure": "top3",
-      "posted": 1,
-      "now": 0
-    },
-    {
-      "university": "UPN",
-      "measure": "present",
-      "posted": 5,
-      "now": 7
-    },
-    {
-      "university": "Pacífico",
-      "measure": "leader",
-      "posted": 0,
-      "now": 0
-    },
-    {
-      "university": "Pacífico",
-      "measure": "top3",
-      "posted": 1,
-      "now": 1
-    },
-    {
-      "university": "Pacífico",
-      "measure": "present",
-      "posted": 4,
-      "now": 5
-    },
-    {
-      "university": "ULima",
-      "measure": "leader",
-      "posted": 0,
-      "now": 0
-    },
-    {
-      "university": "ULima",
-      "measure": "top3",
-      "posted": 1,
-      "now": 0
-    },
-    {
-      "university": "ULima",
-      "measure": "present",
-      "posted": 4,
-      "now": 6
-    },
-    {
-      "university": "USMP",
-      "measure": "leader",
-      "posted": 0,
-      "now": 0
-    },
-    {
-      "university": "USMP",
-      "measure": "top3",
-      "posted": 1,
-      "now": 2
-    },
-    {
-      "university": "USMP",
-      "measure": "present",
-      "posted": 4,
-      "now": 7
-    },
-    {
-      "university": "UNTRM",
-      "measure": "leader",
-      "posted": 0,
-      "now": 0
-    },
-    {
-      "university": "UNTRM",
-      "measure": "top3",
-      "posted": 1,
-      "now": 1
-    },
-    {
-      "university": "UNTRM",
-      "measure": "present",
-      "posted": 3,
-      "now": 5
-    }
-  ],
-  "openalex": {
-    "PUCP": {
-      "articles": 3881,
-      "core_pct": 43.5,
-      "international_pct": 40.7,
-      "top10_pct": 18.3
-    },
-    "UPCH": {
-      "articles": 3106,
-      "core_pct": 60.6,
-      "international_pct": 55.4,
-      "top10_pct": 15.3
-    },
-    "UNMSM": {
-      "articles": 7749,
-      "core_pct": 25.2,
-      "international_pct": 25.7,
-      "top10_pct": 10.1
-    },
-    "Científica": {
-      "articles": 2524,
-      "core_pct": 57.4,
-      "international_pct": 42.4,
-      "top10_pct": 14.9
-    },
-    "UPC": {
-      "articles": 1484,
-      "core_pct": 45.2,
-      "international_pct": 36.3,
-      "top10_pct": 17.7
-    },
-    "UNALM": {
-      "articles": 1598,
-      "core_pct": 43.2,
-      "international_pct": 42.6,
-      "top10_pct": 8.3
-    },
-    "UPN": {
-      "articles": 1278,
-      "core_pct": 43.7,
-      "international_pct": 25.9,
-      "top10_pct": 16.7
-    },
-    "Pacífico": {
-      "articles": 601,
-      "core_pct": 52.7,
-      "international_pct": 69.6,
-      "top10_pct": 18.0
-    },
-    "ULima": {
-      "articles": 1209,
-      "core_pct": 34.7,
-      "international_pct": 30.1,
-      "top10_pct": 18.6
-    },
-    "USMP": {
-      "articles": 1431,
-      "core_pct": 29.1,
-      "international_pct": 28.2,
-      "top10_pct": 13.0
-    },
-    "UNTRM": {
-      "articles": 970,
-      "core_pct": 37.8,
-      "international_pct": 22.9,
-      "top10_pct": 11.0
-    },
-    "UTP": {
-      "articles": 1475,
-      "core_pct": 37.0,
-      "international_pct": 26.7,
-      "top10_pct": 18.9
-    },
-    "UCV": {
-      "articles": 7474,
-      "core_pct": 9.8,
-      "international_pct": 10.4,
-      "top10_pct": 23.4
-    },
-    "USIL": {
-      "articles": 1806,
-      "core_pct": 52.2,
-      "international_pct": 39.2,
-      "top10_pct": 20.5
-    }
-  },
-  "citing": {
-    "PUCP": {
-      "sampled": 200,
-      "citing": 1976,
-      "core_pct": 53.1,
-      "dissertation_pct": 6.9,
-      "same_university_pct": 10.4
-    },
-    "UPCH": {
-      "sampled": 200,
-      "citing": 3112,
-      "core_pct": 69.7,
-      "dissertation_pct": 4.2,
-      "same_university_pct": 4.9
-    },
-    "UNMSM": {
-      "sampled": 200,
-      "citing": 1546,
-      "core_pct": 35.9,
-      "dissertation_pct": 12.7,
-      "same_university_pct": 6.9
-    },
-    "Científica": {
-      "sampled": 200,
-      "citing": 2512,
-      "core_pct": 62.6,
-      "dissertation_pct": 5.7,
-      "same_university_pct": 7.0
-    },
-    "UPC": {
-      "sampled": 200,
-      "citing": 1805,
-      "core_pct": 45.9,
-      "dissertation_pct": 10.1,
-      "same_university_pct": 7.5
-    },
-    "UNALM": {
-      "sampled": 200,
-      "citing": 1740,
-      "core_pct": 62.1,
-      "dissertation_pct": 4.5,
-      "same_university_pct": 8.2
-    },
-    "UPN": {
-      "sampled": 200,
-      "citing": 2167,
-      "core_pct": 42.1,
-      "dissertation_pct": 9.3,
-      "same_university_pct": 6.4
-    },
-    "Pacífico": {
-      "sampled": 200,
-      "citing": 2223,
-      "core_pct": 53.7,
-      "dissertation_pct": 7.0,
-      "same_university_pct": 3.5
-    },
-    "ULima": {
-      "sampled": 200,
-      "citing": 2167,
-      "core_pct": 41.0,
-      "dissertation_pct": 10.7,
-      "same_university_pct": 5.0
-    },
-    "USMP": {
-      "sampled": 200,
-      "citing": 1340,
-      "core_pct": 48.5,
-      "dissertation_pct": 11.7,
-      "same_university_pct": 4.3
-    },
-    "UNTRM": {
-      "sampled": 200,
-      "citing": 1357,
-      "core_pct": 55.1,
-      "dissertation_pct": 8.7,
-      "same_university_pct": 13.0
-    },
-    "UTP": {
-      "sampled": 200,
-      "citing": 2243,
-      "core_pct": 34.2,
-      "dissertation_pct": 16.3,
-      "same_university_pct": 5.8
-    },
-    "UCV": {
-      "sampled": 200,
-      "citing": 2066,
-      "core_pct": 14.1,
-      "dissertation_pct": 23.5,
-      "same_university_pct": 20.2
-    },
-    "USIL": {
-      "sampled": 200,
-      "citing": 2506,
-      "core_pct": 61.3,
-      "dissertation_pct": 5.2,
-      "same_university_pct": 7.4
-    }
-  },
-  "leiden": {
-    "PUCP": {
-      "p": 828,
-      "pp_top10": 5.4
-    },
-    "UNMSM": {
-      "p": 632,
-      "pp_top10": 4.3
-    },
-    "UPCH": {
-      "p": 538,
-      "pp_top10": 7.7
-    },
-    "UPC": {
-      "p": 501,
-      "pp_top10": 2.6
-    },
-    "Científica": {
-      "p": 371,
-      "pp_top10": 5.2
-    },
-    "UCV": {
-      "p": 368,
-      "pp_top10": 4.5
-    },
-    "USIL": {
-      "p": 296,
-      "pp_top10": 8.3
-    },
-    "UTP": {
-      "p": 218,
-      "pp_top10": 3.5
-    }
   }
 }

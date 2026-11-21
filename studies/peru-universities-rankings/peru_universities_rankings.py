@@ -1,11 +1,10 @@
-"""Count how many global rankings place each Peruvian university first in Peru,
-in Peru's top three, or anywhere, beside the counts Percy Mayta-Tristán posted
-on 2026-11-18, and set the rankings beside what OpenAlex and the Leiden Ranking
-show of each university's articles.
+"""Measure the research record of the universities in SUNEDU's register from
+OpenAlex, and set the global rankings' first places in Peru beside it.
 
-`ranks.csv` and `leiden.csv` were read by hand from each ranking's own pages.
-`openalex.py` fetches the OpenAlex files; this script reads no network.
-Universities that share a rank in Peru share its `peru_rank`.
+`universities.csv` is SUNEDU's register with each university's OpenAlex id.
+`ranks.csv`, `leiden.csv` and `staff.csv` were read by hand from each source's
+own pages. `openalex.py` fetches the OpenAlex files; this script reads no
+network.
 """
 
 import argparse
@@ -13,8 +12,7 @@ import csv
 import json
 import sys
 
-from collections import Counter
-from dataclasses import dataclass
+from collections import Counter, defaultdict
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -22,56 +20,29 @@ import figures
 
 
 if TYPE_CHECKING:
-    from collections.abc import Callable, Mapping, Sequence
+    from collections.abc import Mapping, Sequence
 
 OUT = Path(__file__).parent
-POSTED = "Mayta-Tristán, 2026-11-18"
-RANKS_SOURCE = (
-    "Rankings and editions in the study's README; "
-    "QS data: Source: QS Quacquarelli Symonds (www.qs.com). With permission; "
-    "Times Higher Education rankings with permission"
-)
-OPENALEX_SOURCE = "OpenAlex, fetched 2026-11-21 (CC0)"
-LEIDEN_SOURCE = "OpenAlex, fetched 2026-11-21; CWTS Leiden Ranking Open Edition 2026"
-# The universities the yearly charts follow: the five with most articles.
+OPENALEX = "OpenAlex, fetched 2026-11-21 (CC0)"
+REGISTER = f"{OPENALEX}; SUNEDU register (ODC-BY)"
+# Full journal names overflow the legend.
+JOURNALS = {
+    "Ciencia Latina Revista Científica Multidisciplinar": "Ciencia Latina (Paraguay)",
+    "Revista de Climatología": "Revista de Climatología (Spain)",
+    "Horizontes Revista de Investigación en Ciencias de la Educación": (
+        "Horizontes (Bolivia)"
+    ),
+}
+LEIDEN = "OpenAlex, fetched 2026-11-21; CWTS Leiden Ranking Open Edition 2026"
+STAFF = "OpenAlex, fetched 2026-11-21; THE World University Rankings 2027 data, with permission"
+WINDOW = "2021 to 2024"
+GROUPS = {
+    "public": "Public",
+    "private": "Private, licensed",
+    "denied": "Licence denied",
+}
 FOLLOWED = ("UCV", "UNMSM", "PUCP", "UPCH", "Científica")
-
-
-@dataclass(frozen=True)
-class Rank:
-    ranking: str
-    university: str
-    peru_rank: int
-
-
-@dataclass(frozen=True)
-class Measure:
-    key: str
-    title: str
-    subtitle: str
-    counts: Callable[[int], bool]
-
-
-MEASURES = (
-    Measure(
-        "leader",
-        "Rankings that place the university first in Peru",
-        "Global rankings, latest edition on 2026-11-18; ties share a place",
-        lambda rank: rank == 1,
-    ),
-    Measure(
-        "top3",
-        "Rankings that place the university in Peru's top three",
-        "Global rankings, latest edition on 2026-11-18; ties share a place",
-        lambda rank: rank <= 3,
-    ),
-    Measure(
-        "present",
-        "Rankings that include the university",
-        "Global rankings, latest edition on 2026-11-18",
-        lambda _rank: True,
-    ),
-)
+SHOWN = 20
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -79,166 +50,136 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(file))
 
 
-def read_ranks(path: Path) -> list[Rank]:
-    return [
-        Rank(row["ranking"], row["university"], int(row["peru_rank"]))
-        for row in read_csv(path)
-    ]
-
-
-def read_table(path: Path) -> dict[str, dict[str, float]]:
-    """A CSV keyed by its `university` column, every other column a number."""
-    return {
-        row.pop("university"): {k: float(v) for k, v in row.items()}
-        for row in read_csv(path)
-    }
-
-
-def count(
-    ranks: Sequence[Rank], universities: Sequence[str]
-) -> dict[str, dict[str, int]]:
-    """For each university, how many rankings meet each measure."""
-    return {
-        university: {
-            m.key: sum(
-                1
-                for rank in ranks
-                if rank.university == university and m.counts(rank.peru_rank)
-            )
-            for m in MEASURES
-        }
-        for university in universities
-    }
-
-
-def leaders(ranks: Sequence[Rank]) -> dict[str, list[str]]:
-    """Each ranking's first place in Peru; a tie lists every university."""
-    result: dict[str, list[str]] = {}
-    for rank in ranks:
-        if rank.peru_rank == 1:
-            result.setdefault(rank.ranking, []).append(rank.university)
-    return result
-
-
 def share(part: float, whole: float) -> float:
     return round(100 * part / whole, 1)
 
 
-def output_shares(table: Mapping[str, Mapping[str, float]]) -> dict[str, object]:
-    """Each university's articles and the share of them in each subset."""
-    return {
-        name: {
-            "articles": int(row["articles"]),
-            "core_pct": share(row["core"], row["articles"]),
-            "international_pct": share(row["international"], row["articles"]),
-            "top10_pct": share(row["top10"], row["articles"]),
-        }
-        for name, row in table.items()
-    }
-
-
-def citing_shares(table: Mapping[str, Mapping[str, float]]) -> dict[str, object]:
-    """Of the works citing each university's sampled articles, the share in core
-    journals, the share that are theses and the share by the same university."""
-    return {
-        name: {
-            "sampled": int(row["sampled"]),
-            "citing": int(row["citing"]),
-            "core_pct": share(row["core"], row["citing"]),
-            "dissertation_pct": share(row["dissertation"], row["citing"]),
-            "same_university_pct": share(row["same"], row["citing"]),
-        }
-        for name, row in table.items()
-    }
+def label(university: Mapping[str, str]) -> str:
+    if not university["short"]:
+        message = f"{university['name']} is charted but has no short name"
+        raise ValueError(message)
+    return university["short"]
 
 
 def bars(
-    title: str,
-    subtitle: str,
-    source: str,
-    values: Mapping[str, float],
-    *,
-    unit: str = "",
-    decimals: int = 0,
-    label: str = "This study",
-    compare: Mapping[str, object] | None = None,
+    style: figures.Style, values: Mapping[str, float], series: str
 ) -> dict[str, object]:
     points = [{"x": name, "y": y} for name, y in values.items()]
     return figures.chart(
-        "bars",
-        figures.Style(title, subtitle, source, unit, decimals),
-        figures.Axis("category"),
-        [{"label": label, "points": points}],
-        compare=compare,
+        "bars", style, figures.Axis("category"), [{"label": series, "points": points}]
     )
 
 
-def ranking_chart(
-    measure: Measure,
-    now: Mapping[str, Mapping[str, int]],
-    posted: Mapping[str, Mapping[str, int]],
-) -> dict[str, object]:
-    def column(table: Mapping[str, Mapping[str, int]]) -> dict[str, float]:
-        return {name: row[measure.key] for name, row in table.items()}
+def descending(values: Mapping[str, float]) -> dict[str, float]:
+    return dict(sorted(values.items(), key=lambda kv: -kv[1]))
 
-    posted_points = [{"x": k, "y": v} for k, v in column(posted).items()]
+
+class Record:
+    """The OpenAlex counts of every university with an OpenAlex record."""
+
+    def __init__(self, folder: Path) -> None:
+        self.universities = {
+            u["code"]: u for u in read_csv(folder / "universities.csv")
+        }
+        self.output = {
+            row["code"]: {k: int(v) for k, v in row.items() if k != "code" and v}
+            for row in read_csv(folder / "output.csv")
+        }
+
+    def largest(self, n: int, measure: str = "articles") -> list[str]:
+        return sorted(self.output, key=lambda c: -self.output[c][measure])[:n]
+
+    def short(self, code: str) -> str:
+        return label(self.universities[code])
+
+
+def concentration_chart(record: Record) -> dict[str, object]:
+    top = record.largest(15, "core")
     return bars(
-        measure.title,
-        measure.subtitle,
-        RANKS_SOURCE,
-        column(now),
-        compare={"label": POSTED, "points": posted_points},
+        figures.Style(
+            "Articles in core journals",
+            f"Journal articles {WINDOW}; the 15 universities with most",
+            REGISTER,
+            "",
+        ),
+        {record.short(c): record.output[c]["core"] for c in top},
+        "Core articles",
     )
 
 
-def core_chart(table: Mapping[str, Mapping[str, float]]) -> dict[str, object]:
-    values = {name: share(row["core"], row["articles"]) for name, row in table.items()}
-    return bars(
-        "Articles in core journals",
-        "Share of each university's 2021 to 2024 journal articles",
-        OPENALEX_SOURCE,
-        dict(sorted(values.items(), key=lambda kv: -kv[1])),
-        unit="%",
-        label="Share of articles",
-    )
-
-
-def top10_chart(
-    openalex: Mapping[str, Mapping[str, float]],
-    leiden: Mapping[str, Mapping[str, float]],
-) -> dict[str, object]:
-    every = {
-        name: share(openalex[name]["top10"], openalex[name]["articles"])
-        for name in sorted(leiden, key=lambda n: -leiden[n]["pp_top10"])
+def core_share_chart(record: Record) -> dict[str, object]:
+    top = record.largest(SHOWN)
+    values = {
+        record.short(c): share(record.output[c]["core"], record.output[c]["articles"])
+        for c in top
     }
-    core = [{"x": name, "y": row["pp_top10"]} for name, row in leiden.items()]
     return bars(
-        "Articles among the world's 10% most cited",
-        "2021 to 2024; bars count every citing work, ticks count core journals only",
-        LEIDEN_SOURCE,
-        every,
-        unit="%",
-        decimals=1,
-        label="OpenAlex, every citing work",
-        compare={"label": "Leiden Ranking, core only", "points": core},
+        figures.Style(
+            "Share of articles in core journals",
+            f"The {SHOWN} universities with most journal articles, {WINDOW}",
+            OPENALEX,
+            "%",
+        ),
+        descending(values),
+        "Share in core journals",
     )
 
 
-def citing_chart(citing: Mapping[str, Mapping[str, float]]) -> dict[str, object]:
-    values = {name: share(row["core"], row["citing"]) for name, row in citing.items()}
-    ordered = dict(sorted(values.items(), key=lambda kv: -kv[1]))
+def venues_chart(
+    record: Record, venues: Sequence[Mapping[str, str]]
+) -> dict[str, object]:
+    values = {
+        record.short(row["code"]): share(
+            int(row["top5"]), record.output[row["code"]]["articles"]
+        )
+        for row in venues
+    }
     return bars(
-        "Citations that come from core journals",
-        "Works citing a random 200 of each university's 2021 to 2024 articles",
-        OPENALEX_SOURCE,
-        ordered,
-        unit="%",
-        label="Share of citing works",
+        figures.Style(
+            "Articles in the university's five most-used journals",
+            f"Share of journal articles, {WINDOW}; the {SHOWN} universities with most",
+            OPENALEX,
+            "%",
+        ),
+        descending(values),
+        "Share in five journals",
     )
 
 
-def yearly_chart(
-    rows: Sequence[Mapping[str, str]], column: str, title: str, subtitle: str
+def per_staff(record: Record, staff: Sequence[Mapping[str, str]]) -> dict[str, float]:
+    """Core articles in the window per academic staff member, with staff taken
+    as THE's student count over its students per staff."""
+    by_short = {
+        u["short"]: code for code, u in record.universities.items() if u["short"]
+    }
+    return descending(
+        {
+            row["university"]: round(
+                record.output[by_short[row["university"]]]["core"]
+                / (int(row["students"]) / float(row["students_per_staff"])),
+                2,
+            )
+            for row in staff
+        }
+    )
+
+
+def staff_chart(values: Mapping[str, float]) -> dict[str, object]:
+    return bars(
+        figures.Style(
+            "Core articles per academic staff member",
+            f"Core-journal articles {WINDOW} over staff in THE's 2027 data",
+            STAFF,
+            "",
+            2,
+        ),
+        values,
+        "Core articles per staff",
+    )
+
+
+def group_lines(
+    rows: Sequence[Mapping[str, str]], column: str, title: str
 ) -> dict[str, object]:
     series = [
         {
@@ -246,97 +187,254 @@ def yearly_chart(
             "points": [
                 {"x": row["year"], "y": int(row[column])}
                 for row in rows
-                if row["university"] == name
+                if row["group"] == key
+            ],
+        }
+        for key, name in GROUPS.items()
+    ]
+    return figures.chart(
+        "line",
+        figures.Style(
+            title,
+            "Articles with an author at a university of the group; 2025 still filling",
+            REGISTER,
+            "articles",
+        ),
+        figures.Axis("year"),
+        series,
+    )
+
+
+def journals_chart(
+    journals: Sequence[Mapping[str, str]], years: Sequence[Mapping[str, str]]
+) -> dict[str, object]:
+    names = {row["source"]: row["journal"] for row in journals}
+    series = [
+        {
+            "label": JOURNALS.get(names[source], names[source]),
+            "points": [
+                {"x": row["year"], "y": int(row["peru"])}
+                for row in years
+                if row["source"] == source
+            ],
+        }
+        for source in dict.fromkeys(row["source"] for row in years)
+    ]
+    return figures.chart(
+        "line",
+        figures.Style(
+            "Peruvian articles in three foreign journals",
+            f"Articles a year with a Peruvian author, in the three journals with most "
+            f"of them in {WINDOW}; none is core",
+            OPENALEX,
+            "articles",
+        ),
+        figures.Axis("year"),
+        series,
+    )
+
+
+def citing_shares(
+    record: Record, rows: Sequence[Mapping[str, str]]
+) -> dict[str, dict[str, object]]:
+    """Per university, the share of works citing its sampled articles in core
+    journals, theses and by the same university: pooled over the seeds, with
+    the lowest and highest single seed."""
+    by: defaultdict[str, list[Mapping[str, str]]] = defaultdict(list)
+    for row in rows:
+        by[row["code"]].append(row)
+    result: dict[str, dict[str, object]] = {}
+    for code, seeds in by.items():
+        entry: dict[str, object] = {"samples": len(seeds)}
+        for key in ("core", "dissertation", "same"):
+            each = [share(int(s[key]), int(s["citing"])) for s in seeds]
+            pooled = share(
+                sum(int(s[key]) for s in seeds), sum(int(s["citing"]) for s in seeds)
+            )
+            entry[key] = {"pct": pooled, "low": min(each), "high": max(each)}
+        result[record.short(code)] = entry
+    return result
+
+
+def citing_chart(shares: Mapping[str, Mapping[str, object]]) -> dict[str, object]:
+    core = {name: entry["core"] for name, entry in shares.items()}
+    order = sorted(core, key=lambda n: -core[n]["pct"])  # type: ignore[index]
+    points = [
+        {
+            "x": name,
+            "y": core[name]["pct"],  # type: ignore[index]
+            "low": core[name]["low"],  # type: ignore[index]
+            "high": core[name]["high"],  # type: ignore[index]
+        }
+        for name in order
+    ]
+    return figures.chart(
+        "bars",
+        figures.Style(
+            "Citations that come from core journals",
+            "Works citing three random samples of 100 articles each, 2021 to 2024; "
+            "whiskers span the samples",
+            OPENALEX,
+            "%",
+        ),
+        figures.Axis("category"),
+        [{"label": "Share of citing works", "points": points}],
+    )
+
+
+def top10_chart(
+    record: Record, leiden: Mapping[str, Mapping[str, str]]
+) -> dict[str, object]:
+    by_short = {
+        u["short"]: code for code, u in record.universities.items() if u["short"]
+    }
+    every = descending(
+        {
+            name: share(
+                record.output[by_short[name]]["top10"],
+                record.output[by_short[name]]["articles"],
+            )
+            for name in leiden
+        }
+    )
+    core = [{"x": name, "y": float(row["pp_top10"])} for name, row in leiden.items()]
+    return figures.chart(
+        "bars",
+        figures.Style(
+            "Articles among the world's 10% most cited",
+            f"{WINDOW}; OpenAlex counts every article and citing work, Leiden "
+            "core articles, core citations and fractional authorship",
+            LEIDEN,
+            "%",
+            1,
+        ),
+        figures.Axis("category"),
+        [
+            {
+                "label": "OpenAlex, every article",
+                "points": [{"x": k, "y": v} for k, v in every.items()],
+            }
+        ],
+        compare={"label": "Leiden Ranking", "points": core},
+    )
+
+
+def followed_chart(
+    record: Record, rows: Sequence[Mapping[str, str]]
+) -> dict[str, object]:
+    code = {record.short(c): c for c in {row["code"] for row in rows}}
+    series = [
+        {
+            "label": name,
+            "points": [
+                {"x": row["year"], "y": int(row["articles"])}
+                for row in rows
+                if row["code"] == code[name]
             ],
         }
         for name in FOLLOWED
     ]
     return figures.chart(
         "line",
-        figures.Style(title, subtitle, OPENALEX_SOURCE, "articles", 0),
+        figures.Style(
+            "Journal articles a year",
+            "The five universities with most articles; 2025 still filling",
+            OPENALEX,
+            "articles",
+        ),
         figures.Axis("year"),
         series,
     )
 
 
-def numbers(
-    ranks: Sequence[Rank],
-    now: Mapping[str, Mapping[str, int]],
-    posted: Mapping[str, Mapping[str, int]],
-    openalex: Mapping[str, Mapping[str, float]],
-    citing: Mapping[str, Mapping[str, float]],
-    leiden: Mapping[str, Mapping[str, float]],
-) -> dict[str, object]:
-    compared = [
-        {
-            "university": university,
-            "measure": m.key,
-            "posted": row[m.key],
-            "now": now[university][m.key],
-        }
-        for university, row in posted.items()
-        for m in MEASURES
-    ]
-    first = leaders(ranks)
+def leaders(ranks: Sequence[Mapping[str, str]]) -> dict[str, list[str]]:
+    """Each ranking's first place in Peru; a tie lists every university."""
+    result: dict[str, list[str]] = {}
+    for rank in ranks:
+        if rank["peru_rank"] == "1":
+            result.setdefault(rank["ranking"], []).append(rank["university"])
+    return result
+
+
+def summary(record: Record, groups: Sequence[Mapping[str, str]]) -> dict[str, object]:
+    out, unis = record.output, record.universities
+    core = sorted((row["core"] for row in out.values()), reverse=True)
+    total = sum(core)
+    by_group: Counter[str] = Counter()
+    by_lima: Counter[bool] = Counter()
+    for code, row in out.items():
+        u = unis[code]
+        group = "denied" if u["licence"] == "denied" else u["management"]
+        by_group[group] += row["core"]
+        by_lima[u["department"] == "Lima"] += row["core"]
+    year = {(row["group"], row["year"]): row for row in groups}
     return {
-        "rankings": len({rank.ranking for rank in ranks}),
-        "leaders": first,
-        "leader_counts": dict(Counter(u for names in first.values() for u in names)),
-        "leaders_outside_post": sorted(
-            f"{ranking}: {name}"
-            for ranking, names in first.items()
-            for name in names
-            if name not in posted
+        "register": len(unis),
+        "with_openalex": len(out),
+        "without_openalex": dict(
+            Counter(u["licence"] for u in unis.values() if not u["openalex"])
         ),
-        "differs_from_post": [row for row in compared if row["posted"] != row["now"]],
-        "against_original": compared,
-        "openalex": output_shares(openalex),
-        "citing": citing_shares(citing),
-        "leiden": {
-            name: {"p": int(row["p"]), "pp_top10": row["pp_top10"]}
-            for name, row in leiden.items()
+        "core_summed": total,
+        "top10_universities_core_pct": share(sum(core[:10]), total),
+        "under_10_core": sum(1 for c in core if c < 10),
+        "core_pct_by_group": {g: share(n, total) for g, n in by_group.items()},
+        "lima_core_pct": share(by_lima[True], total),
+        "growth_2015_2024": {
+            g: {
+                m: [int(year[g, "2015"][m]), int(year[g, "2024"][m])]
+                for m in ("articles", "core")
+            }
+            for g in (*GROUPS, "Peru")
         },
     }
 
 
 def run(out: Path) -> dict[str, object]:
-    ranks = read_ranks(OUT / "ranks.csv")
-    posted = {
-        name: {k: int(v) for k, v in row.items()}
-        for name, row in read_table(OUT / "original.csv").items()
-    }
-    openalex = read_table(OUT / "openalex.csv")
-    citing = read_table(OUT / "citing.csv")
-    leiden = read_table(OUT / "leiden.csv")
-    yearly = read_csv(OUT / "articles-by-year.csv")
-    now = count(ranks, list(posted))
-    charts = {m.key: ranking_chart(m, now, posted) for m in MEASURES} | {
-        "core-share": core_chart(openalex),
-        "top10": top10_chart(openalex, leiden),
+    record = Record(OUT)
+    groups = read_csv(OUT / "groups.csv")
+    journals = read_csv(OUT / "journals.csv")
+    venues = read_csv(OUT / "venues.csv")
+    leiden = {row.pop("university"): row for row in read_csv(OUT / "leiden.csv")}
+    staff = per_staff(record, read_csv(OUT / "staff.csv"))
+    citing = citing_shares(record, read_csv(OUT / "citing.csv"))
+    charts = {
+        "concentration": concentration_chart(record),
+        "growth": group_lines(groups, "core", "Articles a year in core journals"),
+        "growth-all": group_lines(groups, "articles", "Journal articles a year"),
+        "core-share": core_share_chart(record),
+        "venues": venues_chart(record, venues),
+        "journals": journals_chart(journals, read_csv(OUT / "journal-years.csv")),
+        "per-staff": staff_chart(staff),
+        "top10": top10_chart(record, leiden),
         "citing": citing_chart(citing),
-        "articles": yearly_chart(
-            yearly,
-            "articles",
-            "Journal articles a year",
-            "Articles with an author at the university, by year published",
-        ),
-        "core-articles": yearly_chart(
-            yearly,
-            "core",
-            "Journal articles a year in core journals",
-            "Core journals as OpenAlex marks them, the set the Leiden Ranking counts",
-        ),
+        "articles": followed_chart(record, read_csv(OUT / "articles-by-year.csv")),
     }
     for name, value in charts.items():
         figures.write(out, name, value)
-    result = numbers(ranks, now, posted, openalex, citing, leiden)
+    result = summary(record, groups) | {
+        "universities": {
+            record.short(c): {
+                "articles": record.output[c]["articles"],
+                "core_pct": share(
+                    record.output[c]["core"], record.output[c]["articles"]
+                ),
+            }
+            for c in record.largest(SHOWN)
+        },
+        "venues_top5_pct": charts["venues"]["series"][0]["points"],  # type: ignore[index]
+        "journals": journals,
+        "core_per_staff": staff,
+        "citing": citing,
+        "leiden": {n: float(row["pp_top10"]) for n, row in leiden.items()},
+        "leaders": leaders(read_csv(OUT / "ranks.csv")),
+    }
     text = json.dumps(result, indent=2, ensure_ascii=False) + "\n"
     (out / "numbers.json").write_text(text, encoding="utf-8")
     return result
 
 
 def main(argv: Sequence[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(description="Count the rankings per university.")
+    parser = argparse.ArgumentParser(description="Measure Peru's university research.")
     parser.add_argument("--out", type=Path, default=OUT)
     args = parser.parse_args(argv)
     run(args.out)

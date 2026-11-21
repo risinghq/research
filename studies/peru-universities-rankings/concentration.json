@@ -1,0 +1,78 @@
+{
+ "kind": "bars",
+ "title": "Articles in core journals",
+ "subtitle": "Journal articles 2021 to 2024; the 15 universities with most",
+ "source": "OpenAlex, fetched 2026-11-21 (CC0); SUNEDU register (ODC-BY)",
+ "unit": "",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Core articles",
+   "points": [
+    {
+     "x": "UNMSM",
+     "y": 1951
+    },
+    {
+     "x": "UPCH",
+     "y": 1882
+    },
+    {
+     "x": "PUCP",
+     "y": 1688
+    },
+    {
+     "x": "Científica",
+     "y": 1449
+    },
+    {
+     "x": "USIL",
+     "y": 943
+    },
+    {
+     "x": "UNSA",
+     "y": 741
+    },
+    {
+     "x": "UCV",
+     "y": 731
+    },
+    {
+     "x": "UNALM",
+     "y": 691
+    },
+    {
+     "x": "UPC",
+     "y": 671
+    },
+    {
+     "x": "UPN",
+     "y": 558
+    },
+    {
+     "x": "UTP",
+     "y": 546
+    },
+    {
+     "x": "Continental",
+     "y": 521
+    },
+    {
+     "x": "Wiener",
+     "y": 520
+    },
+    {
+     "x": "UNI",
+     "y": 447
+    },
+    {
+     "x": "ULima",
+     "y": 419
+    }
+   ]
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
  "kind": "bars",
- "title": "Articles in core journals",
- "subtitle": "Share of each university's 2021 to 2024 journal articles",
+ "title": "Share of articles in core journals",
+ "subtitle": "The 20 universities with most journal articles, 2021 to 2024",
  "source": "OpenAlex, fetched 2026-11-21 (CC0)",
  "unit": "%",
  "decimals": 0,
@@ -10,7 +10,7 @@
  },
  "series": [
   {
-   "label": "Share of articles",
+   "label": "Share in core journals",
    "points": [
     {
      "x": "UPCH",
@@ -21,16 +21,16 @@
      "y": 57.4
     },
     {
-     "x": "Pacífico",
-     "y": 52.7
-    },
-    {
      "x": "USIL",
      "y": 52.2
     },
     {
      "x": "UPC",
      "y": 45.2
+    },
+    {
+     "x": "UNSA",
+     "y": 44.7
     },
     {
      "x": "UPN",
@@ -45,8 +45,8 @@
      "y": 43.2
     },
     {
-     "x": "UNTRM",
-     "y": 37.8
+     "x": "Continental",
+     "y": 42.6
     },
     {
      "x": "UTP",
@@ -61,8 +61,32 @@
      "y": 29.1
     },
     {
+     "x": "UPeU",
+     "y": 28.5
+    },
+    {
      "x": "UNMSM",
      "y": 25.2
+    },
+    {
+     "x": "URP",
+     "y": 25.2
+    },
+    {
+     "x": "UNFV",
+     "y": 22.6
+    },
+    {
+     "x": "UNT",
+     "y": 22.5
+    },
+    {
+     "x": "UNA Puno",
+     "y": 14.8
+    },
+    {
+     "x": "UNSM",
+     "y": 11.3
     },
     {
      "x": "UCV",
