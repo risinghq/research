@@ -1,8 +1,9 @@
 name: rerun
 
-# Reruns the live replications and commits what changed. BLS publishes at 8:30
+# Reruns the live studies and commits what changed. BLS publishes at 8:30
 # Eastern on weekdays and NAHB its index at 10:00; 15:30 UTC is after both in
-# summer and winter time.
+# summer and winter time. BCRP has no fixed release hour, so a daily run picks
+# up its updates within a day.
 on:
   schedule:
     - cron: "30 15 * * 1-5"
@@ -32,6 +33,7 @@ jobs:
         env:
           BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
       - run: uv run studies/us-homebuilder-sentiment/us_homebuilder_sentiment.py
+      - run: uv run studies/peru-private-investment/peru_private_investment.py
       - run: '.github/scripts/commit-changes "studies: rerun the live replications"'
         env:
           GH_TOKEN: ${{ github.token }}

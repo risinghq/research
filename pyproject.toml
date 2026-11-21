@@ -68,6 +68,8 @@ mypy_path = [
     "studies/bvl-liquidity",
     "studies/bvl-ownership",
     "studies/bvl-politics",
+    "studies/peru-private-investment",
+    "studies/peru-universities-rankings",
     "studies/us-beef-prices",
     "studies/us-cpi",
     "studies/us-homebuilder-sentiment",
