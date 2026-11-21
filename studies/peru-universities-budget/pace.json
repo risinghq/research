@@ -1,0 +1,120 @@
+{
+ "kind": "line",
+ "title": "How fast San Marcos spends its budget",
+ "subtitle": "Spending accrued since January as a share of the year's budget after changes (PIM)",
+ "source": "MEF, Datos Abiertos: Comparación de Presupuesto y Ejecución de Gasto",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "2025",
+   "points": [
+    {
+     "x": "Jan",
+     "y": 6.4
+    },
+    {
+     "x": "Feb",
+     "y": 12.5
+    },
+    {
+     "x": "Mar",
+     "y": 19.5
+    },
+    {
+     "x": "Apr",
+     "y": 26.0
+    },
+    {
+     "x": "May",
+     "y": 35.1
+    },
+    {
+     "x": "Jun",
+     "y": 42.2
+    },
+    {
+     "x": "Jul",
+     "y": 50.2
+    },
+    {
+     "x": "Aug",
+     "y": 57.6
+    },
+    {
+     "x": "Sep",
+     "y": 64.8
+    },
+    {
+     "x": "Oct",
+     "y": 72.7
+    },
+    {
+     "x": "Nov",
+     "y": 81.0
+    },
+    {
+     "x": "Dec",
+     "y": 94.7
+    }
+   ]
+  },
+  {
+   "label": "2026",
+   "points": [
+    {
+     "x": "Jan",
+     "y": 4.7
+    },
+    {
+     "x": "Feb",
+     "y": 11.4
+    },
+    {
+     "x": "Mar",
+     "y": 18.7
+    },
+    {
+     "x": "Apr",
+     "y": 24.9
+    },
+    {
+     "x": "May",
+     "y": 31.3
+    },
+    {
+     "x": "Jun",
+     "y": 41.3
+    },
+    {
+     "x": "Jul",
+     "y": 49.7
+    },
+    {
+     "x": "Aug",
+     "y": 57.5
+    },
+    {
+     "x": "Sep",
+     "y": 64.6
+    },
+    {
+     "x": "Oct",
+     "y": 72.6
+    },
+    {
+     "x": "Nov",
+     "y": 78.1,
+     "preliminary": true
+    },
+    {
+     "x": "Dec",
+     "y": null
+    }
+   ]
+  }
+ ]
+}

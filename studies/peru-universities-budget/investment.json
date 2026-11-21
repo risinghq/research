@@ -1,0 +1,98 @@
+{
+ "kind": "bars",
+ "title": "How much of their 2025 investment budget universities spent",
+ "subtitle": "Spending accrued in 2025 as a share of the investment budget after the year's changes; the 20 public universities with the largest",
+ "source": "MEF, Datos Abiertos: Comparación de Presupuesto y Ejecución de Gasto",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Share spent",
+   "points": [
+    {
+     "x": "UN Toribio Rodriguez de Mendoza de Amazonas",
+     "y": 100.0
+    },
+    {
+     "x": "UN del Altiplano",
+     "y": 98.9
+    },
+    {
+     "x": "UN San Luis Gonzaga de Ica",
+     "y": 96.7
+    },
+    {
+     "x": "UN de Jaen",
+     "y": 96.6
+    },
+    {
+     "x": "UN de Frontera",
+     "y": 96.2
+    },
+    {
+     "x": "UN Agraria la Molina",
+     "y": 90.5
+    },
+    {
+     "x": "UN de Piura",
+     "y": 90.5
+    },
+    {
+     "x": "UN Micaela Bastidas de Apurimac",
+     "y": 87.0
+    },
+    {
+     "x": "UN de San Agustin",
+     "y": 77.0
+    },
+    {
+     "x": "UN Mayor de San Marcos",
+     "y": 76.7
+    },
+    {
+     "x": "UN Pedro Ruiz Gallo",
+     "y": 75.3
+    },
+    {
+     "x": "UN del Santa",
+     "y": 71.6
+    },
+    {
+     "x": "UN de Moquegua",
+     "y": 68.3
+    },
+    {
+     "x": "UN de Ingenieria",
+     "y": 66.2
+    },
+    {
+     "x": "UN San Cristobal de Huamanga",
+     "y": 65.5
+    },
+    {
+     "x": "UN Santiago Antunez de Mayolo",
+     "y": 58.7
+    },
+    {
+     "x": "UN de San Antonio Abad del Cusco",
+     "y": 56.4
+    },
+    {
+     "x": "UN Jorge Basadre Grohmann",
+     "y": 44.9
+    },
+    {
+     "x": "UN Intercultural de Quillabamba",
+     "y": 44.9
+    },
+    {
+     "x": "UN Autonoma de Tayacaja Daniel Hernandez Morillo",
+     "y": 32.7
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+[project]
+name = "mef"
+version = "0.1.0"
+description = "Client for MEF's open budget data: Peru's public spending by line item."
+requires-python = ">=3.14"
+dependencies = ["httpx2"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
