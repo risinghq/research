@@ -509,6 +509,398 @@
     "USIL": 8.3,
     "UTP": 3.5
   },
+  "grades": {
+    "Peru": {
+      "articles": 57931,
+      "sjr_pct": {
+        "Q1": 15.3,
+        "Q2": 8.8,
+        "Q3": 8.8,
+        "Q4": 6.9,
+        "no quartile": 5.0,
+        "not in SJR": 55.3
+      },
+      "neither_sjr_nor_norway_pct": 54.1,
+      "not_in_sjr_in_scielo_pct": 13.0
+    },
+    "groups": {
+      "Public": {
+        "articles": 27701,
+        "sjr_pct": {
+          "Q1": 11.6,
+          "Q2": 8.1,
+          "Q3": 9.8,
+          "Q4": 6.6,
+          "no quartile": 4.8,
+          "not in SJR": 59.1
+        },
+        "neither_sjr_nor_norway_pct": 57.8,
+        "not_in_sjr_in_scielo_pct": 12.6
+      },
+      "Private, licensed": {
+        "articles": 32389,
+        "sjr_pct": {
+          "Q1": 16.9,
+          "Q2": 10.1,
+          "Q3": 9.5,
+          "Q4": 7.8,
+          "no quartile": 5.2,
+          "not in SJR": 50.5
+        },
+        "neither_sjr_nor_norway_pct": 49.5,
+        "not_in_sjr_in_scielo_pct": 15.0
+      },
+      "Licence denied": {
+        "articles": 1310,
+        "sjr_pct": {
+          "Q1": 5.0,
+          "Q2": 4.2,
+          "Q3": 7.2,
+          "Q4": 3.7,
+          "no quartile": 3.0,
+          "not in SJR": 76.9
+        },
+        "neither_sjr_nor_norway_pct": 76.0,
+        "not_in_sjr_in_scielo_pct": 5.7
+      }
+    },
+    "universities": {
+      "UNMSM": {
+        "articles": 7742,
+        "sjr_pct": {
+          "Q1": 12.0,
+          "Q2": 9.3,
+          "Q3": 10.4,
+          "Q4": 7.1,
+          "no quartile": 5.8,
+          "not in SJR": 55.5
+        },
+        "neither_sjr_nor_norway_pct": 53.5,
+        "not_in_sjr_in_scielo_pct": 12.8
+      },
+      "UCV": {
+        "articles": 7474,
+        "sjr_pct": {
+          "Q1": 3.9,
+          "Q2": 3.3,
+          "Q3": 6.1,
+          "Q4": 3.5,
+          "no quartile": 5.3,
+          "not in SJR": 77.9
+        },
+        "neither_sjr_nor_norway_pct": 77.0,
+        "not_in_sjr_in_scielo_pct": 16.1
+      },
+      "PUCP": {
+        "articles": 3878,
+        "sjr_pct": {
+          "Q1": 28.3,
+          "Q2": 14.6,
+          "Q3": 7.8,
+          "Q4": 4.3,
+          "no quartile": 3.7,
+          "not in SJR": 41.3
+        },
+        "neither_sjr_nor_norway_pct": 39.1,
+        "not_in_sjr_in_scielo_pct": 13.0
+      },
+      "UPCH": {
+        "articles": 3100,
+        "sjr_pct": {
+          "Q1": 38.0,
+          "Q2": 13.2,
+          "Q3": 9.2,
+          "Q4": 7.0,
+          "no quartile": 8.1,
+          "not in SJR": 24.5
+        },
+        "neither_sjr_nor_norway_pct": 24.0,
+        "not_in_sjr_in_scielo_pct": 21.7
+      },
+      "Científica": {
+        "articles": 2522,
+        "sjr_pct": {
+          "Q1": 28.1,
+          "Q2": 18.9,
+          "Q3": 15.4,
+          "Q4": 13.1,
+          "no quartile": 7.2,
+          "not in SJR": 17.3
+        },
+        "neither_sjr_nor_norway_pct": 16.5,
+        "not_in_sjr_in_scielo_pct": 28.1
+      },
+      "USIL": {
+        "articles": 1805,
+        "sjr_pct": {
+          "Q1": 28.8,
+          "Q2": 16.5,
+          "Q3": 13.7,
+          "Q4": 9.3,
+          "no quartile": 2.9,
+          "not in SJR": 28.7
+        },
+        "neither_sjr_nor_norway_pct": 28.4,
+        "not_in_sjr_in_scielo_pct": 39.8
+      },
+      "UNFV": {
+        "articles": 1794,
+        "sjr_pct": {
+          "Q1": 7.7,
+          "Q2": 6.9,
+          "Q3": 13.0,
+          "Q4": 7.2,
+          "no quartile": 4.0,
+          "not in SJR": 61.2
+        },
+        "neither_sjr_nor_norway_pct": 60.2,
+        "not_in_sjr_in_scielo_pct": 9.2
+      },
+      "UNT": {
+        "articles": 1717,
+        "sjr_pct": {
+          "Q1": 8.6,
+          "Q2": 7.2,
+          "Q3": 10.0,
+          "Q4": 6.1,
+          "no quartile": 4.2,
+          "not in SJR": 64.0
+        },
+        "neither_sjr_nor_norway_pct": 63.2,
+        "not_in_sjr_in_scielo_pct": 8.7
+      },
+      "UNSA": {
+        "articles": 1655,
+        "sjr_pct": {
+          "Q1": 23.0,
+          "Q2": 13.5,
+          "Q3": 15.7,
+          "Q4": 9.1,
+          "no quartile": 6.4,
+          "not in SJR": 32.3
+        },
+        "neither_sjr_nor_norway_pct": 31.5,
+        "not_in_sjr_in_scielo_pct": 16.4
+      },
+      "UNA Puno": {
+        "articles": 1624,
+        "sjr_pct": {
+          "Q1": 7.9,
+          "Q2": 5.8,
+          "Q3": 10.8,
+          "Q4": 7.3,
+          "no quartile": 6.2,
+          "not in SJR": 62.0
+        },
+        "neither_sjr_nor_norway_pct": 59.7,
+        "not_in_sjr_in_scielo_pct": 25.7
+      },
+      "UNALM": {
+        "articles": 1597,
+        "sjr_pct": {
+          "Q1": 24.6,
+          "Q2": 12.3,
+          "Q3": 12.5,
+          "Q4": 7.9,
+          "no quartile": 4.0,
+          "not in SJR": 38.7
+        },
+        "neither_sjr_nor_norway_pct": 37.1,
+        "not_in_sjr_in_scielo_pct": 17.2
+      },
+      "UPC": {
+        "articles": 1484,
+        "sjr_pct": {
+          "Q1": 22.1,
+          "Q2": 15.4,
+          "Q3": 15.0,
+          "Q4": 10.4,
+          "no quartile": 4.9,
+          "not in SJR": 32.1
+        },
+        "neither_sjr_nor_norway_pct": 30.5,
+        "not_in_sjr_in_scielo_pct": 13.8
+      },
+      "UTP": {
+        "articles": 1475,
+        "sjr_pct": {
+          "Q1": 16.5,
+          "Q2": 12.7,
+          "Q3": 17.2,
+          "Q4": 12.5,
+          "no quartile": 9.9,
+          "not in SJR": 31.1
+        },
+        "neither_sjr_nor_norway_pct": 30.6,
+        "not_in_sjr_in_scielo_pct": 20.0
+      },
+      "USMP": {
+        "articles": 1424,
+        "sjr_pct": {
+          "Q1": 11.2,
+          "Q2": 9.5,
+          "Q3": 10.0,
+          "Q4": 11.3,
+          "no quartile": 5.3,
+          "not in SJR": 52.7
+        },
+        "neither_sjr_nor_norway_pct": 51.8,
+        "not_in_sjr_in_scielo_pct": 17.2
+      },
+      "UPeU": {
+        "articles": 1358,
+        "sjr_pct": {
+          "Q1": 13.3,
+          "Q2": 11.6,
+          "Q3": 9.8,
+          "Q4": 5.9,
+          "no quartile": 5.7,
+          "not in SJR": 53.6
+        },
+        "neither_sjr_nor_norway_pct": 53.0,
+        "not_in_sjr_in_scielo_pct": 16.6
+      },
+      "UPN": {
+        "articles": 1278,
+        "sjr_pct": {
+          "Q1": 16.6,
+          "Q2": 13.8,
+          "Q3": 19.5,
+          "Q4": 15.8,
+          "no quartile": 4.8,
+          "not in SJR": 29.6
+        },
+        "neither_sjr_nor_norway_pct": 29.1,
+        "not_in_sjr_in_scielo_pct": 19.3
+      },
+      "URP": {
+        "articles": 1258,
+        "sjr_pct": {
+          "Q1": 10.8,
+          "Q2": 7.0,
+          "Q3": 7.9,
+          "Q4": 11.9,
+          "no quartile": 12.6,
+          "not in SJR": 49.8
+        },
+        "neither_sjr_nor_norway_pct": 49.1,
+        "not_in_sjr_in_scielo_pct": 8.6
+      },
+      "Continental": {
+        "articles": 1222,
+        "sjr_pct": {
+          "Q1": 19.0,
+          "Q2": 16.4,
+          "Q3": 17.2,
+          "Q4": 16.4,
+          "no quartile": 4.3,
+          "not in SJR": 26.7
+        },
+        "neither_sjr_nor_norway_pct": 25.9,
+        "not_in_sjr_in_scielo_pct": 19.0
+      },
+      "UNSM": {
+        "articles": 1221,
+        "sjr_pct": {
+          "Q1": 7.9,
+          "Q2": 7.0,
+          "Q3": 7.8,
+          "Q4": 2.7,
+          "no quartile": 4.9,
+          "not in SJR": 69.8
+        },
+        "neither_sjr_nor_norway_pct": 66.7,
+        "not_in_sjr_in_scielo_pct": 16.5
+      },
+      "ULima": {
+        "articles": 1206,
+        "sjr_pct": {
+          "Q1": 20.1,
+          "Q2": 10.9,
+          "Q3": 8.0,
+          "Q4": 5.1,
+          "no quartile": 1.5,
+          "not in SJR": 54.4
+        },
+        "neither_sjr_nor_norway_pct": 53.3,
+        "not_in_sjr_in_scielo_pct": 11.3
+      }
+    },
+    "not_in_sjr_pct_by_year": {
+      "2021": 60.3,
+      "2022": 57.1,
+      "2023": 54.1,
+      "2024": 50.0
+    },
+    "norway_by_year": [
+      {
+        "year": "2015",
+        "articles": "5417",
+        "norway_1_or_2": "1499",
+        "norway_2": "299"
+      },
+      {
+        "year": "2016",
+        "articles": "6012",
+        "norway_1_or_2": "1738",
+        "norway_2": "290"
+      },
+      {
+        "year": "2017",
+        "articles": "6434",
+        "norway_1_or_2": "1906",
+        "norway_2": "312"
+      },
+      {
+        "year": "2018",
+        "articles": "7254",
+        "norway_1_or_2": "2170",
+        "norway_2": "345"
+      },
+      {
+        "year": "2019",
+        "articles": "9393",
+        "norway_1_or_2": "2459",
+        "norway_2": "376"
+      },
+      {
+        "year": "2020",
+        "articles": "11087",
+        "norway_1_or_2": "3207",
+        "norway_2": "429"
+      },
+      {
+        "year": "2021",
+        "articles": "13936",
+        "norway_1_or_2": "3675",
+        "norway_2": "478"
+      },
+      {
+        "year": "2022",
+        "articles": "14134",
+        "norway_1_or_2": "3943",
+        "norway_2": "430"
+      },
+      {
+        "year": "2023",
+        "articles": "14733",
+        "norway_1_or_2": "4275",
+        "norway_2": "483"
+      },
+      {
+        "year": "2024",
+        "articles": "15128",
+        "norway_1_or_2": "4937",
+        "norway_2": "468"
+      },
+      {
+        "year": "2025",
+        "articles": "16335",
+        "norway_1_or_2": "5393",
+        "norway_2": "601"
+      }
+    ]
+  },
   "leaders": {
     "SCImago Institutions Rankings": [
       "PUCP"

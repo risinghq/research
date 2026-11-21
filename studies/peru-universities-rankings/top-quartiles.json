@@ -1,0 +1,98 @@
+{
+ "kind": "bars",
+ "title": "Articles in top-quartile journals",
+ "subtitle": "Share in journals SJR ranks Q1 or Q2 in the article's year, 2021 to 2024; the 20 universities with most",
+ "source": "OpenAlex, fetched 2026-11-21 (CC0); SCImago Journal Rank",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Share in Q1 or Q2",
+   "points": [
+    {
+     "x": "UPCH",
+     "y": 51.3
+    },
+    {
+     "x": "Científica",
+     "y": 47.0
+    },
+    {
+     "x": "USIL",
+     "y": 45.3
+    },
+    {
+     "x": "PUCP",
+     "y": 42.9
+    },
+    {
+     "x": "UPC",
+     "y": 37.5
+    },
+    {
+     "x": "UNALM",
+     "y": 36.9
+    },
+    {
+     "x": "UNSA",
+     "y": 36.4
+    },
+    {
+     "x": "Continental",
+     "y": 35.4
+    },
+    {
+     "x": "ULima",
+     "y": 30.9
+    },
+    {
+     "x": "UPN",
+     "y": 30.4
+    },
+    {
+     "x": "UTP",
+     "y": 29.2
+    },
+    {
+     "x": "UPeU",
+     "y": 25.0
+    },
+    {
+     "x": "UNMSM",
+     "y": 21.3
+    },
+    {
+     "x": "USMP",
+     "y": 20.6
+    },
+    {
+     "x": "URP",
+     "y": 17.8
+    },
+    {
+     "x": "UNT",
+     "y": 15.7
+    },
+    {
+     "x": "UNSM",
+     "y": 14.8
+    },
+    {
+     "x": "UNFV",
+     "y": 14.5
+    },
+    {
+     "x": "UNA Puno",
+     "y": 13.8
+    },
+    {
+     "x": "UCV",
+     "y": 7.2
+    }
+   ]
+  }
+ ]
+}

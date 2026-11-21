@@ -13,6 +13,7 @@ import json
 import sys
 
 from collections import Counter, defaultdict
+from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -20,11 +21,15 @@ import figures
 
 
 if TYPE_CHECKING:
-    from collections.abc import Mapping, Sequence
+    from collections.abc import Callable, Mapping, Sequence
 
 OUT = Path(__file__).parent
 OPENALEX = "OpenAlex, fetched 2026-11-21 (CC0)"
 REGISTER = f"{OPENALEX}; SUNEDU register (ODC-BY)"
+SJR = f"{OPENALEX}; SCImago Journal Rank"
+# An article whose journal SJR does not list in the article's year, or whose
+# journal has no ISSN in OpenAlex.
+UNLISTED = "not in SJR"
 # Full journal names overflow the legend.
 JOURNALS = {
     "Ciencia Latina Revista Científica Multidisciplinar": "Ciencia Latina (Paraguay)",
@@ -68,6 +73,10 @@ def bars(
     return figures.chart(
         "bars", style, figures.Axis("category"), [{"label": series, "points": points}]
     )
+
+
+def group_of(university: Mapping[str, str]) -> str:
+    return "denied" if university["licence"] == "denied" else university["management"]
 
 
 def descending(values: Mapping[str, float]) -> dict[str, float]:
@@ -347,6 +356,127 @@ def followed_chart(
     )
 
 
+@dataclass(frozen=True)
+class Article:
+    year: str
+    universities: tuple[str, ...]
+    sjr: str
+    lists: frozenset[str]
+
+
+class Grades:
+    """Every 2021 to 2024 Peruvian article with the SJR quartile of its journal
+    in the article's year and the national lists OpenAlex records for it."""
+
+    def __init__(self, folder: Path) -> None:
+        quartile = {
+            (row["source"], row["year"]): row["quartile"]
+            for row in read_csv(folder / "sjr.csv")
+        }
+        lists = {
+            row["source"]: frozenset(row["lists"].split())
+            for row in read_csv(folder / "sources.csv")
+        }
+        self.articles = [
+            Article(
+                row["year"],
+                tuple(row["universities"].split()),
+                # SJR prints "-" for a journal it lists without a quartile.
+                quartile.get((row["source"], row["year"]), UNLISTED).replace(
+                    "-", "no quartile"
+                ),
+                lists.get(row["source"], frozenset()),
+            )
+            for row in read_csv(folder / "articles.csv")
+        ]
+
+    def of(self, code: str) -> list[Article]:
+        return [a for a in self.articles if code in a.universities]
+
+    def largest(self, n: int) -> list[str]:
+        counts = Counter(c for a in self.articles for c in a.universities)
+        return [code for code, _ in counts.most_common(n)]
+
+
+def top_quartiles(articles: Sequence[Article]) -> float:
+    return share(sum(a.sjr in {"Q1", "Q2"} for a in articles), len(articles))
+
+
+def unlisted(articles: Sequence[Article]) -> float:
+    return share(sum(a.sjr == UNLISTED for a in articles), len(articles))
+
+
+def grade_mix(articles: Sequence[Article]) -> dict[str, object]:
+    sjr = Counter(a.sjr for a in articles)
+    outside = [a for a in articles if a.sjr == UNLISTED]
+    ungraded = [a for a in outside if not {"norway-1", "norway-2"} & a.lists]
+    return {
+        "articles": len(articles),
+        "sjr_pct": {k: share(n, len(articles)) for k, n in sorted(sjr.items())},
+        "neither_sjr_nor_norway_pct": share(len(ungraded), len(articles)),
+        "not_in_sjr_in_scielo_pct": share(
+            sum("scielo" in a.lists for a in outside), len(outside)
+        ),
+    }
+
+
+def grades_summary(record: Record, grades: Grades) -> dict[str, object]:
+    def in_group(key: str) -> list[Article]:
+        return [
+            a
+            for a in grades.articles
+            if any(group_of(record.universities[c]) == key for c in a.universities)
+        ]
+
+    return {
+        "Peru": grade_mix(grades.articles),
+        "groups": {name: grade_mix(in_group(key)) for key, name in GROUPS.items()},
+        "universities": {
+            record.short(c): grade_mix(grades.of(c)) for c in grades.largest(SHOWN)
+        },
+        "not_in_sjr_pct_by_year": {
+            year: unlisted([a for a in grades.articles if a.year == year])
+            for year in sorted({a.year for a in grades.articles})
+        },
+    }
+
+
+def grade_chart(
+    record: Record,
+    grades: Grades,
+    measure: Callable[[Sequence[Article]], float],
+    style: figures.Style,
+    series: str,
+) -> dict[str, object]:
+    values = {record.short(c): measure(grades.of(c)) for c in grades.largest(SHOWN)}
+    return bars(style, descending(values), series)
+
+
+def graded_years_chart(rows: Sequence[Mapping[str, str]]) -> dict[str, object]:
+    columns = {"norway_1_or_2": "Level 1 or 2", "norway_2": "Level 2"}
+    return figures.chart(
+        "line",
+        figures.Style(
+            "Peruvian articles in graded journals",
+            "Share of journal articles with a Peruvian author, by the journal's "
+            "level in the Norwegian register as OpenAlex lists it today",
+            f"{OPENALEX}; Norwegian Register for Scientific Journals",
+            "%",
+        ),
+        figures.Axis("year"),
+        [
+            {
+                "label": label,
+                "points": [
+                    {"x": row["year"], "y": share(int(row[key]), int(row["articles"]))}
+                    for row in rows
+                ],
+            }
+            for key, label in columns.items()
+        ],
+    )
+
+
 def leaders(ranks: Sequence[Mapping[str, str]]) -> dict[str, list[str]]:
     """Each ranking's first place in Peru; a tie lists every university."""
     result: dict[str, list[str]] = {}
@@ -364,8 +494,7 @@ def summary(record: Record, groups: Sequence[Mapping[str, str]]) -> dict[str, ob
     by_lima: Counter[bool] = Counter()
     for code, row in out.items():
         u = unis[code]
-        group = "denied" if u["licence"] == "denied" else u["management"]
-        by_group[group] += row["core"]
+        by_group[group_of(u)] += row["core"]
         by_lima[u["department"] == "Lima"] += row["core"]
     year = {(row["group"], row["year"]): row for row in groups}
     return {
@@ -397,7 +526,36 @@ def run(out: Path) -> dict[str, object]:
     leiden = {row.pop("university"): row for row in read_csv(OUT / "leiden.csv")}
     staff = per_staff(record, read_csv(OUT / "staff.csv"))
     citing = citing_shares(record, read_csv(OUT / "citing.csv"))
+    grades = Grades(OUT)
+    by_year = read_csv(OUT / "grades-by-year.csv")
     charts = {
+        "top-quartiles": grade_chart(
+            record,
+            grades,
+            top_quartiles,
+            figures.Style(
+                "Articles in top-quartile journals",
+                f"Share in journals SJR ranks Q1 or Q2 in the article's year, "
+                f"{WINDOW}; the {SHOWN} universities with most",
+                SJR,
+                "%",
+            ),
+            "Share in Q1 or Q2",
+        ),
+        "not-in-sjr": grade_chart(
+            record,
+            grades,
+            unlisted,
+            figures.Style(
+                "Articles in journals SJR does not list",
+                f"Share in journals outside SJR in the article's year, {WINDOW}; "
+                f"the {SHOWN} universities with most",
+                SJR,
+                "%",
+            ),
+            "Share not in SJR",
+        ),
+        "graded-years": graded_years_chart(by_year),
         "concentration": concentration_chart(record),
         "growth": group_lines(groups, "core", "Articles a year in core journals"),
         "growth-all": group_lines(groups, "articles", "Journal articles a year"),
@@ -426,6 +584,7 @@ def run(out: Path) -> dict[str, object]:
         "core_per_staff": staff,
         "citing": citing,
         "leiden": {n: float(row["pp_top10"]) for n, row in leiden.items()},
+        "grades": grades_summary(record, grades) | {"norway_by_year": by_year},
         "leaders": leaders(read_csv(OUT / "ranks.csv")),
     }
     text = json.dumps(result, indent=2, ensure_ascii=False) + "\n"

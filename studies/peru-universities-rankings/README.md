@@ -29,6 +29,9 @@ every university in SUNEDU's register, from OpenAlex.
   set, and fill largely with Peruvian authors. A Spanish climatology journal
   published under ten articles a year until 2022 and 460 in 2023; 418 had a
   Peruvian author.
+- A quarter of Peru's 2021 to 2024 articles are in journals SJR ranks Q1 or
+  Q2, and more than half in journals it does not list. At Cayetano Heredia
+  half are in Q1 or Q2; at César Vallejo, 7%.
 - Per member of academic staff, Cayetano Heredia published 3.2 core articles
   in four years, nine times PUCP's 0.36 and twenty times César Vallejo's 0.16.
 
@@ -104,6 +107,44 @@ are on public management, law and education, not climate. Horizontes went
 from one Peruvian article in 2020 to 188 in 2023. The Retraction Watch
 Hijacked Journal Checker listed none of the three on 2026-11-21. This study
 does not judge the journals; it shows where the volume went.
+
+## Journal grades
+
+Core is one line drawn through the journals. Two public lists grade them
+more finely. SCImago Journal Rank (SJR) ranks the journals Scopus indexes
+within each field and splits each field into quartiles, Q1 the highest. The
+Norwegian Register for Scientific Journals marks journals level 1, which
+meets basic academic standards, or level 2, the leading fifth of a field;
+OpenAlex records which journals each list holds. Both grade the journal, not
+the article: a strong article can appear in a Q4 journal, and a journal
+outside both lists is ungraded, not rejected.
+
+![Articles in top-quartile journals](https://research.rising.sh/peru-universities-rankings/top-quartiles.svg)
+
+From 2021 to 2024, 24% of Peru's 57,931 journal articles appeared in Q1 or Q2
+journals in the year they were published, and 55% in journals SJR does not
+list. Among the twenty universities with most articles, the Q1 or Q2 share
+runs from 51% at Cayetano Heredia, 47% at Científica and 45% at San Ignacio
+de Loyola to 7% at César Vallejo and 14% at the Universidad Nacional del
+Altiplano. Private licensed universities placed 27% of their articles in Q1
+or Q2 and public ones 20%.
+
+![Articles in journals SJR does not list](https://research.rising.sh/peru-universities-rankings/not-in-sjr.svg)
+
+César Vallejo published 78% of its articles in journals SJR does not list,
+the Universidad Nacional de San Martín 70% and the Universidad Nacional de
+Trujillo 64%. At Científica it is 17% and at Cayetano
+Heredia 25%. Of Peru's articles outside SJR, 13% are in journals SciELO
+indexes, and 2% are in journals the Norwegian register grades; the rest have
+neither grade. The share outside SJR fell each year, from 60% in 2021 to 50%
+in 2024.
+
+![Peruvian articles in graded journals](https://research.rising.sh/peru-universities-rankings/graded-years.svg)
+
+Over the longer run, the share in journals the Norwegian register grades
+stayed between 26% and 33% from 2015 to 2025 while the articles tripled.
+The share at level 2 fell from 5.5% in 2015 to 3.1% in 2024: the leading
+journals took a smaller part of the growth.
 
 ## Size
 
@@ -205,6 +246,11 @@ which has no dated edition.
 - **Top 10%.** OpenAlex and Leiden differ in counting, field classification
   and publication set as well as in which citations count, so the gap has
   more than one cause.
+- **Grades.** SJR quartiles are matched by ISSN for the article's year; an
+  article in a journal without an ISSN in OpenAlex counts as outside SJR.
+  The Norwegian levels are the ones OpenAlex lists today, so a journal
+  downgraded since counts at its current level in every year. A journal's
+  best quartile is its best field; in its other fields it may rank lower.
 - **Staff.** THE's student and staff figures are the universities' own
   submissions, and universities count part-time staff differently.
 
@@ -246,6 +292,8 @@ which has no dated edition.
 | [`leiden.csv`](leiden.csv) | CWTS Leiden Ranking Open Edition 2026, CC0 |
 | [`ranks.csv`](ranks.csv) | Each ranking's own page |
 | `output.csv`, `groups.csv`, `journals.csv`, `journal-years.csv`, `venues.csv`, `citing.csv`, `articles-by-year.csv` | OpenAlex, CC0, fetched 2026-11-21 by [`openalex.py`](openalex.py) |
+| `articles.csv`, `sources.csv`, `grades-by-year.csv` | OpenAlex, CC0, fetched 2026-11-21 by `openalex.py --articles`: every 2021 to 2024 article with its journal, and each journal's ISSNs and lists |
+| [`sjr.csv`](sjr.csv) | [SCImago Journal Rank](https://www.scimagojr.com), from Scopus data: the best quartile, 2021 to 2024, of the journals in `sources.csv`, written by [`sjr.py`](sjr.py) |
 
 Times Higher Education data are used with THE's permission. QS World
 University Rankings data: Source: QS Quacquarelli Symonds
@@ -255,9 +303,16 @@ Symonds.
 [`peru_universities_rankings.py`](peru_universities_rankings.py) reads the
 files, writes every chart and [`numbers.json`](numbers.json), and reads no
 network. OpenAlex updates continuously, so a later fetch differs slightly.
+`openalex.py --articles` makes about 300 requests; a free OpenAlex API key in
+`OPENALEX_API_KEY` keeps both fetches inside one day's budget. SCImago's
+yearly lists sit behind a browser check: save each from
+`https://www.scimagojr.com/journalrank.php?out=xls&year=YEAR` as
+`sjr-YEAR.csv` in one folder and pass the folder to `sjr.py`.
 
 ```bash
 mise run install
 uv run studies/peru-universities-rankings/openalex.py
+uv run studies/peru-universities-rankings/openalex.py --articles
+uv run studies/peru-universities-rankings/sjr.py FOLDER
 uv run studies/peru-universities-rankings/peru_universities_rankings.py
 ```
