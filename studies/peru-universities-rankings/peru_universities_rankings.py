@@ -191,26 +191,15 @@ def ranking_chart(
     )
 
 
-def output_chart(table: Mapping[str, Mapping[str, float]]) -> dict[str, object]:
-    points = [
-        {
-            "x": row["articles"],
-            "y": round(100 * row["core"] / row["articles"], 1),
-            "name": name,
-        }
-        for name, row in table.items()
-    ]
-    return figures.chart(
-        "scatter",
-        figures.Style(
-            "Articles and the share of them in core journals",
-            "Journal articles 2021 to 2024 with an author at the university",
-            OPENALEX_SOURCE,
-            "%",
-            0,
-        ),
-        figures.Axis("number", label="Articles", decimals=0),
-        [{"label": "Universities", "points": points}],
+def core_chart(table: Mapping[str, Mapping[str, float]]) -> dict[str, object]:
+    values = {name: share(row["core"], row["articles"]) for name, row in table.items()}
+    return bars(
+        "Articles in core journals",
+        "Share of each university's 2021 to 2024 journal articles",
+        OPENALEX_SOURCE,
+        dict(sorted(values.items(), key=lambda kv: -kv[1])),
+        unit="%",
+        label="Share of articles",
     )
 
 
@@ -322,7 +311,7 @@ def run(out: Path) -> dict[str, object]:
     yearly = read_csv(OUT / "articles-by-year.csv")
     now = count(ranks, list(posted))
     charts = {m.key: ranking_chart(m, now, posted) for m in MEASURES} | {
-        "output": output_chart(openalex),
+        "core-share": core_chart(openalex),
         "top10": top10_chart(openalex, leiden),
         "citing": citing_chart(citing),
         "articles": yearly_chart(

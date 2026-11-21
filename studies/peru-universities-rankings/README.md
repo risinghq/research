@@ -63,7 +63,7 @@ has the larger share of them among the world's 10% most cited, 7.7% against
 
 ## Volume and where it is published
 
-![Articles and the share of them in core journals](https://research.rising.sh/peru-universities-rankings/output.svg)
+![Articles in core journals](https://research.rising.sh/peru-universities-rankings/core-share.svg)
 
 From 2021 to 2024, San Marcos and César Vallejo each published more than 7,400
 articles, almost twice PUCP's 3,881 and more than twice Cayetano Heredia's
