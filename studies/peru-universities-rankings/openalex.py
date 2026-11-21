@@ -352,6 +352,26 @@ def by_year(
     return rows
 
 
+def grades_by_year(client: OpenAlex) -> list[dict[str, object]]:
+    """Peruvian articles a year, and those in journals at level 1 or 2 and at
+    level 2 of the Norwegian register, as OpenAlex lists the journals today."""
+    span = f"{YEARS[0]}-{YEARS[-1]}"
+    base = f"{PERU},type:article,publication_year:{span}"
+    listed = ",primary_location.source.listed_in:"
+    every = client.groups(base, "publication_year")
+    level1 = client.groups(base + listed + "norway-1|norway-2", "publication_year")
+    level2 = client.groups(base + listed + "norway-2", "publication_year")
+    return [
+        {
+            "year": year,
+            "articles": every.get(str(year), 0),
+            "norway_1_or_2": level1.get(str(year), 0),
+            "norway_2": level2.get(str(year), 0),
+        }
+        for year in YEARS
+    ]
+
+
 def largest(
     universities: Sequence[Mapping[str, str]],
     counts: Sequence[Mapping[str, object]],
@@ -381,6 +401,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     client = OpenAlex()
     try:
         if args.articles:
+            write(args.out / "grades-by-year.csv", grades_by_year(client))
             works, sources = every_article(client, universities)
             write(args.out / "articles.csv", works)
             write(args.out / "sources.csv", sources)
