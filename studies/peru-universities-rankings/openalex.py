@@ -3,13 +3,15 @@
 `articles-by-year.csv`.
 
 OpenAlex works are CC0. Without an API key the requests share a daily budget
-of 1,000 calls per address; a full fetch makes about 280. OpenAlex
+of 1,000 calls per address; a full fetch makes about 280 and `--articles`
+about 300. A free key in `OPENALEX_API_KEY` raises the budget to 10,000. OpenAlex
 updates continuously, so a later fetch gives slightly different counts.
 """
 
 import argparse
 import calendar
 import csv
+import os
 import sys
 
 from pathlib import Path
@@ -47,7 +49,13 @@ MEASURES = {
 
 class OpenAlex:
     def __init__(self, *, transport: httpx2.BaseTransport | None = None) -> None:
-        self._http = httpx2.Client(base_url=BASE_URL, timeout=60, transport=transport)
+        key = os.environ.get("OPENALEX_API_KEY")
+        self._http = httpx2.Client(
+            base_url=BASE_URL,
+            timeout=60,
+            transport=transport,
+            params={"api_key": key} if key else None,
+        )
 
     def close(self) -> None:
         self._http.close()

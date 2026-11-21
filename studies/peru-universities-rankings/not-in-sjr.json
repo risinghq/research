@@ -1,0 +1,98 @@
+{
+ "kind": "bars",
+ "title": "Articles in journals SJR does not list",
+ "subtitle": "Share in journals outside SJR in the article's year, 2021 to 2024; the 20 universities with most",
+ "source": "OpenAlex, fetched 2026-11-21 (CC0); SCImago Journal Rank",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Share not in SJR",
+   "points": [
+    {
+     "x": "UCV",
+     "y": 77.9
+    },
+    {
+     "x": "UNSM",
+     "y": 69.8
+    },
+    {
+     "x": "UNT",
+     "y": 64.0
+    },
+    {
+     "x": "UNA Puno",
+     "y": 62.0
+    },
+    {
+     "x": "UNFV",
+     "y": 61.2
+    },
+    {
+     "x": "UNMSM",
+     "y": 55.5
+    },
+    {
+     "x": "ULima",
+     "y": 54.4
+    },
+    {
+     "x": "UPeU",
+     "y": 53.6
+    },
+    {
+     "x": "USMP",
+     "y": 52.7
+    },
+    {
+     "x": "URP",
+     "y": 49.8
+    },
+    {
+     "x": "PUCP",
+     "y": 41.3
+    },
+    {
+     "x": "UNALM",
+     "y": 38.7
+    },
+    {
+     "x": "UNSA",
+     "y": 32.3
+    },
+    {
+     "x": "UPC",
+     "y": 32.1
+    },
+    {
+     "x": "UTP",
+     "y": 31.1
+    },
+    {
+     "x": "UPN",
+     "y": 29.6
+    },
+    {
+     "x": "USIL",
+     "y": 28.7
+    },
+    {
+     "x": "Continental",
+     "y": 26.7
+    },
+    {
+     "x": "UPCH",
+     "y": 24.5
+    },
+    {
+     "x": "Científica",
+     "y": 17.3
+    }
+   ]
+  }
+ ]
+}
