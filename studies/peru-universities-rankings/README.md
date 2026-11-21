@@ -93,11 +93,11 @@ the twenty. At PUCP the five most-used journals hold 6%.
 The three journals with most Peruvian articles from 2021 to 2024 are none of
 Peru's own:
 
-| Journal | Based in | Peruvian articles | All articles | Core |
-| ------- | -------- | ----------------- | ------------ | ---- |
-| Ciencia Latina Revista Científica Multidisciplinar | Paraguay | 1,788 | 10,143 | No |
-| Revista de Climatología | Spain | 628 | 682 | No |
-| Horizontes Revista de Investigación en Ciencias de la Educación | Bolivia | 585 | 697 | No |
+| Journal | Based in | Peruvian articles | All articles | Core | In SJR or the Norwegian register |
+| ------- | -------- | ----------------- | ------------ | ---- | -------------------------------- |
+| Ciencia Latina Revista Científica Multidisciplinar | Paraguay | 1,788 | 10,143 | No | No |
+| Revista de Climatología | Spain | 628 | 682 | No | No |
+| Horizontes Revista de Investigación en Ciencias de la Educación | Bolivia | 585 | 697 | No | No; in SciELO |
 
 Revista de Climatología published one article in 2020 and none in 2021 or
 2022. In 2023 it published 460, and 418 had a Peruvian author. OpenAlex
