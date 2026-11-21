@@ -8,6 +8,7 @@ updates continuously, so a later fetch gives slightly different counts.
 """
 
 import argparse
+import calendar
 import csv
 import sys
 
@@ -18,7 +19,7 @@ import httpx2
 
 
 if TYPE_CHECKING:
-    from collections.abc import Mapping, Sequence
+    from collections.abc import Iterator, Mapping, Sequence
 
 OUT = Path(__file__).parent
 BASE_URL = "https://api.openalex.org"
@@ -26,6 +27,7 @@ WINDOW = "2021-2024"
 # OpenAlex dates about a thousand back-issue articles of UNMSM's own journals
 # to 2014, which makes that year twice its neighbours for Peru as a whole.
 YEARS = range(2015, 2026)
+MONTHS = [(year, month) for year in range(2021, 2025) for month in range(1, 13)]
 CORE = ",primary_location.source.is_core:true"
 PERU = "authorships.institutions.country_code:PE"
 # `cites:` takes at most 100 ids, so each sample is one request.
@@ -75,6 +77,26 @@ class OpenAlex:
             "/works", filter=filters, sample=size, seed=seed, per_page=size, select="id"
         )
         return [w["id"].rsplit("/", 1)[-1] for w in body["results"]]
+
+    def pages(self, filters: str, select: str) -> Iterator[dict[str, Any]]:
+        """Every work that matches, 200 a request. Cursor paging needs an API
+        key, and numbered pages stop at 10,000 results, so a filter must match
+        fewer. Numbered pages under a shared sort can repeat a work at a page
+        boundary; the caller drops repeats."""
+        page = 1
+        while True:
+            body = self.get(
+                "/works",
+                filter=filters,
+                select=select,
+                per_page=200,
+                page=page,
+                sort="publication_date",
+            )
+            yield from body["results"]
+            if page * 200 >= body["meta"]["count"]:
+                return
+            page += 1
 
     def source(self, source: str) -> dict[str, Any]:
         return self.get(
@@ -250,6 +272,66 @@ def citing(
     return rows
 
 
+def every_article(
+    client: OpenAlex,
+    universities: Sequence[Mapping[str, str]],
+    months: Sequence[tuple[int, int]] = MONTHS,
+) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    """Every 2021 to 2024 Peruvian article with its journal and the register's
+    universities that sign it, and each journal with its ISSNs and the national
+    lists OpenAlex records for it. Fetched a month at a time to stay under the
+    10,000-result limit of numbered pages."""
+    codes = {u["openalex"]: u["code"] for u in universities}
+    works: dict[str, dict[str, object]] = {}
+    sources: dict[str, dict[str, object]] = {}
+    for year, month in months:
+        last = calendar.monthrange(year, month)[1]
+        filters = (
+            f"{PERU},type:article,from_publication_date:{year}-{month:02}-01,"
+            f"to_publication_date:{year}-{month:02}-{last}"
+        )
+        for work in client.pages(
+            filters, "id,publication_year,primary_location,authorships"
+        ):
+            article, source = describe(work, codes)
+            works[str(article["work"])] = article
+            if source and source["source"] not in sources:
+                sources[str(source["source"])] = source
+    return list(works.values()), sorted(
+        sources.values(), key=lambda s: str(s["source"])
+    )
+
+
+def describe(
+    work: Mapping[str, Any], codes: Mapping[str, str]
+) -> tuple[dict[str, object], dict[str, object] | None]:
+    """One article's row, and its journal's row when it has a journal."""
+    source = (work.get("primary_location") or {}).get("source") or {}
+    key = str(source.get("id") or "").rsplit("/", 1)[-1]
+    signed = {
+        codes[short]
+        for a in work["authorships"]
+        for i in a["institutions"]
+        for short in (s.rsplit("/", 1)[-1] for s in i.get("lineage") or [])
+        if short in codes
+    }
+    article: dict[str, object] = {
+        "work": work["id"].rsplit("/", 1)[-1],
+        "year": work["publication_year"],
+        "source": key,
+        "universities": " ".join(sorted(signed)),
+    }
+    if not key:
+        return article, None
+    return article, {
+        "source": key,
+        "journal": source.get("display_name") or "",
+        "type": source.get("type") or "",
+        "issn": " ".join(source.get("issn") or []),
+        "lists": " ".join(sorted(source.get("listed_in") or [])),
+    }
+
+
 def by_year(
     client: OpenAlex, universities: Sequence[Mapping[str, str]]
 ) -> list[dict[str, object]]:
@@ -289,10 +371,20 @@ def write(path: Path, rows: Sequence[Mapping[str, object]]) -> None:
 def main(argv: Sequence[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Fetch the study's OpenAlex counts.")
     parser.add_argument("--out", type=Path, default=OUT)
+    parser.add_argument(
+        "--articles",
+        action="store_true",
+        help="fetch only every 2021 to 2024 article and its journal (~300 calls)",
+    )
     args = parser.parse_args(argv)
     universities = read_universities(OUT / "universities.csv")
     client = OpenAlex()
     try:
+        if args.articles:
+            works, sources = every_article(client, universities)
+            write(args.out / "articles.csv", works)
+            write(args.out / "sources.csv", sources)
+            return
         counts = output(client, universities)
         write(args.out / "output.csv", counts)
         write(args.out / "groups.csv", groups(client, universities))
