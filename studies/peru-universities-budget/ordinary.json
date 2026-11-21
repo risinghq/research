@@ -1,0 +1,78 @@
+{
+ "kind": "columns",
+ "title": "Public universities' opening budget from ordinary resources",
+ "subtitle": "Opening budget (PIA) funded by the Treasury, all public universities, current soles",
+ "source": "MEF, Datos Abiertos: Comparación de Presupuesto y Ejecución de Gasto",
+ "unit": "million soles",
+ "decimals": 0,
+ "x": {
+  "kind": "period"
+ },
+ "series": [
+  {
+   "label": "Ordinary resources",
+   "points": [
+    {
+     "x": "2012",
+     "y": 1731.86
+    },
+    {
+     "x": "2013",
+     "y": 1987.69
+    },
+    {
+     "x": "2014",
+     "y": 2154.92
+    },
+    {
+     "x": "2015",
+     "y": 2308.53
+    },
+    {
+     "x": "2016",
+     "y": 2270.44
+    },
+    {
+     "x": "2017",
+     "y": 2323.07
+    },
+    {
+     "x": "2018",
+     "y": 2488.78
+    },
+    {
+     "x": "2019",
+     "y": 2980.51
+    },
+    {
+     "x": "2020",
+     "y": 3040.76
+    },
+    {
+     "x": "2021",
+     "y": 2898.59
+    },
+    {
+     "x": "2022",
+     "y": 3400.83
+    },
+    {
+     "x": "2023",
+     "y": 4009.33
+    },
+    {
+     "x": "2024",
+     "y": 5096.45
+    },
+    {
+     "x": "2025",
+     "y": 4997.07
+    },
+    {
+     "x": "2026",
+     "y": 4699.17
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,497 @@
+{
+  "latest_month": "2026-11",
+  "universities": 65,
+  "unmsm": {
+    "2012": {
+      "pia": 360598804,
+      "pim": 379574760,
+      "certificado": 354225917,
+      "devengado": 353853438
+    },
+    "2013": {
+      "pia": 400071239,
+      "pim": 420792632,
+      "certificado": 361286551,
+      "devengado": 360559745
+    },
+    "2014": {
+      "pia": 413466261,
+      "pim": 473658507,
+      "certificado": 412659861,
+      "devengado": 411946104
+    },
+    "2015": {
+      "pia": 447391382,
+      "pim": 500126952,
+      "certificado": 437055383,
+      "devengado": 436453186
+    },
+    "2016": {
+      "pia": 439776170,
+      "pim": 490801776,
+      "certificado": 452154792,
+      "devengado": 418590170
+    },
+    "2017": {
+      "pia": 443495815,
+      "pim": 530418392,
+      "certificado": 500984307,
+      "devengado": 476408145
+    },
+    "2018": {
+      "pia": 485049546,
+      "pim": 525443242,
+      "certificado": 487298137,
+      "devengado": 484924439
+    },
+    "2019": {
+      "pia": 520748800,
+      "pim": 517923856,
+      "certificado": 495117727,
+      "devengado": 488555299
+    },
+    "2020": {
+      "pia": 518021550,
+      "pim": 575296480,
+      "certificado": 474287418,
+      "devengado": 463369948
+    },
+    "2021": {
+      "pia": 519446083,
+      "pim": 557814540,
+      "certificado": 478151358,
+      "devengado": 471957797
+    },
+    "2022": {
+      "pia": 496278125,
+      "pim": 582853302,
+      "certificado": 528562570,
+      "devengado": 516345395
+    },
+    "2023": {
+      "pia": 516551248,
+      "pim": 600020309,
+      "certificado": 561144818,
+      "devengado": 559268157
+    },
+    "2024": {
+      "pia": 633495401,
+      "pim": 749560632,
+      "certificado": 707930792,
+      "devengado": 700403588
+    },
+    "2025": {
+      "pia": 671264055,
+      "pim": 757078825,
+      "certificado": 718941639,
+      "devengado": 716799600
+    },
+    "2026": {
+      "pia": 677749157,
+      "pim": 745682068,
+      "certificado": 700405262,
+      "devengado": 582216702
+    }
+  },
+  "unmsm_against_communique": {
+    "total": {
+      "communique": 17296489,
+      "mef_pia": -6485102
+    },
+    "goods_and_services": {
+      "communique": 13484620,
+      "mef_pia": 13484620
+    },
+    "capital": {
+      "communique": 3811869,
+      "mef_pia": 3811869
+    }
+  },
+  "ordinary_pia_all": {
+    "2012": 1731859405,
+    "2013": 1987688536,
+    "2014": 2154923048,
+    "2015": 2308533847,
+    "2016": 2270444957,
+    "2017": 2323070000,
+    "2018": 2488780313,
+    "2019": 2980507897,
+    "2020": 3040762435,
+    "2021": 2898591705,
+    "2022": 3400831677,
+    "2023": 4009327160,
+    "2024": 5096451569,
+    "2025": 4997072184,
+    "2026": 4699167815
+  },
+  "ordinary_pia_cut_vs_rectors": {
+    "rectors": 288000000,
+    "mef_pia": 297904369
+  },
+  "all_execution_pct": {
+    "2012": 70.1,
+    "2013": 67.6,
+    "2014": 72.4,
+    "2015": 73.0,
+    "2016": 75.4,
+    "2017": 81.0,
+    "2018": 83.4,
+    "2019": 82.0,
+    "2020": 77.0,
+    "2021": 80.8,
+    "2022": 85.2,
+    "2023": 83.7,
+    "2024": 87.1,
+    "2025": 90.1
+  },
+  "all_capital_execution_pct": {
+    "2012": 30.1,
+    "2013": 33.5,
+    "2014": 46.4,
+    "2015": 45.3,
+    "2016": 46.4,
+    "2017": 58.1,
+    "2018": 62.5,
+    "2019": 61.5,
+    "2020": 58.6,
+    "2021": 65.4,
+    "2022": 63.3,
+    "2023": 59.2,
+    "2024": 72.2,
+    "2025": 75.1
+  },
+  "execution_pct": {
+    "UN Mayor de San Marcos": 94.7,
+    "UN de San Agustin": 94.6,
+    "UN de San Antonio Abad del Cusco": 81.6,
+    "UN de Ingenieria": 91.3,
+    "UN del Altiplano": 97.1,
+    "UN de Trujillo": 92.1,
+    "UN Federico Villarreal": 85.6,
+    "UN de Piura": 95.9,
+    "UN San Luis Gonzaga de Ica": 97.8,
+    "UN Agraria la Molina": 93.3,
+    "UN de Educacion Enrique Guzman y Valle": 88.0,
+    "UN Pedro Ruiz Gallo": 89.6,
+    "UN Jorge Basadre Grohmann": 76.7,
+    "UN del Centro del Peru": 97.5,
+    "UN San Cristobal de Huamanga": 86.3,
+    "UN Santiago Antunez de Mayolo": 77.2,
+    "UN Toribio Rodriguez de Mendoza de Amazonas": 99.9,
+    "UN de Cajamarca": 94.8,
+    "UN del Callao": 89.0,
+    "UN de la Amazonia Peruana": 93.6,
+    "UN Jose Faustino Sanchez Carrion": 95.1,
+    "UN Hermilio Valdizan": 100.0,
+    "UN Daniel Alcides Carrion": 93.8,
+    "UN de Tumbes": 93.8,
+    "UN de Huancavelica": 93.4,
+    "UN del Santa": 80.5,
+    "UN Agraria de la Selva": 99.1,
+    "UN de San Martin": 86.2,
+    "UN Intercultural de Quillabamba": 51.7,
+    "UN Micaela Bastidas de Apurimac": 92.6,
+    "UN de Frontera": 97.2,
+    "UN de Moquegua": 79.7,
+    "UN de Jaen": 92.1,
+    "UN de Ucayali": 93.2,
+    "UN Autonoma de Tayacaja Daniel Hernandez Morillo": 48.7,
+    "UN Jose Maria Arguedas": 92.0,
+    "UN Amazonica de Madre de Dios": 97.8,
+    "UN de Barranca": 96.4,
+    "UN Autónoma Altoandina de Tarma": 93.9,
+    "UN de Cañete": 65.8,
+    "UN de Juliaca": 94.7,
+    "UN de Arte Diego Quispe Tito del Cusco": 38.2,
+    "UN Intercultural de la Selva Central Juan Santos Atahualpa": 78.9,
+    "UN Intercultural de la Amazonia": 92.5,
+    "UN Autonoma de Chota": 91.7,
+    "UN Tecnologica de Lima Sur": 97.8,
+    "UN Autonoma de Alto Amazonas": 77.4,
+    "UN Intercultural Fabiola Salazar Leguia de Bagua": 92.5,
+    "UN Autónoma de Huanta": 92.5,
+    "UN de Música": 96.1,
+    "UN Ciro Alegria": 63.3,
+    "UN Daniel Alomia Robles": 99.1,
+    "UN Tecnologica de San Juan de Lurigancho": 96.9,
+    "UN Tecnologica de Frontera San Ignacio de Loyola": 100.0,
+    "UN de Cutervo": 87.2,
+    "UN del Vraem": 100.0,
+    "UN Autonoma del Distrito de San Marcos": 98.1,
+    "UN Autonoma de Chupaca": 78.9,
+    "UN de Sechura": 81.6,
+    "UN Tecnologica de Chincha": 75.4,
+    "UN Fronteriza Autonoma de Yunguyo": 94.5,
+    "UN de Carabaya": 99.1,
+    "UN Intercultural Aimara de Ilave": 90.1,
+    "UN de Desaguadero": 99.5,
+    "UN de Huancabamba": 87.4
+  },
+  "capital_execution_pct": {
+    "UN de San Antonio Abad del Cusco": {
+      "pim": 139939128,
+      "pct": 56.4
+    },
+    "UN Mayor de San Marcos": {
+      "pim": 98962644,
+      "pct": 76.7
+    },
+    "UN Toribio Rodriguez de Mendoza de Amazonas": {
+      "pim": 97403983,
+      "pct": 100.0
+    },
+    "UN de San Agustin": {
+      "pim": 95224518,
+      "pct": 77.0
+    },
+    "UN Agraria la Molina": {
+      "pim": 92309437,
+      "pct": 90.5
+    },
+    "UN del Altiplano": {
+      "pim": 78910762,
+      "pct": 98.9
+    },
+    "UN Santiago Antunez de Mayolo": {
+      "pim": 76117176,
+      "pct": 58.7
+    },
+    "UN Jorge Basadre Grohmann": {
+      "pim": 74804595,
+      "pct": 44.9
+    },
+    "UN de Ingenieria": {
+      "pim": 70088213,
+      "pct": 66.2
+    },
+    "UN Intercultural de Quillabamba": {
+      "pim": 70021109,
+      "pct": 44.9
+    },
+    "UN San Cristobal de Huamanga": {
+      "pim": 54845933,
+      "pct": 65.5
+    },
+    "UN Pedro Ruiz Gallo": {
+      "pim": 53809031,
+      "pct": 75.3
+    },
+    "UN del Santa": {
+      "pim": 52372611,
+      "pct": 71.6
+    },
+    "UN de Piura": {
+      "pim": 51679841,
+      "pct": 90.5
+    },
+    "UN Autonoma de Tayacaja Daniel Hernandez Morillo": {
+      "pim": 50329738,
+      "pct": 32.7
+    },
+    "UN San Luis Gonzaga de Ica": {
+      "pim": 47440613,
+      "pct": 96.7
+    },
+    "UN Micaela Bastidas de Apurimac": {
+      "pim": 46926452,
+      "pct": 87.0
+    },
+    "UN de Moquegua": {
+      "pim": 46570434,
+      "pct": 68.3
+    },
+    "UN de Jaen": {
+      "pim": 45167248,
+      "pct": 96.6
+    },
+    "UN de Frontera": {
+      "pim": 43287834,
+      "pct": 96.2
+    },
+    "UN Agraria de la Selva": {
+      "pim": 40795639,
+      "pct": 99.2
+    },
+    "UN Autónoma Altoandina de Tarma": {
+      "pim": 40327813,
+      "pct": 97.1
+    },
+    "UN de Cajamarca": {
+      "pim": 33186336,
+      "pct": 76.0
+    },
+    "UN Hermilio Valdizan": {
+      "pim": 32905918,
+      "pct": 100.0
+    },
+    "UN de Trujillo": {
+      "pim": 32903051,
+      "pct": 72.3
+    },
+    "UN Jose Maria Arguedas": {
+      "pim": 31221859,
+      "pct": 93.6
+    },
+    "UN de Huancavelica": {
+      "pim": 30719572,
+      "pct": 94.1
+    },
+    "UN de Educacion Enrique Guzman y Valle": {
+      "pim": 29932474,
+      "pct": 75.2
+    },
+    "UN de Arte Diego Quispe Tito del Cusco": {
+      "pim": 29817517,
+      "pct": 4.2
+    },
+    "UN Jose Faustino Sanchez Carrion": {
+      "pim": 29018000,
+      "pct": 91.8
+    },
+    "UN de Barranca": {
+      "pim": 27330775,
+      "pct": 96.0
+    },
+    "UN Daniel Alcides Carrion": {
+      "pim": 27009555,
+      "pct": 75.8
+    },
+    "UN de Tumbes": {
+      "pim": 25694831,
+      "pct": 84.6
+    },
+    "UN Federico Villarreal": {
+      "pim": 25539196,
+      "pct": 44.7
+    },
+    "UN de Cañete": {
+      "pim": 24609736,
+      "pct": 30.9
+    },
+    "UN Amazonica de Madre de Dios": {
+      "pim": 24170289,
+      "pct": 96.3
+    },
+    "UN del Callao": {
+      "pim": 22814374,
+      "pct": 95.0
+    },
+    "UN del Centro del Peru": {
+      "pim": 20290758,
+      "pct": 82.5
+    },
+    "UN de Juliaca": {
+      "pim": 18675881,
+      "pct": 91.7
+    },
+    "UN Intercultural de la Amazonia": {
+      "pim": 17261111,
+      "pct": 81.8
+    },
+    "UN Intercultural de la Selva Central Juan Santos Atahualpa": {
+      "pim": 17019401,
+      "pct": 64.1
+    },
+    "UN de San Martin": {
+      "pim": 16733950,
+      "pct": 51.4
+    },
+    "UN Autonoma de Chota": {
+      "pim": 15988707,
+      "pct": 84.8
+    },
+    "UN de Ucayali": {
+      "pim": 15526877,
+      "pct": 73.2
+    },
+    "UN de la Amazonia Peruana": {
+      "pim": 15160416,
+      "pct": 50.6
+    },
+    "UN Autónoma de Huanta": {
+      "pim": 14125269,
+      "pct": 87.2
+    },
+    "UN Autonoma de Alto Amazonas": {
+      "pim": 13580389,
+      "pct": 61.7
+    },
+    "UN Ciro Alegria": {
+      "pim": 9901210,
+      "pct": 21.7
+    },
+    "UN Intercultural Fabiola Salazar Leguia de Bagua": {
+      "pim": 9519661,
+      "pct": 77.1
+    },
+    "UN Tecnologica de Lima Sur": {
+      "pim": 8166812,
+      "pct": 93.5
+    },
+    "UN de Música": {
+      "pim": 1984689,
+      "pct": 89.9
+    },
+    "UN Tecnologica de San Juan de Lurigancho": {
+      "pim": 979142,
+      "pct": 91.7
+    },
+    "UN Tecnologica de Frontera San Ignacio de Loyola": {
+      "pim": 629577,
+      "pct": 100.0
+    },
+    "UN Daniel Alomia Robles": {
+      "pim": 583120,
+      "pct": 91.8
+    },
+    "UN de Cutervo": {
+      "pim": 261705,
+      "pct": 99.7
+    },
+    "UN de Carabaya": {
+      "pim": 242964,
+      "pct": 99.1
+    },
+    "UN Fronteriza Autonoma de Yunguyo": {
+      "pim": 228701,
+      "pct": 99.9
+    },
+    "UN Autonoma del Distrito de San Marcos": {
+      "pim": 191903,
+      "pct": 100.0
+    },
+    "UN del Vraem": {
+      "pim": 190627,
+      "pct": 100.0
+    },
+    "UN de Sechura": {
+      "pim": 176223,
+      "pct": 100.0
+    },
+    "UN Autonoma de Chupaca": {
+      "pim": 128499,
+      "pct": 100.0
+    },
+    "UN Tecnologica de Chincha": {
+      "pim": 115433,
+      "pct": 100.0
+    },
+    "UN Intercultural Aimara de Ilave": {
+      "pim": 113327,
+      "pct": 98.8
+    },
+    "UN de Desaguadero": {
+      "pim": 86681,
+      "pct": 99.6
+    }
+  },
+  "daily_against_zip_devengado": {
+    "daily": 6967055836,
+    "zip": 6967056652
+  },
+  "unmsm_pace_through": "Oct",
+  "unmsm_pace_pct": {
+    "2025": 72.7,
+    "2026": 72.6
+  }
+}

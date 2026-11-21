@@ -1,0 +1,98 @@
+{
+ "kind": "bars",
+ "title": "How much of their 2025 budget universities spent",
+ "subtitle": "Spending accrued in 2025 as a share of the budget after the year's changes; the 20 public universities with the largest",
+ "source": "MEF, Datos Abiertos: Comparación de Presupuesto y Ejecución de Gasto",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Share spent",
+   "points": [
+    {
+     "x": "UN Toribio Rodriguez de Mendoza de Amazonas",
+     "y": 99.9
+    },
+    {
+     "x": "UN San Luis Gonzaga de Ica",
+     "y": 97.8
+    },
+    {
+     "x": "UN del Centro del Peru",
+     "y": 97.5
+    },
+    {
+     "x": "UN del Altiplano",
+     "y": 97.1
+    },
+    {
+     "x": "UN de Piura",
+     "y": 95.9
+    },
+    {
+     "x": "UN de Cajamarca",
+     "y": 94.8
+    },
+    {
+     "x": "UN Mayor de San Marcos",
+     "y": 94.7
+    },
+    {
+     "x": "UN de San Agustin",
+     "y": 94.6
+    },
+    {
+     "x": "UN de la Amazonia Peruana",
+     "y": 93.6
+    },
+    {
+     "x": "UN Agraria la Molina",
+     "y": 93.3
+    },
+    {
+     "x": "UN de Trujillo",
+     "y": 92.1
+    },
+    {
+     "x": "UN de Ingenieria",
+     "y": 91.3
+    },
+    {
+     "x": "UN Pedro Ruiz Gallo",
+     "y": 89.6
+    },
+    {
+     "x": "UN del Callao",
+     "y": 89.0
+    },
+    {
+     "x": "UN de Educacion Enrique Guzman y Valle",
+     "y": 88.0
+    },
+    {
+     "x": "UN San Cristobal de Huamanga",
+     "y": 86.3
+    },
+    {
+     "x": "UN Federico Villarreal",
+     "y": 85.6
+    },
+    {
+     "x": "UN de San Antonio Abad del Cusco",
+     "y": 81.6
+    },
+    {
+     "x": "UN Santiago Antunez de Mayolo",
+     "y": 77.2
+    },
+    {
+     "x": "UN Jorge Basadre Grohmann",
+     "y": 76.7
+    }
+   ]
+  }
+ ]
+}
