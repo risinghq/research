@@ -1,0 +1,74 @@
+{
+ "kind": "columns",
+ "title": "How much of their canon universities spend",
+ "subtitle": "Canon and royalty spending accrued as a share of the budget after the year's changes, all public universities",
+ "source": "MEF, Datos Abiertos: Comparación de Presupuesto y Ejecución de Gasto",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "period"
+ },
+ "series": [
+  {
+   "label": "Share spent",
+   "points": [
+    {
+     "x": "2012",
+     "y": 13.0
+    },
+    {
+     "x": "2013",
+     "y": 20.5
+    },
+    {
+     "x": "2014",
+     "y": 28.1
+    },
+    {
+     "x": "2015",
+     "y": 28.7
+    },
+    {
+     "x": "2016",
+     "y": 35.9
+    },
+    {
+     "x": "2017",
+     "y": 48.9
+    },
+    {
+     "x": "2018",
+     "y": 46.0
+    },
+    {
+     "x": "2019",
+     "y": 61.4
+    },
+    {
+     "x": "2020",
+     "y": 50.8
+    },
+    {
+     "x": "2021",
+     "y": 58.9
+    },
+    {
+     "x": "2022",
+     "y": 53.7
+    },
+    {
+     "x": "2023",
+     "y": 42.8
+    },
+    {
+     "x": "2024",
+     "y": 58.5
+    },
+    {
+     "x": "2025",
+     "y": 66.2
+    }
+   ]
+  }
+ ]
+}

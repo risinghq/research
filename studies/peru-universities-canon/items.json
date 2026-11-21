@@ -1,0 +1,58 @@
+{
+ "kind": "bars",
+ "title": "What universities buy with their canon",
+ "subtitle": "Canon and royalty spending accrued in 2012-2025 by spending item, all public universities, current soles",
+ "source": "MEF, Datos Abiertos: Comparación de Presupuesto y Ejecución de Gasto",
+ "unit": "million soles",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Spent",
+   "points": [
+    {
+     "x": "Edificios o unidades no residenciales",
+     "y": 2122.21
+    },
+    {
+     "x": "Adquisicion de maquinarias, equipo y mobiliario",
+     "y": 1006.19
+    },
+    {
+     "x": "Servicio de mantenimiento, acondicionamiento y  reparaciones",
+     "y": 352.16
+    },
+    {
+     "x": "Servicios profesionales y tecnicos",
+     "y": 281.28
+    },
+    {
+     "x": "Otros gastos de activos no financieros",
+     "y": 272.079
+    },
+    {
+     "x": "Otras estructuras",
+     "y": 181.344
+    },
+    {
+     "x": "Activos no producidos",
+     "y": 107.868
+    },
+    {
+     "x": "Adquisicion de vehiculos",
+     "y": 76.6661
+    },
+    {
+     "x": "Subvenciones financieras",
+     "y": 62.4079
+    },
+    {
+     "x": "Adquisicion de otros activos fijos",
+     "y": 55.0684
+    }
+   ]
+  }
+ ]
+}

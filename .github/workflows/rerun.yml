@@ -34,11 +34,12 @@ jobs:
           BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
       - run: uv run studies/us-homebuilder-sentiment/us_homebuilder_sentiment.py
       - run: uv run studies/peru-private-investment/peru_private_investment.py
-      # The MEF refresh streams about 5 GB from MEF's server, so it runs on
-      # Mondays and on a manual run only.
+      # Each MEF study streams about 5 GB from MEF's server, so the refresh
+      # runs on Mondays and on a manual run only.
       - run: |
           if [ "$(date -u +%u)" = 1 ] || [ "$GITHUB_EVENT_NAME" = workflow_dispatch ]; then
             uv run studies/peru-universities-budget/peru_universities_budget.py --fetch
+            uv run studies/peru-universities-canon/peru_universities_canon.py --fetch
           fi
       - run: '.github/scripts/commit-changes "studies: rerun the live replications"'
         env:

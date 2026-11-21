@@ -1,0 +1,98 @@
+{
+ "kind": "bars",
+ "title": "How much of their 2025 canon universities spent",
+ "subtitle": "Canon and royalty spending accrued in 2025 as a share of the budget after the year's changes; the 20 universities with the largest canon budgets",
+ "source": "MEF, Datos Abiertos: Comparación de Presupuesto y Ejecución de Gasto",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Share spent",
+   "points": [
+    {
+     "x": "UN San Luis Gonzaga de Ica",
+     "y": 97.4
+    },
+    {
+     "x": "UN de Frontera",
+     "y": 95.7
+    },
+    {
+     "x": "UN del Callao",
+     "y": 94.5
+    },
+    {
+     "x": "UN de Barranca",
+     "y": 94.4
+    },
+    {
+     "x": "UN Jose Maria Arguedas",
+     "y": 90.5
+    },
+    {
+     "x": "UN de Piura",
+     "y": 89.7
+    },
+    {
+     "x": "UN Jose Faustino Sanchez Carrion",
+     "y": 84.7
+    },
+    {
+     "x": "UN Micaela Bastidas de Apurimac",
+     "y": 82.0
+    },
+    {
+     "x": "UN de San Agustin",
+     "y": 78.1
+    },
+    {
+     "x": "UN Daniel Alcides Carrion",
+     "y": 76.4
+    },
+    {
+     "x": "UN del Santa",
+     "y": 74.5
+    },
+    {
+     "x": "UN de Moquegua",
+     "y": 67.9
+    },
+    {
+     "x": "UN de Trujillo",
+     "y": 65.0
+    },
+    {
+     "x": "UN Santiago Antunez de Mayolo",
+     "y": 61.7
+    },
+    {
+     "x": "UN de San Antonio Abad del Cusco",
+     "y": 60.1
+    },
+    {
+     "x": "UN San Cristobal de Huamanga",
+     "y": 53.6
+    },
+    {
+     "x": "UN Jorge Basadre Grohmann",
+     "y": 46.3
+    },
+    {
+     "x": "UN Intercultural de Quillabamba",
+     "y": 42.2
+    },
+    {
+     "x": "UN de Cañete",
+     "y": 27.5
+    },
+    {
+     "x": "UN de Arte Diego Quispe Tito del Cusco",
+     "y": 3.4
+    }
+   ]
+  }
+ ]
+}

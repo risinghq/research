@@ -1,0 +1,550 @@
+{
+  "canon": {
+    "2012": {
+      "pia": 354917500,
+      "pim": 534409174,
+      "devengado": 69207251
+    },
+    "2013": {
+      "pia": 455949720,
+      "pim": 828829355,
+      "devengado": 169940453
+    },
+    "2014": {
+      "pia": 369065907,
+      "pim": 770736214,
+      "devengado": 216279498
+    },
+    "2015": {
+      "pia": 280476844,
+      "pim": 689913721,
+      "devengado": 198255206
+    },
+    "2016": {
+      "pia": 241519973,
+      "pim": 599837985,
+      "devengado": 215107048
+    },
+    "2017": {
+      "pia": 209560587,
+      "pim": 469190005,
+      "devengado": 229429437
+    },
+    "2018": {
+      "pia": 475874906,
+      "pim": 668062581,
+      "devengado": 307460534
+    },
+    "2019": {
+      "pia": 489309501,
+      "pim": 843195637,
+      "devengado": 517471191
+    },
+    "2020": {
+      "pia": 533621745,
+      "pim": 620695488,
+      "devengado": 315183868
+    },
+    "2021": {
+      "pia": 414370711,
+      "pim": 663074043,
+      "devengado": 390743218
+    },
+    "2022": {
+      "pia": 530022632,
+      "pim": 957388303,
+      "devengado": 513850206
+    },
+    "2023": {
+      "pia": 874363584,
+      "pim": 1017413046,
+      "devengado": 435860837
+    },
+    "2024": {
+      "pia": 947497360,
+      "pim": 937753808,
+      "devengado": 548777791
+    },
+    "2025": {
+      "pia": 915622324,
+      "pim": 1117375788,
+      "devengado": 739344455
+    },
+    "2026": {
+      "pia": 889811573,
+      "pim": 1048501327,
+      "devengado": 416615706
+    }
+  },
+  "execution_pct": {
+    "2012": 13.0,
+    "2013": 20.5,
+    "2014": 28.1,
+    "2015": 28.7,
+    "2016": 35.9,
+    "2017": 48.9,
+    "2018": 46.0,
+    "2019": 61.4,
+    "2020": 50.8,
+    "2021": 58.9,
+    "2022": 53.7,
+    "2023": 42.8,
+    "2024": 58.5,
+    "2025": 66.2
+  },
+  "universities_with_canon": {
+    "2012": 41,
+    "2013": 42,
+    "2014": 44,
+    "2015": 46,
+    "2016": 47,
+    "2017": 49,
+    "2018": 48,
+    "2019": 51,
+    "2020": 52,
+    "2021": 52,
+    "2022": 51,
+    "2023": 52,
+    "2024": 53,
+    "2025": 54,
+    "2026": 63
+  },
+  "against_press": {
+    "buho_2013": {
+      "claimed": {
+        "available": 828500000,
+        "pct": 14.1
+      },
+      "mef": {
+        "pim": 828829355,
+        "devengado": 169940453,
+        "pct": 20.5
+      }
+    },
+    "comercio_2014": {
+      "claimed": {
+        "received": 771000000,
+        "spent": 216200000,
+        "pct": 28.5
+      },
+      "mef": {
+        "pim": 770736214,
+        "devengado": 216279498,
+        "pct": 28.1
+      }
+    },
+    "comercio_2014_universities": {
+      "536": {
+        "claimed": {
+          "received_over": 18000000,
+          "spent": 14000
+        },
+        "mef": {
+          "pim": 18300316,
+          "devengado": 13774,
+          "pct": 0.1
+        }
+      },
+      "511": {
+        "claimed": {
+          "received_over": 154000000
+        },
+        "mef": {
+          "pim": 154825391,
+          "devengado": 26313844,
+          "pct": 17.0
+        }
+      },
+      "510": {
+        "claimed": {
+          "received_under": 100000
+        },
+        "mef": {
+          "pim": 92567,
+          "devengado": 60468,
+          "pct": 65.3
+        }
+      }
+    },
+    "snmpe_2012_2021": {
+      "claimed": {
+        "received": 2072000000,
+        "pct": 39.0
+      },
+      "mef_summed": {
+        "pim": 6687944203,
+        "devengado": 2629077705,
+        "pct": 39.3
+      }
+    }
+  },
+  "spent": {
+    "span": "2012-2025",
+    "total": 4866910994,
+    "capital_pct": 79.8,
+    "research_pct": 8.8,
+    "by_grupo_pct": {
+      "EDUCACION SUPERIOR UNIVERSITARIA": 46.3,
+      "INFRAESTRUCTURA Y EQUIPAMIENTO": 41.8,
+      "INVESTIGACION APLICADA": 7.2,
+      "INVESTIGACION BASICA": 1.6,
+      "ASESORAMIENTO Y APOYO": 1.3,
+      "EDUCACION DE POST-GRADO": 0.9,
+      "PAGO DE LA DEUDA PUBLICA": 0.5,
+      "DIRECCION Y SUPERVISION SUPERIOR": 0.3
+    },
+    "by_item_pct": {
+      "EDIFICIOS O UNIDADES NO RESIDENCIALES": 43.6,
+      "ADQUISICION DE MAQUINARIAS, EQUIPO Y MOBILIARIO": 20.7,
+      "SERVICIO DE MANTENIMIENTO, ACONDICIONAMIENTO Y  REPARACIONES": 7.2,
+      "SERVICIOS PROFESIONALES Y TECNICOS": 5.8,
+      "OTROS GASTOS DE ACTIVOS NO FINANCIEROS": 5.6,
+      "OTRAS ESTRUCTURAS": 3.7,
+      "ACTIVOS NO PRODUCIDOS": 2.2,
+      "ADQUISICION DE VEHICULOS": 1.6,
+      "SUBVENCIONES FINANCIERAS": 1.3,
+      "ADQUISICION DE OTROS ACTIVOS FIJOS": 1.1
+    }
+  },
+  "regional_transfers_devengado": {
+    "2012": 104083908,
+    "2013": 74539018,
+    "2014": 88835086,
+    "2015": 48282402,
+    "2016": 35905428,
+    "2017": 44922996,
+    "2018": 116019991,
+    "2019": 47732652,
+    "2020": 62245965,
+    "2021": 75246298,
+    "2022": 3199848,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+  },
+  "universities_2025": {
+    "UN de San Antonio Abad del Cusco": {
+      "pim": 162907711,
+      "unspent": 64974423,
+      "pct": 60.1
+    },
+    "UN de San Agustin": {
+      "pim": 93435343,
+      "unspent": 20503715,
+      "pct": 78.1
+    },
+    "UN Santiago Antunez de Mayolo": {
+      "pim": 91423893,
+      "unspent": 35054551,
+      "pct": 61.7
+    },
+    "UN Intercultural de Quillabamba": {
+      "pim": 79304578,
+      "unspent": 45800021,
+      "pct": 42.2
+    },
+    "UN Jorge Basadre Grohmann": {
+      "pim": 78399895,
+      "unspent": 42087833,
+      "pct": 46.3
+    },
+    "UN San Luis Gonzaga de Ica": {
+      "pim": 75151319,
+      "unspent": 1936365,
+      "pct": 97.4
+    },
+    "UN del Santa": {
+      "pim": 49359847,
+      "unspent": 12588528,
+      "pct": 74.5
+    },
+    "UN de Moquegua": {
+      "pim": 47850301,
+      "unspent": 15336861,
+      "pct": 67.9
+    },
+    "UN Micaela Bastidas de Apurimac": {
+      "pim": 32115548,
+      "unspent": 5764753,
+      "pct": 82.0
+    },
+    "UN de Trujillo": {
+      "pim": 31764564,
+      "unspent": 11125818,
+      "pct": 65.0
+    },
+    "UN de Arte Diego Quispe Tito del Cusco": {
+      "pim": 30391926,
+      "unspent": 29344607,
+      "pct": 3.4
+    },
+    "UN Daniel Alcides Carrion": {
+      "pim": 29525897,
+      "unspent": 6959785,
+      "pct": 76.4
+    },
+    "UN de Piura": {
+      "pim": 23715779,
+      "unspent": 2434439,
+      "pct": 89.7
+    },
+    "UN de Frontera": {
+      "pim": 22292182,
+      "unspent": 949297,
+      "pct": 95.7
+    },
+    "UN del Callao": {
+      "pim": 22033694,
+      "unspent": 1217345,
+      "pct": 94.5
+    },
+    "UN de Barranca": {
+      "pim": 21770737,
+      "unspent": 1212981,
+      "pct": 94.4
+    },
+    "UN Jose Maria Arguedas": {
+      "pim": 21248642,
+      "unspent": 2028004,
+      "pct": 90.5
+    },
+    "UN San Cristobal de Huamanga": {
+      "pim": 20963060,
+      "unspent": 9721067,
+      "pct": 53.6
+    },
+    "UN de Cañete": {
+      "pim": 17676578,
+      "unspent": 12809376,
+      "pct": 27.5
+    },
+    "UN Jose Faustino Sanchez Carrion": {
+      "pim": 16109457,
+      "unspent": 2464430,
+      "pct": 84.7
+    },
+    "UN de Huancavelica": {
+      "pim": 15154702,
+      "unspent": 645360,
+      "pct": 95.7
+    },
+    "UN Autónoma Altoandina de Tarma": {
+      "pim": 13082688,
+      "unspent": 1006468,
+      "pct": 92.3
+    },
+    "UN Autónoma de Huanta": {
+      "pim": 12812753,
+      "unspent": 1817284,
+      "pct": 85.8
+    },
+    "UN del Altiplano": {
+      "pim": 12797205,
+      "unspent": 192391,
+      "pct": 98.5
+    },
+    "UN de Tumbes": {
+      "pim": 10219295,
+      "unspent": 3331838,
+      "pct": 67.4
+    },
+    "UN Autonoma de Alto Amazonas": {
+      "pim": 8737707,
+      "unspent": 5149611,
+      "pct": 41.1
+    },
+    "UN Autonoma de Chota": {
+      "pim": 8662657,
+      "unspent": 2092517,
+      "pct": 75.8
+    },
+    "UN Ciro Alegria": {
+      "pim": 8540472,
+      "unspent": 7983996,
+      "pct": 6.5
+    },
+    "UN de Ucayali": {
+      "pim": 8118063,
+      "unspent": 4308811,
+      "pct": 46.9
+    },
+    "UN Autonoma de Tayacaja Daniel Hernandez Morillo": {
+      "pim": 7654702,
+      "unspent": 7465505,
+      "pct": 2.5
+    },
+    "UN de la Amazonia Peruana": {
+      "pim": 7635377,
+      "unspent": 5645200,
+      "pct": 26.1
+    },
+    "UN Intercultural de la Amazonia": {
+      "pim": 7262192,
+      "unspent": 2611944,
+      "pct": 64.0
+    },
+    "UN de Cajamarca": {
+      "pim": 6279867,
+      "unspent": 2235268,
+      "pct": 64.4
+    },
+    "UN de Jaen": {
+      "pim": 6233202,
+      "unspent": 1527823,
+      "pct": 75.5
+    },
+    "UN del Centro del Peru": {
+      "pim": 6006817,
+      "unspent": 1445435,
+      "pct": 75.9
+    },
+    "UN de Juliaca": {
+      "pim": 4582345,
+      "unspent": 1573472,
+      "pct": 65.7
+    },
+    "UN Intercultural de la Selva Central Juan Santos Atahualpa": {
+      "pim": 2920763,
+      "unspent": 2575453,
+      "pct": 11.8
+    },
+    "UN de San Martin": {
+      "pim": 885105,
+      "unspent": 885105,
+      "pct": 0.0
+    },
+    "UN de Educacion Enrique Guzman y Valle": {
+      "pim": 492178,
+      "unspent": 215540,
+      "pct": 56.2
+    },
+    "UN Tecnologica de Frontera San Ignacio de Loyola": {
+      "pim": 325027,
+      "unspent": 5,
+      "pct": 100.0
+    },
+    "UN Mayor de San Marcos": {
+      "pim": 252362,
+      "unspent": 244180,
+      "pct": 3.2
+    },
+    "UN Amazonica de Madre de Dios": {
+      "pim": 227927,
+      "unspent": 102002,
+      "pct": 55.2
+    },
+    "UN Pedro Ruiz Gallo": {
+      "pim": 214996,
+      "unspent": 214996,
+      "pct": 0.0
+    },
+    "UN Agraria la Molina": {
+      "pim": 213955,
+      "unspent": 137486,
+      "pct": 35.7
+    },
+    "UN del Vraem": {
+      "pim": 105851,
+      "unspent": 4,
+      "pct": 100.0
+    },
+    "UN de Ingenieria": {
+      "pim": 96544,
+      "unspent": 32291,
+      "pct": 66.6
+    },
+    "UN Tecnologica de San Juan de Lurigancho": {
+      "pim": 81174,
+      "unspent": 81174,
+      "pct": 0.0
+    },
+    "UN Hermilio Valdizan": {
+      "pim": 76684,
+      "unspent": 0,
+      "pct": 100.0
+    },
+    "UN Federico Villarreal": {
+      "pim": 66544,
+      "unspent": 66544,
+      "pct": 0.0
+    },
+    "UN Tecnologica de Lima Sur": {
+      "pim": 66544,
+      "unspent": 51544,
+      "pct": 22.5
+    },
+    "UN de Música": {
+      "pim": 66544,
+      "unspent": 66544,
+      "pct": 0.0
+    },
+    "UN Daniel Alomia Robles": {
+      "pim": 60778,
+      "unspent": 9526,
+      "pct": 84.3
+    },
+    "UN Toribio Rodriguez de Mendoza de Amazonas": {
+      "pim": 1151,
+      "unspent": 1151,
+      "pct": 0.0
+    },
+    "UN Intercultural Fabiola Salazar Leguia de Bagua": {
+      "pim": 666,
+      "unspent": 666,
+      "pct": 0.0
+    }
+  },
+  "top_projects": [
+    {
+      "university": "UN de San Antonio Abad del Cusco",
+      "project": "FORTALECIMIENTO DE LOS SERVICIOS DE SOPORTE PARA EL PROCESO DE ENSEÑANZA, INVESTIGACION Y EXTENSION EN LA UNSAAC-CUSCO",
+      "devengado": 126632684
+    },
+    {
+      "university": "UN San Luis Gonzaga de Ica",
+      "project": "MEJORAMIENTO Y AMPLIACION DEL SERVICIO EDUCATIVO DE LA FACULTAD DE INGENIERIA CIVIL DE LA UNIVERSIDAD NACIONAL SAN LUIS GONZAGA DE ICA, EN LA CIUDAD UNIVERSITARIA, DISTRITO DE ICA, PROVINCIA ICA, REGION ICA",
+      "devengado": 50866351
+    },
+    {
+      "university": "UN de Jaen",
+      "project": "MEJORAMIENTO DE LOS SERVICIOS ACADEMICOS Y ADMINISTRATIVOS DE LA UNIVERSIDAD NACIONAL DE JAEN DISTRITO DE JAEN, PROVINCIA DE JAEN, DEPARTAMENTO DE CAJAMARCA",
+      "devengado": 47616144
+    },
+    {
+      "university": "UN Jorge Basadre Grohmann",
+      "project": "MEJORAMIENTO DEL SERVICIO ACADEMICO DE LA EAP. DE INGENIERIA CIVIL - FIAG DE LA UNIVERSIDAD NACIONAL JORGE BASADRE GROHMANN DE TACNA",
+      "devengado": 46343113
+    },
+    {
+      "university": "UN de San Antonio Abad del Cusco",
+      "project": "FORTALECIMIENTO DE LA ENSEÑANZA E INVESTIGACION EN LA FACULTAD DE CIENCIAS SOCIALES - UNSAAC",
+      "devengado": 41535992
+    },
+    {
+      "university": "UN Santiago Antunez de Mayolo",
+      "project": "CREACION DEL SERVICIO ACADEMICO DE LA FACULTAD DE MEDICINA HUMANA DE LA UNIVERSIDAD NACIONAL SANTIAGO ANTUNEZ DE MAYOLO - DISTRITO DE HUARAZ - PROVINCIA DE HUARAZ - DEPARTAMENTO DE ANCASH",
+      "devengado": 40276976
+    },
+    {
+      "university": "UN de San Antonio Abad del Cusco",
+      "project": "MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS DE SISTEMAS DE INFORMACION Y COMUNICACION EN LA SEDE CENTRAL DE LA UNSAAC, DISTRITO DE CUSCO - PROVINCIA DE CUSCO - DEPARTAMENTO DE CUSCO",
+      "devengado": 39403742
+    },
+    {
+      "university": "UN de Arte Diego Quispe Tito del Cusco",
+      "project": "ADQUISICION DE TERRENO; EN EL(LA) SEDE CENTRAL DE LA UNIVERSIDAD ANCIONAL DIEGO QUISPE TITO DISTRITO DE CUSCO, PROVINCIA CUSCO, DEPARTAMENTO CUSCO",
+      "devengado": 33159871
+    },
+    {
+      "university": "UN Intercultural de Quillabamba",
+      "project": "MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS ADMINISTRATIVOS, DE LA UNIVERSIDAD NACIONAL INTERCULTURAL DE QUILLABAMBA, FUNDO POTRERO DISTRITO DE SANTA ANA PROVINCIA DE LA CONVENCION, DEPARTAMENTO DEL CUSCO",
+      "devengado": 33043438
+    },
+    {
+      "university": "UN de San Antonio Abad del Cusco",
+      "project": "MEJORAMIENTO DE LA CAPACIDAD PRESTADORA DE SERVICIOS EN LA FORMACION ACADEMICA DE LA CARRERA PROFESIONAL DE MEDICINA VETERINARIA DE LA UNSAAC EN SU SEDE ESPINAR, DISTRITO Y PROVINCIA DE ESPINAR, DEPARTAMENTO DEL CUSCO",
+      "devengado": 31607309
+    }
+  ]
+}
