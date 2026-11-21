@@ -1,5 +1,62 @@
 {
-  "rankings": 13,
+  "rankings": 16,
+  "leaders": {
+    "SCImago Institutions Rankings": [
+      "PUCP"
+    ],
+    "Webometrics": [
+      "PUCP"
+    ],
+    "CWTS Leiden Ranking Open Edition": [
+      "PUCP"
+    ],
+    "QS World University Rankings": [
+      "PUCP"
+    ],
+    "CWUR": [
+      "UPCH"
+    ],
+    "U.S. News Best Global Universities": [
+      "UPCH"
+    ],
+    "NTU Ranking": [
+      "UPCH"
+    ],
+    "MosIUR Three University Missions": [
+      "PUCP"
+    ],
+    "Nature Index": [
+      "PUCP"
+    ],
+    "Round University Ranking": [
+      "PUCP"
+    ],
+    "UI GreenMetric": [
+      "UPCH"
+    ],
+    "EduRank": [
+      "PUCP"
+    ],
+    "uniRank": [
+      "UTP"
+    ],
+    "THE World University Rankings": [
+      "UPCH"
+    ],
+    "THE Interdisciplinary Science Rankings": [
+      "UPCH"
+    ],
+    "THE Sustainability Impact Ratings": [
+      "PUCP",
+      "UPC"
+    ]
+  },
+  "leader_counts": {
+    "PUCP": 9,
+    "UPCH": 6,
+    "UTP": 1,
+    "UPC": 1
+  },
   "leaders_outside_post": [
     "uniRank: UTP"
   ],
@@ -8,37 +65,31 @@
       "university": "PUCP",
       "measure": "leader",
       "posted": 7,
-      "now": 8
-    },
-    {
-      "university": "PUCP",
-      "measure": "top3",
-      "posted": 15,
-      "now": 12
+      "now": 9
     },
     {
       "university": "PUCP",
       "measure": "present",
       "posted": 16,
-      "now": 12
+      "now": 15
     },
     {
       "university": "UPCH",
       "measure": "leader",
       "posted": 8,
-      "now": 4
+      "now": 6
     },
     {
       "university": "UPCH",
       "measure": "top3",
       "posted": 14,
-      "now": 10
+      "now": 12
     },
     {
       "university": "UPCH",
       "measure": "present",
       "posted": 15,
-      "now": 12
+      "now": 14
     },
     {
       "university": "UNMSM",
@@ -48,9 +99,15 @@
     },
     {
       "university": "UNMSM",
+      "measure": "top3",
+      "posted": 7,
+      "now": 8
+    },
+    {
+      "university": "UNMSM",
       "measure": "present",
       "posted": 11,
-      "now": 9
+      "now": 10
     },
     {
       "university": "Científica",
@@ -62,37 +119,31 @@
       "university": "Científica",
       "measure": "top3",
       "posted": 6,
-      "now": 3
-    },
-    {
-      "university": "Científica",
-      "measure": "present",
-      "posted": 12,
-      "now": 9
+      "now": 5
     },
     {
       "university": "UPC",
-      "measure": "leader",
+      "measure": "top3",
       "posted": 1,
-      "now": 0
+      "now": 3
     },
     {
       "university": "UPC",
       "measure": "present",
       "posted": 9,
-      "now": 8
+      "now": 10
     },
     {
       "university": "UNALM",
       "measure": "top3",
       "posted": 1,
-      "now": 0
+      "now": 2
     },
     {
       "university": "UNALM",
       "measure": "present",
       "posted": 7,
-      "now": 6
+      "now": 8
     },
     {
       "university": "UPN",
@@ -104,7 +155,7 @@
       "university": "UPN",
       "measure": "present",
       "posted": 5,
-      "now": 6
+      "now": 7
     },
     {
       "university": "Pacífico",
@@ -128,25 +179,19 @@
       "university": "USMP",
       "measure": "top3",
       "posted": 1,
-      "now": 0
+      "now": 2
     },
     {
       "university": "USMP",
       "measure": "present",
       "posted": 4,
-      "now": 5
-    },
-    {
-      "university": "UNTRM",
-      "measure": "top3",
-      "posted": 1,
-      "now": 0
+      "now": 7
     },
     {
       "university": "UNTRM",
       "measure": "present",
       "posted": 3,
-      "now": 4
+      "now": 5
     }
   ],
   "against_original": [
@@ -154,37 +199,37 @@
       "university": "PUCP",
       "measure": "leader",
       "posted": 7,
-      "now": 8
+      "now": 9
     },
     {
       "university": "PUCP",
       "measure": "top3",
       "posted": 15,
-      "now": 12
+      "now": 15
     },
     {
       "university": "PUCP",
       "measure": "present",
       "posted": 16,
-      "now": 12
+      "now": 15
     },
     {
       "university": "UPCH",
       "measure": "leader",
       "posted": 8,
-      "now": 4
+      "now": 6
     },
     {
       "university": "UPCH",
       "measure": "top3",
       "posted": 14,
-      "now": 10
+      "now": 12
     },
     {
       "university": "UPCH",
       "measure": "present",
       "posted": 15,
-      "now": 12
+      "now": 14
     },
     {
       "university": "UNMSM",
@@ -196,13 +241,13 @@
       "university": "UNMSM",
       "measure": "top3",
       "posted": 7,
-      "now": 7
+      "now": 8
     },
     {
       "university": "UNMSM",
       "measure": "present",
       "posted": 11,
-      "now": 9
+      "now": 10
     },
     {
       "university": "Científica",
@@ -214,31 +259,31 @@
       "university": "Científica",
       "measure": "top3",
       "posted": 6,
-      "now": 3
+      "now": 5
     },
     {
       "university": "Científica",
       "measure": "present",
       "posted": 12,
-      "now": 9
+      "now": 12
     },
     {
       "university": "UPC",
       "measure": "leader",
       "posted": 1,
-      "now": 0
+      "now": 1
     },
     {
       "university": "UPC",
       "measure": "top3",
       "posted": 1,
-      "now": 1
+      "now": 3
     },
     {
       "university": "UPC",
       "measure": "present",
       "posted": 9,
-      "now": 8
+      "now": 10
     },
     {
       "university": "UNALM",
@@ -250,13 +295,13 @@
       "university": "UNALM",
       "measure": "top3",
       "posted": 1,
-      "now": 0
+      "now": 2
     },
     {
       "university": "UNALM",
       "measure": "present",
       "posted": 7,
-      "now": 6
+      "now": 8
     },
     {
       "university": "UPN",
@@ -274,7 +319,7 @@
       "university": "UPN",
       "measure": "present",
       "posted": 5,
-      "now": 6
+      "now": 7
     },
     {
       "university": "Pacífico",
@@ -322,13 +367,13 @@
       "university": "USMP",
       "measure": "top3",
       "posted": 1,
-      "now": 0
+      "now": 2
     },
     {
       "university": "USMP",
       "measure": "present",
       "posted": 4,
-      "now": 5
+      "now": 7
     },
     {
       "university": "UNTRM",
@@ -340,13 +385,233 @@
       "university": "UNTRM",
       "measure": "top3",
       "posted": 1,
-      "now": 0
+      "now": 1
     },
     {
       "university": "UNTRM",
       "measure": "present",
       "posted": 3,
-      "now": 4
+      "now": 5
     }
-  ]
+  ],
+  "openalex": {
+    "PUCP": {
+      "articles": 3881,
+      "core_pct": 43.5,
+      "international_pct": 40.7,
+      "top10_pct": 18.3
+    },
+    "UPCH": {
+      "articles": 3106,
+      "core_pct": 60.6,
+      "international_pct": 55.4,
+      "top10_pct": 15.3
+    },
+    "UNMSM": {
+      "articles": 7749,
+      "core_pct": 25.2,
+      "international_pct": 25.7,
+      "top10_pct": 10.1
+    },
+    "Científica": {
+      "articles": 2524,
+      "core_pct": 57.4,
+      "international_pct": 42.4,
+      "top10_pct": 14.9
+    },
+    "UPC": {
+      "articles": 1484,
+      "core_pct": 45.2,
+      "international_pct": 36.3,
+      "top10_pct": 17.7
+    },
+    "UNALM": {
+      "articles": 1598,
+      "core_pct": 43.2,
+      "international_pct": 42.6,
+      "top10_pct": 8.3
+    },
+    "UPN": {
+      "articles": 1278,
+      "core_pct": 43.7,
+      "international_pct": 25.9,
+      "top10_pct": 16.7
+    },
+    "Pacífico": {
+      "articles": 601,
+      "core_pct": 52.7,
+      "international_pct": 69.6,
+      "top10_pct": 18.0
+    },
+    "ULima": {
+      "articles": 1209,
+      "core_pct": 34.7,
+      "international_pct": 30.1,
+      "top10_pct": 18.6
+    },
+    "USMP": {
+      "articles": 1431,
+      "core_pct": 29.1,
+      "international_pct": 28.2,
+      "top10_pct": 13.0
+    },
+    "UNTRM": {
+      "articles": 970,
+      "core_pct": 37.8,
+      "international_pct": 22.9,
+      "top10_pct": 11.0
+    },
+    "UTP": {
+      "articles": 1475,
+      "core_pct": 37.0,
+      "international_pct": 26.7,
+      "top10_pct": 18.9
+    },
+    "UCV": {
+      "articles": 7474,
+      "core_pct": 9.8,
+      "international_pct": 10.4,
+      "top10_pct": 23.4
+    },
+    "USIL": {
+      "articles": 1806,
+      "core_pct": 52.2,
+      "international_pct": 39.2,
+      "top10_pct": 20.5
+    }
+  },
+  "citing": {
+    "PUCP": {
+      "sampled": 200,
+      "citing": 1976,
+      "core_pct": 53.1,
+      "dissertation_pct": 6.9,
+      "same_university_pct": 10.4
+    },
+    "UPCH": {
+      "sampled": 200,
+      "citing": 3112,
+      "core_pct": 69.7,
+      "dissertation_pct": 4.2,
+      "same_university_pct": 4.9
+    },
+    "UNMSM": {
+      "sampled": 200,
+      "citing": 1546,
+      "core_pct": 35.9,
+      "dissertation_pct": 12.7,
+      "same_university_pct": 6.9
+    },
+    "Científica": {
+      "sampled": 200,
+      "citing": 2512,
+      "core_pct": 62.6,
+      "dissertation_pct": 5.7,
+      "same_university_pct": 7.0
+    },
+    "UPC": {
+      "sampled": 200,
+      "citing": 1805,
+      "core_pct": 45.9,
+      "dissertation_pct": 10.1,
+      "same_university_pct": 7.5
+    },
+    "UNALM": {
+      "sampled": 200,
+      "citing": 1740,
+      "core_pct": 62.1,
+      "dissertation_pct": 4.5,
+      "same_university_pct": 8.2
+    },
+    "UPN": {
+      "sampled": 200,
+      "citing": 2167,
+      "core_pct": 42.1,
+      "dissertation_pct": 9.3,
+      "same_university_pct": 6.4
+    },
+    "Pacífico": {
+      "sampled": 200,
+      "citing": 2223,
+      "core_pct": 53.7,
+      "dissertation_pct": 7.0,
+      "same_university_pct": 3.5
+    },
+    "ULima": {
+      "sampled": 200,
+      "citing": 2167,
+      "core_pct": 41.0,
+      "dissertation_pct": 10.7,
+      "same_university_pct": 5.0
+    },
+    "USMP": {
+      "sampled": 200,
+      "citing": 1340,
+      "core_pct": 48.5,
+      "dissertation_pct": 11.7,
+      "same_university_pct": 4.3
+    },
+    "UNTRM": {
+      "sampled": 200,
+      "citing": 1357,
+      "core_pct": 55.1,
+      "dissertation_pct": 8.7,
+      "same_university_pct": 13.0
+    },
+    "UTP": {
+      "sampled": 200,
+      "citing": 2243,
+      "core_pct": 34.2,
+      "dissertation_pct": 16.3,
+      "same_university_pct": 5.8
+    },
+    "UCV": {
+      "sampled": 200,
+      "citing": 2066,
+      "core_pct": 14.1,
+      "dissertation_pct": 23.5,
+      "same_university_pct": 20.2
+    },
+    "USIL": {
+      "sampled": 200,
+      "citing": 2506,
+      "core_pct": 61.3,
+      "dissertation_pct": 5.2,
+      "same_university_pct": 7.4
+    }
+  },
+  "leiden": {
+    "PUCP": {
+      "p": 828,
+      "pp_top10": 5.4
+    },
+    "UNMSM": {
+      "p": 632,
+      "pp_top10": 4.3
+    },
+    "UPCH": {
+      "p": 538,
+      "pp_top10": 7.7
+    },
+    "UPC": {
+      "p": 501,
+      "pp_top10": 2.6
+    },
+    "Científica": {
+      "p": 371,
+      "pp_top10": 5.2
+    },
+    "UCV": {
+      "p": 368,
+      "pp_top10": 4.5
+    },
+    "USIL": {
+      "p": 296,
+      "pp_top10": 8.3
+    },
+    "UTP": {
+      "p": 218,
+      "pp_top10": 3.5
+    }
+  }
 }

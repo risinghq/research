@@ -2,7 +2,7 @@
  "kind": "bars",
  "title": "Rankings that place the university first in Peru",
  "subtitle": "Global rankings, latest edition on 2026-11-18; ties share a place",
- "source": "Rankings and editions in the study's README; QS data: Source: QS Quacquarelli Symonds (www.qs.com). With permission.",
+ "source": "Rankings and editions in the study's README; QS data: Source: QS Quacquarelli Symonds (www.qs.com). With permission; Times Higher Education rankings with permission",
  "unit": "",
  "decimals": 0,
  "x": {
@@ -14,11 +14,11 @@
    "points": [
     {
      "x": "PUCP",
-     "y": 8
+     "y": 9
     },
     {
      "x": "UPCH",
-     "y": 4
+     "y": 6
     },
     {
      "x": "UNMSM",
@@ -30,7 +30,7 @@
     },
     {
      "x": "UPC",
-     "y": 0
+     "y": 1
     },
     {
      "x": "UNALM",
