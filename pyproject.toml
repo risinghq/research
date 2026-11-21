@@ -9,6 +9,8 @@ dev = [
     "pytest>=9.2.0",
     "pytest-xdist>=3.8.0",
     "ruff>=0.17.3",
+    "types-openpyxl>=3.1.5.20261017",
+    "types-xlrd>=2.0.0.20260518",
 ]
 
 [tool.ruff]
@@ -62,6 +64,7 @@ mypy_path = [
     "packages/mef",
     "packages/nahb",
     "packages/replication",
+    "packages/sbs",
     "packages/smv",
     "studies/bvl-brokers",
     "studies/bvl-disclosure",
@@ -69,6 +72,7 @@ mypy_path = [
     "studies/bvl-liquidity",
     "studies/bvl-ownership",
     "studies/bvl-politics",
+    "studies/peru-microfinance-profits",
     "studies/peru-private-investment",
     "studies/peru-universities-budget",
     "studies/peru-universities-rankings",
