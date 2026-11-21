@@ -1,0 +1,13 @@
+[project]
+name = "sbs"
+version = "0.1.0"
+description = "Reader for the SBS's monthly workbooks: Peru's financial firms by entity."
+requires-python = ">=3.14"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "xlrd>=2.0.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

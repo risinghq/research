@@ -1,0 +1,231 @@
+{
+ "kind": "bars",
+ "title": "Return on equity by firm",
+ "subtitle": "Net profit over average equity, annualised, September 2026; the tick marks September 2025",
+ "source": "SBS, Estadísticas del Sistema Financiero",
+ "unit": "%",
+ "decimals": 1,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "September 2026",
+   "points": [
+    {
+     "x": "Financiera Qapaq",
+     "y": 36.79
+    },
+    {
+     "x": "CMCP Lima",
+     "y": 30.6
+    },
+    {
+     "x": "CMAC Piura",
+     "y": 30.09
+    },
+    {
+     "x": "CMAC Huancayo",
+     "y": 29.16
+    },
+    {
+     "x": "Santander Consumo",
+     "y": 26.68
+    },
+    {
+     "x": "CMAC Cusco",
+     "y": 25.77
+    },
+    {
+     "x": "CMAC Arequipa",
+     "y": 23.1
+    },
+    {
+     "x": "Mitsui Auto Finance",
+     "y": 18.76
+    },
+    {
+     "x": "Financiera Proempresa",
+     "y": 18.07
+    },
+    {
+     "x": "CMAC Ica",
+     "y": 16.87
+    },
+    {
+     "x": "Financiera Confianza",
+     "y": 16.36
+    },
+    {
+     "x": "CMAC Tacna",
+     "y": 14.36
+    },
+    {
+     "x": "Vívela",
+     "y": 13.47
+    },
+    {
+     "x": "TOTAL Servicios Financieros",
+     "y": 13.3
+    },
+    {
+     "x": "CMAC Paita",
+     "y": 13.0
+    },
+    {
+     "x": "Volvo Finance",
+     "y": 12.66
+    },
+    {
+     "x": "CMAC Trujillo",
+     "y": 12.47
+    },
+    {
+     "x": "CMAC Maynas",
+     "y": 9.39
+    },
+    {
+     "x": "CRAC Incasur",
+     "y": 7.89
+    },
+    {
+     "x": "CRAC Cencosud Scotia",
+     "y": 7.82
+    },
+    {
+     "x": "Alternativa",
+     "y": 6.44
+    },
+    {
+     "x": "Financiera Surgir",
+     "y": 4.17
+    },
+    {
+     "x": "CRAC Prymera",
+     "y": 4.08
+    },
+    {
+     "x": "CRAC Los Andes",
+     "y": 3.55
+    },
+    {
+     "x": "CMAC Del Santa",
+     "y": 1.34
+    },
+    {
+     "x": "InFinance XP",
+     "y": 0.93
+    }
+   ]
+  }
+ ],
+ "compare": {
+  "label": "September 2025",
+  "points": [
+   {
+    "x": "Financiera Qapaq",
+    "y": 13.36
+   },
+   {
+    "x": "CMCP Lima",
+    "y": 16.19
+   },
+   {
+    "x": "CMAC Piura",
+    "y": 9.33
+   },
+   {
+    "x": "CMAC Huancayo",
+    "y": 22.87
+   },
+   {
+    "x": "Santander Consumo",
+    "y": 20.08
+   },
+   {
+    "x": "CMAC Cusco",
+    "y": 21.92
+   },
+   {
+    "x": "CMAC Arequipa",
+    "y": 14.38
+   },
+   {
+    "x": "Mitsui Auto Finance",
+    "y": 21.48
+   },
+   {
+    "x": "Financiera Proempresa",
+    "y": -12.4
+   },
+   {
+    "x": "CMAC Ica",
+    "y": 12.13
+   },
+   {
+    "x": "Financiera Confianza",
+    "y": 9.82
+   },
+   {
+    "x": "CMAC Tacna",
+    "y": 12.04
+   },
+   {
+    "x": "Vívela",
+    "y": 22.68
+   },
+   {
+    "x": "TOTAL Servicios Financieros",
+    "y": 7.29
+   },
+   {
+    "x": "CMAC Paita",
+    "y": 3.65
+   },
+   {
+    "x": "Volvo Finance",
+    "y": 9.21
+   },
+   {
+    "x": "CMAC Trujillo",
+    "y": 8.8
+   },
+   {
+    "x": "CMAC Maynas",
+    "y": -1.37
+   },
+   {
+    "x": "CRAC Incasur",
+    "y": 0.88
+   },
+   {
+    "x": "CRAC Cencosud Scotia",
+    "y": 2.36
+   },
+   {
+    "x": "Alternativa",
+    "y": 2.76
+   },
+   {
+    "x": "Financiera Surgir",
+    "y": 0.66
+   },
+   {
+    "x": "CRAC Prymera",
+    "y": -2.07
+   },
+   {
+    "x": "CRAC Los Andes",
+    "y": 3.03
+   },
+   {
+    "x": "CMAC Del Santa",
+    "y": 5.1
+   },
+   {
+    "x": "InFinance XP",
+    "y": 7.72
+   }
+  ]
+ }
+}

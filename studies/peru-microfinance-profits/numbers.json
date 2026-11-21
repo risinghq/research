@@ -1,0 +1,428 @@
+{
+  "month": "2026-09",
+  "read": "2026-11-21",
+  "gestion": {
+    "cajas_municipales": {
+      "profit": 1124.5,
+      "growth_pct": 93.1,
+      "firms_up": 11
+    },
+    "cajas_rurales": {
+      "profit": 17.7,
+      "firms_up": 4
+    },
+    "financieras": {
+      "profit": 158.5,
+      "growth_pct": -16,
+      "firms_up": 5
+    },
+    "empresas_de_credito": {
+      "profit": 91,
+      "growth_pct": 52,
+      "firms_up": 4
+    },
+    "firms_up": 24,
+    "firms": 26,
+    "roe_pct": {
+      "Financiera Qapaq": 36.8,
+      "Mitsui Auto Finance": 18.8,
+      "Financiera Proempresa": 18.1,
+      "Santander Consumo": 26.7,
+      "Vívela": 13.5,
+      "TOTAL Servicios Financieros": 13.3
+    }
+  },
+  "systems": {
+    "cajas_municipales": {
+      "profit_millions": {
+        "2025": 582.21,
+        "2026": 1124.53
+      },
+      "growth_pct": 93.1,
+      "roe_pct": {
+        "2025": 15.41,
+        "2026": 24.07
+      },
+      "arrears_pct": {
+        "2025": 5.91,
+        "2026": 5.0
+      },
+      "firms": 11,
+      "profit_up": [
+        "CMAC Arequipa",
+        "CMAC Cusco",
+        "CMAC Del Santa",
+        "CMAC Huancayo",
+        "CMAC Ica",
+        "CMAC Maynas",
+        "CMAC Paita",
+        "CMAC Piura",
+        "CMAC Tacna",
+        "CMAC Trujillo",
+        "CMCP Lima"
+      ],
+      "roe_up": [
+        "CMAC Arequipa",
+        "CMAC Cusco",
+        "CMAC Huancayo",
+        "CMAC Ica",
+        "CMAC Maynas",
+        "CMAC Paita",
+        "CMAC Piura",
+        "CMAC Tacna",
+        "CMAC Trujillo",
+        "CMCP Lima"
+      ],
+      "arrears_up": [
+        "CMAC Del Santa",
+        "CMAC Maynas",
+        "CMAC Paita"
+      ]
+    },
+    "cajas_rurales": {
+      "profit_millions": {
+        "2025": 7.89602,
+        "2026": 17.6888
+      },
+      "growth_pct": 124.0,
+      "roe_pct": {
+        "2025": 0.96,
+        "2026": 4.23
+      },
+      "arrears_pct": {
+        "2025": 6.49,
+        "2026": 5.78
+      },
+      "firms": 4,
+      "profit_up": [
+        "CRAC Cencosud Scotia",
+        "CRAC Incasur",
+        "CRAC Los Andes",
+        "CRAC Prymera"
+      ],
+      "roe_up": [
+        "CRAC Cencosud Scotia",
+        "CRAC Incasur",
+        "CRAC Los Andes",
+        "CRAC Prymera"
+      ],
+      "arrears_up": []
+    },
+    "financieras": {
+      "profit_millions": {
+        "2025": 189.279,
+        "2026": 158.484
+      },
+      "growth_pct": -16.3,
+      "roe_pct": {
+        "2025": 14.18,
+        "2026": 15.37
+      },
+      "arrears_pct": {
+        "2025": 5.34,
+        "2026": 4.7
+      },
+      "firms": 6,
+      "profit_up": [
+        "Financiera Confianza",
+        "Financiera Proempresa",
+        "Financiera Qapaq",
+        "Financiera Surgir",
+        "Mitsui Auto Finance"
+      ],
+      "roe_up": [
+        "Financiera Confianza",
+        "Financiera Proempresa",
+        "Financiera Qapaq",
+        "Financiera Surgir"
+      ],
+      "arrears_up": []
+    },
+    "empresas_de_credito": {
+      "profit_millions": {
+        "2025": 59.7143,
+        "2026": 91.0092
+      },
+      "growth_pct": 52.4,
+      "roe_pct": {
+        "2025": 14.17,
+        "2026": 18.96
+      },
+      "arrears_pct": {
+        "2025": 5.13,
+        "2026": 3.79
+      },
+      "firms": 5,
+      "profit_up": [
+        "Alternativa",
+        "Santander Consumo",
+        "TOTAL Servicios Financieros",
+        "Volvo Finance"
+      ],
+      "roe_up": [
+        "Alternativa",
+        "Santander Consumo",
+        "TOTAL Servicios Financieros",
+        "Volvo Finance"
+      ],
+      "arrears_up": []
+    }
+  },
+  "firms": 26,
+  "firms_profit_up": 24,
+  "gone": [
+    "CRAC del Centro",
+    "Financiera Efectiva"
+  ],
+  "new": [],
+  "cajas_by_roe": [
+    "CMCP Lima",
+    "CMAC Piura",
+    "CMAC Huancayo",
+    "CMAC Cusco",
+    "CMAC Arequipa"
+  ],
+  "gestion_top_cajas": [
+    "CMCP Lima",
+    "CMAC Piura",
+    "CMAC Huancayo",
+    "CMAC Cusco",
+    "CMAC Arequipa"
+  ],
+  "by_firm": {
+    "CMAC Arequipa": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 123409.83,
+      "net_profit_2026": 246459.78,
+      "roe_2025": 14.38,
+      "roe_2026": 23.1,
+      "arrears_2025": 5.35,
+      "arrears_2026": 4.58
+    },
+    "CMAC Cusco": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 135303.24,
+      "net_profit_2026": 206406.07,
+      "roe_2025": 21.92,
+      "roe_2026": 25.77,
+      "arrears_2025": 4.43,
+      "arrears_2026": 4.04
+    },
+    "CMAC Del Santa": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 258.27,
+      "net_profit_2026": 266.57,
+      "roe_2025": 5.1,
+      "roe_2026": 1.34,
+      "arrears_2025": 12.42,
+      "arrears_2026": 14.94
+    },
+    "CMAC Huancayo": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 169261.45,
+      "net_profit_2026": 280168.41,
+      "roe_2025": 22.87,
+      "roe_2026": 29.16,
+      "arrears_2025": 5.24,
+      "arrears_2026": 4.53
+    },
+    "CMAC Ica": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 27864.13,
+      "net_profit_2026": 46090.15,
+      "roe_2025": 12.13,
+      "roe_2026": 16.87,
+      "arrears_2025": 4.77,
+      "arrears_2026": 4.24
+    },
+    "CMAC Maynas": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 1169.94,
+      "net_profit_2026": 6199.01,
+      "roe_2025": -1.37,
+      "roe_2026": 9.39,
+      "arrears_2025": 8.54,
+      "arrears_2026": 8.69
+    },
+    "CMAC Paita": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 1659.71,
+      "net_profit_2026": 1782.49,
+      "roe_2025": 3.65,
+      "roe_2026": 13.0,
+      "arrears_2025": 8.84,
+      "arrears_2026": 10.7
+    },
+    "CMAC Piura": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 60021.92,
+      "net_profit_2026": 234376.59,
+      "roe_2025": 9.33,
+      "roe_2026": 30.09,
+      "arrears_2025": 7.93,
+      "arrears_2026": 6.72
+    },
+    "CMAC Tacna": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 13430.98,
+      "net_profit_2026": 17507.44,
+      "roe_2025": 12.04,
+      "roe_2026": 14.36,
+      "arrears_2025": 8.2,
+      "arrears_2026": 6.28
+    },
+    "CMAC Trujillo": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 39145.67,
+      "net_profit_2026": 64968.34,
+      "roe_2025": 8.8,
+      "roe_2026": 12.47,
+      "arrears_2025": 8.45,
+      "arrears_2026": 5.46
+    },
+    "CMCP Lima": {
+      "system": "cajas_municipales",
+      "net_profit_2025": 10685.09,
+      "net_profit_2026": 20307.24,
+      "roe_2025": 16.19,
+      "roe_2026": 30.6,
+      "arrears_2025": 4.71,
+      "arrears_2026": 4.38
+    },
+    "CRAC Cencosud Scotia": {
+      "system": "cajas_rurales",
+      "net_profit_2025": 6057.34,
+      "net_profit_2026": 9077.06,
+      "roe_2025": 2.36,
+      "roe_2026": 7.82,
+      "arrears_2025": 3.46,
+      "arrears_2026": 2.92
+    },
+    "CRAC Incasur": {
+      "system": "cajas_rurales",
+      "net_profit_2025": 298.07,
+      "net_profit_2026": 599.7,
+      "roe_2025": 0.88,
+      "roe_2026": 7.89,
+      "arrears_2025": 5.37,
+      "arrears_2026": 4.04
+    },
+    "CRAC Los Andes": {
+      "system": "cajas_rurales",
+      "net_profit_2025": 4012.18,
+      "net_profit_2026": 6049.15,
+      "roe_2025": 3.03,
+      "roe_2026": 3.55,
+      "arrears_2025": 8.08,
+      "arrears_2026": 7.78
+    },
+    "CRAC Prymera": {
+      "system": "cajas_rurales",
+      "net_profit_2025": -301.25,
+      "net_profit_2026": 1962.92,
+      "roe_2025": -2.07,
+      "roe_2026": 4.08,
+      "arrears_2025": 6.79,
+      "arrears_2026": 5.55
+    },
+    "Financiera Confianza": {
+      "system": "financieras",
+      "net_profit_2025": 33628.93,
+      "net_profit_2026": 58877.46,
+      "roe_2025": 9.82,
+      "roe_2026": 16.36,
+      "arrears_2025": 5.21,
+      "arrears_2026": 4.6
+    },
+    "Financiera Proempresa": {
+      "system": "financieras",
+      "net_profit_2025": -2628.96,
+      "net_profit_2026": 9877.78,
+      "roe_2025": -12.4,
+      "roe_2026": 18.07,
+      "arrears_2025": 12.85,
+      "arrears_2026": 9.55
+    },
+    "Financiera Qapaq": {
+      "system": "financieras",
+      "net_profit_2025": 8890.75,
+      "net_profit_2026": 20191.95,
+      "roe_2025": 13.36,
+      "roe_2026": 36.79,
+      "arrears_2025": 8.82,
+      "arrears_2026": 6.38
+    },
+    "Financiera Surgir": {
+      "system": "financieras",
+      "net_profit_2025": 831.36,
+      "net_profit_2026": 4841.24,
+      "roe_2025": 0.66,
+      "roe_2026": 4.17,
+      "arrears_2025": 6.27,
+      "arrears_2026": 5.27
+    },
+    "InFinance XP": {
+      "system": "financieras",
+      "net_profit_2025": 17276.49,
+      "net_profit_2026": -3780.66,
+      "roe_2025": 7.72,
+      "roe_2026": 0.93,
+      "arrears_2025": 3.62,
+      "arrears_2026": 3.28
+    },
+    "Mitsui Auto Finance": {
+      "system": "financieras",
+      "net_profit_2025": 64004.46,
+      "net_profit_2026": 68476.58,
+      "roe_2025": 21.48,
+      "roe_2026": 18.76,
+      "arrears_2025": 5.61,
+      "arrears_2026": 4.65
+    },
+    "Alternativa": {
+      "system": "empresas_de_credito",
+      "net_profit_2025": 844.04,
+      "net_profit_2026": 2154.45,
+      "roe_2025": 2.76,
+      "roe_2026": 6.44,
+      "arrears_2025": 9.33,
+      "arrears_2026": 7.6
+    },
+    "Santander Consumo": {
+      "system": "empresas_de_credito",
+      "net_profit_2025": 38981.32,
+      "net_profit_2026": 61868.59,
+      "roe_2025": 20.08,
+      "roe_2026": 26.68,
+      "arrears_2025": 3.75,
+      "arrears_2026": 3.21
+    },
+    "TOTAL Servicios Financieros": {
+      "system": "empresas_de_credito",
+      "net_profit_2025": 5547.6,
+      "net_profit_2026": 8683.94,
+      "roe_2025": 7.29,
+      "roe_2026": 13.3,
+      "arrears_2025": 7.61,
+      "arrears_2026": 6.16
+    },
+    "Volvo Finance": {
+      "system": "empresas_de_credito",
+      "net_profit_2025": 10764.8,
+      "net_profit_2026": 16050.77,
+      "roe_2025": 9.21,
+      "roe_2026": 12.66,
+      "arrears_2025": 2.17,
+      "arrears_2026": 1.24
+    },
+    "Vívela": {
+      "system": "empresas_de_credito",
+      "net_profit_2025": 3576.58,
+      "net_profit_2026": 2251.48,
+      "roe_2025": 22.68,
+      "roe_2026": 13.47,
+      "arrears_2025": 14.49,
+      "arrears_2026": 9.29
+    }
+  }
+}

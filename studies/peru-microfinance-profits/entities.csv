@@ -1,0 +1,710 @@
+system,year,name,net_profit,roe,arrears
+cajas_municipales,2010,CMAC Arequipa,37208.91,21.40,4.38
+cajas_municipales,2010,CMAC Cusco,24180.75,20.82,4.12
+cajas_municipales,2010,CMAC Del Santa,-2323.81,-3.97,9.49
+cajas_municipales,2010,CMAC Huancayo,16768.08,20.89,4.81
+cajas_municipales,2010,CMAC Ica,8933.63,20.57,6.57
+cajas_municipales,2010,CMAC Maynas,5858.91,19.54,5.03
+cajas_municipales,2010,CMAC Paita,2012.41,8.44,5.02
+cajas_municipales,2010,CMAC Pisco,334.85,8.29,3.63
+cajas_municipales,2010,CMAC Piura,3514.41,4.42,8.26
+cajas_municipales,2010,CMAC Sullana,18722.54,21.78,5.73
+cajas_municipales,2010,CMAC Tacna,8379.74,17.09,4.16
+cajas_municipales,2010,CMAC Trujillo,10981.83,7.80,8.78
+cajas_municipales,2010,CMCP Lima,10506.00,13.87,2.56
+cajas_municipales,2010,Total,145078.23,15.32,5.84
+cajas_municipales,2011,CMAC Arequipa,54934.01,25.13,4.24
+cajas_municipales,2011,CMAC Cusco,25502.53,18.96,4.19
+cajas_municipales,2011,CMAC Del Santa,1512.94,-0.62,9.33
+cajas_municipales,2011,CMAC Huancayo,20664.45,20.34,3.65
+cajas_municipales,2011,CMAC Ica,11705.53,16.69,6.37
+cajas_municipales,2011,CMAC Maynas,4858.02,13.09,5.21
+cajas_municipales,2011,CMAC Paita,-3195.55,-9.87,8.35
+cajas_municipales,2011,CMAC Pisco,-541.86,-7.65,3.92
+cajas_municipales,2011,CMAC Piura,29105.29,15.93,5.99
+cajas_municipales,2011,CMAC Sullana,24022.25,19.63,5.25
+cajas_municipales,2011,CMAC Tacna,7196.04,10.50,4.18
+cajas_municipales,2011,CMAC Trujillo,23848.44,15.03,7.38
+cajas_municipales,2011,CMCP Lima,365.93,-4.99,7.90
+cajas_municipales,2011,Total,199978.05,15.89,5.50
+cajas_municipales,2012,CMAC Arequipa,60910.48,22.81,4.80
+cajas_municipales,2012,CMAC Cusco,26840.71,18.06,4.28
+cajas_municipales,2012,CMAC Del Santa,282.30,1.60,13.23
+cajas_municipales,2012,CMAC Huancayo,23400.56,18.97,3.66
+cajas_municipales,2012,CMAC Ica,6266.19,12.01,7.34
+cajas_municipales,2012,CMAC Maynas,4298.98,12.23,5.34
+cajas_municipales,2012,CMAC Paita,6.23,4.06,9.55
+cajas_municipales,2012,CMAC Pisco,515.07,6.74,4.45
+cajas_municipales,2012,CMAC Piura,21025.57,15.55,6.94
+cajas_municipales,2012,CMAC Sullana,21555.76,16.27,5.71
+cajas_municipales,2012,CMAC Tacna,10458.20,14.54,4.49
+cajas_municipales,2012,CMAC Trujillo,30942.71,17.22,8.45
+cajas_municipales,2012,CMCP Lima,1292.58,5.89,8.87
+cajas_municipales,2012,Total,207795.34,16.33,6.06
+cajas_municipales,2013,CMAC Arequipa,59837.60,19.03,6.27
+cajas_municipales,2013,CMAC Cusco,28313.63,16.60,4.63
+cajas_municipales,2013,CMAC Del Santa,-1993.07,-7.74,18.24
+cajas_municipales,2013,CMAC Huancayo,27786.56,20.81,3.88
+cajas_municipales,2013,CMAC Ica,4940.57,7.95,8.00
+cajas_municipales,2013,CMAC Maynas,3008.25,9.38,7.38
+cajas_municipales,2013,CMAC Paita,70.03,-7.89,10.09
+cajas_municipales,2013,CMAC Pisco,-1711.94,-27.72,9.70
+cajas_municipales,2013,CMAC Piura,19667.81,10.87,5.70
+cajas_municipales,2013,CMAC Sullana,10752.25,7.61,7.70
+cajas_municipales,2013,CMAC Tacna,6112.53,9.13,6.45
+cajas_municipales,2013,CMAC Trujillo,20831.47,10.42,7.13
+cajas_municipales,2013,CMCP Lima,19.96,0.30,11.77
+cajas_municipales,2013,Total,177635.67,12.06,6.65
+cajas_municipales,2014,CMAC Arequipa,50908.36,17.84,7.22
+cajas_municipales,2014,CMAC Cusco,32269.95,16.57,4.97
+cajas_municipales,2014,CMAC Del Santa,732.88,5.40,17.96
+cajas_municipales,2014,CMAC Huancayo,30663.64,19.60,3.83
+cajas_municipales,2014,CMAC Ica,8993.55,11.89,8.17
+cajas_municipales,2014,CMAC Maynas,2457.59,5.11,7.90
+cajas_municipales,2014,CMAC Paita,5.71,-1.38,11.22
+cajas_municipales,2014,CMAC Piura,26045.77,13.58,7.43
+cajas_municipales,2014,CMAC Sullana,20153.10,13.96,5.00
+cajas_municipales,2014,CMAC Tacna,4834.51,5.74,9.33
+cajas_municipales,2014,CMAC Trujillo,20371.89,9.38,7.17
+cajas_municipales,2014,CMCP Lima,-5927.49,-5.58,9.37
+cajas_municipales,2014,Total,191509.45,12.79,6.84
+cajas_municipales,2015,CMAC Arequipa,55427.61,16.66,5.28
+cajas_municipales,2015,CMAC Cusco,41193.68,18.90,5.28
+cajas_municipales,2015,CMAC Del Santa,1042.33,7.79,15.06
+cajas_municipales,2015,CMAC Huancayo,54733.25,27.88,3.67
+cajas_municipales,2015,CMAC Ica,12196.10,13.34,8.88
+cajas_municipales,2015,CMAC Maynas,5106.15,11.46,5.68
+cajas_municipales,2015,CMAC Paita,-924.14,-2.56,17.05
+cajas_municipales,2015,CMAC Piura,35858.58,15.05,7.68
+cajas_municipales,2015,CMAC Sullana,32762.25,17.98,4.32
+cajas_municipales,2015,CMAC Tacna,-2971.36,0.94,13.13
+cajas_municipales,2015,CMAC Trujillo,23470.86,9.63,7.78
+cajas_municipales,2015,CMCP Lima,-6253.19,-10.01,10.80
+cajas_municipales,2015,Total,251642.14,14.73,6.52
+cajas_municipales,2016,CMAC Arequipa,80505.50,22.62,5.06
+cajas_municipales,2016,CMAC Cusco,41873.23,15.93,5.25
+cajas_municipales,2016,CMAC Del Santa,-2359.80,-7.08,17.60
+cajas_municipales,2016,CMAC Huancayo,49914.10,20.47,3.54
+cajas_municipales,2016,CMAC Ica,13106.97,13.98,8.72
+cajas_municipales,2016,CMAC Maynas,2088.16,4.80,6.98
+cajas_municipales,2016,CMAC Paita,37.43,-0.19,12.00
+cajas_municipales,2016,CMAC Piura,40052.41,13.44,7.03
+cajas_municipales,2016,CMAC Sullana,30167.10,14.00,5.23
+cajas_municipales,2016,CMAC Tacna,4351.16,5.42,8.66
+cajas_municipales,2016,CMAC Trujillo,26740.38,9.86,7.98
+cajas_municipales,2016,CMCP Lima,1609.96,-0.22,13.33
+cajas_municipales,2016,Total,288086.60,14.65,6.14
+cajas_municipales,2017,CMAC Arequipa,76543.50,17.33,4.96
+cajas_municipales,2017,CMAC Cusco,48156.68,16.74,4.56
+cajas_municipales,2017,CMAC Del Santa,-1507.14,-15.38,17.71
+cajas_municipales,2017,CMAC Huancayo,62523.16,22.14,3.73
+cajas_municipales,2017,CMAC Ica,12796.46,10.89,6.51
+cajas_municipales,2017,CMAC Maynas,1249.72,3.17,7.95
+cajas_municipales,2017,CMAC Paita,152.57,0.56,17.30
+cajas_municipales,2017,CMAC Piura,46983.76,14.07,6.65
+cajas_municipales,2017,CMAC Sullana,28156.95,13.62,5.17
+cajas_municipales,2017,CMAC Tacna,6331.07,6.76,9.05
+cajas_municipales,2017,CMAC Trujillo,18911.32,8.07,6.52
+cajas_municipales,2017,CMCP Lima,-5241.51,-7.74,16.96
+cajas_municipales,2017,Total,295056.53,13.53,5.85
+cajas_municipales,2018,CMAC Arequipa,90146.27,18.98,5.13
+cajas_municipales,2018,CMAC Cusco,57043.03,16.57,4.71
+cajas_municipales,2018,CMAC Del Santa,-2178.25,-10.86,21.01
+cajas_municipales,2018,CMAC Huancayo,61318.39,18.37,3.91
+cajas_municipales,2018,CMAC Ica,17320.04,13.06,5.49
+cajas_municipales,2018,CMAC Maynas,4386.17,7.21,6.77
+cajas_municipales,2018,CMAC Paita,510.72,1.95,16.32
+cajas_municipales,2018,CMAC Piura,49381.82,13.65,6.60
+cajas_municipales,2018,CMAC Sullana,-35093.43,-13.25,15.78
+cajas_municipales,2018,CMAC Tacna,9542.46,9.95,6.90
+cajas_municipales,2018,CMAC Trujillo,18840.38,6.63,6.87
+cajas_municipales,2018,CMCP Lima,-6129.03,-6.06,16.49
+cajas_municipales,2018,Total,265088.55,11.16,6.94
+cajas_municipales,2019,CMAC Arequipa,94845.27,18.67,5.39
+cajas_municipales,2019,CMAC Cusco,58177.65,14.84,4.96
+cajas_municipales,2019,CMAC Del Santa,-2284.51,-7.01,22.49
+cajas_municipales,2019,CMAC Huancayo,70849.68,19.36,2.67
+cajas_municipales,2019,CMAC Ica,20456.00,13.24,5.95
+cajas_municipales,2019,CMAC Maynas,4788.08,8.65,6.66
+cajas_municipales,2019,CMAC Paita,-592.98,-3.00,17.76
+cajas_municipales,2019,CMAC Piura,45067.48,11.71,7.95
+cajas_municipales,2019,CMAC Sullana,-10214.74,-7.21,17.34
+cajas_municipales,2019,CMAC Tacna,-1901.77,-0.44,9.77
+cajas_municipales,2019,CMAC Trujillo,25005.87,8.11,6.88
+cajas_municipales,2019,CMCP Lima,483.66,-8.25,20.46
+cajas_municipales,2019,Total,304679.70,11.55,7.12
+cajas_municipales,2020,CMAC Arequipa,30356.35,9.50,4.65
+cajas_municipales,2020,CMAC Cusco,6186.90,4.77,3.16
+cajas_municipales,2020,CMAC Del Santa,-3809.00,-19.54,22.94
+cajas_municipales,2020,CMAC Huancayo,19524.65,8.12,2.72
+cajas_municipales,2020,CMAC Ica,10036.91,7.38,6.15
+cajas_municipales,2020,CMAC Maynas,684.74,2.88,6.07
+cajas_municipales,2020,CMAC Paita,-705.48,-1.47,14.73
+cajas_municipales,2020,CMAC Piura,11661.85,5.66,7.55
+cajas_municipales,2020,CMAC Sullana,-564.93,3.56,13.01
+cajas_municipales,2020,CMAC Tacna,443.54,-1.26,13.09
+cajas_municipales,2020,CMAC Trujillo,6658.75,3.25,6.14
+cajas_municipales,2020,CMCP Lima,1837.84,3.27,17.74
+cajas_municipales,2020,Total,82312.13,5.75,6.13
+cajas_municipales,2021,CMAC Arequipa,36446.95,5.01,3.28
+cajas_municipales,2021,CMAC Cusco,22152.22,4.88,3.22
+cajas_municipales,2021,CMAC Del Santa,-4452.48,-26.59,19.98
+cajas_municipales,2021,CMAC Huancayo,10237.28,3.60,3.80
+cajas_municipales,2021,CMAC Ica,6006.51,3.59,4.40
+cajas_municipales,2021,CMAC Maynas,4748.14,5.87,4.37
+cajas_municipales,2021,CMAC Paita,-2850.62,-12.05,16.76
+cajas_municipales,2021,CMAC Piura,20445.11,4.88,6.82
+cajas_municipales,2021,CMAC Sullana,-51898.31,-32.07,13.98
+cajas_municipales,2021,CMAC Tacna,-32637.99,-32.53,17.17
+cajas_municipales,2021,CMAC Trujillo,3794.35,0.46,6.58
+cajas_municipales,2021,CMCP Lima,-26611.37,-34.59,11.93
+cajas_municipales,2021,Total,-14620.20,-0.37,5.77
+cajas_municipales,2022,CMAC Arequipa,71965.57,12.31,3.91
+cajas_municipales,2022,CMAC Cusco,43165.40,9.80,4.44
+cajas_municipales,2022,CMAC Del Santa,-233.95,2.92,5.88
+cajas_municipales,2022,CMAC Huancayo,34081.28,10.60,4.27
+cajas_municipales,2022,CMAC Ica,18512.38,10.99,5.51
+cajas_municipales,2022,CMAC Maynas,3596.83,5.36,5.09
+cajas_municipales,2022,CMAC Paita,526.56,3.80,9.09
+cajas_municipales,2022,CMAC Piura,61429.08,12.11,5.95
+cajas_municipales,2022,CMAC Sullana,-12260.47,-3.41,15.47
+cajas_municipales,2022,CMAC Tacna,5405.46,13.31,9.66
+cajas_municipales,2022,CMAC Trujillo,32954.22,8.87,5.66
+cajas_municipales,2022,CMCP Lima,-5142.66,-18.21,9.40
+cajas_municipales,2022,Total,253999.71,9.34,5.69
+cajas_municipales,2023,CMAC Arequipa,49304.12,8.18,4.16
+cajas_municipales,2023,CMAC Cusco,33407.58,6.69,4.61
+cajas_municipales,2023,CMAC Del Santa,-816.09,-3.62,7.99
+cajas_municipales,2023,CMAC Huancayo,23547.17,9.50,4.63
+cajas_municipales,2023,CMAC Ica,4367.35,2.80,6.60
+cajas_municipales,2023,CMAC Maynas,-2872.53,-0.34,7.11
+cajas_municipales,2023,CMAC Paita,-727.85,-2.29,10.00
+cajas_municipales,2023,CMAC Piura,45615.64,9.43,6.51
+cajas_municipales,2023,CMAC Sullana,-44934.96,-14.86,12.79
+cajas_municipales,2023,CMAC Tacna,-1002.02,0.58,9.68
+cajas_municipales,2023,CMAC Trujillo,11975.92,4.67,5.80
+cajas_municipales,2023,CMCP Lima,-5957.88,-0.76,6.39
+cajas_municipales,2023,Total,111906.45,5.15,5.70
+cajas_municipales,2024,CMAC Arequipa,69197.21,9.44,5.83
+cajas_municipales,2024,CMAC Cusco,76326.49,14.43,5.07
+cajas_municipales,2024,CMAC Del Santa,-2034.67,-4.77,9.06
+cajas_municipales,2024,CMAC Huancayo,54627.34,11.50,5.29
+cajas_municipales,2024,CMAC Ica,11651.48,7.18,5.90
+cajas_municipales,2024,CMAC Maynas,-3768.46,-12.96,8.90
+cajas_municipales,2024,CMAC Paita,-2106.60,-7.50,11.00
+cajas_municipales,2024,CMAC Piura,18674.82,5.64,7.98
+cajas_municipales,2024,CMAC Tacna,1077.20,0.26,10.65
+cajas_municipales,2024,CMAC Trujillo,3924.46,0.96,9.38
+cajas_municipales,2024,CMCP Lima,2798.77,0.63,4.98
+cajas_municipales,2024,Total,230368.04,5.23,6.39
+cajas_municipales,2025,CMAC Arequipa,123409.83,14.38,5.35
+cajas_municipales,2025,CMAC Cusco,135303.24,21.92,4.43
+cajas_municipales,2025,CMAC Del Santa,258.27,5.10,12.42
+cajas_municipales,2025,CMAC Huancayo,169261.45,22.87,5.24
+cajas_municipales,2025,CMAC Ica,27864.13,12.13,4.77
+cajas_municipales,2025,CMAC Maynas,1169.94,-1.37,8.54
+cajas_municipales,2025,CMAC Paita,1659.71,3.65,8.84
+cajas_municipales,2025,CMAC Piura,60021.92,9.33,7.93
+cajas_municipales,2025,CMAC Tacna,13430.98,12.04,8.20
+cajas_municipales,2025,CMAC Trujillo,39145.67,8.80,8.45
+cajas_municipales,2025,CMCP Lima,10685.09,16.19,4.71
+cajas_municipales,2025,Total,582210.25,15.41,5.91
+cajas_municipales,2026,CMAC Arequipa,246459.78,23.10,4.58
+cajas_municipales,2026,CMAC Cusco,206406.07,25.77,4.04
+cajas_municipales,2026,CMAC Del Santa,266.57,1.34,14.94
+cajas_municipales,2026,CMAC Huancayo,280168.41,29.16,4.53
+cajas_municipales,2026,CMAC Ica,46090.15,16.87,4.24
+cajas_municipales,2026,CMAC Maynas,6199.01,9.39,8.69
+cajas_municipales,2026,CMAC Paita,1782.49,13.00,10.70
+cajas_municipales,2026,CMAC Piura,234376.59,30.09,6.72
+cajas_municipales,2026,CMAC Tacna,17507.44,14.36,6.28
+cajas_municipales,2026,CMAC Trujillo,64968.34,12.47,5.46
+cajas_municipales,2026,CMCP Lima,20307.24,30.60,4.38
+cajas_municipales,2026,Total,1124532.10,24.07,5.00
+cajas_rurales,2010,CRAC Cajamarca,997.71,15.16,8.68
+cajas_rurales,2010,CRAC Chavín,-498.73,-6.46,6.23
+cajas_rurales,2010,CRAC Credinka,1703.15,7.97,3.83
+cajas_rurales,2010,CRAC Libertadores Ayacucho,-569.64,-22.61,11.75
+cajas_rurales,2010,CRAC Los Andes,1346.82,27.90,3.72
+cajas_rurales,2010,CRAC Nuestra Gente,7384.13,10.35,3.92
+cajas_rurales,2010,CRAC Profinanzas,-359.37,1.20,5.21
+cajas_rurales,2010,CRAC Prymera,-4295.91,-55.04,4.90
+cajas_rurales,2010,CRAC Señor de Luren,7213.73,19.48,7.68
+cajas_rurales,2010,CRAC Sipán,513.06,8.30,7.19
+cajas_rurales,2010,Total,13434.94,8.18,5.37
+cajas_rurales,2011,CRAC Cajamarca,747.34,10.74,7.44
+cajas_rurales,2011,CRAC Chavín,-3956.80,-31.64,17.69
+cajas_rurales,2011,CRAC Credinka,3357.09,11.50,3.61
+cajas_rurales,2011,CRAC Libertadores Ayacucho,-204.78,-2.25,4.04
+cajas_rurales,2011,CRAC Los Andes,3021.31,41.74,2.90
+cajas_rurales,2011,CRAC Nuestra Gente,15965.70,9.87,4.38
+cajas_rurales,2011,CRAC Profinanzas,835.48,6.69,5.92
+cajas_rurales,2011,CRAC Prymera,-4122.34,-59.17,6.03
+cajas_rurales,2011,CRAC Señor de Luren,4763.81,4.31,7.33
+cajas_rurales,2011,CRAC Sipán,60.70,-0.95,6.90
+cajas_rurales,2011,Total,20467.51,5.58,5.78
+cajas_rurales,2012,CRAC Cajamarca,1367.04,13.97,7.64
+cajas_rurales,2012,CRAC Chavín,-1451.46,-19.03,12.57
+cajas_rurales,2012,CRAC Credinka,4760.26,18.65,3.45
+cajas_rurales,2012,CRAC Incasur,-1151.94,,2.61
+cajas_rurales,2012,CRAC Libertadores Ayacucho,-1291.02,-28.30,4.37
+cajas_rurales,2012,CRAC Los Andes,3241.23,29.73,4.15
+cajas_rurales,2012,CRAC Nuestra Gente,16272.15,10.79,3.30
+cajas_rurales,2012,CRAC Profinanzas,410.24,2.02,6.88
+cajas_rurales,2012,CRAC Prymera,-2892.31,-28.09,4.99
+cajas_rurales,2012,CRAC Señor de Luren,5570.52,11.15,7.21
+cajas_rurales,2012,CRAC Sipán,917.75,8.69,4.32
+cajas_rurales,2012,Total,25752.44,8.45,5.30
+cajas_rurales,2013,CRAC Cajamarca,1447.48,12.52,8.03
+cajas_rurales,2013,CRAC Chavín,-3162.41,-47.94,17.80
+cajas_rurales,2013,CRAC Credinka,5395.69,14.09,3.55
+cajas_rurales,2013,CRAC Incasur,-1715.47,-51.77,8.64
+cajas_rurales,2013,CRAC Libertadores Ayacucho,-2126.84,-49.21,5.50
+cajas_rurales,2013,CRAC Los Andes,3756.89,26.51,4.08
+cajas_rurales,2013,CRAC Prymera,-1870.38,-13.07,5.62
+cajas_rurales,2013,CRAC Señor de Luren,2594.96,6.78,8.26
+cajas_rurales,2013,CRAC Sipán,-1137.32,-19.25,9.71
+cajas_rurales,2013,Total,3182.60,2.41,6.90
+cajas_rurales,2014,CRAC Cajamarca,558.45,9.36,9.48
+cajas_rurales,2014,CRAC Chavín,-3686.45,-30.34,13.34
+cajas_rurales,2014,CRAC Credinka,5308.08,13.66,4.40
+cajas_rurales,2014,CRAC Incasur,-1878.55,-50.82,9.74
+cajas_rurales,2014,CRAC Libertadores Ayacucho,-1641.00,-49.03,6.90
+cajas_rurales,2014,CRAC Los Andes,2991.66,17.72,5.84
+cajas_rurales,2014,CRAC Prymera,-2636.71,-11.21,8.66
+cajas_rurales,2014,CRAC Señor de Luren,-10251.92,-14.20,20.77
+cajas_rurales,2014,CRAC Sipán,-1461.50,-30.17,6.07
+cajas_rurales,2014,CRAC del Centro,-2059.55,,0.00
+cajas_rurales,2014,Total,-14757.49,-5.98,12.23
+cajas_rurales,2015,CRAC Cajamarca,738.90,7.55,7.63
+cajas_rurales,2015,CRAC Chavín,-7042.33,-112.48,23.50
+cajas_rurales,2015,CRAC Incasur,-400.00,-17.54,8.12
+cajas_rurales,2015,CRAC Libertadores Ayacucho,-926.71,-27.70,9.86
+cajas_rurales,2015,CRAC Los Andes,715.36,6.55,7.11
+cajas_rurales,2015,CRAC Prymera,-3302.55,-19.93,8.56
+cajas_rurales,2015,CRAC Sipán,-1130.70,-9.46,6.97
+cajas_rurales,2015,CRAC del Centro,-2478.75,-47.33,3.45
+cajas_rurales,2015,Total,-13826.78,-6.65,9.58
+cajas_rurales,2016,CRAC Incasur,310.09,3.69,6.04
+cajas_rurales,2016,CRAC Los Andes,482.07,3.46,6.34
+cajas_rurales,2016,CRAC Prymera,-2738.09,-15.18,9.56
+cajas_rurales,2016,CRAC Raíz,2790.31,-0.96,5.11
+cajas_rurales,2016,CRAC Sipán,-1712.81,-24.06,7.52
+cajas_rurales,2016,CRAC del Centro,-3976.55,-93.67,3.38
+cajas_rurales,2016,Total,-4844.99,-5.42,5.97
+cajas_rurales,2017,CRAC Incasur,472.34,7.83,5.62
+cajas_rurales,2017,CRAC Los Andes,3673.44,7.96,6.51
+cajas_rurales,2017,CRAC Prymera,-4760.02,-24.49,7.24
+cajas_rurales,2017,CRAC Raíz,433.46,0.42,3.47
+cajas_rurales,2017,CRAC Sipán,-1744.49,-25.77,5.15
+cajas_rurales,2017,CRAC del Centro,-3272.83,-70.43,3.03
+cajas_rurales,2017,Total,-5198.11,-2.82,4.66
+cajas_rurales,2018,CRAC Incasur,116.45,4.36,5.97
+cajas_rurales,2018,CRAC Los Andes,8660.85,15.89,6.82
+cajas_rurales,2018,CRAC Prymera,-4119.62,-17.45,9.56
+cajas_rurales,2018,CRAC Raíz,3790.64,2.94,4.50
+cajas_rurales,2018,CRAC Sipán,-1127.96,-18.74,8.27
+cajas_rurales,2018,CRAC del Centro,-1915.53,-24.65,3.85
+cajas_rurales,2018,Total,5404.83,2.21,5.70
+cajas_rurales,2019,CRAC CAT,13668.40,9.85,4.82
+cajas_rurales,2019,CRAC Incasur,-251.77,-2.32,9.88
+cajas_rurales,2019,CRAC Los Andes,-2231.88,-0.13,12.94
+cajas_rurales,2019,CRAC Prymera,-4517.06,-19.07,5.13
+cajas_rurales,2019,CRAC Raíz,1684.07,1.59,7.24
+cajas_rurales,2019,CRAC Sipán,-4088.77,-46.12,23.16
+cajas_rurales,2019,CRAC del Centro,-1019.36,-8.73,3.92
+cajas_rurales,2019,Total,3243.63,1.15,7.63
+cajas_rurales,2020,CRAC Cencosud Scotia,-11227.49,-1.76,6.11
+cajas_rurales,2020,CRAC Incasur,-571.87,-8.36,11.87
+cajas_rurales,2020,CRAC Los Andes,-10699.63,-18.22,21.85
+cajas_rurales,2020,CRAC Prymera,-2800.92,-11.95,3.71
+cajas_rurales,2020,CRAC Raíz,664.39,-0.72,4.25
+cajas_rurales,2020,CRAC Sipán,-2106.48,-59.16,54.07
+cajas_rurales,2020,CRAC del Centro,345.03,3.09,3.02
+cajas_rurales,2020,Total,-26396.96,-5.97,8.62
+cajas_rurales,2021,CRAC Cencosud Scotia,-16163.92,-16.15,4.90
+cajas_rurales,2021,CRAC Incasur,-927.79,-22.35,16.00
+cajas_rurales,2021,CRAC Los Andes,-14490.47,-31.09,16.78
+cajas_rurales,2021,CRAC Prymera,-8196.61,-31.62,6.23
+cajas_rurales,2021,CRAC Raíz,-9105.93,-7.24,5.43
+cajas_rurales,2021,CRAC del Centro,-3640.00,-35.32,4.40
+cajas_rurales,2021,Total,-52524.71,-18.42,7.83
+cajas_rurales,2022,CRAC Cencosud Scotia,5555.01,5.38,3.78
+cajas_rurales,2022,CRAC Incasur,27.77,-6.65,13.65
+cajas_rurales,2022,CRAC Los Andes,2316.16,9.68,8.99
+cajas_rurales,2022,CRAC Prymera,-5727.09,-25.02,8.43
+cajas_rurales,2022,CRAC Raíz,-18794.12,-27.80,16.00
+cajas_rurales,2022,CRAC del Centro,-1591.51,-40.72,4.98
+cajas_rurales,2022,Total,-18213.77,-7.65,11.03
+cajas_rurales,2023,CRAC Cencosud Scotia,-18182.29,-12.95,4.89
+cajas_rurales,2023,CRAC Incasur,-691.69,-14.41,12.31
+cajas_rurales,2023,CRAC Los Andes,53.05,0.33,6.68
+cajas_rurales,2023,CRAC Prymera,-5100.83,-19.92,8.99
+cajas_rurales,2023,CRAC del Centro,-5011.73,-47.25,4.96
+cajas_rurales,2023,Total,-28933.49,-27.34,6.21
+cajas_rurales,2024,CRAC Cencosud Scotia,-7905.01,-6.83,4.12
+cajas_rurales,2024,CRAC Incasur,-511.21,-9.79,9.20
+cajas_rurales,2024,CRAC Los Andes,-3788.83,-3.41,12.04
+cajas_rurales,2024,CRAC Prymera,-5355.46,-19.34,6.64
+cajas_rurales,2024,CRAC del Centro,-6887.69,-83.83,9.70
+cajas_rurales,2024,Total,-24448.19,-10.26,8.43
+cajas_rurales,2025,CRAC Cencosud Scotia,6057.34,2.36,3.46
+cajas_rurales,2025,CRAC Incasur,298.07,0.88,5.37
+cajas_rurales,2025,CRAC Los Andes,4012.18,3.03,8.08
+cajas_rurales,2025,CRAC Prymera,-301.25,-2.07,6.79
+cajas_rurales,2025,CRAC del Centro,-2170.32,-29.53,10.40
+cajas_rurales,2025,Total,7896.02,0.96,6.49
+cajas_rurales,2026,CRAC Cencosud Scotia,9077.06,7.82,2.92
+cajas_rurales,2026,CRAC Incasur,599.70,7.89,4.04
+cajas_rurales,2026,CRAC Los Andes,6049.15,3.55,7.78
+cajas_rurales,2026,CRAC Prymera,1962.92,4.08,5.55
+cajas_rurales,2026,Total,17688.82,4.23,5.78
+financieras,2010,Amérika Financiera,3114.33,4.96,2.10
+financieras,2010,Crediscotia Financiera,65718.07,41.77,3.76
+financieras,2010,Financiera Confianza,4845.90,11.26,6.00
+financieras,2010,Financiera Crear,14207.66,40.59,6.64
+financieras,2010,Financiera Edyficar,34504.37,29.84,4.19
+financieras,2010,Financiera Efectiva,6991.25,38.00,3.74
+financieras,2010,Financiera TFC S.A.,3776.79,13.07,6.50
+financieras,2010,Financiera UNO,-11816.39,-55.12,3.67
+financieras,2010,Financiera Universal,-5050.75,-9.03,1.11
+financieras,2010,Total,116291.22,25.54,4.23
+financieras,2011,Amérika Financiera,2001.44,2.22,1.05
+financieras,2011,Crediscotia Financiera,71104.79,24.28,3.36
+financieras,2011,Financiera Confianza,9874.53,15.62,5.04
+financieras,2011,Financiera Crear,16821.98,34.38,4.95
+financieras,2011,Financiera Edyficar,49506.10,36.83,4.11
+financieras,2011,Financiera Efectiva,9834.14,36.34,3.82
+financieras,2011,Financiera TFC S.A.,2141.57,6.90,7.48
+financieras,2011,Financiera UNO,-6813.48,-12.16,4.68
+financieras,2011,Financiera Universal,-5240.33,-14.36,3.50
+financieras,2011,Mitsui Auto Finance,82.68,-0.20,4.22
+financieras,2011,Total,149313.42,18.98,3.77
+financieras,2012,Amérika Financiera,5723.97,5.98,1.23
+financieras,2012,Crediscotia Financiera,104433.40,29.85,4.19
+financieras,2012,Financiera Confianza,12964.27,18.33,3.54
+financieras,2012,Financiera Crear,13870.17,24.38,5.49
+financieras,2012,Financiera Edyficar,58117.59,34.27,4.08
+financieras,2012,Financiera Efectiva,10826.55,27.55,3.96
+financieras,2012,Financiera Proempresa,2263.02,7.98,5.21
+financieras,2012,Financiera TFC S.A.,1712.20,6.38,6.91
+financieras,2012,Financiera UNO,-1351.62,-3.15,5.33
+financieras,2012,Financiera Universal,-3970.46,-14.93,5.30
+financieras,2012,Mitsui Auto Finance,2150.14,4.62,3.11
+financieras,2012,Total,206739.22,21.26,4.16
+financieras,2013,Amérika Financiera,7.01,3.21,0.00
+financieras,2013,Compartamos Financiera,10190.89,15.78,5.49
+financieras,2013,Crediscotia Financiera,73541.93,20.56,6.22
+financieras,2013,Financiera Confianza,5624.34,6.34,3.16
+financieras,2013,Financiera Edyficar,82980.67,40.06,4.08
+financieras,2013,Financiera Efectiva,10865.86,21.02,3.90
+financieras,2013,Financiera Proempresa,2170.86,6.17,5.24
+financieras,2013,Financiera TFC S.A.,-4741.48,-11.48,7.57
+financieras,2013,Financiera UNO,-22384.93,-22.66,3.26
+financieras,2013,Financiera Universal,-891.09,5.56,6.76
+financieras,2013,Mitsui Auto Finance,11875.39,9.75,7.86
+financieras,2013,Total,169239.44,15.92,5.10
+financieras,2014,Amérika Financiera,-1213.07,-9.17,0.00
+financieras,2014,Compartamos Financiera,17320.96,22.45,7.04
+financieras,2014,Crediscotia Financiera,69407.74,16.10,7.36
+financieras,2014,Financiera Confianza,4862.47,1.95,3.54
+financieras,2014,Financiera Edyficar,68793.44,14.71,4.07
+financieras,2014,Financiera Efectiva,13643.04,21.63,4.48
+financieras,2014,Financiera Nueva Visión,-13307.81,-42.66,11.82
+financieras,2014,Financiera Proempresa,3240.20,7.52,5.54
+financieras,2014,Financiera Qapaq,278.90,2.18,8.41
+financieras,2014,Financiera TFC S.A.,374.04,3.31,5.40
+financieras,2014,Financiera UNO,-4424.18,-10.36,6.44
+financieras,2014,Mitsui Auto Finance,16637.53,14.49,10.37
+financieras,2014,Total,175613.26,10.58,5.91
+financieras,2015,Amérika Financiera,-571.20,-7.41,0.00
+financieras,2015,Compartamos Financiera,14583.52,11.21,7.15
+financieras,2015,Crediscotia Financiera,138531.87,34.95,6.83
+financieras,2015,Financiera Confianza,10472.69,2.76,2.59
+financieras,2015,Financiera Credinka,-3307.84,-5.91,6.32
+financieras,2015,Financiera Edyficar,-715.91,-3.16,0.00
+financieras,2015,Financiera Efectiva,14016.25,18.92,5.50
+financieras,2015,Financiera Proempresa,1233.66,3.72,6.49
+financieras,2015,Financiera Qapaq,1029.79,2.36,9.55
+financieras,2015,Financiera TFC S.A.,-1084.38,-0.50,6.18
+financieras,2015,Financiera UNO,9803.02,7.71,5.04
+financieras,2015,Mitsui Auto Finance,27182.87,23.29,8.15
+financieras,2015,Total,211174.34,12.27,6.07
+financieras,2016,Amérika Financiera,-331.66,-0.34,0.00
+financieras,2016,Compartamos Financiera,18826.41,9.92,4.85
+financieras,2016,Crediscotia Financiera,115572.01,27.33,7.75
+financieras,2016,Financiera Confianza,8737.10,3.76,2.82
+financieras,2016,Financiera Credinka,-1059.02,-7.62,7.22
+financieras,2016,Financiera Efectiva,13910.38,16.62,5.46
+financieras,2016,Financiera Proempresa,3383.26,6.84,5.78
+financieras,2016,Financiera Qapaq,706.38,1.32,11.05
+financieras,2016,Financiera TFC S.A.,335.94,0.78,5.73
+financieras,2016,InFinance XP,19960.77,13.79,4.55
+financieras,2016,Mitsui Auto Finance,22091.38,16.14,9.10
+financieras,2016,Total,202132.95,13.87,6.23
+financieras,2017,Amérika Financiera,-96.64,-1.57,0.00
+financieras,2017,Compartamos Financiera,24152.32,10.59,4.56
+financieras,2017,Crediscotia Financiera,143562.37,27.03,5.80
+financieras,2017,Financiera Confianza,11409.55,6.49,3.00
+financieras,2017,Financiera Credinka,-10536.27,-3.49,3.96
+financieras,2017,Financiera Efectiva,12349.83,14.00,4.66
+financieras,2017,Financiera Proempresa,3653.11,7.49,6.88
+financieras,2017,Financiera Qapaq,218.77,-0.04,8.05
+financieras,2017,Financiera TFC S.A.,1985.44,4.00,5.60
+financieras,2017,InFinance XP,27463.60,17.80,3.91
+financieras,2017,Mitsui Auto Finance,11382.02,9.49,14.57
+financieras,2017,Total,225544.09,14.56,5.43
+financieras,2018,Amérika Financiera,38.67,1.57,0.00
+financieras,2018,Compartamos Financiera,60796.28,19.55,3.97
+financieras,2018,Crediscotia Financiera,182864.15,28.49,6.55
+financieras,2018,Financiera Confianza,21204.63,10.92,3.06
+financieras,2018,Financiera Credinka,53.18,-4.51,3.92
+financieras,2018,Financiera Efectiva,26163.66,20.31,3.58
+financieras,2018,Financiera Proempresa,5804.39,9.84,7.54
+financieras,2018,Financiera Qapaq,195.17,0.12,7.71
+financieras,2018,Financiera TFC S.A.,1154.98,-4.19,6.00
+financieras,2018,InFinance XP,50238.91,25.90,5.34
+financieras,2018,Mitsui Auto Finance,16868.38,11.90,12.15
+financieras,2018,Total,365382.39,18.38,5.52
+financieras,2019,Amérika Financiera,-221.47,-1.18,0.00
+financieras,2019,Compartamos Financiera,70086.53,20.40,3.84
+financieras,2019,Crediscotia Financiera,191975.35,26.92,5.72
+financieras,2019,Financiera Confianza,33535.20,13.72,3.04
+financieras,2019,Financiera Credinka,-956.70,-12.82,4.47
+financieras,2019,Financiera Efectiva,37479.66,24.40,3.82
+financieras,2019,Financiera Proempresa,7690.67,14.67,5.60
+financieras,2019,Financiera Qapaq,-4119.00,-10.44,7.31
+financieras,2019,Financiera TFC S.A.,462.60,-0.25,6.22
+financieras,2019,InFinance XP,52379.84,19.96,5.43
+financieras,2019,Mitsui Auto Finance,17799.86,12.03,7.03
+financieras,2019,Total,406112.54,18.10,4.98
+financieras,2020,Amérika Financiera,826.19,4.08,0.00
+financieras,2020,Compartamos Financiera,1006.77,5.07,6.38
+financieras,2020,Crediscotia Financiera,-48879.62,2.54,9.42
+financieras,2020,Financiera Confianza,12265.98,6.66,3.42
+financieras,2020,Financiera Credinka,613.08,1.07,4.26
+financieras,2020,Financiera Efectiva,14182.44,12.34,5.91
+financieras,2020,Financiera Proempresa,6904.63,13.12,3.66
+financieras,2020,Financiera Qapaq,-3282.94,-7.50,7.42
+financieras,2020,InFinance XP,-16206.88,0.45,7.79
+financieras,2020,Mitsui Auto Finance,9382.68,10.07,9.06
+financieras,2020,Total,-23187.68,4.56,6.94
+financieras,2021,Amérika Financiera,-181.64,-2.39,0.00
+financieras,2021,Compartamos Financiera,1987.58,-6.06,7.11
+financieras,2021,Crediscotia Financiera,-23172.41,-24.85,8.27
+financieras,2021,Financiera Confianza,664.65,0.71,4.75
+financieras,2021,Financiera Credinka,-43498.05,-33.07,9.29
+financieras,2021,Financiera Efectiva,25978.36,5.71,4.94
+financieras,2021,Financiera Proempresa,-2443.73,-5.73,8.38
+financieras,2021,Financiera Qapaq,-23560.44,-67.85,12.91
+financieras,2021,InFinance XP,16562.04,-11.59,3.82
+financieras,2021,Mitsui Auto Finance,39030.35,18.68,6.62
+financieras,2021,Total,-8633.30,-9.18,6.74
+financieras,2022,Amérika Financiera,49.72,-0.57,0.00
+financieras,2022,Compartamos Financiera,79027.02,17.16,5.69
+financieras,2022,Crediscotia Financiera,123877.77,26.98,4.51
+financieras,2022,Financiera Confianza,32163.50,8.89,4.89
+financieras,2022,Financiera Credinka,-29777.31,-40.67,10.65
+financieras,2022,Financiera Efectiva,59998.63,29.35,3.13
+financieras,2022,Financiera Proempresa,268.32,1.28,7.32
+financieras,2022,Financiera Qapaq,-3493.37,-10.87,6.55
+financieras,2022,InFinance XP,38236.52,15.41,6.65
+financieras,2022,Mitsui Auto Finance,36235.81,20.02,4.74
+financieras,2022,Total,336586.61,16.85,5.52
+financieras,2023,Compartamos Financiera,69185.22,13.08,6.60
+financieras,2023,Crediscotia Financiera,66547.97,15.02,5.31
+financieras,2023,Financiera Confianza,12014.53,5.47,7.08
+financieras,2023,Financiera Credinka,-29771.28,-58.59,14.07
+financieras,2023,Financiera Efectiva,42826.37,17.89,3.82
+financieras,2023,Financiera Proempresa,-14223.86,-17.83,10.06
+financieras,2023,Financiera Qapaq,-10624.70,-47.63,9.74
+financieras,2023,InFinance XP,-48964.74,-16.98,8.47
+financieras,2023,Mitsui Auto Finance,27048.14,14.93,4.97
+financieras,2023,Total,114037.64,7.06,6.75
+financieras,2024,Compartamos Financiera,66233.77,12.77,6.57
+financieras,2024,Crediscotia Financiera,17432.30,1.64,6.09
+financieras,2024,Financiera Confianza,4379.06,1.07,8.41
+financieras,2024,Financiera Efectiva,34161.50,11.47,4.27
+financieras,2024,Financiera Proempresa,3574.09,5.30,11.25
+financieras,2024,Financiera Qapaq,-10972.20,-35.44,10.46
+financieras,2024,Financiera Surgir,-13469.51,,4.60
+financieras,2024,InFinance XP,-40812.67,-24.43,9.14
+financieras,2024,Mitsui Auto Finance,35631.10,14.07,6.17
+financieras,2024,Total,96157.44,2.23,7.02
+financieras,2025,Financiera Confianza,33628.93,9.82,5.21
+financieras,2025,Financiera Efectiva,67275.72,25.57,3.71
+financieras,2025,Financiera Proempresa,-2628.96,-12.40,12.85
+financieras,2025,Financiera Qapaq,8890.75,13.36,8.82
+financieras,2025,Financiera Surgir,831.36,0.66,6.27
+financieras,2025,InFinance XP,17276.49,7.72,3.62
+financieras,2025,Mitsui Auto Finance,64004.46,21.48,5.61
+financieras,2025,Total,189278.74,14.18,5.34
+financieras,2026,Financiera Confianza,58877.46,16.36,4.60
+financieras,2026,Financiera Proempresa,9877.78,18.07,9.55
+financieras,2026,Financiera Qapaq,20191.95,36.79,6.38
+financieras,2026,Financiera Surgir,4841.24,4.17,5.27
+financieras,2026,InFinance XP,-3780.66,0.93,3.28
+financieras,2026,Mitsui Auto Finance,68476.58,18.76,4.65
+financieras,2026,Total,158484.36,15.37,4.70
+empresas_de_credito,2010,Acceso Crediticio,365.63,22.44,5.77
+empresas_de_credito,2010,Alternativa,971.51,2.74,7.49
+empresas_de_credito,2010,Credijet,-257.30,-6.67,8.12
+empresas_de_credito,2010,Credivisión,114.50,2.84,9.78
+empresas_de_credito,2010,Micasita,-302.19,-6.90,0.31
+empresas_de_credito,2010,Nueva Visión,2271.47,11.27,5.59
+empresas_de_credito,2010,Pro Negocios,-36.27,4.93,7.80
+empresas_de_credito,2010,Proempresa,1475.73,8.33,6.47
+empresas_de_credito,2010,Raíz,4327.45,5.58,6.14
+empresas_de_credito,2010,Solidaridad,617.03,3.75,3.35
+empresas_de_credito,2010,Total,9547.56,5.86,5.77
+empresas_de_credito,2011,Acceso Crediticio,1097.22,32.46,5.05
+empresas_de_credito,2011,Alternativa,-2249.78,-16.10,6.72
+empresas_de_credito,2011,Credijet,-871.48,-20.90,17.20
+empresas_de_credito,2011,Credivisión,175.25,-5.63,3.26
+empresas_de_credito,2011,Micasita,-221.97,-4.78,0.64
+empresas_de_credito,2011,Nueva Visión,1330.21,4.34,6.80
+empresas_de_credito,2011,Pro Negocios,-2624.68,-48.54,4.31
+empresas_de_credito,2011,Proempresa,2079.41,7.04,5.46
+empresas_de_credito,2011,Raíz,6968.14,7.97,6.04
+empresas_de_credito,2011,Solidaridad,1474.38,4.82,4.80
+empresas_de_credito,2011,Total,7156.69,3.40,5.57
+empresas_de_credito,2012,Acceso Crediticio,2389.15,51.84,5.46
+empresas_de_credito,2012,Alternativa,888.08,-6.01,4.94
+empresas_de_credito,2012,Credijet,-533.77,-12.13,9.93
+empresas_de_credito,2012,Credivisión,-1051.51,-16.73,5.23
+empresas_de_credito,2012,Inversiones La Cruz,4287.56,,5.46
+empresas_de_credito,2012,Marcimex,-1370.61,-47.66,7.88
+empresas_de_credito,2012,Micasita,-416.37,-5.14,0.87
+empresas_de_credito,2012,Nueva Visión,1542.58,6.78,6.59
+empresas_de_credito,2012,Raíz,5073.31,5.50,5.81
+empresas_de_credito,2012,Solidaridad,875.68,2.92,6.85
+empresas_de_credito,2012,Total,11684.08,4.71,5.66
+empresas_de_credito,2013,Acceso Crediticio,4695.46,59.48,5.73
+empresas_de_credito,2013,Alternativa,621.98,5.20,4.82
+empresas_de_credito,2013,Credijet,-757.11,-11.56,18.41
+empresas_de_credito,2013,Credivisión,-1740.32,-27.05,6.84
+empresas_de_credito,2013,Inversiones La Cruz,7803.84,25.93,6.21
+empresas_de_credito,2013,Marcimex,246.99,-19.72,7.37
+empresas_de_credito,2013,Micasita,100.58,0.39,0.72
+empresas_de_credito,2013,Nueva Visión,315.12,2.16,6.55
+empresas_de_credito,2013,Raíz,2625.76,3.06,6.35
+empresas_de_credito,2013,Solidaridad,-3229.85,-9.58,3.05
+empresas_de_credito,2013,Total,10682.44,4.86,5.58
+empresas_de_credito,2014,Acceso Crediticio,4589.40,35.78,4.62
+empresas_de_credito,2014,Alternativa,296.87,3.37,5.66
+empresas_de_credito,2014,BBVA Consumer Finance,-3994.61,,1.29
+empresas_de_credito,2014,Credijet,-481.80,-8.39,32.14
+empresas_de_credito,2014,Credivisión,-1780.02,-48.23,7.22
+empresas_de_credito,2014,GMG,-2343.71,,0.06
+empresas_de_credito,2014,Inversiones La Cruz,9088.21,24.71,3.24
+empresas_de_credito,2014,Marcimex,1598.64,10.18,12.66
+empresas_de_credito,2014,Micasita,-53.60,0.04,0.62
+empresas_de_credito,2014,Raíz,1905.46,2.21,5.69
+empresas_de_credito,2014,Solidaridad,-1121.99,-6.10,6.29
+empresas_de_credito,2014,Total,7702.86,3.48,4.59
+empresas_de_credito,2015,Acceso Crediticio,3218.91,22.07,4.39
+empresas_de_credito,2015,Alternativa,697.56,5.17,4.08
+empresas_de_credito,2015,BBVA Consumer Finance,-1646.94,-2.86,4.88
+empresas_de_credito,2015,Credijet,-173.33,-3.06,30.23
+empresas_de_credito,2015,Credivisión,-316.09,0.51,6.23
+empresas_de_credito,2015,GMG,-4714.29,-20.73,11.03
+empresas_de_credito,2015,Inversiones La Cruz,7408.46,16.93,3.67
+empresas_de_credito,2015,Marcimex,-2192.98,-33.71,9.59
+empresas_de_credito,2015,Micasita,1474.09,10.31,0.50
+empresas_de_credito,2015,Raíz,1996.04,2.98,5.55
+empresas_de_credito,2015,Solidaridad,-193.43,3.13,6.46
+empresas_de_credito,2015,Total,5558.00,2.87,4.90
+empresas_de_credito,2016,Acceso Crediticio,4277.96,11.80,5.63
+empresas_de_credito,2016,Alternativa,533.72,3.78,2.86
+empresas_de_credito,2016,BBVA Consumer Finance,-4031.00,-7.07,1.40
+empresas_de_credito,2016,Credivisión,-118.18,-1.20,4.86
+empresas_de_credito,2016,GMG,-2110.66,-25.63,7.65
+empresas_de_credito,2016,Inversiones La Cruz,8954.98,15.22,3.45
+empresas_de_credito,2016,Marcimex,-10171.64,-82.30,13.64
+empresas_de_credito,2016,Micasita,156.95,3.46,1.20
+empresas_de_credito,2016,Santander,2357.25,,3.56
+empresas_de_credito,2016,Solidaridad,170.71,1.27,7.64
+empresas_de_credito,2016,Total,20.09,-1.46,3.83
+empresas_de_credito,2017,Acceso Crediticio,7512.94,7.80,4.59
+empresas_de_credito,2017,Alternativa,345.70,2.59,2.91
+empresas_de_credito,2017,BBVA Consumer Finance,-1068.38,-1.51,1.95
+empresas_de_credito,2017,Credivisión,-834.56,-34.52,8.02
+empresas_de_credito,2017,GMG,-2125.14,-7.85,12.20
+empresas_de_credito,2017,Inversiones La Cruz,8201.53,12.63,4.94
+empresas_de_credito,2017,Marcimex,-14557.92,-107.12,10.40
+empresas_de_credito,2017,Micasita,738.38,4.88,1.00
+empresas_de_credito,2017,Santander,6511.64,12.02,3.11
+empresas_de_credito,2017,Total,4724.20,1.23,3.98
+empresas_de_credito,2018,Acceso Crediticio,1718.21,3.77,4.62
+empresas_de_credito,2018,Alternativa,1065.40,4.63,3.43
+empresas_de_credito,2018,BBVA Consumer Finance,8885.51,9.69,3.42
+empresas_de_credito,2018,Credivisión,-849.91,-29.65,6.56
+empresas_de_credito,2018,GMG,-5396.72,-39.61,21.25
+empresas_de_credito,2018,Inversiones La Cruz,14441.87,18.39,5.19
+empresas_de_credito,2018,Marcimex,4840.82,26.20,7.04
+empresas_de_credito,2018,Micasita,1470.97,8.04,1.06
+empresas_de_credito,2018,Santander,9000.36,14.96,4.98
+empresas_de_credito,2018,Total,35176.50,7.85,4.84
+empresas_de_credito,2019,Acceso Crediticio,6866.12,10.63,3.89
+empresas_de_credito,2019,Alternativa,1576.08,6.07,3.90
+empresas_de_credito,2019,BBVA Consumer Finance,12981.27,17.70,3.55
+empresas_de_credito,2019,Credivisión,-726.27,-25.92,5.70
+empresas_de_credito,2019,GMG,-14004.95,-4.35,19.33
+empresas_de_credito,2019,Inversiones La Cruz,18979.96,24.74,6.44
+empresas_de_credito,2019,Micasita,2785.58,15.75,1.72
+empresas_de_credito,2019,Progreso,3449.32,14.85,4.87
+empresas_de_credito,2019,Santander,10194.65,15.40,4.70
+empresas_de_credito,2019,Total,42101.77,13.67,4.34
+empresas_de_credito,2020,Acceso Crediticio,-9081.39,-3.68,6.38
+empresas_de_credito,2020,Alternativa,596.76,3.42,3.37
+empresas_de_credito,2020,BBVA Consumer Finance,10964.41,16.25,4.90
+empresas_de_credito,2020,Credivisión,-57.46,0.43,5.91
+empresas_de_credito,2020,GMG,8876.59,42.58,21.84
+empresas_de_credito,2020,Inversiones La Cruz,16154.42,20.34,16.87
+empresas_de_credito,2020,Micasita,382.99,3.70,2.81
+empresas_de_credito,2020,Progreso,-712.22,1.15,9.12
+empresas_de_credito,2020,Santander,12689.13,16.53,2.97
+empresas_de_credito,2020,Total,39813.23,11.91,5.47
+empresas_de_credito,2021,Acceso Crediticio,-17264.38,-17.78,5.57
+empresas_de_credito,2021,Alternativa,159.28,-1.18,4.02
+empresas_de_credito,2021,BBVA Consumer Finance,17224.51,18.77,13.85
+empresas_de_credito,2021,Credivisión,-2008.75,-58.56,10.78
+empresas_de_credito,2021,Inversiones La Cruz,10537.37,15.51,5.96
+empresas_de_credito,2021,Micasita,1874.65,7.25,2.82
+empresas_de_credito,2021,Santander,18263.06,19.45,3.96
+empresas_de_credito,2021,Servicios Financieros Total,5514.83,10.29,7.88
+empresas_de_credito,2021,Total,34300.58,-0.82,5.66
+empresas_de_credito,2022,Acceso Crediticio,-46227.99,-43.62,7.61
+empresas_de_credito,2022,Alternativa,1458.38,6.16,4.25
+empresas_de_credito,2022,Credivisión,-3767.98,-165.11,86.10
+empresas_de_credito,2022,Inversiones La Cruz,4575.12,2.79,7.70
+empresas_de_credito,2022,Micasita,760.71,6.26,2.27
+empresas_de_credito,2022,Santander,13446.69,14.54,6.47
+empresas_de_credito,2022,Servicios Financieros Total,6030.67,12.16,8.14
+empresas_de_credito,2022,Total,-22153.42,-3.11,6.34
+empresas_de_credito,2022,Volvo Finance,1570.97,,1.93
+empresas_de_credito,2023,Alternativa,1854.49,7.28,4.76
+empresas_de_credito,2023,Inversiones La Cruz,4821.03,5.72,9.71
+empresas_de_credito,2023,Santander Consumo,7478.28,4.52,8.12
+empresas_de_credito,2023,TOTAL Servicios Financieros,4768.59,8.40,8.77
+empresas_de_credito,2023,Total,22464.58,-16.00,6.59
+empresas_de_credito,2023,Volvo Finance,4299.37,5.27,1.38
+empresas_de_credito,2023,Vívela,-757.18,-3.55,3.82
+empresas_de_credito,2024,Alternativa,617.05,4.29,10.82
+empresas_de_credito,2024,Santander Consumo,17938.99,9.67,5.35
+empresas_de_credito,2024,TOTAL Servicios Financieros,2135.53,2.72,9.31
+empresas_de_credito,2024,Total,29654.63,9.12,6.24
+empresas_de_credito,2024,Volvo Finance,7338.76,7.58,1.54
+empresas_de_credito,2024,Vívela,1624.30,7.68,11.36
+empresas_de_credito,2025,Alternativa,844.04,2.76,9.33
+empresas_de_credito,2025,Santander Consumo,38981.32,20.08,3.75
+empresas_de_credito,2025,TOTAL Servicios Financieros,5547.60,7.29,7.61
+empresas_de_credito,2025,Total,59714.34,14.17,5.13
+empresas_de_credito,2025,Volvo Finance,10764.80,9.21,2.17
+empresas_de_credito,2025,Vívela,3576.58,22.68,14.49
+empresas_de_credito,2026,Alternativa,2154.45,6.44,7.60
+empresas_de_credito,2026,Santander Consumo,61868.59,26.68,3.21
+empresas_de_credito,2026,TOTAL Servicios Financieros,8683.94,13.30,6.16
+empresas_de_credito,2026,Total,91009.23,18.96,3.79
+empresas_de_credito,2026,Volvo Finance,16050.77,12.66,1.24
+empresas_de_credito,2026,Vívela,2251.48,13.47,9.29
