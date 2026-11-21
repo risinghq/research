@@ -1,0 +1,50 @@
+{
+ "kind": "bars",
+ "title": "What universities spend their canon on",
+ "subtitle": "Canon and royalty spending accrued in 2012-2025 by MEF's functional group, all public universities, current soles",
+ "source": "MEF, Datos Abiertos: Comparación de Presupuesto y Ejecución de Gasto",
+ "unit": "million soles",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Spent",
+   "points": [
+    {
+     "x": "Educacion superior universitaria",
+     "y": 2253.26
+    },
+    {
+     "x": "Infraestructura y equipamiento",
+     "y": 2034.12
+    },
+    {
+     "x": "Investigacion aplicada",
+     "y": 350.46
+    },
+    {
+     "x": "Investigacion basica",
+     "y": 75.5088
+    },
+    {
+     "x": "Asesoramiento y apoyo",
+     "y": 65.2253
+    },
+    {
+     "x": "Educacion de post-grado",
+     "y": 42.6143
+    },
+    {
+     "x": "Pago de la deuda publica",
+     "y": 24.225
+    },
+    {
+     "x": "Direccion y supervision superior",
+     "y": 12.3056
+    }
+   ]
+  }
+ ]
+}
