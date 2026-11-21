@@ -2,7 +2,7 @@
  "kind": "bars",
  "title": "Rankings that include the university",
  "subtitle": "Global rankings, latest edition on 2026-11-18",
- "source": "Rankings and editions in the study's README; QS data: Source: QS Quacquarelli Symonds (www.qs.com). With permission.",
+ "source": "Rankings and editions in the study's README; QS data: Source: QS Quacquarelli Symonds (www.qs.com). With permission; Times Higher Education rankings with permission",
  "unit": "",
  "decimals": 0,
  "x": {
@@ -14,31 +14,31 @@
    "points": [
     {
      "x": "PUCP",
-     "y": 12
+     "y": 15
     },
     {
      "x": "UPCH",
-     "y": 12
+     "y": 14
     },
     {
      "x": "UNMSM",
-     "y": 9
+     "y": 10
     },
     {
      "x": "Científica",
-     "y": 9
+     "y": 12
     },
     {
      "x": "UPC",
-     "y": 8
+     "y": 10
     },
     {
      "x": "UNALM",
-     "y": 6
+     "y": 8
     },
     {
      "x": "UPN",
-     "y": 6
+     "y": 7
     },
     {
      "x": "Pacífico",
@@ -50,11 +50,11 @@
     },
     {
      "x": "USMP",
-     "y": 5
+     "y": 7
     },
     {
      "x": "UNTRM",
-     "y": 4
+     "y": 5
     }
    ]
   }

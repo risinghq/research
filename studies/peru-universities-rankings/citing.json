@@ -1,0 +1,74 @@
+{
+ "kind": "bars",
+ "title": "Citations that come from core journals",
+ "subtitle": "Works citing a random 200 of each university's 2021 to 2024 articles",
+ "source": "OpenAlex, fetched 2026-11-21 (CC0)",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Share of citing works",
+   "points": [
+    {
+     "x": "UPCH",
+     "y": 69.7
+    },
+    {
+     "x": "Científica",
+     "y": 62.6
+    },
+    {
+     "x": "UNALM",
+     "y": 62.1
+    },
+    {
+     "x": "USIL",
+     "y": 61.3
+    },
+    {
+     "x": "UNTRM",
+     "y": 55.1
+    },
+    {
+     "x": "Pacífico",
+     "y": 53.7
+    },
+    {
+     "x": "PUCP",
+     "y": 53.1
+    },
+    {
+     "x": "USMP",
+     "y": 48.5
+    },
+    {
+     "x": "UPC",
+     "y": 45.9
+    },
+    {
+     "x": "UPN",
+     "y": 42.1
+    },
+    {
+     "x": "ULima",
+     "y": 41.0
+    },
+    {
+     "x": "UNMSM",
+     "y": 35.9
+    },
+    {
+     "x": "UTP",
+     "y": 34.2
+    },
+    {
+     "x": "UCV",
+     "y": 14.1
+    }
+   ]
+  }
+ ]
+}
