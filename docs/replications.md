@@ -37,8 +37,7 @@ the precision the original published: a posted 0.4 is not revised by a current
 A post that publishes a table with no periods keeps the table's own columns
 in `original.csv`, one row per table row. Its study draws each column as a
 `bars` chart through `figures`, with `compare` holding the posted values, and
-lists each posted value beside its own under `against_original`; [peru-universities-rankings](../studies/peru-universities-rankings)
-is one.
+lists each posted value beside its own under `against_original`.
 
 The `replication` package writes the chart file, `numbers.json` and the `data`
 date from a study's points and its original, so a study script only fetches

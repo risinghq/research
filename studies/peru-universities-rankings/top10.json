@@ -1,7 +1,7 @@
 {
  "kind": "bars",
  "title": "Articles among the world's 10% most cited",
- "subtitle": "2021 to 2024; bars count every citing work, ticks count core journals only",
+ "subtitle": "2021 to 2024; OpenAlex counts every article and citing work, Leiden core articles, core citations and fractional authorship",
  "source": "OpenAlex, fetched 2026-11-21; CWTS Leiden Ranking Open Edition 2026",
  "unit": "%",
  "decimals": 1,
@@ -10,45 +10,45 @@
  },
  "series": [
   {
-   "label": "OpenAlex, every citing work",
+   "label": "OpenAlex, every article",
    "points": [
-    {
-     "x": "USIL",
-     "y": 20.5
-    },
-    {
-     "x": "UPCH",
-     "y": 15.3
-    },
-    {
-     "x": "PUCP",
-     "y": 18.3
-    },
-    {
-     "x": "Científica",
-     "y": 14.9
-    },
     {
      "x": "UCV",
      "y": 23.4
     },
     {
-     "x": "UNMSM",
-     "y": 10.1
+     "x": "USIL",
+     "y": 20.5
     },
     {
      "x": "UTP",
      "y": 18.9
     },
     {
+     "x": "PUCP",
+     "y": 18.3
+    },
+    {
      "x": "UPC",
      "y": 17.7
+    },
+    {
+     "x": "UPCH",
+     "y": 15.3
+    },
+    {
+     "x": "Científica",
+     "y": 14.9
+    },
+    {
+     "x": "UNMSM",
+     "y": 10.1
     }
    ]
   }
  ],
  "compare": {
-  "label": "Leiden Ranking, core only",
+  "label": "Leiden Ranking",
   "points": [
    {
     "x": "PUCP",

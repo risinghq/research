@@ -1,0 +1,66 @@
+{
+ "kind": "bars",
+ "title": "Core articles per academic staff member",
+ "subtitle": "Core-journal articles 2021 to 2024 over staff in THE's 2027 data",
+ "source": "OpenAlex, fetched 2026-11-21; THE World University Rankings 2027 data, with permission",
+ "unit": "",
+ "decimals": 2,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Core articles per staff",
+   "points": [
+    {
+     "x": "UPCH",
+     "y": 3.18
+    },
+    {
+     "x": "UNTRM",
+     "y": 1.12
+    },
+    {
+     "x": "USIL",
+     "y": 0.98
+    },
+    {
+     "x": "Pacífico",
+     "y": 0.97
+    },
+    {
+     "x": "UNALM",
+     "y": 0.86
+    },
+    {
+     "x": "Científica",
+     "y": 0.66
+    },
+    {
+     "x": "UNMSM",
+     "y": 0.6
+    },
+    {
+     "x": "UCSP",
+     "y": 0.49
+    },
+    {
+     "x": "PUCP",
+     "y": 0.36
+    },
+    {
+     "x": "UPC",
+     "y": 0.22
+    },
+    {
+     "x": "USMP",
+     "y": 0.19
+    },
+    {
+     "x": "UCV",
+     "y": 0.16
+    }
+   ]
+  }
+ ]
+}

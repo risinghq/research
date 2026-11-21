@@ -1,0 +1,98 @@
+{
+ "kind": "bars",
+ "title": "Articles in the university's five most-used journals",
+ "subtitle": "Share of journal articles, 2021 to 2024; the 20 universities with most",
+ "source": "OpenAlex, fetched 2026-11-21 (CC0)",
+ "unit": "%",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Share in five journals",
+   "points": [
+    {
+     "x": "UCV",
+     "y": 30.2
+    },
+    {
+     "x": "UNT",
+     "y": 24.2
+    },
+    {
+     "x": "ULima",
+     "y": 23.7
+    },
+    {
+     "x": "URP",
+     "y": 22.1
+    },
+    {
+     "x": "UNA Puno",
+     "y": 16.5
+    },
+    {
+     "x": "USMP",
+     "y": 15.2
+    },
+    {
+     "x": "USIL",
+     "y": 15.1
+    },
+    {
+     "x": "UNFV",
+     "y": 13.5
+    },
+    {
+     "x": "UPCH",
+     "y": 12.6
+    },
+    {
+     "x": "UNALM",
+     "y": 12.5
+    },
+    {
+     "x": "UPeU",
+     "y": 11.9
+    },
+    {
+     "x": "Continental",
+     "y": 10.8
+    },
+    {
+     "x": "UNSM",
+     "y": 10.3
+    },
+    {
+     "x": "UTP",
+     "y": 9.8
+    },
+    {
+     "x": "UNMSM",
+     "y": 9.1
+    },
+    {
+     "x": "UPN",
+     "y": 8.1
+    },
+    {
+     "x": "UNSA",
+     "y": 7.9
+    },
+    {
+     "x": "Científica",
+     "y": 7.0
+    },
+    {
+     "x": "UPC",
+     "y": 6.5
+    },
+    {
+     "x": "PUCP",
+     "y": 5.6
+    }
+   ]
+  }
+ ]
+}

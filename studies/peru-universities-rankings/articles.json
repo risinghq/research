@@ -1,7 +1,7 @@
 {
  "kind": "line",
  "title": "Journal articles a year",
- "subtitle": "Articles with an author at the university, by year published",
+ "subtitle": "The five universities with most articles; 2025 still filling",
  "source": "OpenAlex, fetched 2026-11-21 (CC0)",
  "unit": "articles",
  "decimals": 0,

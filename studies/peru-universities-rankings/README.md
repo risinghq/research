@@ -1,133 +1,162 @@
 ---
-summary: Which Peruvian university leads a global ranking depends on what the ranking counts. Sixteen named rankings, set beside Percy Mayta-Tristán's table and against OpenAlex counts of each university's articles and of who cites them.
+summary: Peru's universities nearly tripled their journal articles from 2015 to 2024, but ten of them write half the articles in core international journals. OpenAlex counts for every university in SUNEDU's register, set beside the rankings that disagree about who leads.
 topic: peru-universities
 status: finished
 published: 2026-11-20
 data: 2026-11-21
-replicates: https://x.com/MaytaTristan/status/2123099835351888118
-original: Universidades peruanas con mayor presencia en rankings globales el 2026
-author: Percy Mayta-Tristán
-outlet: X
-posted: 2026-11-18
 ---
 
-# Peruvian universities in global rankings
+# The research record of Peru's universities
 
-On 2026-11-18 Percy Mayta-Tristán posted a table of eleven Peruvian
-universities. For each one it counts the global rankings that place it first
-in Peru, in Peru's top three, and anywhere in the ranking. It counts 18
-rankings at their most recent edition and does not name them.
+On 2026-11-18 Percy Mayta-Tristán
+posted
+[which Peruvian universities appear most in global rankings in 2026](https://x.com/MaytaTristan/status/2123099835351888118).
+The rankings disagree about who leads Peru, because each mixes different
+indicators.
+This study goes to the record most of them draw on: the journal articles of
+every university in SUNEDU's register, from OpenAlex.
 
-This study counts the same three things over 16 named rankings, each at its
-latest edition published on or before 2026-11-18. It then asks why the
-rankings disagree, using OpenAlex's record of each university's journal
-articles from 2021 to 2024 and of the works that cite them.
+- Peruvian institutions published 5,417 journal articles in 2015 and 15,128 in
+  2024. Articles in core journals, the international set bibliometric
+  rankings count, went from 1,280 to 4,759.
+- Ten universities write half of the core articles. Of the 112 universities
+  OpenAlex records, 19 published fewer than ten core articles in four years.
+  Universities in Lima write 64%.
+- San Marcos and César Vallejo published about 7,500 articles each from 2021
+  to 2024, twice PUCP's 3,881. A quarter of San Marcos' and a tenth of César
+  Vallejo's are in core journals. For Cayetano Heredia it is 61%.
+- The three journals with most Peruvian articles are foreign, outside the core
+  set, and fill largely with Peruvian authors. A Spanish climatology journal
+  published under ten articles a year until 2022 and 460 in 2023; 418 had a
+  Peruvian author.
+- Per member of academic staff, Cayetano Heredia published 3.2 core articles
+  in four years, nine times PUCP's 0.36 and twenty times César Vallejo's 0.16.
 
-The answer is that each ranking rewards something different. Rankings built
-on citations put Cayetano Heredia first. Rankings built on volume, reputation
-or the web put PUCP first. And the database matters as much as the ranking.
-César Vallejo published almost twice as many articles as PUCP. OpenAlex marks
-more of them among the world's most cited than it does for any other large
-Peruvian university. Most of those citations come from theses and from
-journals outside the core set that bibliometric rankings count.
+## Where the core articles are
 
-## Who leads depends on what is counted
+![Articles in core journals](https://research.rising.sh/peru-universities-rankings/concentration.svg)
 
-![Rankings that place the university first in Peru](https://research.rising.sh/peru-universities-rankings/leader.svg)
+CWTS, which builds the Leiden Ranking, defines core journals as international
+journals that cite and are cited by one another. OpenAlex marks them. From
+2021 to 2024, San Marcos, Cayetano Heredia and PUCP each published between
+1,688 and 1,951 core articles. Científica follows with 1,449. Summed over the
+universities, the ten largest hold 49.5% of core articles and the twenty
+largest 69%.
 
-PUCP is first in Peru in 9 of the 16 rankings and Cayetano Heredia in 6. In
-THE's Sustainability Impact Ratings, PUCP shares first place with UPC. uniRank
-places the Universidad Tecnológica del Perú first, a university the post does
-not list.
+Licensed private universities hold 62% and public universities 38%. The 45
+universities SUNEDU denied a licence hold 0.8%. SUNEDU's register lists 143
+universities; OpenAlex has no record for 31 of them, 27 of those denied a
+licence.
 
-Five of the six rankings that put Cayetano Heredia first weigh citations
-heavily: CWUR, U.S. News, NTU and THE's World University and Interdisciplinary
-Science rankings. The sixth is GreenMetric, which scores campus
-sustainability. Most of the nine that put PUCP first count totals,
-reputation or web presence: publications (Leiden), share of articles in a set
-of journals (Nature Index), academic surveys (QS) and web links
-(Webometrics). The exception is THE's Sustainability Impact Ratings, where
-PUCP shares first place with UPC.
+## Growth since 2015
 
-THE's World University Rankings 2027 show the split inside one ranking.
-Cayetano Heredia scores 63.7 on research quality, the pillar built on
-citations, and PUCP 30.9. PUCP scores 26.2 on teaching and Cayetano Heredia
-17.8. The Leiden Ranking shows it in two numbers. PUCP has the most core
-publications in Peru, 828 against Cayetano Heredia's 538. Cayetano Heredia
-has the larger share of them among the world's 10% most cited, 7.7% against
-5.4%.
+![Articles a year in core journals](https://research.rising.sh/peru-universities-rankings/growth.svg)
 
-![Rankings that place the university in Peru's top three](https://research.rising.sh/peru-universities-rankings/top3.svg)
+Public universities published 349 core articles in 2015 and 1,973 in 2024,
+5.7 times as many. Licensed private universities went from 673 to 2,999, 4.5
+times. Each line counts an article once however many universities of its
+group sign it.
 
-![Rankings that include the university](https://research.rising.sh/peru-universities-rankings/present.svg)
+![Journal articles a year](https://research.rising.sh/peru-universities-rankings/growth-all.svg)
 
-## Volume and where it is published
+Counting every journal article, both groups grew more than threefold.
+Licensed private universities published more than public ones in every year
+but 2019.
 
-![Articles in core journals](https://research.rising.sh/peru-universities-rankings/core-share.svg)
+![Journal articles a year, five universities](https://research.rising.sh/peru-universities-rankings/articles.svg)
 
-From 2021 to 2024, San Marcos and César Vallejo each published more than 7,400
-articles, almost twice PUCP's 3,881 and more than twice Cayetano Heredia's
-3,106. They differ in where the articles appear. Leiden counts only core
-journals, which CWTS defines as international journals that cite and are
-cited by one another, and OpenAlex marks them. Core journals hold 61% of
-Cayetano Heredia's articles, 57% of Científica's and 44% of PUCP's, against
-25% of San Marcos' and 10% of César Vallejo's.
+The largest single change is César Vallejo's. It published 283 articles in
+2019 and 1,590 in 2021, and more than any other Peruvian university in 2023
+and 2024.
 
-![Journal articles a year](https://research.rising.sh/peru-universities-rankings/articles.svg)
+## Volume is not reach
 
-César Vallejo published 283 articles in 2019 and 1,590 in 2021. In 2023 and
-2024 it published more than any other Peruvian university. Seven of its 2019
-articles and 77 of its 2021 ones were in core journals.
+![Share of articles in core journals](https://research.rising.sh/peru-universities-rankings/core-share.svg)
 
-![Journal articles a year in core journals](https://research.rising.sh/peru-universities-rankings/core-articles.svg)
+Among the twenty universities with most articles, the share in core journals
+runs from 61% at Cayetano Heredia to 10% at César Vallejo and 11% at the
+Universidad Nacional de San Martín. Core journals publish mostly in English
+and favour fields with international literatures. A low share means the
+articles reach the international literature less; it does not by itself say
+they are weaker.
 
-Counted in core journals, the fastest riser is Científica, from 101 articles
-in 2019 to 515 in 2025, close to PUCP's 561 and Cayetano Heredia's 537. San
-Marcos has published the most core articles every year since 2022. OpenAlex is still
-adding 2025 articles, so the last year will rise.
+![Articles in the university's five most-used journals](https://research.rising.sh/peru-universities-rankings/venues.svg)
+
+César Vallejo placed 30% of its articles in five journals, more than any of
+the twenty. At PUCP the five most-used journals hold 6%.
+
+![Peruvian articles in three foreign journals](https://research.rising.sh/peru-universities-rankings/journals.svg)
+
+The three journals with most Peruvian articles from 2021 to 2024 are none of
+Peru's own:
+
+| Journal | Based in | Peruvian articles | All articles | Core |
+| ------- | -------- | ----------------- | ------------ | ---- |
+| Ciencia Latina Revista Científica Multidisciplinar | Paraguay | 1,788 | 10,143 | No |
+| Revista de Climatología | Spain | 628 | 682 | No |
+| Horizontes Revista de Investigación en Ciencias de la Educación | Bolivia | 585 | 697 | No |
+
+Revista de Climatología published one article in 2020 and none in 2021 or
+2022. In 2023 it published 460, and 418 had a Peruvian author. OpenAlex
+records none for 2025. Its
+[2023 Peruvian articles](https://api.openalex.org/works?filter=primary_location.source.id:S2737847956,publication_year:2023,authorships.institutions.country_code:PE)
+are on public management, law and education, not climate. Horizontes went
+from one Peruvian article in 2020 to 188 in 2023. The Retraction Watch
+Hijacked Journal Checker listed none of the three on 2026-11-21. This study
+does not judge the journals; it shows where the volume went.
+
+## Size
+
+![Core articles per academic staff member](https://research.rising.sh/peru-universities-rankings/per-staff.svg)
+
+Totals favour large universities. THE's 2027 data give the students and the
+students per staff member of twelve Peruvian universities, which yields their
+academic staff. Cayetano Heredia has about 590 staff and published 3.2 core
+articles per staff member from 2021 to 2024. Toribio Rodríguez de Mendoza, a
+public university in Amazonas with about 330 staff, follows with 1.1. PUCP,
+with about 4,600 staff, has 0.36. César Vallejo, with 361,748 students and
+about 4,400 staff, has 0.16.
 
 ## Which citations count
 
 ![Articles among the world's 10% most cited](https://research.rising.sh/peru-universities-rankings/top10.svg)
 
 OpenAlex marks an article among the world's 10% most cited for its field and
-year, counting every work that cites it. On that measure César Vallejo leads
-every university here: 23.4% of its 2021 to 2024 articles, against
-18.3% of PUCP's and 15.3% of Cayetano Heredia's. The Leiden Ranking builds the
-same indicator from OpenAlex, but counts only core publications and citations
-from core journals. There César Vallejo has 4.5%. San Ignacio de Loyola, at
-8.3%, and Cayetano Heredia, at 7.7%, lead.
+year, counting every work that cites it. On that flag César Vallejo has the
+highest share of the eight universities in the Leiden Ranking, 23.4%. The
+Leiden Ranking builds the same indicator from OpenAlex with core publications,
+citations from core journals and fractional counting. There César Vallejo has
+4.5%, and San Ignacio de Loyola, 8.3%, and Cayetano Heredia, 7.7%, lead.
 
 ![Citations that come from core journals](https://research.rising.sh/peru-universities-rankings/citing.svg)
 
-The citing works explain the gap. For a random 200 of each university's
-articles, 70% of the works citing Cayetano Heredia's are in core journals.
-For César Vallejo's it is 14%. Theses make up 23.5% of the works citing César
-Vallejo's articles, against 4.2% for Cayetano Heredia and 6.9% for PUCP.
-Peruvian universities deposit their students' theses in open repositories,
-and OpenAlex indexes them as citing works. A fifth of the works citing César
-Vallejo's articles carry César Vallejo's own affiliation. For PUCP it is a
-tenth and for Cayetano Heredia a twentieth.
+Who cites the articles accounts for much of the gap. Of the works citing
+Cayetano Heredia's sampled articles, 69% are in core journals; for César
+Vallejo's, 9%. Theses are 27% of the works citing César Vallejo's articles
+and 4% of those citing Cayetano Heredia's. A quarter of the works citing César
+Vallejo's articles carry César Vallejo's own affiliation; for the other nine
+universities sampled it is between 4% and 9%. Peruvian universities deposit
+their students' theses in open repositories, and OpenAlex counts them as
+citing works.
 
-A ranking built on raw OpenAlex citations would therefore move César Vallejo
-up. Rankings built on Scopus, Web of Science or Leiden's core set do not.
-César Vallejo is the largest Peruvian university in THE's 2027 data, with
-361,748 students. It enters all three THE rankings, but none places it first
-in Peru.
+## What the rankings reward
 
-## Rankings counted
+The rankings Mayta-Tristán counted are not independent votes. Several are
+built on the same citation databases, so counting the rankings a university
+leads counts the same articles more than once. What separates them is
+whether they reward totals or rates.
 
 | Ranking | Edition | What orders it | First in Peru |
 | ------- | ------- | -------------- | ------------- |
-| [SCImago Institutions Rankings](https://www.scimagoir.com/rankings.php?sector=Higher%20educ.&country=PER) | 2026 | Research, innovation and web visibility, higher education sector | PUCP |
-| [Webometrics](https://doi.org/10.6084/m9.figshare.33062150.v3) | 2026, July | Web presence and citations; the Figshare edition, CC BY 4.0 | PUCP |
-| [CWTS Leiden Ranking Open Edition](https://open.leidenranking.com/ranking/2026/list) | 2026 | Publications (P), 2021 to 2024, core publications, fractional counting; CC0 | PUCP |
+| [SCImago Institutions Rankings](https://www.scimagoir.com/rankings.php?sector=Higher%20educ.&country=PER) | 2026 | Research, innovation and web visibility | PUCP |
+| [Webometrics](https://doi.org/10.6084/m9.figshare.33062150.v3) | 2026, July | Web presence and citations | PUCP |
+| [CWTS Leiden Ranking Open Edition](https://open.leidenranking.com/ranking/2026/list) | 2026 | Core publications, 2021 to 2024 | PUCP |
 | [QS World University Rankings](https://www.topuniversities.com/world-university-rankings?countries=pe) | 2027 | Reputation, citations and ratios | PUCP |
 | [CWUR](https://cwur.org/2026.php) | 2026 | Education, employability, faculty and research | UPCH |
 | [U.S. News Best Global Universities](https://www.usnews.com/education/best-global-universities/search?country=peru) | 2026-2027 | Research and reputation | UPCH |
 | [NTU Ranking](https://nturanking.csti.tw/ranking/ByCountry/2026/PE) | 2026 | Scientific papers and their citations | UPCH |
 | [MosIUR Three University Missions](https://mosiur.org/ranking/) | 2026 | Education, research and the university's role in society | PUCP |
-| [Nature Index](https://www.nature.com/nature-index/institution-outputs/generate/all/countries-Peru/all) | 1 July 2025 to 30 June 2026 | Share of articles in its journals; CC BY-NC-SA 4.0 | PUCP |
+| [Nature Index](https://www.nature.com/nature-index/institution-outputs/generate/all/countries-Peru/all) | 1 July 2025 to 30 June 2026 | Share of articles in its journals | PUCP |
 | [Round University Ranking](https://roundranking.com/ranking/world-university-rankings.html) | 2026 | Teaching, research, international diversity and finances | PUCP |
 | [UI GreenMetric](http://web.archive.org/web/20260314234938/https://greenmetric.ui.ac.id/rankings/overall-rankings-2025) | 2025 | Campus sustainability | UPCH |
 | [EduRank](https://edurank.org/geo/pe/) | 2026 | Research output, influence and alumni | PUCP |
@@ -136,96 +165,96 @@ in Peru.
 | [THE Interdisciplinary Science Rankings](https://www.timeshighereducation.com/world-university-rankings/interdisciplinary-science-rankings) | 2027 | Funding, support and output of interdisciplinary science | UPCH |
 | [THE Sustainability Impact Ratings](https://www.timeshighereducation.com/impactrankings) | 2026 | Work toward the UN Sustainable Development Goals | PUCP, UPC |
 
-[`ranks.csv`](ranks.csv) holds every Peru rank the counts use, with the rank
-or band the ranking publishes and a link to the page it was read from.
-Universities that share a rank or a band share their place in Peru: in QS
-2027, Científica and the Universidad de Lima are both fourth. In THE's World
-University Rankings 2027, seven Peruvian universities share the 2001+ band
-and so share third place.
+PUCP leads nine and Cayetano Heredia six. Rankings that weigh citations
+heavily (CWUR, U.S. News, NTU, THE) put Cayetano Heredia first; rankings that
+count totals, reputation or the web put PUCP first. The record above explains
+both. PUCP publishes fewer core articles than Cayetano Heredia but
+far more articles overall, and Cayetano Heredia, an eighth PUCP's size in
+staff, publishes far more per person and is cited more often from core
+journals. THE's 2027 pillars show the split: Cayetano Heredia scores
+63.7 on research quality and PUCP 30.9; PUCP scores 26.2 on teaching and
+Cayetano Heredia 17.8.
 
-THE lists some universities as reporters, which send data but are not
-ranked; they count as absent. The Nature Index lists every Peruvian
-institution. The Peru place here counts universities only, so an institute, an
-NGO or a hospital above a university does not move it down. Webometrics' July
-edition prints the top of its world list. UNALM, Pacífico and UNTRM fall below
-that cut, so they count as absent. GreenMetric's site did not answer on
-2026-11-20, so its 2025 list was read from the Internet Archive's copy. THE
-published the Interdisciplinary Science Rankings 2027 on 2026-11-18, the day
-of the post.
+[`ranks.csv`](ranks.csv) holds each Peru rank read, with a link to its page.
+Universities that share a rank or band share a place. THE lists some
+universities as reporters, which send data but are not ranked.
 
-Times Higher Education rankings are used with THE's permission.
+Left out: QS Sustainability Rankings 2027, because QS permits reuse of the
+World University Rankings only; ARWU 2026, which ranks no Peruvian
+university; URAP, which did not load on 2026-11-20; and AD Scientific Index,
+which has no dated edition.
 
-QS World University Rankings data: Source: QS Quacquarelli Symonds
-([www.qs.com](https://www.qs.com)). With permission from QS Quacquarelli
-Symonds.
+## Limits
 
-### Left out
-
-- **QS Sustainability Rankings 2027**, published 2026-11-17. QS permits reuse
-  of the World University Rankings only.
-- **ARWU 2026** ranks no Peruvian university.
-- **URAP** did not load on 2026-11-20.
-- **AD Scientific Index** updates continuously and has no dated edition.
+- **Matching.** Universities were matched to OpenAlex institutions by name
+  and checked by hand. OpenAlex counts an article for a university only when
+  it parses the affiliation, so articles in journals with poor metadata are
+  missed, more often in small Peruvian journals.
+- **Full counting.** An article with authors at two universities counts for
+  both, so the universities' totals sum to more than Peru's. The group lines
+  count it once per group.
+- **Core is one definition.** It follows CWTS's rules, which favour English
+  and international journals. It measures reach into that literature, not
+  quality.
+- **Years.** OpenAlex dates about a thousand back issues of San Marcos'
+  journals to 2014, so the series start in 2015. OpenAlex is still adding
+  2025 articles.
+- **Citing samples.** Each university has three random samples of 100
+  articles. The whiskers span the three, and a few highly cited articles move
+  a sample a lot.
+- **Top 10%.** OpenAlex and Leiden differ in counting, field classification
+  and publication set as well as in which citations count, so the gap has
+  more than one cause.
+- **Staff.** THE's student and staff figures are the universities' own
+  submissions, and universities count part-time staff differently.
 
 ## Universities
 
-| Short name | University                                            |
-| ---------- | ----------------------------------------------------- |
-| PUCP       | Pontificia Universidad Católica del Perú              |
-| UPCH       | Universidad Peruana Cayetano Heredia                  |
-| UNMSM      | Universidad Nacional Mayor de San Marcos              |
-| Científica | Universidad Científica del Sur                        |
-| UPC        | Universidad Peruana de Ciencias Aplicadas             |
-| UNALM      | Universidad Nacional Agraria La Molina                |
-| UPN        | Universidad Privada del Norte                         |
-| Pacífico   | Universidad del Pacífico                              |
-| ULima      | Universidad de Lima                                   |
-| USMP       | Universidad de San Martín de Porres                   |
-| UNTRM      | Universidad Nacional Toribio Rodríguez de Mendoza     |
-| UTP        | Universidad Tecnológica del Perú                      |
-| UCV        | Universidad César Vallejo                             |
-| USIL       | Universidad San Ignacio de Loyola                     |
-
-The ranking counts cover the post's eleven universities. The OpenAlex counts
-add UTP, César Vallejo and San Ignacio de Loyola, the three other Peruvian
-universities in the Leiden Ranking.
-
-## What differs from the original
-
-- **Rankings.** The original counts 18 rankings. This study counts 16 and
-  names each one.
-- **First place.** The original has Cayetano Heredia first in Peru in 8
-  rankings and PUCP in 7. Here PUCP leads 9 and Cayetano Heredia 6. UNMSM and
-  Científica each lead one ranking in the original and none here.
-- **Top three.** The original places each of its eleven universities in Peru's
-  top three at least once. Here UPN and ULima never reach it.
-- **Presence.** UPC, UNALM, UPN, Pacífico, ULima, USMP and UNTRM appear in
-  more rankings here than in the original. EduRank and uniRank include all
-  seven.
-- **Universities.** uniRank places UTP first in Peru. The original does not
-  list UTP, which suggests it does not count uniRank.
-
-The post gives counts and no ranks, so the check is by count.
-[`numbers.json`](numbers.json) lists each of the original's 33 counts beside
-this study's under `against_original`, and the 22 that differ under
-`differs_from_post`. The 11 that match include PUCP's 15 top-three places,
-UPC's one first place, and UNTRM's one top-three place. Here UNTRM's top-three
-place is its shared second place in THE's Interdisciplinary Science Rankings.
+| Short name | University |
+| ---------- | ---------- |
+| Científica | Universidad Científica del Sur |
+| Continental | Universidad Continental |
+| Pacífico | Universidad del Pacífico |
+| PUCP | Pontificia Universidad Católica del Perú |
+| UCSP | Universidad Católica San Pablo |
+| UCV | Universidad César Vallejo |
+| ULima | Universidad de Lima |
+| UNA Puno | Universidad Nacional del Altiplano |
+| UNALM | Universidad Nacional Agraria La Molina |
+| UNFV | Universidad Nacional Federico Villarreal |
+| UNI | Universidad Nacional de Ingeniería |
+| UNMSM | Universidad Nacional Mayor de San Marcos |
+| UNSA | Universidad Nacional de San Agustín de Arequipa |
+| UNSM | Universidad Nacional de San Martín |
+| UNT | Universidad Nacional de Trujillo |
+| UNTRM | Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas |
+| UPC | Universidad Peruana de Ciencias Aplicadas |
+| UPCH | Universidad Peruana Cayetano Heredia |
+| UPeU | Universidad Peruana Unión |
+| UPN | Universidad Privada del Norte |
+| URP | Universidad Ricardo Palma |
+| USIL | Universidad San Ignacio de Loyola |
+| USMP | Universidad de San Martín de Porres |
+| UTP | Universidad Tecnológica del Perú |
 
 ## Reproduce
 
-[`openalex.py`](openalex.py) fetches the OpenAlex counts into
-[`openalex.csv`](openalex.csv), [`citing.csv`](citing.csv) and
-[`articles-by-year.csv`](articles-by-year.csv). They were fetched on
-2026-11-21. OpenAlex updates continuously, so a later fetch differs slightly.
-The citing sample is OpenAlex's random sample with seed 7.
+| File | Source |
+| ---- | ------ |
+| [`universities.csv`](universities.csv) | SUNEDU's [licensing register](https://www.datosabiertos.gob.pe/dataset/sunedu-licenciamiento-institucional), cut 2024-08-28, ODC-BY, with each university's OpenAlex id |
+| [`staff.csv`](staff.csv) | THE World University Rankings 2027: students and students per staff |
+| [`leiden.csv`](leiden.csv) | CWTS Leiden Ranking Open Edition 2026, CC0 |
+| [`ranks.csv`](ranks.csv) | Each ranking's own page |
+| `output.csv`, `groups.csv`, `journals.csv`, `journal-years.csv`, `venues.csv`, `citing.csv`, `articles-by-year.csv` | OpenAlex, CC0, fetched 2026-11-21 by [`openalex.py`](openalex.py) |
 
-[`peru_universities_rankings.py`](peru_universities_rankings.py) reads those
-files and [`ranks.csv`](ranks.csv), [`leiden.csv`](leiden.csv) and
-[`original.csv`](original.csv), the post's table. It writes every chart file
-and [`numbers.json`](numbers.json) and reads no network. The ranks and the
-Leiden values were read by hand from the linked pages on 2026-11-20 and
-2026-11-21.
+Times Higher Education data are used with THE's permission. QS World
+University Rankings data: Source: QS Quacquarelli Symonds
+([www.qs.com](https://www.qs.com)). With permission from QS Quacquarelli
+Symonds.
+
+[`peru_universities_rankings.py`](peru_universities_rankings.py) reads the
+files, writes every chart and [`numbers.json`](numbers.json), and reads no
+network. OpenAlex updates continuously, so a later fetch differs slightly.
 
 ```bash
 mise run install
