@@ -1,6 +1,8 @@
+<a href="https://rising.sh"><picture><source media="(prefers-color-scheme: dark)" srcset="https://rising.sh/brand/rising-sh-dark.svg"><img alt="rising.sh" src="https://rising.sh/brand/rising-sh-light.svg" height="28"></picture></a>
+
 # research
 
-Rising's studies on open data. Each study is a folder under
+Studies on open data by rising.sh. Each study is a folder under
 [`studies/`](studies) with its question, its report, the numbers it cites and
 its chart files, which [docs/charts.md](docs/charts.md) describes. Shared data
 clients live under [`packages/`](packages).
