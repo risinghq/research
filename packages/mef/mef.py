@@ -15,6 +15,12 @@ one row per line item and month and the stages in `MONTO_` columns. MEF also
 serves the CSV unzipped, fifteen times larger.
 Summing a line item's months gives its year. MEF publishes daily files for
 2025 on, and 2025's agrees with the zip.
+
+Revenue has only the daily file, `{year}-Ingreso-Diario.zip`, from 2025:
+one row per executing unit, funding source, resource type, revenue
+classifier and month, with PIA, PIM and the amount collected (recaudado).
+Its CSV has no byte-order mark. Earlier years of revenue are in Consulta
+Amigable de Ingresos only.
 """
 
 import csv
@@ -49,6 +55,8 @@ STAGES = (
     "DEVENGADO",
     "GIRADO",
 )
+# Revenue stages: RECAUDADO is the amount collected or received.
+REVENUE_STAGES = ("PIA", "PIM", "RECAUDADO")
 _LOCAL_HEADER = b"PK\x03\x04"
 _DEFLATE = 8
 
@@ -154,21 +162,37 @@ class MefClient:
         self, span: tuple[int, int], keep: Callable[[str], bool]
     ) -> Iterator[dict[str, str]]:
         """The rows of a span whose raw line passes `keep`."""
-        with self._http.stream("GET", SPANS[span]) as response:
-            response.raise_for_status()
-            chunks = response.iter_bytes(1 << 20)
-            yield from records(lines(inflate(chunks)), keep)
+        return self._stream(SPANS[span], keep)
 
     def daily_modified(self, year: int) -> str:
         """The daily file's `Last-Modified` header."""
-        response = self._http.head(daily_file(year))
-        response.raise_for_status()
-        return response.headers["Last-Modified"]
+        return self._modified(daily_file(year))
 
     def daily(self, year: int, keep: Callable[[str], bool]) -> Iterator[dict[str, str]]:
         """The rows of a year's daily file whose raw line passes `keep`, one per
         line item and month."""
-        with self._http.stream("GET", daily_file(year)) as response:
+        return self._stream(daily_file(year), keep)
+
+    def revenue_modified(self, year: int) -> str:
+        """The daily revenue file's `Last-Modified` header."""
+        return self._modified(revenue_file(year))
+
+    def revenue(
+        self, year: int, keep: Callable[[str], bool]
+    ) -> Iterator[dict[str, str]]:
+        """The rows of a year's daily revenue file whose raw line passes `keep`,
+        one per revenue line and month."""
+        return self._stream(revenue_file(year), keep)
+
+    def _modified(self, path: str) -> str:
+        response = self._http.head(path)
+        response.raise_for_status()
+        return response.headers["Last-Modified"]
+
+    def _stream(
+        self, path: str, keep: Callable[[str], bool]
+    ) -> Iterator[dict[str, str]]:
+        with self._http.stream("GET", path) as response:
             response.raise_for_status()
             chunks = response.iter_bytes(1 << 20)
             yield from records(lines(inflate(chunks)), keep)
@@ -178,6 +202,15 @@ def daily_file(year: int) -> str:
     return f"{year}-Gasto-Diario.zip"
 
 
+def revenue_file(year: int) -> str:
+    return f"{year}-Ingreso-Diario.zip"
+
+
 def monthly(row: dict[str, str]) -> dict[str, float]:
     """A daily file row's stages, `MONTO_PIA` read as PIA."""
     return {stage: amount(row[f"MONTO_{stage}"]) for stage in STAGES}
+
+
+def collected(row: dict[str, str]) -> dict[str, float]:
+    """A daily revenue row's stages, `MONTO_RECAUDADO` read as RECAUDADO."""
+    return {stage: amount(row[f"MONTO_{stage}"]) for stage in REVENUE_STAGES}

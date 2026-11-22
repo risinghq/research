@@ -90,3 +90,25 @@ def test_daily_reads_the_zipped_csv_by_month() -> None:
     assert [r["MES_EJE"] for r in kept] == ["1"]
     stages = mef.monthly(kept[0])
     assert (stages["PIA"], stages["CERTIFICADO"], stages["DEVENGADO"]) == (100, 0, 10)
+
+
+def test_revenue_reads_the_daily_revenue_file_without_a_bom() -> None:
+    header = ",".join(
+        f'"{n}"'
+        for n in ["ANO_DOC", "PLIEGO", *(f"MONTO_{s}" for s in mef.REVENUE_STAGES)]
+    )
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        text = "\n".join([header, '"2026","511","","20.5","7"'])
+        archive.writestr("ingreso.csv", text.encode("utf-8"))
+    body = buffer.getvalue()
+
+    def handler(request: httpx2.Request) -> httpx2.Response:
+        assert request.url.path.endswith("2026-Ingreso-Diario.zip")
+        return httpx2.Response(200, content=body)
+
+    client = mef.MefClient(transport=httpx2.MockTransport(handler))
+    kept = list(client.revenue(2026, lambda line: True))
+    client.close()
+    assert [r["ANO_DOC"] for r in kept] == ["2026"]
+    assert mef.collected(kept[0]) == {"PIA": 0.0, "PIM": 20.5, "RECAUDADO": 7.0}

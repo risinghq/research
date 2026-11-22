@@ -109,6 +109,379 @@
     "2025": 54,
     "2026": 63
   },
+  "revenue": {
+    "2012": {
+      "transfers": 429054809,
+      "other_income": 7735371,
+      "balance": 283472042,
+      "balance_pim": 142927124
+    },
+    "2013": {
+      "transfers": 382860934,
+      "other_income": 10181692,
+      "balance": 650826399,
+      "balance_pim": 365996721
+    },
+    "2014": {
+      "transfers": 550406190,
+      "other_income": 23944761,
+      "balance": 844482255,
+      "balance_pim": 454085140
+    },
+    "2015": {
+      "transfers": 289785231,
+      "other_income": 28797843,
+      "balance": 1199054336,
+      "balance_pim": 465178817
+    },
+    "2016": {
+      "transfers": 256226906,
+      "other_income": 42177973,
+      "balance": 1345026695,
+      "balance_pim": 366048826
+    },
+    "2017": {
+      "transfers": 325626832,
+      "other_income": 59651568,
+      "balance": 1383645841,
+      "balance_pim": 189174294
+    },
+    "2018": {
+      "transfers": 366864573,
+      "other_income": 40779006,
+      "balance": 1586145272,
+      "balance_pim": 420501715
+    },
+    "2019": {
+      "transfers": 357579186,
+      "other_income": 42062979,
+      "balance": 1734047894,
+      "balance_pim": 499691280
+    },
+    "2020": {
+      "transfers": 297707946,
+      "other_income": 22381849,
+      "balance": 1617322484,
+      "balance_pim": 366088099
+    },
+    "2021": {
+      "transfers": 520424087,
+      "other_income": 26708214,
+      "balance": 1623537655,
+      "balance_pim": 405686056
+    },
+    "2022": {
+      "transfers": 855278613,
+      "other_income": 108356200,
+      "balance": 1781293753,
+      "balance_pim": 376541999
+    },
+    "2023": {
+      "transfers": 637196443,
+      "other_income": 169053083,
+      "balance": 2231691719,
+      "balance_pim": 327521062
+    },
+    "2024": {
+      "transfers": 631656034,
+      "other_income": 155545028,
+      "balance": 2606349132,
+      "balance_pim": 412712535
+    },
+    "2025": {
+      "transfers": 653212031,
+      "other_income": 131069875,
+      "balance": 2845582005,
+      "balance_pim": 571112465
+    },
+    "2026": {
+      "transfers": 583767022,
+      "other_income": 100095217,
+      "balance": 2884742594,
+      "balance_pim": 543887322
+    }
+  },
+  "transfers_by_resource": {
+    "span": "2012-2025",
+    "Gas canon and FOCAM": 1971833576,
+    "Mining canon": 2729653420,
+    "Mining royalties": 978281174,
+    "Oil canon": 549008426,
+    "Other": 325103219
+  },
+  "balance_check": {
+    "balance_2025": 2845582005,
+    "income_2025": 784281906,
+    "devengado_2025": 739344455,
+    "predicted_2026": 2890519456,
+    "balance_2026": 2884742594
+  },
+  "balances_2026": {
+    "UN Intercultural de Quillabamba": {
+      "balance": 664050920,
+      "balance_pim": 11500000
+    },
+    "UN de Arte Diego Quispe Tito del Cusco": {
+      "balance": 337851834,
+      "balance_pim": 21800000
+    },
+    "UN Santiago Antunez de Mayolo": {
+      "balance": 274294234,
+      "balance_pim": 22606414
+    },
+    "UN de San Antonio Abad del Cusco": {
+      "balance": 253821869,
+      "balance_pim": 80409145
+    },
+    "UN del Santa": {
+      "balance": 253756230,
+      "balance_pim": 40906654
+    },
+    "UN Jorge Basadre Grohmann": {
+      "balance": 208421142,
+      "balance_pim": 77863623
+    },
+    "UN Ciro Alegria": {
+      "balance": 137699064,
+      "balance_pim": 9695870
+    },
+    "UN de Moquegua": {
+      "balance": 118306693,
+      "balance_pim": 14465938
+    },
+    "UN San Luis Gonzaga de Ica": {
+      "balance": 75656400,
+      "balance_pim": 39084532
+    },
+    "UN de San Agustin": {
+      "balance": 69057637,
+      "balance_pim": 34219597
+    },
+    "UN Autonoma de Tayacaja Daniel Hernandez Morillo": {
+      "balance": 51178354,
+      "balance_pim": 2536376
+    },
+    "UN del Callao": {
+      "balance": 29658023,
+      "balance_pim": 8201235
+    },
+    "UN Autonoma del Distrito de San Marcos": {
+      "balance": 27701488,
+      "balance_pim": 0
+    },
+    "UN Tecnologica de Chincha": {
+      "balance": 27590997,
+      "balance_pim": 0
+    },
+    "UN Micaela Bastidas de Apurimac": {
+      "balance": 27491895,
+      "balance_pim": 15256562
+    },
+    "UN San Cristobal de Huamanga": {
+      "balance": 27361460,
+      "balance_pim": 16333042
+    },
+    "UN de Barranca": {
+      "balance": 23852032,
+      "balance_pim": 3866875
+    },
+    "UN del Vraem": {
+      "balance": 21772381,
+      "balance_pim": 0
+    },
+    "UN Autónoma de Huanta": {
+      "balance": 21570944,
+      "balance_pim": 14082149
+    },
+    "UN de Cañete": {
+      "balance": 20970383,
+      "balance_pim": 6914383
+    },
+    "UN Jose Maria Arguedas": {
+      "balance": 17818472,
+      "balance_pim": 11502464
+    },
+    "UN de Frontera": {
+      "balance": 17290692,
+      "balance_pim": 10586955
+    },
+    "UN de Trujillo": {
+      "balance": 16682835,
+      "balance_pim": 16092265
+    },
+    "UN de Piura": {
+      "balance": 13349536,
+      "balance_pim": 13335252
+    },
+    "UN de Jaen": {
+      "balance": 13151396,
+      "balance_pim": 8663953
+    },
+    "UN Tecnologica de Frontera San Ignacio de Loyola": {
+      "balance": 10667348,
+      "balance_pim": 2126904
+    },
+    "UN de Huancavelica": {
+      "balance": 9843176,
+      "balance_pim": 8800000
+    },
+    "UN Intercultural de la Selva Central Juan Santos Atahualpa": {
+      "balance": 9727701,
+      "balance_pim": 800000
+    },
+    "UN del Centro del Peru": {
+      "balance": 9663706,
+      "balance_pim": 3000000
+    },
+    "UN Daniel Alcides Carrion": {
+      "balance": 9009166,
+      "balance_pim": 9038537
+    },
+    "UN de la Amazonia Peruana": {
+      "balance": 8736565,
+      "balance_pim": 63978
+    },
+    "UN del Altiplano": {
+      "balance": 8326147,
+      "balance_pim": 5781669
+    },
+    "UN Jose Faustino Sanchez Carrion": {
+      "balance": 7518949,
+      "balance_pim": 4453011
+    },
+    "UN de Juliaca": {
+      "balance": 6781674,
+      "balance_pim": 4938350
+    },
+    "UN de Cutervo": {
+      "balance": 5933480,
+      "balance_pim": 0
+    },
+    "UN de Cajamarca": {
+      "balance": 4626595,
+      "balance_pim": 3317944
+    },
+    "UN de Tumbes": {
+      "balance": 4600579,
+      "balance_pim": 4431031
+    },
+    "UN de Ucayali": {
+      "balance": 4507190,
+      "balance_pim": 4018986
+    },
+    "UN Fronteriza Autonoma de Yunguyo": {
+      "balance": 4376606,
+      "balance_pim": 20000
+    },
+    "UN de Carabaya": {
+      "balance": 4376523,
+      "balance_pim": 0
+    },
+    "UN Autonoma de Chupaca": {
+      "balance": 4084222,
+      "balance_pim": 0
+    },
+    "UN Intercultural Aimara de Ilave": {
+      "balance": 3744963,
+      "balance_pim": 0
+    },
+    "UN Autonoma de Chota": {
+      "balance": 3400996,
+      "balance_pim": 4400996
+    },
+    "UN de Sechura": {
+      "balance": 1933823,
+      "balance_pim": 0
+    },
+    "UN de Huancabamba": {
+      "balance": 1926732,
+      "balance_pim": 0
+    },
+    "UN Tecnologica de San Juan de Lurigancho": {
+      "balance": 1851608,
+      "balance_pim": 339231
+    },
+    "UN Intercultural de la Amazonia": {
+      "balance": 1842224,
+      "balance_pim": 2834756
+    },
+    "UN Autónoma Altoandina de Tarma": {
+      "balance": 1414876,
+      "balance_pim": 918409
+    },
+    "UN de Música": {
+      "balance": 843176,
+      "balance_pim": 10000
+    },
+    "UN de San Martin": {
+      "balance": 813935,
+      "balance_pim": 1165624
+    },
+    "UN Federico Villarreal": {
+      "balance": 623960,
+      "balance_pim": 322782
+    },
+    "UN Pedro Ruiz Gallo": {
+      "balance": 455288,
+      "balance_pim": 167881
+    },
+    "UN de Ingenieria": {
+      "balance": 409136,
+      "balance_pim": 240196
+    },
+    "UN de Desaguadero": {
+      "balance": 381962,
+      "balance_pim": 0
+    },
+    "UN Amazonica de Madre de Dios": {
+      "balance": 355169,
+      "balance_pim": 209921
+    },
+    "UN Mayor de San Marcos": {
+      "balance": 331710,
+      "balance_pim": 331710
+    },
+    "UN Daniel Alomia Robles": {
+      "balance": 274764,
+      "balance_pim": 28356
+    },
+    "UN Tecnologica de Lima Sur": {
+      "balance": 240277,
+      "balance_pim": 227452
+    },
+    "UN Agraria de la Selva": {
+      "balance": 227980,
+      "balance_pim": 10200
+    },
+    "UN de Folklore Jose Maria Arguedas": {
+      "balance": 151001,
+      "balance_pim": 0
+    },
+    "UN Agraria la Molina": {
+      "balance": 146545,
+      "balance_pim": 5000
+    },
+    "UN Hermilio Valdizan": {
+      "balance": 116911,
+      "balance_pim": 68208
+    },
+    "UN de Educacion Enrique Guzman y Valle": {
+      "balance": 98517,
+      "balance_pim": 223424
+    },
+    "UN Autonoma de Alto Amazonas": {
+      "balance": 18654,
+      "balance_pim": 1668382
+    },
+    "UN Intercultural Fabiola Salazar Leguia de Bagua": {
+      "balance": 1453,
+      "balance_pim": 1100
+    },
+    "UN Toribio Rodriguez de Mendoza de Amazonas": {
+      "balance": 394,
+      "balance_pim": 0
+    }
+  },
   "against_press": {
     "buho_2013": {
       "claimed": {
@@ -171,10 +544,74 @@
         "received": 2072000000,
         "pct": 39.0
       },
+      "mef_received": {
+        "mining": 2017949865,
+        "all_transfers": 3776536694
+      },
       "mef_summed": {
         "pim": 6687944203,
         "devengado": 2629077705,
         "pct": 39.3
+      }
+    },
+    "snmpe_2021": {
+      "claimed": {
+        "received": 306000000
+      },
+      "mef_received": 306035665
+    },
+    "snmpe_2022": {
+      "claimed": {
+        "received": 498000000,
+        "canon": 392000000,
+        "royalties": 106000000
+      },
+      "mef": {
+        "received": 498769247,
+        "canon": 391995913,
+        "royalties": 106773334
+      },
+      "universities_millions": {
+        "513": {
+          "claimed": 68,
+          "mef": 68.3
+        },
+        "532": {
+          "claimed": 67,
+          "mef": 66.6
+        },
+        "536": {
+          "claimed": 67,
+          "mef": 66.6
+        },
+        "515": {
+          "claimed": 60,
+          "mef": 60.1
+        },
+        "531": {
+          "claimed": 55,
+          "mef": 55.3
+        },
+        "545": {
+          "claimed": 37,
+          "mef": 37.3
+        },
+        "511": {
+          "claimed": 11,
+          "mef": 11.2
+        },
+        "560": {
+          "claimed": 11,
+          "mef": 11.2
+        },
+        "556": {
+          "claimed": 11,
+          "mef": 10.9
+        },
+        "520": {
+          "claimed": 10,
+          "mef": 9.8
+        }
       }
     }
   },

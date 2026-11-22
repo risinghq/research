@@ -1,0 +1,38 @@
+{
+ "kind": "bars",
+ "title": "Where universities' canon comes from",
+ "subtitle": "Canon and royalty transfers received in 2012-2025 by resource, all public universities, current soles",
+ "source": "MEF, Consulta Amigable de Ingresos and Datos Abiertos: Presupuesto y Ejecución de Ingresos",
+ "unit": "million soles",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Received",
+   "points": [
+    {
+     "x": "Mining canon",
+     "y": 2729.65
+    },
+    {
+     "x": "Gas canon and FOCAM",
+     "y": 1971.83
+    },
+    {
+     "x": "Mining royalties",
+     "y": 978.281
+    },
+    {
+     "x": "Oil canon",
+     "y": 549.008
+    },
+    {
+     "x": "Other",
+     "y": 325.103
+    }
+   ]
+  }
+ ]
+}

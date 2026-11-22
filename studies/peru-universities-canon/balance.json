@@ -1,0 +1,144 @@
+{
+ "kind": "line",
+ "title": "Canon universities hold unspent",
+ "subtitle": "Canon balance carried over from earlier years, as recorded at the start of each year, and the part of it in the budget after the year's changes, all public universities, current soles",
+ "source": "MEF, Consulta Amigable de Ingresos and Datos Abiertos: Presupuesto y Ejecución de Ingresos",
+ "unit": "million soles",
+ "decimals": 0,
+ "x": {
+  "kind": "period"
+ },
+ "series": [
+  {
+   "label": "Balance carried over",
+   "points": [
+    {
+     "x": "2012",
+     "y": 283.472
+    },
+    {
+     "x": "2013",
+     "y": 650.826
+    },
+    {
+     "x": "2014",
+     "y": 844.482
+    },
+    {
+     "x": "2015",
+     "y": 1199.05
+    },
+    {
+     "x": "2016",
+     "y": 1345.03
+    },
+    {
+     "x": "2017",
+     "y": 1383.65
+    },
+    {
+     "x": "2018",
+     "y": 1586.15
+    },
+    {
+     "x": "2019",
+     "y": 1734.05
+    },
+    {
+     "x": "2020",
+     "y": 1617.32
+    },
+    {
+     "x": "2021",
+     "y": 1623.54
+    },
+    {
+     "x": "2022",
+     "y": 1781.29
+    },
+    {
+     "x": "2023",
+     "y": 2231.69
+    },
+    {
+     "x": "2024",
+     "y": 2606.35
+    },
+    {
+     "x": "2025",
+     "y": 2845.58
+    },
+    {
+     "x": "2026",
+     "y": 2884.74
+    }
+   ]
+  },
+  {
+   "label": "In the budget",
+   "points": [
+    {
+     "x": "2012",
+     "y": 142.927
+    },
+    {
+     "x": "2013",
+     "y": 365.997
+    },
+    {
+     "x": "2014",
+     "y": 454.085
+    },
+    {
+     "x": "2015",
+     "y": 465.179
+    },
+    {
+     "x": "2016",
+     "y": 366.049
+    },
+    {
+     "x": "2017",
+     "y": 189.174
+    },
+    {
+     "x": "2018",
+     "y": 420.502
+    },
+    {
+     "x": "2019",
+     "y": 499.691
+    },
+    {
+     "x": "2020",
+     "y": 366.088
+    },
+    {
+     "x": "2021",
+     "y": 405.686
+    },
+    {
+     "x": "2022",
+     "y": 376.542
+    },
+    {
+     "x": "2023",
+     "y": 327.521
+    },
+    {
+     "x": "2024",
+     "y": 412.713
+    },
+    {
+     "x": "2025",
+     "y": 571.112
+    },
+    {
+     "x": "2026",
+     "y": 543.887,
+     "preliminary": true
+    }
+   ]
+  }
+ ]
+}
