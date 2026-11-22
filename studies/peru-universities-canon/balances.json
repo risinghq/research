@@ -1,0 +1,78 @@
+{
+ "kind": "bars",
+ "title": "Which universities hold the most unspent canon in 2026",
+ "subtitle": "Canon balance carried over into 2026; the 15 universities with the largest, current soles",
+ "source": "MEF, Consulta Amigable de Ingresos and Datos Abiertos: Presupuesto y Ejecución de Ingresos",
+ "unit": "million soles",
+ "decimals": 0,
+ "x": {
+  "kind": "category"
+ },
+ "series": [
+  {
+   "label": "Balance carried over",
+   "points": [
+    {
+     "x": "UN Intercultural de Quillabamba",
+     "y": 664.051
+    },
+    {
+     "x": "UN de Arte Diego Quispe Tito del Cusco",
+     "y": 337.852
+    },
+    {
+     "x": "UN Santiago Antunez de Mayolo",
+     "y": 274.294
+    },
+    {
+     "x": "UN de San Antonio Abad del Cusco",
+     "y": 253.822
+    },
+    {
+     "x": "UN del Santa",
+     "y": 253.756
+    },
+    {
+     "x": "UN Jorge Basadre Grohmann",
+     "y": 208.421
+    },
+    {
+     "x": "UN Ciro Alegria",
+     "y": 137.699
+    },
+    {
+     "x": "UN de Moquegua",
+     "y": 118.307
+    },
+    {
+     "x": "UN San Luis Gonzaga de Ica",
+     "y": 75.6564
+    },
+    {
+     "x": "UN de San Agustin",
+     "y": 69.0576
+    },
+    {
+     "x": "UN Autonoma de Tayacaja Daniel Hernandez Morillo",
+     "y": 51.1784
+    },
+    {
+     "x": "UN del Callao",
+     "y": 29.658
+    },
+    {
+     "x": "UN Autonoma del Distrito de San Marcos",
+     "y": 27.7015
+    },
+    {
+     "x": "UN Tecnologica de Chincha",
+     "y": 27.591
+    },
+    {
+     "x": "UN Micaela Bastidas de Apurimac",
+     "y": 27.4919
+    }
+   ]
+  }
+ ]
+}
