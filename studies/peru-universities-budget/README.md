@@ -1,5 +1,5 @@
 ---
-summary: San Marcos' 2026 opening budget cut goods and services by S/ 13.5 million and investment by S/ 3.8 million, as it said, but pay rose more, so its total rose S/ 6.5 million. Public universities lost S/ 298 million of Treasury funding, and in 2025 they spent 90% of their budgets, the most since 2012.
+summary: San Marcos' 2026 opening budget cut goods and services by S/ 13.5 million and investment by S/ 3.8 million, but pay rose more, so its total rose S/ 6.5 million. Public universities lost S/ 298 million of Treasury funding, and in 2025 they spent 90% of their budgets, the most since 2012.
 topic: peru-universities
 status: live
 published: 2026-11-21
@@ -8,50 +8,44 @@ data: 2026-11-20
 
 # The budgets of Peru's public universities
 
+Each year Congress passes the budget law by 30 November for the year after:
+[Law 32185](https://mef.gob.pe/contenidos/presu_publ/anexos/ppto2025/Ley_N_32185-LeydePpto2025.pdf)
+for 2025 and
+[Law 32513](https://www.mef.gob.pe/contenidos/presu_publ/anexos/ppto2026/Ley_N_32513-LeydePpto2026.pdf)
+for 2026. The amount the law gives each public university is its opening
+budget (PIA). The budget after changes (PIM) adds the transfers and credits of
+the year. In 2026 ordinary resources, the Treasury's money, made up 70.1% of
+the public universities' PIA. Revenue they collect themselves, such as fees,
+made up 16.3%, canon and royalties 13.3%, and donations and transfers the
+rest.
+
 On 2025-12-11 the Universidad Nacional Mayor de San Marcos declared itself in
-emergency over budget cuts, as
+emergency over cuts to its 2026 budget, as
 [Infobae](https://www.infobae.com/peru/2025/12/11/unmsm-se-declara-en-emergencia-por-recortes-de-presupuesto-que-superan-s-100-millones-y-alerta-impacto-en-calidad-educativa-e-investigacion/)
 and
 [América TV](https://www.americatv.com.pe/noticias/actualidad/unmsm-se-declara-emergencia-recorte-s100-millones-n513827)
-reported from its communiqué. On 2026-11-19
+reported. On 2026-11-19
 [La República](https://larepublica.pe/sociedad/2026/11/19/san-marcos-denuncia-recorte-presupuestal-y-anuncia-marcha-hacia-el-congreso-este-24-de-noviembre-1043119)
-reported a march to Congress on 2026-11-24 over the same cuts. The budget
-data the Ministerio de Economía y Finanzas (MEF) publishes check the
-communiqué's figures and set San Marcos beside the country's other public
-universities.
+reported a march to Congress on 2026-11-24 over the same cuts.
 
-- San Marcos' communiqué said its 2026 budget was S/ 17,296,489 below 2025's:
-  S/ 13,484,620 less for goods and services and S/ 3,811,869 less for capital
-  spending. MEF's opening budgets (PIA) match both cuts to the sol. The
-  S/ 17.3 million is their sum, not the change in the total. Pay rose
-  S/ 19.4 million and pensions S/ 4.0 million, so San Marcos' opening budget
-  rose S/ 6.5 million, to S/ 677.7 million.
-- The rectors said ordinary resources, the Treasury's share, fell S/ 288
-  million for public universities. MEF's opening budgets show a fall of
-  S/ 297.9 million, from S/ 4,997 million in 2025 to S/ 4,699 million.
-- Public universities spent 90.1% of their budget after changes (PIM) in
-  2025, the most since 2012, when they spent 70.1%. They spent 75.1% of their
-  investment budget. San Marcos spent 94.7% and 76.7%.
-- Through October 2026 San Marcos had spent 72.6% of its budget after
-  changes, against 72.7% through October 2025.
-
-None of the reports cited here alleges misuse of funds. The figures show how
-much was budgeted and how much was spent, not what the money bought.
+- San Marcos' 2026 PIA cut goods and services by S/ 13.5 million and capital
+  spending by S/ 3.8 million, S/ 17.3 million in all. Pay rose S/ 19.4 million
+  and pensions S/ 4.0 million, so its PIA rose S/ 6.5 million, to
+  S/ 677.7 million.
+- The PIA of ordinary resources for all public universities fell
+  S/ 297.9 million, from S/ 4,997 million in 2025 to S/ 4,699 million in 2026.
+- Public universities spent 90.1% of their PIM in 2025, the highest share
+  since the data begin in 2012, when they spent 70.1%. They spent 75.1% of
+  their investment budget. San Marcos spent 94.7% and 76.7%.
+- Through October 2026 San Marcos had spent 72.6% of its PIM, against 72.7%
+  through October 2025.
 
 ## San Marcos
 
 ![San Marcos' budget and spending](https://research.rising.sh/peru-universities-budget/unmsm.svg)
 
-The opening budget (PIA) is the one Congress approves in December. The budget
-after changes (PIM) adds the transfers and credits of the year. San Marcos'
-PIA grew from S/ 361 million in 2012 to S/ 678 million in 2026, in current
-soles. Its largest step was 2024, when the PIA rose 23%.
-
-The communiqué also said S/ 40 million allotted under Ley 32185 arrived as
-S/ 12,840,828, that S/ 72,983,846 assigned for 2025 was never transferred, and
-that a S/ 45,824,674 research centre got no funding. A transfer that never
-arrived never enters the PIM, and the data names no project as promised, so
-these three figures cannot be checked.
+San Marcos' PIA grew from S/ 361 million in 2012 to S/ 678 million in 2026, in
+current soles. Its largest step was 2024, when the PIA rose 23%.
 
 | Spending group | PIA 2025 | PIA 2026 | Change |
 | -------------- | -------: | -------: | -----: |
@@ -70,9 +64,9 @@ Million soles. MEF codes each line by its spending group (genérica).
 
 ![Public universities' opening budget from ordinary resources](https://research.rising.sh/peru-universities-budget/ordinary.svg)
 
-Ordinary resources are the Treasury's money. Their opening budget for public
-universities rose from S/ 1,732 million in 2012 to S/ 5,096 million in 2024.
-It fell in 2025 and again in 2026.
+The PIA of ordinary resources for public universities rose from
+S/ 1,732 million in 2012 to S/ 5,096 million in 2024. It fell in 2025 and
+again in 2026.
 
 ![How much of their 2025 budget universities spent](https://research.rising.sh/peru-universities-budget/execution.svg)
 
@@ -88,9 +82,8 @@ S/ 97.4 million. [`numbers.json`](numbers.json) lists every university.
 
 ![How fast San Marcos spends its budget](https://research.rising.sh/peru-universities-budget/pace.svg)
 
-The chart counts spending accrued since January against the year's budget
-after changes. The last month of 2026 is partial: MEF adds each day's
-spending as it comes.
+The chart counts spending accrued since January against the year's PIM. The
+last month of 2026 is partial: MEF adds each day's spending as it comes.
 
 ## Limits
 
@@ -99,6 +92,11 @@ spending as it comes.
   spending group, not what it bought or how well.
 - **Accrual.** Spending accrued (devengado) counts goods received and work
   done. Money committed but not yet accrued is not counted as spent.
+- **Promised transfers.** A transfer that never arrived never enters the PIM,
+  and the data names no project as promised. San Marcos says S/ 40 million
+  allotted under Law 32185 arrived as S/ 12.8 million, that S/ 73.0 million
+  assigned for 2025 was never transferred, and that a S/ 45.8 million research
+  centre got no funding; the data can show none of these.
 - **Universities.** The figures count every pliego from 510 to 583 in the
   education sector, which are the public universities, except 540, the
   Asamblea Nacional de Rectores that SUNEDU replaced in 2014. Universities
