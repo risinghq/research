@@ -8,14 +8,16 @@ data: 2026-10-31
 
 # Peru's private investment
 
-On 2026-11-21 Gestión reported that
-[private investment grew at double digits for a fifth quarter, at a slower pace](https://gestion.pe/economia/inversion-privada-crece-por-quinto-trimestre-a-doble-digito-pero-esta-vez-a-menor-ritmo-noticia/),
-citing data from the Banco Central de Reserva del Perú (BCRP). The charts below
-draw the BCRP series behind it from BCRPData, with the codes to look each one
-up, and update as BCRP publishes.
+Gross fixed private investment is what firms and households spend on
+buildings, machinery and equipment. The Banco Central de Reserva del Perú
+(BCRP) publishes it each quarter in the national accounts, and each month it
+asks firms how much they plan to invest. Every series below comes from
+BCRPData with its code. On 2026-11-21
+[Gestión](https://gestion.pe/economia/inversion-privada-crece-por-quinto-trimestre-a-doble-digito-pero-esta-vez-a-menor-ritmo-noticia/)
+reported the fifth quarter of double-digit growth.
 
-- Gross fixed private investment grew 13.6% in the third quarter of 2026 on
-  a year before, after 17.8% in the second. It has grown 10% or more for five
+- Private investment grew 13.6% in the third quarter of 2026 on a year
+  before, after 17.8% in the second. It has grown 10% or more for five
   straight quarters.
 - Since 2010 only the quarters of 2010 and the 2021 rebound from the pandemic
   grew faster than the second quarter of 2026.
@@ -30,14 +32,12 @@ up, and update as BCRP publishes.
 
 ![Private investment growth in Peru](https://research.rising.sh/peru-private-investment/growth.svg)
 
-Each bar is the real change in gross fixed private investment on the same
-quarter a year before, series `PN02522AQ`. The red ticks are the two values
-Gestión published. BCRP's series now gives 17.76% for the second quarter,
-which rounds to 17.8%, where Gestión wrote 17.6%; BCRP revises earlier
-quarters with each release. The third quarter, 13.55%, matches.
+Each bar is the real change in private investment on the same quarter a year
+before, series `PN02522AQ`. BCRP revises earlier quarters with each release,
+and the chart shows its latest estimate.
 
 Public investment, series `PN02523AQ`, fell 0.2% in the first quarter of 2026
-and 2.5% in the second, and grew 4.2% in the third, as Gestión reported.
+and 2.5% in the second, and grew 4.2% in the third.
 
 ## A low base
 
@@ -55,8 +55,7 @@ have lifted it only to 16.9%.
 
 BCRP's monthly business survey asks firms whether they expect to invest more,
 the same or less in the next three months. An index above 50 means more firms
-expect to invest more than less. Gestión cites a total index that fell from
-59.2 in July to 54.8. BCRPData publishes the index by sector only:
+expect to invest more than less. BCRPData publishes the index by sector:
 
 | Sector | Series | July 2026 | October 2026 |
 | ------ | ------ | --------- | ------------ |

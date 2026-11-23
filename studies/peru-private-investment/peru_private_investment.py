@@ -34,8 +34,6 @@ SECTORS = {
     "PD41428AM": "Commerce",
     "PD41436AM": "Services",
 }
-# The values Gestión published on 2026-11-21, percent change on a year before.
-GESTION = {"2026-Q2": 17.6, "2026-Q3": 13.6}
 FIRST = "2000-1"
 
 
@@ -57,10 +55,6 @@ def growth_chart(private: Sequence[tuple[str, float]]) -> dict[str, object]:
         figures.Axis("quarter"),
         [{"label": "Latest estimate", "points": points(private)}],
         view="2022-Q1",
-        compare={
-            "label": "Gestión, 2026-11-21",
-            "points": [{"x": x, "y": y} for x, y in GESTION.items()],
-        },
     )
 
 
@@ -140,7 +134,6 @@ def run(client: bcrp.BcrpClient, out: Path) -> dict[str, object]:
         figures.write(out, name, value)
     date_readme(out, max(values[-1][0] for values in sectors.values()))
     latest = private[-1][0]
-    by_quarter = dict(private)
     streak = 0
     for _, y in reversed(private):
         if y < 10:
@@ -152,10 +145,6 @@ def run(client: bcrp.BcrpClient, out: Path) -> dict[str, object]:
         "public_growth_pct": {x: round(y, 2) for x, y in public[-8:]},
         "quarters_at_10_pct_or_more_running": streak,
         "beat_2026_q2_since_2010": highest_since(private, "2026-Q2"),
-        "against_gestion": {
-            x: {"gestion": y, "bcrp": round(by_quarter[x], 2)}
-            for x, y in GESTION.items()
-        },
         "share_of_gdp_pct_4q_mean": {
             x: round(y, 2) for x, y in trailing_mean(share, 4)[-1:]
         },

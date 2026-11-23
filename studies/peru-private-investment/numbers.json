@@ -29,16 +29,6 @@
     "2021-Q2",
     "2021-Q3"
   ],
-  "against_gestion": {
-    "2026-Q2": {
-      "gestion": 17.6,
-      "bcrp": 17.76
-    },
-    "2026-Q3": {
-      "gestion": 13.6,
-      "bcrp": 13.55
-    }
-  },
   "share_of_gdp_pct_4q_mean": {
     "2026-Q3": 16.87
   },
