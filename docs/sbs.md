@@ -3,7 +3,7 @@
 [`sbs`](../packages/sbs/sbs.py) reads the monthly workbooks of Peru's
 Superintendencia de Banca, Seguros y AFP (SBS): one workbook per system,
 report and month, one column per firm. The
-[`peru-microfinance-profits`](../studies/peru-microfinance-profits) study
+[`peru-microfinance-profits`](../studies/peru-microfinance-profits) article
 uses it.
 
 ## Files

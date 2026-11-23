@@ -10,23 +10,23 @@ data: 2026-11-19
 
 The SMV publishes a register of the large holders of each issuer it
 supervises: the holder, their nationality, their stake and the share class.
-This study reads the register from the SMV open data API
-([`registro/AccionistaSMVEmisor`](https://mvnet.smv.gob.pe/SMV.OData.Api/api/registro/AccionistaSMVEmisor))
-and asks two questions. How concentrated is the ownership of Peruvian issuers?
-And do share classes with more free float trade more?
+The SMV open data API serves it as
+[`registro/AccionistaSMVEmisor`](https://mvnet.smv.gob.pe/SMV.OData.Api/api/registro/AccionistaSMVEmisor).
+It shows how concentrated the ownership of Peruvian issuers is, and whether
+share classes with more free float trade more.
 
-The API answers only the current register, so the study is one snapshot,
+The API answers only the current register, so the article reads one snapshot,
 fetched on 2026-11-19.
 
 ## The register
 
 The snapshot lists 444 holdings. Eighteen belong to eight foreign issuers,
 among them Credicorp, Southern Copper and InRetail. The register files them all
-under RUC `0`, so the study leaves them out. That leaves 426 holdings in 186
+under RUC `0`, so they are left out. That leaves 426 holdings in 186
 Peruvian issuers.
 
-The smallest listed stake is 4.02%. The study treats every holder below the
-register's cut-off as outside it, and does not assume what the cut-off is.
+The smallest listed stake is 4.02%. Every holder below the register's cut-off
+counts as outside it, with no assumption about what the cut-off is.
 
 Each holder gets one of four kinds from its name:
 
@@ -126,7 +126,7 @@ Ferreycorp, with no holder above 10%, trades every day.
 
 ## Limits
 
-- **One snapshot.** The API has no history, so the study cannot say whether
+- **One snapshot.** The API has no history, so the article cannot say whether
   ownership changed or whether a change in float moved trading. A later
   download of the register would add a second dated snapshot.
 - **Free float is an upper bound.** Holders under the cut-off may act
@@ -136,7 +136,7 @@ Ferreycorp, with no holder above 10%, trades every day.
   that class only. Holdings that name several classes are left out.
 - **Foreign issuers.** The eight issuers under RUC `0` are excluded, so the
   largest BVL names by market value (Credicorp, Southern Copper) are not in
-  the study.
+  the article.
 - **Kinds from names.** A holding company owned by the state or by a person
   counts as a company.
 - **Selection.** The trading tests use the 57 classes that traded in the year
@@ -148,7 +148,7 @@ Ferreycorp, with no holder above 10%, trades every day.
 ## Reproduce
 
 Every number above is in [`numbers.json`](numbers.json), which
-[`bvl_ownership.py`](bvl_ownership.py) rewrites. The study reads the latest
+[`bvl_ownership.py`](bvl_ownership.py) rewrites. The script reads the latest
 holders snapshot, so a new `fetch holders` moves it to that day's register.
 
 ```bash

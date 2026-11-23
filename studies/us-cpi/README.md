@@ -15,7 +15,7 @@ posted: 2026-11-10
 
 On 2026-11-10 Axios charted the monthly change in the U.S. Consumer Price Index
 from January to October 2026, the day the Bureau of Labor Statistics (BLS)
-released the October index. This study rebuilds that chart from the BLS series
+released the October index. The chart below rebuilds it from the BLS series
 it was drawn from, series `CUSR0000SA0`, all items for all urban consumers,
 U.S. city average, seasonally adjusted. The data is public domain and comes
 from the BLS Public Data API.

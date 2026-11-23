@@ -3,7 +3,7 @@
 [`mef`](../packages/mef/mef.py) streams the open budget data of Peru's
 Ministerio de Economía y Finanzas (MEF) from `datosabiertos.mef.gob.pe`. The
 [`peru-universities-canon`](../studies/peru-universities-canon) and
-[`peru-universities-budget`](../studies/peru-universities-budget) studies use
+[`peru-universities-budget`](../studies/peru-universities-budget) articles use
 it. The module docstring describes the files and their quirks.
 
 ## Revenue before 2025

@@ -15,10 +15,10 @@ and
 [América TV](https://www.americatv.com.pe/noticias/actualidad/unmsm-se-declara-emergencia-recorte-s100-millones-n513827)
 reported from its communiqué. On 2026-11-19
 [La República](https://larepublica.pe/sociedad/2026/11/19/san-marcos-denuncia-recorte-presupuestal-y-anuncia-marcha-hacia-el-congreso-este-24-de-noviembre-1043119)
-reported a march to Congress on 2026-11-24 over the same cuts. Neither
-article links a budget table. This study tests the communiqué's figures
-against the budget data the Ministerio de Economía y Finanzas (MEF) publishes,
-and sets San Marcos beside the country's other public universities.
+reported a march to Congress on 2026-11-24 over the same cuts. The budget
+data the Ministerio de Economía y Finanzas (MEF) publishes check the
+communiqué's figures and set San Marcos beside the country's other public
+universities.
 
 - San Marcos' communiqué said its 2026 budget was S/ 17,296,489 below 2025's:
   S/ 13,484,620 less for goods and services and S/ 3,811,869 less for capital
@@ -35,9 +35,8 @@ and sets San Marcos beside the country's other public universities.
 - Through October 2026 San Marcos had spent 72.6% of its budget after
   changes, against 72.7% through October 2025.
 
-None of the reports cited here alleges misuse of funds, and this study tests
-no such claim. It measures how much was budgeted and how much was spent, not
-what the money bought.
+None of the reports cited here alleges misuse of funds. The figures show how
+much was budgeted and how much was spent, not what the money bought.
 
 ## San Marcos
 
@@ -52,7 +51,7 @@ The communiqué also said S/ 40 million allotted under Ley 32185 arrived as
 S/ 12,840,828, that S/ 72,983,846 assigned for 2025 was never transferred, and
 that a S/ 45,824,674 research centre got no funding. A transfer that never
 arrived never enters the PIM, and the data names no project as promised, so
-this study cannot test these three figures.
+these three figures cannot be checked.
 
 | Spending group | PIA 2025 | PIA 2026 | Change |
 | -------------- | -------: | -------: | -----: |
@@ -100,7 +99,7 @@ spending as it comes.
   spending group, not what it bought or how well.
 - **Accrual.** Spending accrued (devengado) counts goods received and work
   done. Money committed but not yet accrued is not counted as spent.
-- **Universities.** The study counts every pliego from 510 to 583 in the
+- **Universities.** The figures count every pliego from 510 to 583 in the
   education sector, which are the public universities, except 540, the
   Asamblea Nacional de Rectores that SUNEDU replaced in 2014. Universities
   created since 2012 appear from their first budget.
@@ -112,7 +111,7 @@ MEF's open data portal publishes the
 [comparison of budget and spending](https://datosabiertos.mef.gob.pe) as three
 zips of five years each, 2012 to 2026, refreshed monthly, and one daily file
 per year from 2025. The 2022 to 2026 zip of 2026-10-22 repeats each row's 2025
-figures in its 2026 columns, so the study takes 2026 from the daily file.
+figures in its 2026 columns, so 2026 comes from the daily file.
 Both files hold 2025: their spending for all public universities agrees
 within S/ 816 of S/ 6,967 million.
 

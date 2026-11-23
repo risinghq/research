@@ -15,7 +15,7 @@ posted: 2026-11-06
 
 On 2026-11-06 Axios charted the monthly change in U.S. nonfarm payrolls from
 January to October 2026, the day the Bureau of Labor Statistics (BLS) released
-the October jobs report. This study rebuilds that chart from the BLS series it
+the October jobs report. The chart below rebuilds it from the BLS series it
 was drawn from, series `CES0000000001`, total nonfarm employment, seasonally
 adjusted. The data is public domain and comes from the BLS Public Data API.
 

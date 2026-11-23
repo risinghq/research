@@ -11,11 +11,9 @@ data: 2026-09-30
 On 2026-11-20 Gestión reported that
 [cajas municipales and rurales earned twice as much as a year before](https://gestion.pe/economia/empresas/cajas-municipales-y-rurales-ganan-el-doble-que-hace-un-ano-cuales-son-las-5-mas-rentables-noticia/),
 with data from the Superintendencia de Banca, Seguros y AFP (SBS) to September.
-The article has no table and names five cajas as the most profitable without a
-figure or the measure it ranks them by. This study reads the SBS's monthly
-workbooks for September of every year from 2010, for the four systems the
-article covers: cajas municipales, cajas rurales, empresas financieras and
-empresas de crédito.
+The figures below come from the SBS's monthly workbooks for September of every
+year from 2010, for the four systems Gestión covers: cajas municipales, cajas
+rurales, empresas financieras and empresas de crédito.
 
 - The cajas municipales earned S/ 1,124.5 million from January to September
   2026, up 93.1% on 2025, as Gestión reported. All eleven earned more, and
@@ -27,7 +25,7 @@ empresas de crédito.
   money in nine of the eleven Septembers from 2014 to 2024.
 - The empresas financieras earned S/ 158.5 million, 16.3% less, and the
   empresas de crédito S/ 91.0 million, 52.4% more. Every figure and return on
-  equity the article quotes matches the workbooks at the precision it gives.
+  equity Gestión quotes matches the workbooks at the precision it gives.
 - The five cajas Gestión names, CMCP Lima, Piura, Huancayo, Cusco and
   Arequipa in that order, are the five with the highest return on equity, in
   that order. By profit, CMCP Lima earned S/ 20.3 million and ranks seventh
@@ -65,7 +63,7 @@ positive return.
 Arrears are loans past due or in court collection over direct loans, the
 SBS's "morosidad". They rose at three cajas municipales, Del Santa, Maynas and
 Paita, and fell at the other eight and at every caja rural, financiera and
-empresa de crédito, as the article reported.
+empresa de crédito, as Gestión reported.
 
 ## Which firms count
 
@@ -73,8 +71,8 @@ Gestión counted 24 of 26 firms earning more. The workbooks give the same
 count once two firms drop out:
 
 - **CRAC del Centro** reports zero in every column of September 2026. The
-  SBS keeps a column of zeros for a firm that stopped reporting, so the study
-  reads it as absent.
+  SBS keeps a column of zeros for a firm that stopped reporting, so it counts
+  as absent.
 - **Financiera Efectiva** appears in September 2025 and not in 2026.
 
 The two firms whose profit fell are InFinance XP and Vívela.
@@ -83,12 +81,12 @@ The two firms whose profit fell are InFinance XP and Vívela.
 
 - **Current soles.** Profits are not adjusted for inflation.
 - **Year to date.** September's figures cover nine months. A full year's
-  profit is in December's workbooks, which this study does not read.
+  profit is in December's workbooks, which are not read here.
 - **Firms change.** The SBS approved Financiera Oh!'s new name, InFinance XP,
   in
   [Resolución SBS 00332-2026](https://busquedas.elperuano.pe/dispositivo/NL/2485493-1)
-  of 2026-02-03; the study joins the two names. It does not join firms that
-  merged, and the system totals include whichever firms reported that year.
+  of 2026-02-03, and the two names are joined. Firms that merged are not
+  joined, and the system totals include whichever firms reported that year.
   The empresas de crédito were called EDPYMEs until 2021; the SBS kept the
   same reports.
 - **Solidaridad.** The EDPYME Solidaridad has no profit column after 2016,
@@ -98,8 +96,8 @@ The two firms whose profit fell are InFinance XP and Vívela.
 
 The SBS publishes one workbook per system, report and month at
 [intranet2.sbs.gob.pe/estadistica/financiera](https://intranet2.sbs.gob.pe/estadistica/financiera/).
-The study reads the balance and income statement workbook and the indicators
-workbook for September of each year:
+The figures come from the balance and income statement workbook and the
+indicators workbook for September of each year:
 
 | System | Statements | Indicators |
 | --- | --- | --- |

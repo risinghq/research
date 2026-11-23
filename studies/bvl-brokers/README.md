@@ -10,8 +10,8 @@ data: 2026-11-13
 
 Every trade on the Lima Stock Exchange goes through a brokerage firm, a
 sociedad agente de bolsa (SAB). The SMV publishes how much each firm bought and
-sold on every market day since 1996. This study measures how the market splits
-among the firms, year by year, and which firms lead it.
+sold on every market day since 1996. The figures below show how the market
+splits among the firms, year by year, and which firms lead it.
 
 The panel has 7,615 market days from 1996-01-02 to 2026-11-13 and 31 firms.
 The findings cover 2010 to 2026; the next section says why. 2026 runs to 13
@@ -88,7 +88,7 @@ to 2023, 2025 and 2026. Its share peaked at 47.2% in 2018 and has been between
 2010.
 
 BBVA's share jumps between years: 2.7% in 2023, 32.5% in 2024 and 4.2% in 2025.
-A few large trades can make such a year; this study does not identify them.
+A few large trades can make such a year; the data do not identify them.
 
 Grupo Coril (GCO) first entered the top five in 2022, with 7.9%. It was second
 in 2023 (17.5%), 2025 (16.7%) and 2026 (15.8%).

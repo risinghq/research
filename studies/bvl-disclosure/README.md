@@ -10,8 +10,8 @@ data: 2026-11-13
 
 A Peruvian issuer must file each material event (hecho de importancia) with the
 SMV. If news leaks before the filing, the stock should move before the filing in
-the direction it moves on the filing day. This study tests that on every filing
-made since 2010.
+the direction it moves on the filing day. The figures below test that on every
+filing made since 2010.
 
 The data are the BVL daily quotes and the SMV's material-event register:
 125,068 filings from 2010-01-04 to 2026-11-13. 13,906 events of 147 issuers

@@ -2,12 +2,12 @@
 
 # research
 
-Studies on open data by rising.sh. Each study is a folder under
-[`studies/`](studies) with its question, its report, the numbers it cites and
-its chart files, which [docs/charts.md](docs/charts.md) describes. Shared data
-clients live under [`packages/`](packages).
+Articles on open data by rising.sh. Each article is a folder under
+[`studies/`](studies) with its text, the numbers it cites, its chart files,
+which [docs/charts.md](docs/charts.md) describes, and the script that rebuilds
+them. Shared data clients live under [`packages/`](packages).
 
-## Studies
+## Articles
 
 The Lima Stock Exchange (BVL), on the SMV's open data and the central bank's
 series:
@@ -22,9 +22,20 @@ series:
 
 [docs/bvl.md](docs/bvl.md) describes the data and the `bvl` command.
 
-Replications rebuild a published chart from its public data and rerun it as
-the data updates; [docs/replications.md](docs/replications.md) describes them:
+Peru, on the open data of MEF, the SBS, the central bank, SUNEDU and
+OpenAlex:
 
+- [The budgets of Peru's public universities](studies/peru-universities-budget/README.md)
+- [How Peru's public universities spend their canon](studies/peru-universities-canon/README.md)
+- [The research record of Peru's universities](studies/peru-universities-rankings/README.md)
+- [The profits of Peru's microfinance firms](studies/peru-microfinance-profits/README.md)
+- [Peru's private investment](studies/peru-private-investment/README.md)
+
+[docs/mef.md](docs/mef.md) and [docs/sbs.md](docs/sbs.md) describe the MEF and
+SBS sources.
+
+Replications rebuild a published chart from its public data and rerun it as
+the data updates; [docs/replications.md](docs/replications.md) describes them.
 All six rebuild Axios charts, five from BLS series and one from NAHB's
 Housing Market Index:
 
@@ -35,7 +46,7 @@ Housing Market Index:
 - [Ground beef price per pound](studies/us-beef-prices/README.md)
 - [U.S. homebuilder sentiment index](studies/us-homebuilder-sentiment/README.md)
 
-## Run a study
+## Rebuild an article
 
 You need [mise](https://mise.jdx.dev/), which installs the pinned Python and uv:
 
@@ -45,8 +56,8 @@ uv run bvl fetch quotes
 uv run studies/bvl-liquidity/bvl_liquidity.py
 ```
 
-A study reads `data/`, which is not committed, and rewrites its folder. Its
-README lists the fetches it needs. Each README opens with front matter that the
+An article's script reads `data/`, which is not committed, and rewrites its
+folder. Its README lists the fetches it needs. Each README opens with front matter that the
 research.rising.sh site reads: a one-line `summary`, the `topic`, a `status` of
 `live` or `finished`, the `published` date and the `data` date the numbers run
 to. A replication adds the keys that name its original.
@@ -54,7 +65,7 @@ to. A replication adds the keys that name its original.
 A README ends with a `## Reproduce` section that names the script, its output
 files and the commands that rerun it. The text above that section is for
 readers and names no files, commands or pipeline. The site shows the text above
-`## Reproduce`, links the study's folder for the rest, and fails its build on a
+`## Reproduce`, links the article's folder for the rest, and fails its build on a
 README without the section.
 
 `mise run check` runs the lint, type checks and tests that CI runs.

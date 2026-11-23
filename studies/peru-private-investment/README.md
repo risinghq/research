@@ -10,9 +10,9 @@ data: 2026-10-31
 
 On 2026-11-21 Gestión reported that
 [private investment grew at double digits for a fifth quarter, at a slower pace](https://gestion.pe/economia/inversion-privada-crece-por-quinto-trimestre-a-doble-digito-pero-esta-vez-a-menor-ritmo-noticia/),
-citing data from the Banco Central de Reserva del Perú (BCRP). The article has
-no chart and names no table. This study draws the BCRP series behind it, from
-BCRPData, with the codes to look each one up, and reruns as BCRP publishes.
+citing data from the Banco Central de Reserva del Perú (BCRP). The charts below
+draw the BCRP series behind it from BCRPData, with the codes to look each one
+up, and update as BCRP publishes.
 
 - Gross fixed private investment grew 13.6% in the third quarter of 2026 on
   a year before, after 17.8% in the second. It has grown 10% or more for five

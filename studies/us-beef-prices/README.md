@@ -14,7 +14,7 @@ posted: 2026-11-07
 # Ground beef price per pound
 
 On 2026-11-07 Axios charted the average U.S. price of a pound of ground beef
-from January 2023 to September 2026. This study rebuilds that chart from the
+from January 2023 to September 2026. The chart below rebuilds it from the
 Bureau of Labor Statistics (BLS) series it was drawn from, series
 `APU0000703112`, ground beef, 100% beef, U.S. city average. The data is public
 domain and comes from the BLS Public Data API.
