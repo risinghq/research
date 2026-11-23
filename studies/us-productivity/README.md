@@ -15,8 +15,8 @@ posted: 2026-11-05
 
 On 2026-11-05 Axios charted the quarterly change in U.S. labor productivity
 from the third quarter of 2024 to the third quarter of 2026, the day the
-Bureau of Labor Statistics (BLS) released its third-quarter estimate. This
-study rebuilds that chart from the BLS series it was drawn from, series
+Bureau of Labor Statistics (BLS) released its third-quarter estimate. The
+chart below rebuilds it from the BLS series it was drawn from, series
 `PRS85006092`, output per hour in the nonfarm business sector, percent change
 from the quarter before at an annual rate. The data is public domain and comes
 from the BLS Public Data API.

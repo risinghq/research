@@ -11,7 +11,7 @@ data: 2026-11-13
 Every issuer with securities on the Lima Stock Exchange files quarterly
 statements with the SMV, and the SMV publishes a summary of each: total
 assets, liabilities, equity, revenue and net income, with the day the SMV
-registered it. This study asks two questions. When do issuers file, against
+registered it. The summaries answer two questions. When do issuers file, against
 their legal limit? And do prices move with the news in the statement, on the
 filing day and over the weeks after it?
 
@@ -39,7 +39,7 @@ lists, for example:
 So a 30-day limit is the last day of the month after the quarter, a 45-day
 limit the 15th of the second month, and the 60-day limit 60 calendar days,
 1 March or 29 February in a leap year. A limit on a closed day moves to the
-next business day. The study's due day applies this rule to every quarter. It
+next business day. The due day here applies this rule to every quarter. It
 passes both the 2021 and the 2026 SMV calendars in the tests.
 
 Closed days are weekends, Peru's national holidays, and the public-sector
@@ -57,8 +57,8 @@ market day from 27 July to 3 August 2026, so the 31 July 2026 limit would fall
 on 4 August.
 
 The limits before July 2014 are measured with the same rule. The filing lag
-before and after 2014 has the same 30- and 45-day shape (below), but this study
-did not read the earlier text of article 7. The summary since the rule uses
+before and after 2014 has the same 30- and 45-day shape (below), but the earlier
+text of article 7 was not read. The summary since the rule uses
 statements filed from 1 July 2014.
 
 ## Issuers file on the last day
@@ -98,8 +98,8 @@ Two quarters of 2020 stand out: 64.8% of first-quarter and 52.8% of
 second-quarter statements came after the ordinary limit. In the other quarters
 since 2017, 0.5% to 11% did, apart from 19% in 2022Q1. The SMV extended the limits during the COVID-19
 emergency; [Resolución de Superintendente 033-2020-SMV/02](https://gestion.pe/economia/coronavirus-en-peru-smv-prorroga-plazo-para-presentacion-de-informacion-financiera-por-estado-de-emergencia-covid-19-nndc-noticia/)
-moved the first quarter's individual limit to 31 July 2020. The study measures
-2020 against the ordinary limit and does not model the extensions. The 2020Q2
+moved the first quarter's individual limit to 31 July 2020. 2020 is measured
+against the ordinary limit, without the extensions. The 2020Q2
 filings bunch on 30 September.
 
 ## Prices move with the news on days 0 and 1
@@ -171,12 +171,12 @@ and 2.0% since. The drift appears in every period at 3% to 4.5%, though the
 - **Accounting change.** Peru moved listed companies to IFRS in 2011 and 2012.
   A year-on-year change across the switch mixes earnings with the new
   standard.
-- **Individual statements.** The event study uses individual statements. For a
+- **Individual statements.** The price tests use individual statements. For a
   group the consolidated one, filed two weeks later, may carry more of the news.
 - **The 2023 fourth-quarter consolidated limit.** By the rule it was 29
   February 2024, but 1 March was the most common filing day, and 40% count
   as late. Without the SMV's 2024
-  calendar the study keeps the rule. Consolidated statements are not in the
+  calendar the rule stands. Consolidated statements are not in the
   results above.
 - **Drift near the end.** An event needs 60 market days after day 0 for the
   drift. Events filed from about August 2026 have a shorter drift window, and

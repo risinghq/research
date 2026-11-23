@@ -13,8 +13,9 @@ posted
 [which Peruvian universities appear most in global rankings in 2026](https://x.com/MaytaTristan/status/2123099835351888118).
 The rankings disagree about who leads Peru, because each mixes different
 indicators.
-This study goes to the record most of them draw on: the journal articles of
-every university in SUNEDU's register, from OpenAlex.
+Most of them draw on one record: the journal articles of each university.
+The figures below count them from OpenAlex for every university in SUNEDU's
+register.
 
 - Peruvian institutions published 5,417 journal articles in 2015 and 15,128 in
   2024. Articles in core journals, the international set bibliometric
@@ -105,8 +106,8 @@ records none for 2025. Its
 [2023 Peruvian articles](https://api.openalex.org/works?filter=primary_location.source.id:S2737847956,publication_year:2023,authorships.institutions.country_code:PE)
 are on public management, law and education, not climate. Horizontes went
 from one Peruvian article in 2020 to 188 in 2023. The Retraction Watch
-Hijacked Journal Checker listed none of the three on 2026-11-21. This study
-does not judge the journals; it shows where the volume went.
+Hijacked Journal Checker listed none of the three on 2026-11-21. These
+figures do not judge the journals; they show where the volume went.
 
 ## Journal grades
 

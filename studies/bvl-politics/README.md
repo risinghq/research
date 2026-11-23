@@ -9,9 +9,10 @@ data: 2026-11-13
 # How the BVL and the sol take Peru's political shocks
 
 Peru has held four presidential elections since 2011, and five
-presidents have left office early since 2018. This study measures how the Lima Stock Exchange and the
-sol moved on the first session after 15 of those events, and over the
-following week. It asks which shocks the market priced and which it ignored.
+presidents have left office early since 2018. The figures below measure how
+the Lima Stock Exchange and the sol moved on the first session after 15 of
+those events, and over the following week. They show which shocks the market
+priced and which it ignored.
 
 The index is the Peru General: the IGBVL to April 2015, the S&P/BVL Peru
 General to August 2025 and the MSCI NUAM Peru General after it. There are 7,589

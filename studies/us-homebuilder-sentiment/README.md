@@ -14,7 +14,7 @@ posted: 2026-11-18
 # U.S. homebuilder sentiment index
 
 On 2026-11-18 Axios charted the NAHB/Wells Fargo Housing Market Index from
-January 2000 to November 2026. This study rebuilds that chart from the index's
+January 2000 to November 2026. The chart below rebuilds it from the index's
 history, which the National Association of Home Builders (NAHB) publishes on
 its [Housing Market Index page](https://www.nahb.org/news-and-economics/housing-economics/indices/housing-market-index).
 NAHB allows its use here with credit: the data is the NAHB/Wells Fargo Housing

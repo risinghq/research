@@ -14,8 +14,8 @@ posted: 2026-11-13
 # Year-over-year change in the Producer Price Index
 
 On 2026-11-13 Axios charted the year-over-year change in the U.S. Producer
-Price Index for final demand from November 2010 to October 2026. This study
-rebuilds that chart from the series it was drawn from, Bureau of Labor
+Price Index for final demand from November 2010 to October 2026. The chart
+below rebuilds it from the series it was drawn from, Bureau of Labor
 Statistics (BLS) series `WPSFD4`, final demand, seasonally adjusted. The data
 is public domain and comes from the BLS Public Data API.
 
@@ -28,7 +28,7 @@ publishes it.
 ## What differs from the original
 
 - **Source.** The original credits BLS through FRED, whose series
-  `PPIFIS_PC1` is the same change computed from the same index. This study
+  `PPIFIS_PC1` is the same change computed from the same index. This chart
   reads the index from BLS.
 - **Seasonal adjustment.** BLS headlines the change of the index that is not
   seasonally adjusted, `WPUFD4`. The original, and this chart, use the

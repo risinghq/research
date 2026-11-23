@@ -2,7 +2,7 @@
 
 `bvl` fills one SQLite file with Lima Stock Exchange (BVL) data from the SMV
 open data API and the central bank's (BCRP) statistics API. It also holds the
-panel, issuer links, event-study tools and charts that the `bvl-*` studies in
+panel, issuer links, event-study tools and charts that the `bvl-*` articles in
 [`studies/`](../studies) share. The API clients are their own packages,
 [`smv`](../packages/smv/smv.py) and [`bcrp`](../packages/bcrp/bcrp.py).
 
@@ -20,7 +20,7 @@ uv run bvl fetch bcrp        # BCRP sol per dollar and copper, 1997 to today
 cache (default `~/.cache/bvl/smv`). `fetch` takes `--start` and `--end` as ISO
 dates. `-v` logs each query window.
 
-A study is a script in its folder, and each study's README names the fetches it
+Each article has a script in its folder, and its README names the fetches it
 needs:
 
 ```bash
@@ -86,7 +86,7 @@ What the data lack:
   thousands of the statement's currency (soles or US dollars), and income for
   the quarter alone. The filing date is the date the SMV registered the
   statement; for an amended one it may be the amendment's date. The API has no
-  forecasts, so a study's earnings news is a change from a year before.
+  forecasts, so an article's earnings news is a change from a year before.
 - **Past registers of holders.** `AccionistaSMVEmisor` takes no date and
   answers only the current register, so `fetch holders` stores it under the
   day it ran and each run adds a snapshot. The register lists stakes from about
@@ -97,12 +97,12 @@ What the data lack:
 (`sFechaInicio`, `sFechaFin`). It was read and left out: on 2026-11-19 it held
 143 rules from 1983 to 2026, all in the sections `MERCADO SECUNDARIO` and
 `BOLSA DE VALORES`, and it lacks issuer-reporting rules such as Resolución SMV
-013-2014-SMV/01, the filing limits the earnings study uses. No study reads it.
+013-2014-SMV/01, the filing limits the earnings article uses. No article reads it.
 
 The BCRP publishes its series at
 `https://estadisticas.bcrp.gob.pe/estadisticas/series/api/`, with no key. One
 request returns a whole daily series, so a fill sends one request per series
-and caches nothing. `bcrp.SERIES` lists the codes the studies read, and they
+and caches nothing. `bcrp.SERIES` lists the codes the articles read, and they
 land in the `bcrp_series` table as (date, code, value):
 
 | Code        | Series                                              |
@@ -111,7 +111,7 @@ land in the `bcrp_series` table as (date, code, value):
 | `PD04701XD` | Copper, London, US cents per pound                  |
 
 A day the BCRP has not yet published reads `n.d.` and is skipped. The BCRP
-keeps its own holidays, so a study carries each value forward onto the BVL
+keeps its own holidays, so a script carries each value forward onto the BVL
 calendar.
 
 ## The panel
@@ -139,8 +139,8 @@ between bid and ask, which gives this index a small upward drift; over the 2 to
 | `bvl.panel`                    | Returns, local shares, market days, the market index and Amihud         |
 | `bvl.issuers`                  | Ticker-to-RUC links                                                     |
 | `bvl.eventstudy`               | The event-study grid, measures, placebos and bootstrap                  |
-| `figures`                      | The chart files of every study ([charts](charts.md))                    |
-| `bvl.study`                    | A study's command line, `numbers.json` and the shared source note       |
+| `figures`                      | The chart files of every article ([charts](charts.md))                  |
+| `bvl.study`                    | An article script's command line, `numbers.json` and the source note    |
 | `bvl.cli`                      | The `bvl` command                                                       |
 | `bvl_liquidity.py`             | Coverage, Amihud illiquidity and the MSCI review                        |
 | `bvl_disclosure.py`            | Event rows to filings with topics, and the leak tests                   |
@@ -149,7 +149,7 @@ between bid and ask, which gives this index a small upward drift; over the 2 to
 | `bvl_earnings.py`              | Statement filing limits, due days, earnings news and CARs               |
 | `bvl_ownership.py`             | Share classes, free float, class tickers and rank correlations          |
 
-The `bvl_*.py` scripts sit in their study's folder. Only `smv` and `bcrp` touch
-the network, and only `bvl.store` opens the database. A study writes
+The `bvl_*.py` scripts sit in their article's folder. Only `smv` and `bcrp` touch
+the network, and only `bvl.store` opens the database. A script writes
 `numbers.json` and its figures; its README cites them and is checked by hand
 after a rerun.

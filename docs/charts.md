@@ -1,9 +1,9 @@
 # Charts
 
-Every figure in a study is a chart file, `NAME.json`, beside its README. The
-study script writes it through the `figures` package. research.rising.sh draws
-each file twice at build time: as the interactive chart on the study's page,
-and as a static SVG at `https://research.rising.sh/STUDY/NAME.svg`.
+Every figure in an article is a chart file, `NAME.json`, beside its README. The
+article's script writes it through the `figures` package. research.rising.sh
+draws each file twice at build time: as the interactive chart on the article's
+page, and as a static SVG at `https://research.rising.sh/SLUG/NAME.svg`.
 
 A README shows a figure by linking that SVG:
 

@@ -5,12 +5,12 @@ the public data it was drawn from. It links the original and does not copy its
 image. The reader gets the same chart, the author's choices made visible, and
 every month published since.
 
-A replication is a study like any other: a folder under `studies/` with a
+A replication is an article like any other: a folder under `studies/` with a
 README, a script, its numbers and its figures. It differs in four places.
 
 ## Front matter
 
-Besides the keys every study has, a replication's README names the original:
+Besides the keys every article has, a replication's README names the original:
 
 | Key          | Value                                          |
 | ------------ | ---------------------------------------------- |
@@ -35,12 +35,12 @@ the precision the original published: a posted 0.4 is not revised by a current
 0.35028, which rounds to it. A period with no current value counts as revised.
 
 A post that publishes a table with no periods keeps the table's own columns
-in `original.csv`, one row per table row. Its study draws each column as a
+in `original.csv`, one row per table row. Its script draws each column as a
 `bars` chart through `figures`, with `compare` holding the posted values, and
 lists each posted value beside its own under `against_original`.
 
 The `replication` package writes the chart file, `numbers.json` and the `data`
-date from a study's points and its original, so a study script only fetches
+date from a replication's points and its original, so its script only fetches
 the series and computes its values.
 
 ## Chart file
